@@ -95,44 +95,6 @@
     a { color: var(--sky); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* ---------- top bar (matches spoteasy.com / data hub) ---------- */
-    .topbar {
-      position: sticky; top: 0; z-index: 999; height: 60px;
-      background: rgba(255,255,255,.95);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--rule);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 32px;
-    }
-    .topbar .logo {
-      display: flex; align-items: center; gap: 8px;
-      font-weight: 800; font-size: 16px; color: var(--navy);
-      letter-spacing: -.01em;
-    }
-    .topbar .logo svg { flex-shrink: 0; }
-    .topbar-nav {
-      display: flex; align-items: center; gap: 32px;
-      font-size: 13px; font-weight: 600;
-    }
-    .topbar-nav a { color: var(--muted); letter-spacing: .01em; transition: color .15s; }
-    .topbar-nav a:hover, .topbar-nav a.active { color: var(--navy); }
-    .topbar-nav a.active { color: var(--sky); position: relative; }
-    .topbar-nav a.active::after {
-      content: ''; position: absolute; bottom: -21px; left: 0; right: 0;
-      height: 2px; background: var(--sky);
-    }
-    .btn-ghost {
-      border: 1.5px solid var(--navy); background: transparent; color: var(--navy);
-      font-family: inherit; font-size: 13px; font-weight: 700;
-      padding: 7px 20px; border-radius: 4px; cursor: pointer;
-      letter-spacing: .02em; transition: background .15s, color .15s;
-    }
-    .btn-ghost:hover { background: var(--navy); color: #fff; }
-    @media (max-width: 720px) {
-      .topbar { padding: 0 20px; }
-      .topbar-nav { display: none; }
-    }
-
     /* ---------- container ---------- */
     .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
 
@@ -234,8 +196,6 @@
     .past ul { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
     .past li { margin-bottom: 6px; }
 
-    /* ---------- footer ---------- */
-    footer { color: var(--muted); font-size: 13px; padding: 24px; text-align: center; border-top: 1px solid var(--rule); }
 
     /* ---------- mobile ---------- */
     @media (max-width: 720px) {
@@ -249,21 +209,7 @@
 
 <body>
 
-  <header class="topbar">
-    <a href="https://spoteasy.com" class="logo">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#00ACEE"/>
-      </svg>
-      Spot Easy
-    </a>
-    <nav class="topbar-nav">
-      <a href="https://spoteasy.com/listings">Listings</a>
-      <a href="https://spoteasy.com/data" class="active">Data</a>
-      <a href="https://spoteasy.com/blog">Blog</a>
-      <a href="https://spoteasy.com/about">About</a>
-    </nav>
-    <a href="https://spoteasy.com/signin"><button class="btn-ghost">Sign In</button></a>
-  </header>
+  
 
   <main class="container">
 
@@ -315,9 +261,7 @@
 
 
 
-  <footer>
-    Spot Easy · spoteasy.com · Built for Boston renters by Bostonians.
-  </footer>
+  
   <script>
   const REPORT_DATA = {
   "week_ending": "2026-05-07",

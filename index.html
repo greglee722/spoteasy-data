@@ -81,75 +81,6 @@
 
     a { color: inherit; text-decoration: none; }
 
-    /* ─── Topbar ─── */
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      height: 60px;
-      background: rgba(255,255,255,.95);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--rule);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 32px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 800;
-      font-size: 16px;
-      color: var(--navy);
-      letter-spacing: -.01em;
-    }
-
-    .logo svg { flex-shrink: 0; }
-
-    .topbar-nav {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-      font-size: 13px;
-      font-weight: 600;
-    }
-
-    .topbar-nav a {
-      color: var(--muted);
-      letter-spacing: .01em;
-      transition: color .15s;
-    }
-    .topbar-nav a:hover, .topbar-nav a.active { color: var(--navy); }
-    .topbar-nav a.active {
-      color: var(--sky);
-      position: relative;
-    }
-    .topbar-nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -21px;
-      left: 0; right: 0;
-      height: 2px;
-      background: var(--sky);
-    }
-
-    .btn-ghost {
-      border: 1.5px solid var(--navy);
-      background: transparent;
-      color: var(--navy);
-      font-family: var(--sans);
-      font-size: 13px;
-      font-weight: 700;
-      padding: 7px 20px;
-      border-radius: 4px;
-      cursor: pointer;
-      letter-spacing: .02em;
-      transition: background .15s, color .15s;
-    }
-    .btn-ghost:hover { background: var(--navy); color: var(--white); }
-
     /* ─── Hero ─── */
     .hero {
       background: var(--navy);
@@ -677,40 +608,6 @@
       border: 1px solid var(--rule);
     }
 
-    /* ─── Footer ─── */
-    .site-footer {
-      margin-top: 80px;
-      border-top: 1px solid var(--rule);
-    }
-
-    .footer-inner {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 28px 32px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .footer-copy {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--muted);
-      letter-spacing: .03em;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 24px;
-    }
-    .footer-links a {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--muted);
-      transition: color .15s;
-    }
-    .footer-links a:hover { color: var(--sky); }
 
     /* ─── Scroll animations ─── */
     .fade-up {
@@ -725,8 +622,6 @@
 
     /* ─── Responsive ─── */
     @media (max-width: 768px) {
-      .topbar { padding: 0 20px; }
-      .topbar-nav { display: none; }
       .hero { padding: 56px 20px 48px; }
       .stat-strip { grid-template-columns: repeat(2, 1fr); }
       .stat-cell:nth-child(2) { border-right: none; }
@@ -738,8 +633,6 @@
       .report-row > .status-tag { display: none; }
       .desk-grid { grid-template-columns: 1fr; }
       .desk-divider { height: 1px; width: auto; }
-      .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
-      .footer-links { flex-wrap: wrap; justify-content: center; }
     }
   </style>
 </head>
@@ -771,21 +664,6 @@ const PAGE_DATA = {
 </script>
 
 <!-- ══════════ TOPBAR ══════════ -->
-<header class="topbar">
-  <a href="https://spoteasy.com" class="logo">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#00ACEE"/>
-    </svg>
-    Spot Easy
-  </a>
-  <nav class="topbar-nav">
-    <a href="https://spoteasy.com/listings">Listings</a>
-    <a href="https://spoteasy.com/data" class="active">Data</a>
-    <a href="https://spoteasy.com/blog">Blog</a>
-    <a href="https://spoteasy.com/about">About</a>
-  </nav>
-  <a href="https://spoteasy.com/signin"><button class="btn-ghost">Sign In</button></a>
-</header>
 
 <!-- ══════════ HERO ══════════ -->
 <section class="hero">
@@ -971,17 +849,6 @@ const PAGE_DATA = {
 </div><!-- /page-wrap -->
 
 <!-- ══════════ FOOTER ══════════ -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <span class="footer-copy">© 2026 Spot Easy · Boston Rental Marketplace · Data updated every Friday</span>
-    <div class="footer-links">
-      <a href="/data">All Reports</a>
-      <a href="https://spoteasy.com/listings">Listings</a>
-      <a href="mailto:joel@spoteasy.com">Contact</a>
-      <a href="https://spoteasy.com">spoteasy.com</a>
-    </div>
-  </div>
-</footer>
 
 <!-- ══════════ RENDERER ══════════ -->
 <script>
