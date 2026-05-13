@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============================================================
+       SWAP per week:
+         <title>, <meta description>, <link canonical>,
+         <script type="application/ld+json"> blocks (Dataset + Article),
+         the inline REPORT_DATA object near the bottom of this file.
+       The rest of the file does not change week to week.
+  ============================================================ -->
+  <title>Boston Rent Index — Average Rent by Neighborhood (May 2026) | Spot Easy</title>
+  <meta name="description" content="Median asking rent across Greater Boston is $3,100 for a 1-bedroom this week. Neighborhood-by-neighborhood breakdown, sample sizes, and a downloadable CSV.">
+  <link rel="canonical" href="https://spoteasy.com/data/rent-report/2026-05-week-1/">
+  <meta property="og:title" content="Boston Rent Index — Week of May 7, 2026">
+  <meta property="og:description" content="Median asking rent by Boston neighborhood. Updated every Friday.">
+  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-1/preview.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org: Dataset (this is what gets us into Google Dataset Search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Boston Rent Index — Week of May 7, 2026",
+    "description": "Median asking rent for active rental listings across Greater Boston, broken down by neighborhood and bedroom count, for the week ending May 7, 2026.",
+    "url": "https://spoteasy.com/data/rent-report/2026-05-week-1/",
+    "creator": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "url": "https://spoteasy.com"
+    },
+    "temporalCoverage": "2026-05-01/2026-05-07",
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "Greater Boston, Massachusetts"
+    },
+    "variableMeasured": [
+      "Median asking rent by neighborhood",
+      "Median asking rent by bedroom count",
+      "Sample size",
+      "25th and 75th rent percentiles",
+      "New listings on market"
+    ],
+    "distribution": [{
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv"
+    }],
+    "license": "https://spoteasy.com/data/license/",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <!-- Schema.org: Article (helps Discover / news surfaces) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Boston Rent Index — Week of May 7, 2026",
+    "datePublished": "2026-05-08T07:00:00-04:00",
+    "author": { "@type": "Person", "name": "Joel Mundele" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "logo": { "@type": "ImageObject", "url": "https://spoteasy.com/logo.png" }
+    },
+    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-1/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #001C41;
+      --sky: #00ACEE;
+      --ink: #1a1a1a;
+      --muted: #5b6b7a;
+      --rule: #E5E9EE;
+      --soft: #F4F8FB;
+      --good: #1a8c4f;
+      --bad:  #c0392b;
+      --bg:   #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Poppins', 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--sky); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- top bar (matches spoteasy.com / data hub) ---------- */
+    .topbar {
+      position: sticky; top: 0; z-index: 999; height: 60px;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 32px;
+    }
+    .topbar .logo {
+      display: flex; align-items: center; gap: 8px;
+      font-weight: 800; font-size: 16px; color: var(--navy);
+      letter-spacing: -.01em;
+    }
+    .topbar .logo svg { flex-shrink: 0; }
+    .topbar-nav {
+      display: flex; align-items: center; gap: 32px;
+      font-size: 13px; font-weight: 600;
+    }
+    .topbar-nav a { color: var(--muted); letter-spacing: .01em; transition: color .15s; }
+    .topbar-nav a:hover, .topbar-nav a.active { color: var(--navy); }
+    .topbar-nav a.active { color: var(--sky); position: relative; }
+    .topbar-nav a.active::after {
+      content: ''; position: absolute; bottom: -21px; left: 0; right: 0;
+      height: 2px; background: var(--sky);
+    }
+    .btn-ghost {
+      border: 1.5px solid var(--navy); background: transparent; color: var(--navy);
+      font-family: inherit; font-size: 13px; font-weight: 700;
+      padding: 7px 20px; border-radius: 4px; cursor: pointer;
+      letter-spacing: .02em; transition: background .15s, color .15s;
+    }
+    .btn-ghost:hover { background: var(--navy); color: #fff; }
+    @media (max-width: 720px) {
+      .topbar { padding: 0 20px; }
+      .topbar-nav { display: none; }
+    }
+
+    /* ---------- container ---------- */
+    .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    .kicker {
+      color: var(--sky);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: var(--navy);
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 8px 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .lede {
+      color: var(--navy);
+      font-size: 19px;
+      line-height: 1.55;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    /* ---------- hero stat tiles ---------- */
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .tile {
+      background: var(--soft);
+      border-left: 4px solid var(--sky);
+      padding: 18px 16px;
+      border-radius: 4px;
+    }
+    .tile .label { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 4px; }
+    .tile .num   { color: var(--navy); font-size: 28px; font-weight: 700; line-height: 1.1; }
+    .tile .delta { font-size: 13px; margin-top: 4px; font-weight: 600; }
+    .delta.up   { color: var(--bad); }
+    .delta.down { color: var(--good); }
+    .delta.flat { color: var(--muted); }
+
+    /* ---------- sections ---------- */
+    h2 { color: var(--navy); font-size: 22px; margin: 36px 0 12px; }
+    h3 { color: var(--navy); font-size: 16px; margin: 24px 0 8px; }
+    p, li { color: var(--ink); }
+    .what-changed ul { padding-left: 20px; }
+    .what-changed li { margin-bottom: 8px; }
+
+    /* ---------- table ---------- */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th {
+      background: var(--navy); color: #fff; text-align: left;
+      padding: 10px 12px; font-weight: 600; font-size: 13px;
+      letter-spacing: .03em; cursor: pointer; user-select: none;
+    }
+    thead th[data-sort] { position: relative; }
+    thead th[data-sort]:hover { background: #002757; }
+    tbody td { padding: 10px 12px; border-top: 1px solid var(--rule); }
+    tbody tr:nth-child(even) td { background: var(--soft); }
+    tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody td.dim { color: var(--muted); }
+    tbody a { color: var(--navy); font-weight: 600; }
+
+    /* ---------- quote ---------- */
+    blockquote.spot {
+      background: var(--navy); color: #fff;
+      padding: 22px 24px; border-radius: 6px;
+      border-left: 4px solid var(--sky);
+      margin: 28px 0;
+      font-size: 17px; line-height: 1.6;
+    }
+    blockquote.spot .who { display: block; margin-top: 10px; color: #BFD9EE; font-size: 13px; font-style: normal; }
+
+    /* ---------- methodology ---------- */
+    details.method {
+      background: var(--soft); padding: 14px 18px; border-radius: 6px; margin: 28px 0;
+      border: 1px solid var(--rule);
+    }
+    details.method summary { cursor: pointer; color: var(--navy); font-weight: 600; }
+    details.method[open] summary { margin-bottom: 10px; }
+
+    /* ---------- CTA ---------- */
+    .cta {
+      display: inline-block; background: var(--sky); color: #fff;
+      padding: 12px 22px; border-radius: 4px; font-weight: 600;
+      margin-right: 8px;
+    }
+    .cta:hover { text-decoration: none; background: #0095cc; }
+    .cta.outline { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+    .cta.outline:hover { background: var(--navy); color: #fff; }
+
+    /* ---------- past reports ---------- */
+    .past { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 24px; }
+    .past ul { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
+    .past li { margin-bottom: 6px; }
+
+    /* ---------- footer ---------- */
+    footer { color: var(--muted); font-size: 13px; padding: 24px; text-align: center; border-top: 1px solid var(--rule); }
+
+    /* ---------- mobile ---------- */
+    @media (max-width: 720px) {
+      h1 { font-size: 28px; }
+      .lede { font-size: 16px; }
+      .tiles { grid-template-columns: repeat(2, 1fr); }
+      .past ul { columns: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a href="https://spoteasy.com" class="logo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#00ACEE"/>
+      </svg>
+      Spot Easy
+    </a>
+    <nav class="topbar-nav">
+      <a href="https://spoteasy.com/listings">Listings</a>
+      <a href="https://spoteasy.com/data" class="active">Data</a>
+      <a href="https://spoteasy.com/blog">Blog</a>
+      <a href="https://spoteasy.com/about">About</a>
+    </nav>
+    <a href="https://spoteasy.com/signin"><button class="btn-ghost">Sign In</button></a>
+  </header>
+
+  <main class="container">
+
+    <div class="kicker">Boston Rent Index · Week of <span data-bind="week_label"></span></div>
+    <h1>The price of a Boston apartment, neighborhood by neighborhood.</h1>
+    <p class="lede" data-bind="lede"></p>
+
+    <!-- HERO TILES -->
+    <div class="tiles" id="tiles"><!-- rendered from REPORT_DATA.headline --></div>
+
+    <!-- WHAT CHANGED -->
+    <section class="what-changed">
+      <h2>What changed this week</h2>
+      <ul id="what-changed"><!-- rendered from REPORT_DATA.bullets --></ul>
+    </section>
+
+    <!-- QUOTE -->
+    <blockquote class="spot" cite="https://spoteasy.com">
+      <span data-bind="quote"></span>
+      <span class="who">— <strong>Joel Mundele</strong>, CEO, Spot Easy</span>
+    </blockquote>
+
+    <!-- NEIGHBORHOOD TABLE -->
+    <h2>Median asking rent by neighborhood</h2>
+    <p>Sample sizes shown so you can judge for yourself. Cells with fewer than 10 active listings are suppressed.</p>
+    <div class="table-wrap">
+      <table id="hood-table">
+        <thead>
+          <tr>
+            <th data-sort="neighborhood">Neighborhood</th>
+            <th data-sort="studio" class="num">Studio</th>
+            <th data-sort="b1" class="num">1BR</th>
+            <th data-sort="b2" class="num">2BR</th>
+            <th data-sort="b3" class="num">3BR</th>
+            <th data-sort="b4" class="num">4+BR</th>
+            <th data-sort="n"  class="num">N</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- BUILDING TYPE -->
+    <h2>By building type</h2>
+    <p>Boston's housing stock is a mix you won't find anywhere else. Triple-deckers (Multi-Family) sit alongside brownstones, condos, and big apartment buildings — the per-bedroom price tells very different stories.</p>
+    <div class="table-wrap">
+      <table id="bt-table">
+        <thead>
+          <tr>
+            <th>Building type</th>
+            <th class="num">Studio</th>
+            <th class="num">1BR</th>
+            <th class="num">2BR</th>
+            <th class="num">3BR</th>
+            <th class="num">4+BR</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- DOWNLOADS / CTAs -->
+    <div style="margin: 28px 0;">
+      <a class="cta" data-bind-href="csv_url" download>Download the CSV</a>
+      <a class="cta outline" href="/listings">Browse Boston listings</a>
+    </div>
+
+    <!-- METHODOLOGY -->
+    <details class="method">
+      <summary>How we calculate this</summary>
+      <p>Each Friday morning we snapshot every active listing on Spot Easy and partner sources across Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden. We exclude drafts, listings removed by admins, and asking rents below $500 or above $20,000 (typical bad-data territory). We dedupe across sources by address + unit number, normalize bedroom counts into Studio/1/2/3/4+, and require at least 10 active listings in any cell before publishing it. The resulting median is the one shown.</p>
+      <p>This isn't a transaction price. It's the median <em>asking</em> rent for what's currently listed — same as Zillow's ZORI or Apartment List's index, but built specifically for Greater Boston using Spot Easy's verified-agent inventory. Want the raw data? <a data-bind-href="csv_url">Download the CSV</a>.</p>
+      <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:press@spoteasy.com">press@spoteasy.com</a>.</p>
+    </details>
+
+    <!-- PAST REPORTS -->
+    <section class="past">
+      <h3>Past reports</h3>
+      <ul id="past-list"><!-- rendered from REPORT_DATA.past_reports --></ul>
+    </section>
+
+  </main>
+
+  <footer>
+    Spot Easy · spoteasy.com · Built for Boston renters by Bostonians.
+  </footer>
+
+  <!-- ============================================================
+       REPORT_DATA — replaced each Friday by the weekly script.
+       For production, point to /data/rent-report/{date}/data.json
+       and fetch it; this inline form is the simplest first pass.
+  ============================================================ -->
+  <script>
+  const REPORT_DATA = {
+    week_ending: "2026-05-07",
+    week_label:  "May 7, 2026",
+    csv_url:     "/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv",
+
+    lede: "Median asking rent across Greater Boston this week was $3,100 for a 1-bedroom — up $50 from last week. Inventory is loosening in Allston and Brighton as Sept 1 listings hit the market, while Cambridge held steady.",
+
+    headline: [
+      { beds: "Studio", median: 2350, wow: 25,  yoy: 145 },
+      { beds: "1BR",    median: 2750, wow: 50,  yoy: 175 },
+      { beds: "2BR",    median: 3300, wow: 0,   yoy: 220 },
+      { beds: "3BR",    median: 4000, wow: -50, yoy: 250 }
+    ],
+
+    bullets: [
+      "<strong>Allston 1BR median up $75</strong> WoW as Sept 1 inventory floods in — biggest one-week jump of any neighborhood.",
+      "<strong>Cambridge held flat</strong> across all bedroom counts. Tight, as usual.",
+      "<strong>South Boston 2BR median fell $125</strong> — first weekly drop since February. Worth watching.",
+      "<strong>1,496 new listings hit the market this week</strong>, the highest weekly count of 2026 so far."
+    ],
+
+    quote: "Renters tell us the same thing every spring: it's loud, it's fast, and it's confusing. Publishing the actual numbers each Friday is the least we can do — knowing what 'fair' looks like in your neighborhood changes how you negotiate.",
+
+    // Neighborhood matrix: each row is one neighborhood with up to 5 cells.
+    // Use null where sample size < 10 so we render a dash.
+    neighborhoods: [
+      { neighborhood: "Allston",       slug: "allston",        studio: 2100, b1: 2400, b2: 3195, b3: 3750, b4: 5200, n: 948 },
+      { neighborhood: "Back Bay",      slug: "back-bay",       studio: 2550, b1: 3250, b2: 4500, b3: 5500, b4: null, n: 295 },
+      { neighborhood: "Beacon Hill",   slug: "beacon-hill",    studio: 2400, b1: 2900, b2: 3625, b3: 4618, b4: null, n: 248 },
+      { neighborhood: "Brighton",      slug: "brighton",       studio: 2095, b1: 2350, b2: 3100, b3: 3700, b4: 4900, n: 1922 },
+      { neighborhood: "Coolidge Corner", slug: "coolidge-corner", studio: 2200, b1: 2600, b2: 3400, b3: 4200, b4: null, n: 175 },
+      { neighborhood: "Dorchester",    slug: "dorchester",     studio: null, b1: 2200, b2: 2800, b3: 3300, b4: 3900, n: 252 },
+      { neighborhood: "East Boston",   slug: "east-boston",    studio: 2150, b1: 2500, b2: 3000, b3: 3500, b4: 4300, n: 215 },
+      { neighborhood: "Fenway",        slug: "fenway",         studio: 2475, b1: 2900, b2: 3700, b3: 4200, b4: 5100, n: 875 },
+      { neighborhood: "Jamaica Plain", slug: "jamaica-plain",  studio: 2050, b1: 2400, b2: 3000, b3: 3550, b4: null, n: 198 },
+      { neighborhood: "Mission Hill",  slug: "mission-hill",   studio: 2050, b1: 2400, b2: 3050, b3: 3600, b4: 4400, n: 365 },
+      { neighborhood: "North Brookline", slug: "north-brookline", studio: 2300, b1: 2700, b2: 3500, b3: 4200, b4: null, n: 245 },
+      { neighborhood: "Roxbury",       slug: "roxbury",        studio: null, b1: 2300, b2: 2750, b3: 3200, b4: 3800, n: 270 },
+      { neighborhood: "South Boston",  slug: "south-boston",   studio: 2300, b1: 2750, b2: 3475, b3: 4100, b4: null, n: 240 },
+      { neighborhood: "South End",     slug: "south-end",      studio: 2400, b1: 2950, b2: 3900, b3: 4800, b4: null, n: 178 }
+    ],
+
+    by_building_type: [
+      { building_type: "Apartment",    studio: 2300, b1: 2700, b2: 3245, b3: 4050, b4: 4950 },
+      { building_type: "Multi-Family", studio: null, b1: 2650, b2: 3000, b3: 3600, b4: 5350 },
+      { building_type: "Condo",        studio: 2500, b1: 2900, b2: 3580, b3: 4100, b4: 5600 },
+      { building_type: "Brownstone",   studio: 2395, b1: 2800, b2: 3563, b3: 4750, b4: 6200 }
+    ],
+
+    past_reports: [
+      { label: "Week of Apr 30, 2026", url: "/data/rent-report/2026-04-week-4/" },
+      { label: "Week of Apr 23, 2026", url: "/data/rent-report/2026-04-week-3/" },
+      { label: "Week of Apr 16, 2026", url: "/data/rent-report/2026-04-week-2/" },
+      { label: "Week of Apr 9, 2026",  url: "/data/rent-report/2026-04-week-1/" }
+    ]
+  };
+
+  // ====== RENDERER (no framework, no build step) ======
+  const $ = sel => document.querySelector(sel);
+  const fmt = n => (n == null ? '—' : '$' + n.toLocaleString());
+  const deltaClass = d => d > 0 ? 'up' : (d < 0 ? 'down' : 'flat');
+  const deltaText  = d => (d > 0 ? '▲ +$' : (d < 0 ? '▼ −$' : '— ')) + Math.abs(d).toLocaleString() + ' WoW';
+
+  // Bind plain text/href fields tagged with data-bind / data-bind-href
+  document.querySelectorAll('[data-bind]').forEach(el => {
+    const k = el.getAttribute('data-bind');
+    if (REPORT_DATA[k] != null) el.textContent = REPORT_DATA[k];
+  });
+  document.querySelectorAll('[data-bind-href]').forEach(el => {
+    el.setAttribute('href', REPORT_DATA[el.getAttribute('data-bind-href')]);
+  });
+
+  // Hero tiles
+  $('#tiles').innerHTML = REPORT_DATA.headline.map(h => `
+    <div class="tile">
+      <div class="label">${h.beds} median</div>
+      <div class="num">${fmt(h.median)}</div>
+      <div class="delta ${deltaClass(h.wow)}">${deltaText(h.wow)}</div>
+    </div>`).join('');
+
+  // What changed bullets
+  $('#what-changed').innerHTML =
+    REPORT_DATA.bullets.map(b => `<li>${b}</li>`).join('');
+
+  // Neighborhood table
+  function renderHoodTable(rows) {
+    const body = $('#hood-table tbody');
+    body.innerHTML = rows.map(r => `
+      <tr>
+        <td><a href="https://spoteasy.com/${r.slug}-apartments">${r.neighborhood}</a></td>
+        <td class="num">${fmt(r.studio)}</td>
+        <td class="num">${fmt(r.b1)}</td>
+        <td class="num">${fmt(r.b2)}</td>
+        <td class="num">${fmt(r.b3)}</td>
+        <td class="num">${fmt(r.b4)}</td>
+        <td class="num dim">${r.n.toLocaleString()}</td>
+      </tr>`).join('');
+  }
+  let hoodSort = { key: 'neighborhood', dir: 1 };
+  function sortHood() {
+    const k = hoodSort.key, dir = hoodSort.dir;
+    const sorted = [...REPORT_DATA.neighborhoods].sort((a, b) => {
+      const av = a[k], bv = b[k];
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      if (typeof av === 'string') return av.localeCompare(bv) * dir;
+      return (av - bv) * dir;
+    });
+    renderHoodTable(sorted);
+  }
+  document.querySelectorAll('#hood-table thead th[data-sort]').forEach(th => {
+    th.addEventListener('click', () => {
+      const k = th.dataset.sort;
+      hoodSort.dir = (hoodSort.key === k) ? -hoodSort.dir : 1;
+      hoodSort.key = k;
+      sortHood();
+    });
+  });
+  sortHood();
+
+  // Building-type table
+  $('#bt-table tbody').innerHTML = REPORT_DATA.by_building_type.map(r => `
+    <tr>
+      <td><strong>${r.building_type}</strong></td>
+      <td class="num">${fmt(r.studio)}</td>
+      <td class="num">${fmt(r.b1)}</td>
+      <td class="num">${fmt(r.b2)}</td>
+      <td class="num">${fmt(r.b3)}</td>
+      <td class="num">${fmt(r.b4)}</td>
+    </tr>`).join('');
+
+  // Past reports
+  $('#past-list').innerHTML = REPORT_DATA.past_reports.map(p =>
+    `<li><a href="${p.url}">${p.label}</a></li>`).join('');
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============================================================
+       SWAP per week:
+         <title>, <meta description>, <link canonical>,
+         <script type="application/ld+json"> blocks (Dataset + Article),
+         the inline REPORT_DATA object near the bottom of this file.
+       The rest of the file does not change week to week.
+  ============================================================ -->
+  <title>Top Boston Real Estate Brokerages — Most Active Rental Listings This Week | Spot Easy</title>
+  <meta name="description" content="Boston’s most active brokerages this week by listing volume and new inventory. Updated every Friday.">
+  <link rel="canonical" href="https://spoteasy.com/data/top-brokerages/">
+  <meta property="og:title" content="Top Boston Brokerages — Week of May 7, 2026">
+  <meta property="og:description" content="Boston’s most active brokerages this week by listing volume and new inventory. Updated every Friday.">
+  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-1/preview.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org: Dataset (this is what gets us into Google Dataset Search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Top Boston Brokerages — Week of May 7, 2026",
+    "description": "Weekly ranking of brokerages by active listing count and new listings this week across Greater Boston.",
+    "url": "https://spoteasy.com/data/rent-report/2026-05-week-1/",
+    "creator": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "url": "https://spoteasy.com"
+    },
+    "temporalCoverage": "2026-05-01/2026-05-07",
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "Greater Boston, Massachusetts"
+    },
+    "variableMeasured": [
+      "Median asking rent by neighborhood",
+      "Median asking rent by bedroom count",
+      "Sample size",
+      "25th and 75th rent percentiles",
+      "New listings on market"
+    ],
+    "distribution": [{
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv"
+    }],
+    "license": "https://spoteasy.com/data/license/",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <!-- Schema.org: Article (helps Discover / news surfaces) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Top Boston Brokerages — Week of May 7, 2026",
+    "datePublished": "2026-05-08T07:00:00-04:00",
+    "author": { "@type": "Person", "name": "Joel Mundele" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "logo": { "@type": "ImageObject", "url": "https://spoteasy.com/logo.png" }
+    },
+    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-1/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #001C41;
+      --sky: #00ACEE;
+      --ink: #1a1a1a;
+      --muted: #5b6b7a;
+      --rule: #E5E9EE;
+      --soft: #F4F8FB;
+      --good: #1a8c4f;
+      --bad:  #c0392b;
+      --bg:   #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Poppins', 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--sky); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- top bar (matches spoteasy.com / data hub) ---------- */
+    .topbar {
+      position: sticky; top: 0; z-index: 999; height: 60px;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 32px;
+    }
+    .topbar .logo {
+      display: flex; align-items: center; gap: 8px;
+      font-weight: 800; font-size: 16px; color: var(--navy);
+      letter-spacing: -.01em;
+    }
+    .topbar .logo svg { flex-shrink: 0; }
+    .topbar-nav {
+      display: flex; align-items: center; gap: 32px;
+      font-size: 13px; font-weight: 600;
+    }
+    .topbar-nav a { color: var(--muted); letter-spacing: .01em; transition: color .15s; }
+    .topbar-nav a:hover, .topbar-nav a.active { color: var(--navy); }
+    .topbar-nav a.active { color: var(--sky); position: relative; }
+    .topbar-nav a.active::after {
+      content: ''; position: absolute; bottom: -21px; left: 0; right: 0;
+      height: 2px; background: var(--sky);
+    }
+    .btn-ghost {
+      border: 1.5px solid var(--navy); background: transparent; color: var(--navy);
+      font-family: inherit; font-size: 13px; font-weight: 700;
+      padding: 7px 20px; border-radius: 4px; cursor: pointer;
+      letter-spacing: .02em; transition: background .15s, color .15s;
+    }
+    .btn-ghost:hover { background: var(--navy); color: #fff; }
+    @media (max-width: 720px) {
+      .topbar { padding: 0 20px; }
+      .topbar-nav { display: none; }
+    }
+
+    /* ---------- container ---------- */
+    .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    .kicker {
+      color: var(--sky);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: var(--navy);
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 8px 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .lede {
+      color: var(--navy);
+      font-size: 19px;
+      line-height: 1.55;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    /* ---------- hero stat tiles ---------- */
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .tile {
+      background: var(--soft);
+      border-left: 4px solid var(--sky);
+      padding: 18px 16px;
+      border-radius: 4px;
+    }
+    .tile .label { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 4px; }
+    .tile .num   { color: var(--navy); font-size: 28px; font-weight: 700; line-height: 1.1; }
+    .tile .delta { font-size: 13px; margin-top: 4px; font-weight: 600; }
+    .delta.up   { color: var(--bad); }
+    .delta.down { color: var(--good); }
+    .delta.flat { color: var(--muted); }
+
+    /* ---------- sections ---------- */
+    h2 { color: var(--navy); font-size: 22px; margin: 36px 0 12px; }
+    h3 { color: var(--navy); font-size: 16px; margin: 24px 0 8px; }
+    p, li { color: var(--ink); }
+    .what-changed ul { padding-left: 20px; }
+    .what-changed li { margin-bottom: 8px; }
+
+    /* ---------- table ---------- */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th {
+      background: var(--navy); color: #fff; text-align: left;
+      padding: 10px 12px; font-weight: 600; font-size: 13px;
+      letter-spacing: .03em; cursor: pointer; user-select: none;
+    }
+    thead th[data-sort] { position: relative; }
+    thead th[data-sort]:hover { background: #002757; }
+    tbody td { padding: 10px 12px; border-top: 1px solid var(--rule); }
+    tbody tr:nth-child(even) td { background: var(--soft); }
+    tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody td.dim { color: var(--muted); }
+    tbody a { color: var(--navy); font-weight: 600; }
+
+    /* ---------- quote ---------- */
+    blockquote.spot {
+      background: var(--navy); color: #fff;
+      padding: 22px 24px; border-radius: 6px;
+      border-left: 4px solid var(--sky);
+      margin: 28px 0;
+      font-size: 17px; line-height: 1.6;
+    }
+    blockquote.spot .who { display: block; margin-top: 10px; color: #BFD9EE; font-size: 13px; font-style: normal; }
+
+    /* ---------- methodology ---------- */
+    details.method {
+      background: var(--soft); padding: 14px 18px; border-radius: 6px; margin: 28px 0;
+      border: 1px solid var(--rule);
+    }
+    details.method summary { cursor: pointer; color: var(--navy); font-weight: 600; }
+    details.method[open] summary { margin-bottom: 10px; }
+
+    /* ---------- CTA ---------- */
+    .cta {
+      display: inline-block; background: var(--sky); color: #fff;
+      padding: 12px 22px; border-radius: 4px; font-weight: 600;
+      margin-right: 8px;
+    }
+    .cta:hover { text-decoration: none; background: #0095cc; }
+    .cta.outline { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+    .cta.outline:hover { background: var(--navy); color: #fff; }
+
+    /* ---------- past reports ---------- */
+    .past { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 24px; }
+    .past ul { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
+    .past li { margin-bottom: 6px; }
+
+    /* ---------- footer ---------- */
+    footer { color: var(--muted); font-size: 13px; padding: 24px; text-align: center; border-top: 1px solid var(--rule); }
+
+    /* ---------- mobile ---------- */
+    @media (max-width: 720px) {
+      h1 { font-size: 28px; }
+      .lede { font-size: 16px; }
+      .tiles { grid-template-columns: repeat(2, 1fr); }
+      .past ul { columns: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a href="https://spoteasy.com" class="logo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#00ACEE"/>
+      </svg>
+      Spot Easy
+    </a>
+    <nav class="topbar-nav">
+      <a href="https://spoteasy.com/listings">Listings</a>
+      <a href="https://spoteasy.com/data" class="active">Data</a>
+      <a href="https://spoteasy.com/blog">Blog</a>
+      <a href="https://spoteasy.com/about">About</a>
+    </nav>
+    <a href="https://spoteasy.com/signin"><button class="btn-ghost">Sign In</button></a>
+  </header>
+
+  <main class="container">
+
+    <div class="kicker">Top Brokerages · Week of <span data-bind="week_label"></span></div>
+    <h1>Boston’s most active brokerages, ranked weekly.</h1>
+    <p class="lede" data-bind="lede"></p>
+
+    <!-- HERO TILES -->
+    <div class="tiles" id="tiles"></div>
+
+    <!-- WHAT CHANGED -->
+    <section class="what-changed">
+      <h2>What moved on the leaderboard</h2>
+      <ul id="what-changed"></ul>
+    </section>
+
+    <!-- QUOTE -->
+    <blockquote class="spot" cite="https://spoteasy.com">
+      <span data-bind="quote"></span>
+      <span class="who">— <strong>Joel Mundele</strong>, CEO, Spot Easy</span>
+    </blockquote>
+
+    <!-- TABLE -->
+    <h2>Top 10 brokerages by active listings</h2>
+    <p>Active rentals only. "New this week" is listings that came on market in the last Fri–Thu window. Brokerage is the company affiliation of the listing agent. Names link to the brokerage’s official website.</p>
+    <div class="table-wrap">
+      <table id="data-table">
+        <thead>
+          <tr><th>Rank</th><th class="num">Brokerage</th><th class="num">Active listings</th><th class="num">New this week</th><th class="num">Neighborhoods</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- METHODOLOGY -->
+    <details class="method">
+      <summary>How we calculate this</summary>
+      <p>We count active listings per brokerage based on the listing agent’s company affiliation. Active means is_on_market = true and not removed by admin. "New this week" is listings whose marked_on_market_at falls in the report window. Brokerages with fewer than 15 active listings are suppressed.</p>
+      <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
+    </details>
+
+    <!-- PAST REPORTS -->
+    <section class="past">
+      <h3>Past reports</h3>
+      <ul id="past-list"></ul>
+    </section>
+
+  </main>
+
+
+
+  <footer>
+    Spot Easy · spoteasy.com · Built for Boston renters by Bostonians.
+  </footer>
+  <script>
+  const REPORT_DATA = {
+  "week_ending": "2026-05-07",
+  "week_label": "May 7, 2026",
+  "lede": "Gibson Sotheby’s International Realty leads the week with 127 active listings across Greater Boston. The top 10 brokerages account for over 1,200 active listings — about 12% of the market. (Preview only — brokerage field still being validated.)",
+  "quote": "Renters always want to know who they’re working with. Showing brokerage activity each week is just transparency — same as we do with everything else.",
+  "tiles": [
+    {
+      "label": "#1 brokerage",
+      "value": "Gibson Sotheby’s",
+      "delta_text": "this week"
+    },
+    {
+      "label": "Active listings",
+      "value": "127",
+      "delta_text": "+14 new this week",
+      "delta_dir": "up"
+    },
+    {
+      "label": "Top 10 share",
+      "value": "12%",
+      "delta_text": "of Greater Boston"
+    },
+    {
+      "label": "Active brokerages",
+      "value": "500+",
+      "delta_text": "on Spot Easy"
+    }
+  ],
+  "bullets": [
+    "<strong>Gibson Sotheby’s #1</strong> with 127 active listings; up 14 new this week.",
+    "<strong>Compass holds #2</strong> with 98 active listings — biggest WoW gain at +22 new.",
+    "<strong>Coldwell Banker climbs to #5</strong>, swapping with Engel & Völkers.",
+    "<strong>Top 10 brokerages = 12% of market.</strong> Long tail still dominates Boston rentals."
+  ],
+  "rows": [
+    [
+      "1",
+      "<a href=\"https://www.gibsonsothebysrealty.com\" target=\"_blank\" rel=\"noopener\">Gibson Sotheby’s International</a>",
+      127,
+      "+14",
+      "Back Bay, Beacon Hill, South End"
+    ],
+    [
+      "2",
+      "<a href=\"https://www.compass.com\" target=\"_blank\" rel=\"noopener\">Compass</a>",
+      98,
+      "+22",
+      "Cambridge, Somerville, Brookline"
+    ],
+    [
+      "3",
+      "<a href=\"https://bostonpads.com\" target=\"_blank\" rel=\"noopener\">Boston Pads</a>",
+      92,
+      "+6",
+      "Allston, Brighton, Mission Hill"
+    ],
+    [
+      "4",
+      "<a href=\"https://www.charlesgate.com\" target=\"_blank\" rel=\"noopener\">Charlesgate Realty Group</a>",
+      87,
+      "+11",
+      "Fenway, Allston, Cambridge"
+    ],
+    [
+      "5",
+      "<a href=\"https://www.coldwellbankerhomes.com\" target=\"_blank\" rel=\"noopener\">Coldwell Banker</a>",
+      78,
+      "+9",
+      "Brookline, Newton, West End"
+    ],
+    [
+      "6",
+      "<a href=\"https://www.evrealestate.com\" target=\"_blank\" rel=\"noopener\">Engel & Völkers Boston</a>",
+      74,
+      "+5",
+      "Back Bay, South End"
+    ],
+    [
+      "7",
+      "<a href=\"https://www.elliman.com\" target=\"_blank\" rel=\"noopener\">Douglas Elliman</a>",
+      69,
+      "+8",
+      "Seaport, Back Bay, Beacon Hill"
+    ],
+    [
+      "8",
+      "<a href=\"https://www.bhhsne.com\" target=\"_blank\" rel=\"noopener\">Berkshire Hathaway HomeServices</a>",
+      62,
+      "+4",
+      "Newton, Brookline, Cambridge"
+    ],
+    [
+      "9",
+      "<a href=\"https://www.kw.com\" target=\"_blank\" rel=\"noopener\">Keller Williams Boston</a>",
+      58,
+      "+7",
+      "Dorchester, South Boston"
+    ],
+    [
+      "10",
+      "<a href=\"https://www.century21.com\" target=\"_blank\" rel=\"noopener\">Century 21 North East</a>",
+      47,
+      "+3",
+      "Medford, Malden, Everett"
+    ]
+  ],
+  "past_reports": []
+};
+
+  const $ = sel => document.querySelector(sel);
+
+  document.querySelectorAll('[data-bind]').forEach(el => {
+    const k = el.getAttribute('data-bind');
+    if (REPORT_DATA[k] != null) el.textContent = REPORT_DATA[k];
+  });
+
+  // Hero tiles
+  $('#tiles').innerHTML = REPORT_DATA.tiles.map(t => `
+    <div class="tile">
+      <div class="label">${t.label}</div>
+      <div class="num">${t.value}</div>
+      <div class="delta ${t.delta_dir || 'flat'}">${t.delta_text || '— preview only'}</div>
+    </div>`).join('');
+
+  // Bullets
+  $('#what-changed').innerHTML = REPORT_DATA.bullets.map(b => '<li>' + b + '</li>').join('');
+
+  // Table — rows are arrays. First cell renders as HTML (so anchors work).
+  // Numeric cells render plain text.
+  $('#data-table tbody').innerHTML = REPORT_DATA.rows.map(r =>
+    '<tr>' + r.map((c,i) => '<td' + (i===0 ? '' : ' class="num"') + '>' + (c == null ? '—' : c) + '</td>').join('') + '</tr>'
+  ).join('');
+
+  // Past reports
+  $('#past-list').innerHTML = (REPORT_DATA.past_reports || []).map(p =>
+    '<li><a href="' + p.url + '">' + p.label + '</a></li>').join('');
+  </script>
+
+</body>
+</html>
