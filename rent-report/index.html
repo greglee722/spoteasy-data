@@ -202,7 +202,6 @@
     .past ul { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
     .past li { margin-bottom: 6px; }
 
-
     /* ---------- mobile ---------- */
     @media (max-width: 720px) {
       h1 { font-size: 28px; }
@@ -214,90 +213,6 @@
 </head>
 
 <body>
-<style id="se-site-nav-styles">
-  #se-site-nav{position:sticky;top:0;z-index:999;width:100%;background:#fff;border-bottom:1px solid #E5E7EB;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
-  .se-nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between}
-  .se-nav-logo img{height:32px;display:block}
-  .se-nav-right{display:flex;align-items:center;gap:24px}
-  .se-nav-links{display:flex;align-items:center;gap:28px}
-  .se-nav-links a{color:#425466;text-decoration:none;font-size:14px;font-weight:500;transition:color .15s}
-  .se-nav-links a:hover{color:#00ACEE}
-  .se-nav-btn{display:inline-flex;align-items:center;padding:6px 18px;border:1px solid #00ACEE;border-radius:20px;color:#00ACEE;text-decoration:none;font-size:14px;font-weight:600;transition:background .15s,color .15s}
-  .se-nav-btn:hover{background:#00ACEE;color:#fff}
-  .se-hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;color:#425466;line-height:1}
-  .se-mobile-menu{display:none;background:#fff;border-top:1px solid #E5E7EB;padding:16px 24px}
-  .se-mobile-menu.open{display:block}
-  .se-mobile-menu a{display:block;padding:11px 0;color:#425466;text-decoration:none;font-size:15px;font-weight:500;border-bottom:1px solid #F3F4F6}
-  .se-mobile-menu a:last-child{border-bottom:none}
-  .se-mobile-menu a:hover{color:#00ACEE}
-  .se-mobile-signin{display:inline-flex!important;align-items:center;justify-content:center;margin-top:14px;padding:8px 24px;border:1px solid #00ACEE!important;border-radius:20px;color:#00ACEE!important;font-size:14px;font-weight:600;white-space:nowrap;border-bottom:none!important;text-decoration:none}
-  .se-nav-search{display:flex;align-items:center;flex:1;max-width:420px;margin:0 32px;background:#F7F9FB;border:1px solid #E2E8F0;border-radius:8px;padding:0 12px;height:38px;gap:8px;transition:border-color .15s}
-  .se-nav-search:focus-within{border-color:#00ACEE;background:#fff}
-  .se-search-icon{flex-shrink:0}
-  .se-search-input{flex:1;border:none;background:transparent;outline:none;font-size:14px;color:#425466}
-  .se-search-input::placeholder{color:#9DB0C8}
-  .se-mobile-search{display:flex;gap:8px;margin-bottom:12px}
-  .se-mobile-search input{flex:1;padding:8px 12px;border:1px solid #E2E8F0;border-radius:8px;font-size:14px;outline:none}
-  .se-mobile-search input:focus{border-color:#00ACEE}
-  .se-mobile-search button{padding:8px 14px;background:#00ACEE;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}
-  @media(max-width:768px){.se-nav-search{display:none}.se-nav-links,.se-nav-btn{display:none}.se-hamburger{display:block}}
-  #se-site-footer{background:#F3F4F6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:64px;border-top:1px solid #E5E7EB}
-  .se-footer-inner{max-width:1280px;margin:0 auto;padding:56px 24px 72px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;align-items:start}
-  .se-footer-brand{display:flex;flex-direction:column;align-items:center;text-align:center}
-  .se-footer-brand-logo{height:32px;margin-bottom:12px}
-  .se-footer-tagline{font-size:13px;color:#425466;font-style:italic;max-width:200px;line-height:1.5;margin-bottom:20px}
-  .se-footer-social{display:flex;gap:16px}
-  .se-footer-social a{color:#7A8999;transition:color .15s;text-decoration:none}
-  .se-footer-social a:hover{color:#00ACEE}
-  .se-footer-copyright{display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
-  .se-footer-copyright-text{font-size:13px;color:#425466;margin:0 0 16px}
-  .se-footer-eho{width:44px}
-  .se-footer-links{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
-  .se-footer-links a{font-size:13px;color:#425466;text-decoration:none;transition:color .15s}
-  .se-footer-links a:hover{color:#00ACEE}
-  @media(max-width:768px){
-    .se-footer-inner{grid-template-columns:1fr;text-align:center;gap:32px}
-    .se-footer-copyright,.se-footer-brand,.se-footer-links{align-items:center}
-    .se-footer-copyright{order:3}.se-footer-brand{order:1}.se-footer-links{order:2}
-  }
-</style>
-<header id="se-site-nav">
-  <div class="se-nav-inner">
-    <a href="https://spoteasy.com" class="se-nav-logo" aria-label="Spot Easy home">
-      <img src="https://spoteasy.com/images/dark_logo.svg" alt="Spot Easy"
-           onerror="this.parentElement.innerHTML='<span style=&quot;font-weight:800;font-size:18px;color:#0A2540&quot;>Spot Easy</span>'">
-    </a>
-    <form class="se-nav-search" role="search" action="https://spoteasy.com/on-market-apartments" method="get" onsubmit="if(this.q.value.trim()){window.location='https://spoteasy.com/on-market-apartments?location='+encodeURIComponent(this.q.value.trim());}return false;">
-      <svg class="se-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A8999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input type="text" name="q" class="se-search-input" placeholder="City, neighborhood, zip code&#x2026;" autocomplete="off" aria-label="Search Boston apartments">
-    </form>
-    <div class="se-nav-right">
-      <nav class="se-nav-links" aria-label="Main navigation">
-        <a href="https://spoteasy.com/on-market-apartments">Boston Apartments</a>
-        <a href="https://spoteasy.com/boston-realtors">Boston Realtors</a>
-        <a href="https://spoteasy.com/blog">Blog</a>
-        <a href="https://spoteasy.com/about">About</a>
-      </nav>
-      <a href="https://spoteasy.com/login" class="se-nav-btn">Sign In</a>
-      <button class="se-hamburger" id="se-nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-</header>
-<div class="se-mobile-overlay" id="se-mobile-overlay"></div>
-<div class="se-mobile-menu" id="se-mobile-menu" aria-hidden="true">
-  <a href="https://spoteasy.com/on-market-apartments">Boston Apartments</a>
-  <a href="https://spoteasy.com/boston-realtors">Boston Realtors</a>
-  <a href="https://spoteasy.com/blog">Blog</a>
-  <a href="https://spoteasy.com/about">About</a>
-  <a href="https://spoteasy.com/login" class="se-mobile-signin"><svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z" fill="currentColor"></path></svg> Sign In</a>
-</div>
-<script>
-(function(){var b=document.getElementById('se-nav-toggle'),m=document.getElementById('se-mobile-menu'),ov=document.getElementById('se-mobile-overlay');function closeMenu(){m.classList.remove('open');if(ov)ov.classList.remove('open');b.setAttribute('aria-expanded','false');m.setAttribute('aria-hidden','true');}if(b&&m){b.addEventListener('click',function(){var open=m.classList.toggle('open');if(ov)ov.classList.toggle('open',open);b.setAttribute('aria-expanded',String(open));m.setAttribute('aria-hidden',String(!open));});if(ov)ov.addEventListener('click',closeMenu);}})();
-</script>
 
   
 
@@ -982,46 +897,5 @@
     `<li><a href="${p.url}">${p.label}</a></li>`).join('');
   </script>
 
-
-<footer id="se-site-footer">
-  <div class="se-footer-inner">
-    <div class="se-footer-copyright">
-      <p class="se-footer-copyright-text">&copy; Spot Easy 2026. All rights reserved.</p>
-      <a href="https://www.boston.gov/departments/fair-housing-and-equity" target="_blank" rel="nofollow noreferrer">
-        <img src="https://spoteasy.com/images/shared/eho.svg" alt="Equal Housing Opportunity" class="se-footer-eho"
-             onerror="this.style.display='none'">
-      </a>
-    </div>
-    <div class="se-footer-brand">
-      <img src="https://spoteasy.com/images/dark_logo.svg" alt="Spot Easy" class="se-footer-brand-logo"
-           onerror="this.style.display='none'">
-      <p class="se-footer-tagline">Built for Boston renters by Bostonians</p>
-      <div class="se-footer-social">
-        <a href="https://www.facebook.com/SpotEasy" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        </a>
-        <a href="https://twitter.com/SpotEasyBOS" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.7 5.5 4.3 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/spoteasybos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/company/spot-easy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-        </a>
-      </div>
-    </div>
-    <div class="se-footer-links">
-      <a href="https://spoteasy.com/privacy-policy">Privacy Policy</a>
-      <a href="https://spoteasy.com/terms-of-service">Terms of Service</a>
-      <a href="https://spoteasy.com/sitemap.xml">XML Sitemap</a>
-      <a href="https://spoteasy.com/on-market-apartments">On-market Listings</a>
-      <a href="https://spoteasy.com/off-market-apartments">Off-market Listings</a>
-      <a href="https://spoteasy.com/buildings">Premium Listings</a>
-      <a href="https://spoteasy.com/boston-realtors">Boston Realtors</a>
-      <a href="mailto:support@spoteasy.com">support@spoteasy.com</a>
-    </div>
-  </div>
-</footer>
 </body>
 </html>
