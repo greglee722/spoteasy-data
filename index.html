@@ -276,6 +276,26 @@
       text-transform: uppercase;
     }
 
+    .section-live-badge {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--up);
+      letter-spacing: .04em;
+      text-transform: none;
+    }
+    .section-live-badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--up);
+      animation: pulse 2s infinite;
+      flex-shrink: 0;
+    }
+
     /* ─── Featured card ─── */
     .featured-card {
       display: grid;
@@ -395,7 +415,7 @@
     }
 
     .report-row-desc {
-      font-size: 13px;
+      font-size: 15px;
       color: var(--muted);
       line-height: 1.55;
       max-width: 540px;
@@ -653,6 +673,7 @@
       .featured-card { grid-template-columns: 1fr; }
       .report-row { grid-template-columns: 32px 1fr; }
       .report-row-meta { grid-column: 2 / -1; flex-direction: row; align-items: center; justify-content: flex-start; gap: 14px; }
+      .report-row > .report-row-btn { grid-column: 1 / -1; margin-left: 52px; justify-self: start; }
       .desk-grid { grid-template-columns: 1fr; }
       .desk-divider { height: 1px; width: auto; }
     }
@@ -877,6 +898,7 @@ const PAGE_DATA = {
     <div class="section-head">
       <span class="section-num">02</span>
       <span class="section-title">All Reports</span>
+      <span class="section-live-badge">Live · Updated Weekly</span>
     </div>
     <ul class="reports-list">
 
@@ -887,10 +909,7 @@ const PAGE_DATA = {
           <div class="report-row-desc">What does a 1-bedroom go for in Allston this week? A studio in Fenway? Median asking rents for every major Boston neighborhood, every Friday.</div>
           <div class="report-teaser" id="teaser-rent_index"></div>
         </div>
-        <div class="report-row-meta">
-          <span class="status-tag live">Live · Weekly</span>
-          <button class="report-row-btn">View Report →</button>
-        </div>
+        <button class="report-row-btn">View Report →</button>
       </li>
 
       <li class="report-row is-live" onclick="location.href='hot-neighborhoods/'" data-teaser="hot_hoods">
@@ -900,10 +919,7 @@ const PAGE_DATA = {
           <div class="report-row-desc">Which neighborhoods are getting the most renter attention right now, and which are cooling off. We track lead volume week over week, with a working professional / student split.</div>
           <div class="report-teaser" id="teaser-hot_hoods"></div>
         </div>
-        <div class="report-row-meta">
-          <span class="status-tag live">Live · Weekly</span>
-          <button class="report-row-btn">View Report →</button>
-        </div>
+        <button class="report-row-btn">View Report →</button>
       </li>
 
       <li class="report-row is-live" onclick="location.href='sept-1-countdown/'" data-teaser="sept1">
@@ -913,10 +929,7 @@ const PAGE_DATA = {
           <div class="report-row-desc">Most Boston leases start September 1. Nowhere else in the country works this way. We track how many Sept 1 units are listed right now and what they're asking.</div>
           <div class="report-teaser" id="teaser-sept1"></div>
         </div>
-        <div class="report-row-meta">
-          <span class="status-tag june">Starts June</span>
-          <button class="report-row-btn">View Report →</button>
-        </div>
+        <button class="report-row-btn">View Report →</button>
       </li>
 
       <li class="report-row is-live" onclick="location.href='building-types/'" data-teaser="building_types">
@@ -926,10 +939,7 @@ const PAGE_DATA = {
           <div class="report-row-desc">Apartment, condo, multi-family, brownstone — what you pay in Boston depends a lot on what you're renting. We break down median asking rent by building type and bedroom count across Greater Boston.</div>
           <div class="report-teaser" id="teaser-building_types"></div>
         </div>
-        <div class="report-row-meta">
-          <span class="status-tag live">Live · Weekly</span>
-          <button class="report-row-btn">View Report →</button>
-        </div>
+        <button class="report-row-btn">View Report →</button>
       </li>
 
       <li class="report-row is-live" onclick="location.href='roommate-vs-studio/'" data-teaser="studio_squeeze">
@@ -939,10 +949,7 @@ const PAGE_DATA = {
           <div class="report-row-desc">Solo studio or split a 2-bedroom? We calculate monthly cost per person for both across every major Boston neighborhood.</div>
           <div class="report-teaser" id="teaser-studio_squeeze"></div>
         </div>
-        <div class="report-row-meta">
-          <span class="status-tag live">Live · Weekly</span>
-          <button class="report-row-btn">View Report →</button>
-        </div>
+        <button class="report-row-btn">View Report →</button>
       </li>
 
       <li class="report-row is-live" onclick="location.href='top-brokerages/'" data-teaser="brokerages">
@@ -952,10 +959,7 @@ const PAGE_DATA = {
           <div class="report-row-desc">Which agencies have the most listings on the market right now. Useful if you want more options or a faster response.</div>
           <div class="report-teaser" id="teaser-brokerages"></div>
         </div>
-        <div class="report-row-meta">
-          <span class="status-tag live">Live · Weekly</span>
-          <button class="report-row-btn">View Report →</button>
-        </div>
+        <button class="report-row-btn">View Report →</button>
       </li>
 
     </ul>
