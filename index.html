@@ -654,7 +654,22 @@
   .se-mobile-menu a:last-child{border-bottom:none}
   .se-mobile-menu a:hover{color:#00ACEE}
   .se-mobile-signin{display:inline-block!important;margin-top:14px;padding:8px 20px;border:1px solid #00ACEE!important;border-radius:20px;color:#00ACEE!important;font-size:14px;font-weight:600;border-bottom:none!important}
-  @media(max-width:768px){.se-nav-links,.se-nav-btn{display:none}.se-hamburger{display:block}}
+  .se-nav-search{display:flex;align-items:center;flex:1;max-width:420px;margin:0 32px;background:#F7F9FB;border:1px solid #E2E8F0;border-radius:8px;padding:0 12px;height:38px;gap:8px;transition:border-color .15s}
+  .se-nav-search:focus-within{border-color:#00ACEE;background:#fff}
+  .se-search-icon{flex-shrink:0}
+  .se-search-input{flex:1;border:none;background:transparent;outline:none;font-size:14px;color:#425466}
+  .se-search-input::placeholder{color:#9DB0C8}
+  .se-mobile-search{display:flex;gap:8px;margin-bottom:12px}
+  .se-mobile-search input{flex:1;padding:8px 12px;border:1px solid #E2E8F0;border-radius:8px;font-size:14px;outline:none}
+  .se-mobile-search input:focus{border-color:#00ACEE}
+  .se-mobile-search button{padding:8px 14px;background:#00ACEE;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer}
+  @media(max-width:768px){.se-nav-search{display:none}.se-nav-links,.se-nav-btn{display:none}.se-hamburger{display:block}}
+  .se-breadcrumb{background:#fff;border-bottom:1px solid #E2E8F0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  .se-breadcrumb-inner{max-width:1280px;margin:0 auto;padding:8px 24px;display:flex;align-items:center;gap:8px;font-size:13px}
+  .se-breadcrumb-inner a{color:#425466;text-decoration:none}
+  .se-breadcrumb-inner a:hover{color:#00ACEE}
+  .se-bc-sep{color:#9DB0C8}
+  .se-breadcrumb-inner span:last-child{color:#0A2540;font-weight:600}
   #se-site-footer{background:#F3F4F6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:64px;border-top:1px solid #E5E7EB}
   .se-footer-inner{max-width:1280px;margin:0 auto;padding:56px 24px 72px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;align-items:start}
   .se-footer-brand{display:flex;flex-direction:column;align-items:center;text-align:center}
@@ -681,6 +696,10 @@
       <img src="https://spoteasy.com/images/dark_logo.svg" alt="Spot Easy"
            onerror="this.parentElement.innerHTML='<span style=&quot;font-weight:800;font-size:18px;color:#0A2540&quot;>Spot Easy</span>'">
     </a>
+    <form class="se-nav-search" role="search" action="https://spoteasy.com/on-market-apartments" method="get" onsubmit="if(this.q.value.trim()){window.location='https://spoteasy.com/on-market-apartments?location='+encodeURIComponent(this.q.value.trim());}return false;">
+      <svg class="se-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A8999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" name="q" class="se-search-input" placeholder="City, neighborhood, zip code&#x2026;" autocomplete="off" aria-label="Search Boston apartments">
+    </form>
     <div class="se-nav-right">
       <nav class="se-nav-links" aria-label="Main navigation">
         <a href="https://spoteasy.com/on-market-apartments">Boston Apartments</a>
@@ -697,6 +716,10 @@
     </div>
   </div>
   <div class="se-mobile-menu" id="se-mobile-menu" aria-hidden="true">
+    <form class="se-mobile-search" role="search" onsubmit="if(this.q.value.trim()){window.location='https://spoteasy.com/on-market-apartments?location='+encodeURIComponent(this.q.value.trim());}return false;">
+      <input type="text" name="q" placeholder="City, neighborhood, zip code&#x2026;" autocomplete="off" aria-label="Search Boston apartments">
+      <button type="submit">Search</button>
+    </form>
     <a href="https://spoteasy.com/on-market-apartments">Boston Apartments</a>
     <a href="https://spoteasy.com/boston-realtors">Boston Realtors</a>
     <a href="https://spoteasy.com/blog">Blog</a>
@@ -776,6 +799,13 @@ const PAGE_DATA = {
 </script>
 
 <!-- ══════════ TOPBAR ══════════ -->
+<nav class="se-breadcrumb" aria-label="Breadcrumb">
+  <div class="se-breadcrumb-inner">
+    <a href="https://spoteasy.com">Spot Easy</a>
+    <span class="se-bc-sep">›</span>
+    <span>Data</span>
+  </div>
+</nav>
 
 <!-- ══════════ HERO ══════════ -->
 <section class="hero">
