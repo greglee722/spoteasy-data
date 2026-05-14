@@ -158,6 +158,8 @@
     table { width: 100%; border-collapse: collapse; font-size: 14px; }
     thead th {
       background: var(--navy); color: #fff; text-align: left;
+    }
+    thead th.num { text-align: center;
       padding: 10px 12px; font-weight: 600; font-size: 13px;
       letter-spacing: .03em; cursor: pointer; user-select: none;
     }
@@ -165,7 +167,7 @@
     thead th[data-sort]:hover { background: #002757; }
     tbody td { padding: 10px 12px; border-top: 1px solid var(--rule); }
     tbody tr:nth-child(even) td { background: var(--soft); }
-    tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody td.num { text-align: center; font-variant-numeric: tabular-nums; }
     tbody td.dim { color: var(--muted); }
     tbody a { color: var(--navy); font-weight: 600; }
 
