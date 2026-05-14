@@ -161,8 +161,11 @@
       padding: 10px 12px; font-weight: 600; font-size: 13px;
       letter-spacing: .03em; cursor: pointer; user-select: none;
     }
-    thead th[data-sort] { position: relative; }
+    thead th[data-sort] { position: relative; cursor: pointer; user-select: none; }
     thead th[data-sort]:hover { background: #002757; }
+    thead th[data-sort]::after { content: " \2195"; opacity: .4; font-size: 11px; }
+    thead th[data-sort][data-dir="desc"]::after { content: " \2193"; opacity: 1; }
+    thead th[data-sort][data-dir="asc"]::after { content: " \2191"; opacity: 1; }
     tbody td { padding: 10px 12px; border-top: 1px solid var(--rule); }
     tbody tr:nth-child(even) td { background: var(--soft); }
     tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
@@ -333,7 +336,7 @@
     <div class="table-wrap">
       <table id="data-table">
         <thead>
-          <tr><th>Neighborhood</th><th class="num">Leads this week</th><th class="num">WoW change</th><th class="num">Working Pro %</th><th class="num">Student %</th></tr>
+          <tr><th>Neighborhood</th><th class="num" data-sort="1">Leads this week</th><th class="num">WoW change</th><th class="num">Working Pro %</th><th class="num">Student %</th></tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -488,11 +491,29 @@
   // Bullets
   $('#what-changed').innerHTML = REPORT_DATA.bullets.map(b => '<li>' + b + '</li>').join('');
 
-  // Table — rows are arrays. First cell renders as HTML (so anchors work).
-  // Numeric cells render plain text.
-  $('#data-table tbody').innerHTML = REPORT_DATA.rows.map(r =>
-    '<tr>' + r.map((c,i) => '<td' + (i===0 ? '' : ' class="num"') + '>' + (c == null ? '—' : c) + '</td>').join('') + '</tr>'
-  ).join('');
+  // Table — sortable. Default: Leads this week descending.
+  (function(){
+    var rows=REPORT_DATA.rows.slice(),sortCol=1,sortDir=-1;
+    function numVal(v){if(v==null||v==='—')return-Infinity;var n=parseFloat(String(v).replace(/[^0-9.\-]/g,''));return isNaN(n)?-Infinity:n;}
+    function render(){
+      var sorted=rows.slice().sort(function(a,b){return sortDir*(numVal(a[sortCol])-numVal(b[sortCol]));});
+      $('#data-table tbody').innerHTML=sorted.map(function(r){
+        return'<tr>'+r.map(function(c,i){'use strict';return'<td'+(i===0?'':' class="num"')+'>'+(c==null?'—':c)+'</td>';}).join('')+'</tr>';
+      }).join('');
+      document.querySelectorAll('#data-table thead th[data-sort]').forEach(function(th){
+        var col=parseInt(th.getAttribute('data-sort'));
+        th.setAttribute('data-dir',col===sortCol?(sortDir===-1?'desc':'asc'):'');
+      });
+    }
+    document.querySelectorAll('#data-table thead th[data-sort]').forEach(function(th){
+      th.addEventListener('click',function(){
+        var col=parseInt(th.getAttribute('data-sort'));
+        if(sortCol===col){sortDir*=-1;}else{sortCol=col;sortDir=-1;}
+        render();
+      });
+    });
+    render();
+  })();
 
   // Past reports
   $('#past-list').innerHTML = (REPORT_DATA.past_reports || []).map(p =>
