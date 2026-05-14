@@ -329,7 +329,7 @@
 
     <!-- TABLE -->
     <h2>Top 10 brokerages by active listings</h2>
-    <p>Active rentals only. "New this week" is listings that came on market in the last Fri–Thu window. Brokerage is the company affiliation of the listing agent. Names link to the brokerage’s official website.</p>
+    <p>Active rentals only. "New this week" is listings that came on market in the last Fri–Thu window. Brokerage is the company affiliation of the listing agent.</p>
     <div class="table-wrap">
       <table id="data-table">
         <thead>
@@ -395,70 +395,70 @@
   "rows": [
     [
       "1",
-      "<a href=\"https://www.gibsonsothebysrealty.com\" target=\"_blank\" rel=\"noopener\">Gibson Sotheby’s International</a>",
+      "Gibson Sotheby’s International",
       127,
       "+14",
       "Back Bay, Beacon Hill, South End"
     ],
     [
       "2",
-      "<a href=\"https://www.compass.com\" target=\"_blank\" rel=\"noopener\">Compass</a>",
+      "Compass",
       98,
       "+22",
       "Cambridge, Somerville, Brookline"
     ],
     [
       "3",
-      "<a href=\"https://bostonpads.com\" target=\"_blank\" rel=\"noopener\">Boston Pads</a>",
+      "Boston Pads",
       92,
       "+6",
       "Allston, Brighton, Mission Hill"
     ],
     [
       "4",
-      "<a href=\"https://www.charlesgate.com\" target=\"_blank\" rel=\"noopener\">Charlesgate Realty Group</a>",
+      "Charlesgate Realty Group",
       87,
       "+11",
       "Fenway, Allston, Cambridge"
     ],
     [
       "5",
-      "<a href=\"https://www.coldwellbankerhomes.com\" target=\"_blank\" rel=\"noopener\">Coldwell Banker</a>",
+      "Coldwell Banker",
       78,
       "+9",
       "Brookline, Newton, West End"
     ],
     [
       "6",
-      "<a href=\"https://www.evrealestate.com\" target=\"_blank\" rel=\"noopener\">Engel & Völkers Boston</a>",
+      "Engel & Völkers Boston",
       74,
       "+5",
       "Back Bay, South End"
     ],
     [
       "7",
-      "<a href=\"https://www.elliman.com\" target=\"_blank\" rel=\"noopener\">Douglas Elliman</a>",
+      "Douglas Elliman",
       69,
       "+8",
       "Seaport, Back Bay, Beacon Hill"
     ],
     [
       "8",
-      "<a href=\"https://www.bhhsne.com\" target=\"_blank\" rel=\"noopener\">Berkshire Hathaway HomeServices</a>",
+      "Berkshire Hathaway HomeServices",
       62,
       "+4",
       "Newton, Brookline, Cambridge"
     ],
     [
       "9",
-      "<a href=\"https://www.kw.com\" target=\"_blank\" rel=\"noopener\">Keller Williams Boston</a>",
+      "Keller Williams Boston",
       58,
       "+7",
       "Dorchester, South Boston"
     ],
     [
       "10",
-      "<a href=\"https://www.century21.com\" target=\"_blank\" rel=\"noopener\">Century 21 North East</a>",
+      "Century 21 North East",
       47,
       "+3",
       "Medford, Malden, Everett"
@@ -488,7 +488,7 @@
   // Table — rows are arrays. First cell renders as HTML (so anchors work).
   // Numeric cells render plain text.
   $('#data-table tbody').innerHTML = REPORT_DATA.rows.map(r =>
-    '<tr>' + r.map((c,i) => '<td' + (i===0 ? '' : ' class="num"') + '>' + (c == null ? '—' : c) + '</td>').join('') + '</tr>'
+    '<tr>' + r.map((c,i) => '<td' + (i > 1 ? ' class="num"' : '') + '>' + (c == null ? '—' : c) + '</td>').join('') + '</tr>'
   ).join('');
 
   // Past reports

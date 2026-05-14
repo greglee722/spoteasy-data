@@ -329,7 +329,7 @@
 
     <!-- TABLE -->
     <h2>Top 10 brokerages by active listings</h2>
-    <p>Active rentals only. "New this week" is listings that came on market in the last Fri–Thu window. Brokerage is the company affiliation of the listing agent. Names link to the brokerage’s official website.</p>
+    <p>Active rentals only. "New this week" is listings that came on market in the last Fri–Thu window. Brokerage is the company affiliation of the listing agent.</p>
     <div class="table-wrap">
       <table id="data-table">
         <thead>
@@ -394,105 +394,105 @@
   "rows": [
     [
       "1",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Encore Realty</a>",
+      "Encore Realty",
       993,
       "—",
       "—"
     ],
     [
       "2",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Edge Realty Advisors</a>",
+      "Edge Realty Advisors",
       832,
       "—",
       "—"
     ],
     [
       "3",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">East Coast Realty</a>",
+      "East Coast Realty",
       676,
       "—",
       "—"
     ],
     [
       "4",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Red Tree Real Estate</a>",
+      "Red Tree Real Estate",
       667,
       "—",
       "—"
     ],
     [
       "5",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Centre Realty Group</a>",
+      "Centre Realty Group",
       509,
       "—",
       "—"
     ],
     [
       "6",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Colonial Realty Associates, LLC</a>",
+      "Colonial Realty Associates, LLC",
       353,
       "—",
       "—"
     ],
     [
       "7",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Kingston Real Estate & Management</a>",
+      "Kingston Real Estate & Management",
       273,
       "—",
       "—"
     ],
     [
       "8",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Boston Brokerage Group</a>",
+      "Boston Brokerage Group",
       230,
       "—",
       "—"
     ],
     [
       "9",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">REALTY20</a>",
+      "REALTY20",
       222,
       "—",
       "—"
     ],
     [
       "10",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Boston Proper Real Estate</a>",
+      "Boston Proper Real Estate",
       212,
       "—",
       "—"
     ],
     [
       "11",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Benjamin Apartments + Cityside Homes</a>",
+      "Benjamin Apartments + Cityside Homes",
       187,
       "—",
       "—"
     ],
     [
       "12",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Apartment Rental Experts, LLC</a>",
+      "Apartment Rental Experts, LLC",
       166,
       "—",
       "—"
     ],
     [
       "13",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Apartment Rental Experts - Davis Square</a>",
+      "Apartment Rental Experts - Davis Square",
       150,
       "—",
       "—"
     ],
     [
       "14",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">CWS Realty</a>",
+      "CWS Realty",
       142,
       "—",
       "—"
     ],
     [
       "15",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">StreetPads, LLC</a>",
+      "StreetPads, LLC",
       131,
       "—",
       "—"
@@ -523,7 +523,7 @@
   // Table — rows are arrays. First cell renders as HTML (so anchors work).
   // Numeric cells render plain text.
   $('#data-table tbody').innerHTML = REPORT_DATA.rows.map(r =>
-    '<tr>' + r.map((c,i) => '<td' + (i===0 ? '' : ' class="num"') + '>' + (c == null ? '—' : c) + '</td>').join('') + '</tr>'
+    '<tr>' + r.map((c,i) => '<td' + (i > 1 ? ' class="num"' : '') + '>' + (c == null ? '—' : c) + '</td>').join('') + '</tr>'
   ).join('');
 
   // Past reports
