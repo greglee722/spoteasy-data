@@ -641,24 +641,66 @@
 <!-- ══════════ DATA LAYER — update every Friday ══════════ -->
 <script>
 const PAGE_DATA = {
-  // ── Replace with real values every Friday ──
-  as_of_date: "May 9, 2026",
-  sample_count: 4831,
-  latest_report_url: "/data/rent-report/2026-05-week-2/",
-  tiles: [
-    { label: "Studio", value: 2050, delta: 1.4, dir: "up"   },
-    { label: "1 BR",   value: 2625, delta: 0.8, dir: "down" },
-    { label: "2 BR",   value: 3375, delta: 2.3, dir: "up"   },
-    { label: "3 BR",   value: 4150, delta: 0.4, dir: "up"   }
+  "as_of_date": "May 7, 2026",
+  "sample_count": 2916,
+  "latest_report_url": "/data/rent-report/2026-05-week-1/",
+  "tiles": [
+    {
+      "label": "Studio",
+      "value": 2325,
+      "delta": 0,
+      "dir": "up"
+    },
+    {
+      "label": "1 BR",
+      "value": 2750,
+      "delta": 0,
+      "dir": "up"
+    },
+    {
+      "label": "2 BR",
+      "value": 3295,
+      "delta": 0,
+      "dir": "up"
+    },
+    {
+      "label": "3 BR",
+      "value": 3995,
+      "delta": 0,
+      "dir": "up"
+    }
   ],
-  // ── Teaser stats shown on the hub for each report ──
-  teasers: {
-    rent_index:    { stat: "$3,375", label: "2BR median · Greater Boston", delta: "+$75 vs. last week" },
-    hot_hoods:     { stat: "Fenway",  label: "most in-demand neighborhood this week", delta: "Back Bay #2 · Beacon Hill #3" },
-    sept1:         { stat: "111",    label: "days until Sept 1", delta: "3,323 units already listed" },
-    building_types: { stat: "$5,350", label: "Multi-Family 4BR median", delta: "+$427 vs. apartment 4BR" },
-    studio_squeeze:{ stat: "$650",   label: "monthly savings splitting a 2BR in Allston", delta: "vs. solo studio" },
-    brokerages:    { stat: "993",    label: "active listings · Encore Realty #1 this week", delta: "across Greater Boston" }
+  "teasers": {
+    "rent_index": {
+      "stat": "$3,295",
+      "label": "2BR median · Greater Boston",
+      "delta": "updated weekly"
+    },
+    "hot_hoods": {
+      "stat": "Union Square",
+      "label": "most in-demand neighborhood this week",
+      "delta": "South End #2 · Beacon Hill #3"
+    },
+    "sept1": {
+      "stat": "117",
+      "label": "days until Sept 1",
+      "delta": "3,024 units already listed"
+    },
+    "building_types": {
+      "stat": "+$400",
+      "label": "Multi-Family vs apartment premium at 4BR",
+      "delta": "per month"
+    },
+    "studio_squeeze": {
+      "stat": "$1,050",
+      "label": "monthly savings splitting a 2BR",
+      "delta": "vs. solo studio · top neighborhood"
+    },
+    "brokerages": {
+      "stat": "993",
+      "label": "active listings · Encore Realty #1 this week",
+      "delta": "across Greater Boston"
+    }
   }
 };
 </script>

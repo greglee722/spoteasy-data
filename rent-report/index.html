@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============================================================
+       SWAP per week:
+         <title>, <meta description>, <link canonical>,
+         <script type="application/ld+json"> blocks (Dataset + Article),
+         the inline REPORT_DATA object near the bottom of this file.
+       The rest of the file does not change week to week.
+  ============================================================ -->
+  <title>Boston Rent Index — Average Rent by Neighborhood (May 2026) | Spot Easy</title>
+  <meta name="description" content="Median asking rent across Greater Boston is $3,100 for a 1-bedroom this week. Neighborhood-by-neighborhood breakdown, sample sizes, and a downloadable CSV.">
+  <link rel="canonical" href="https://spoteasy.com/data/rent-report/2026-05-week-1/">
+  <meta property="og:title" content="Boston Rent Index — Week of May 7, 2026">
+  <meta property="og:description" content="Median asking rent by Boston neighborhood. Updated every Friday.">
+  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-1/preview.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org: Dataset (this is what gets us into Google Dataset Search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Boston Rent Index — Week of May 7, 2026",
+    "description": "Median asking rent for active rental listings across Greater Boston, broken down by neighborhood and bedroom count, for the week ending May 7, 2026.",
+    "url": "https://spoteasy.com/data/rent-report/2026-05-week-1/",
+    "creator": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "url": "https://spoteasy.com"
+    },
+    "temporalCoverage": "2026-05-01/2026-05-07",
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "Greater Boston, Massachusetts"
+    },
+    "variableMeasured": [
+      "Median asking rent by neighborhood",
+      "Median asking rent by bedroom count",
+      "Sample size",
+      "25th and 75th rent percentiles",
+      "New listings on market"
+    ],
+    "distribution": [{
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv"
+    }],
+    "license": "https://spoteasy.com/data/license/",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <!-- Schema.org: Article (helps Discover / news surfaces) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Boston Rent Index — Week of May 7, 2026",
+    "datePublished": "2026-05-08T07:00:00-04:00",
+    "author": { "@type": "Person", "name": "Joel Mundele" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "logo": { "@type": "ImageObject", "url": "https://spoteasy.com/logo.png" }
+    },
+    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-1/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #001C41;
+      --sky: #00ACEE;
+      --ink: #1a1a1a;
+      --muted: #5b6b7a;
+      --rule: #E5E9EE;
+      --soft: #F4F8FB;
+      --good: #1a8c4f;
+      --bad:  #c0392b;
+      --bg:   #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Poppins', 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--sky); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- container ---------- */
+    .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    /* ---------- breadcrumb ---------- */
+    .breadcrumb { font-size: 13px; margin-bottom: 16px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--sky); }
+    .breadcrumb-sep { margin: 0 6px; }
+
+    .kicker {
+      color: var(--sky);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: var(--navy);
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 8px 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .lede {
+      color: var(--navy);
+      font-size: 19px;
+      line-height: 1.55;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    /* ---------- hero stat tiles ---------- */
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .tile {
+      background: var(--soft);
+      border-left: 4px solid var(--sky);
+      padding: 18px 16px;
+      border-radius: 4px;
+    }
+    .tile .label { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 4px; }
+    .tile .num   { color: var(--navy); font-size: 28px; font-weight: 700; line-height: 1.1; }
+    .tile .delta { font-size: 13px; margin-top: 4px; font-weight: 600; }
+    .delta.up   { color: var(--bad); }
+    .delta.down { color: var(--good); }
+    .delta.flat { color: var(--muted); }
+
+    /* ---------- sections ---------- */
+    h2 { color: var(--navy); font-size: 22px; margin: 36px 0 12px; }
+    h3 { color: var(--navy); font-size: 16px; margin: 24px 0 8px; }
+    p, li { color: var(--ink); }
+    .what-changed ul { padding-left: 20px; }
+    .what-changed li { margin-bottom: 8px; }
+
+    /* ---------- table ---------- */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th {
+      background: var(--navy); color: #fff; text-align: left;
+      padding: 10px 12px; font-weight: 600; font-size: 13px;
+      letter-spacing: .03em; cursor: pointer; user-select: none;
+    }
+    thead th[data-sort] { position: relative; }
+    thead th[data-sort]:hover { background: #002757; }
+    tbody td { padding: 10px 12px; border-top: 1px solid var(--rule); }
+    tbody tr:nth-child(even) td { background: var(--soft); }
+    tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody td.dim { color: var(--muted); }
+    tbody a { color: var(--navy); font-weight: 600; }
+
+    /* ---------- quote ---------- */
+    blockquote.spot {
+      background: var(--navy); color: #fff;
+      padding: 22px 24px; border-radius: 6px;
+      border-left: 4px solid var(--sky);
+      margin: 28px 0;
+      font-size: 17px; line-height: 1.6;
+    }
+    blockquote.spot .who { display: block; margin-top: 10px; color: #BFD9EE; font-size: 13px; font-style: normal; }
+
+    /* ---------- methodology ---------- */
+    details.method {
+      background: var(--soft); padding: 14px 18px; border-radius: 6px; margin: 28px 0;
+      border: 1px solid var(--rule);
+    }
+    details.method summary { cursor: pointer; color: var(--navy); font-weight: 600; }
+    details.method[open] summary { margin-bottom: 10px; }
+
+    /* ---------- CTA ---------- */
+    .cta {
+      display: inline-block; background: var(--sky); color: #fff;
+      padding: 12px 22px; border-radius: 4px; font-weight: 600;
+      margin-right: 8px;
+    }
+    .cta:hover { text-decoration: none; background: #0095cc; }
+    .cta.outline { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+    .cta.outline:hover { background: var(--navy); color: #fff; }
+
+    /* ---------- past reports ---------- */
+    .past { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 24px; }
+    .past ul { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
+    .past li { margin-bottom: 6px; }
+
+
+    /* ---------- mobile ---------- */
+    @media (max-width: 720px) {
+      h1 { font-size: 28px; }
+      .lede { font-size: 16px; }
+      .tiles { grid-template-columns: repeat(2, 1fr); }
+      .past ul { columns: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  
+
+  <main class="container">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://spoteasy.com/data/">Spot Easy Data</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Boston Rent Index</span>
+    </nav>
+    <div class="kicker">Boston Rent Index · Week of <span data-bind="week_label"></span></div>
+    <h1>The price of a Boston apartment, neighborhood by neighborhood.</h1>
+    <p class="lede" data-bind="lede"></p>
+
+    <!-- HERO TILES -->
+    <div class="tiles" id="tiles"><!-- rendered from REPORT_DATA.headline --></div>
+
+    <!-- WHAT CHANGED -->
+    <section class="what-changed">
+      <h2>What changed this week</h2>
+      <ul id="what-changed"><!-- rendered from REPORT_DATA.bullets --></ul>
+    </section>
+
+    <!-- QUOTE -->
+    <blockquote class="spot" cite="https://spoteasy.com">
+      <span data-bind="quote"></span>
+      <span class="who">— <strong>Joel Mundele</strong>, CEO, Spot Easy</span>
+    </blockquote>
+
+    <!-- NEIGHBORHOOD TABLE -->
+    <h2>Median asking rent by neighborhood</h2>
+    <p>N is the number of listings behind each figure. Any cell with fewer than 20 is suppressed — the sample isn't big enough to mean anything.</p>
+    <p style="margin-top: 6px; font-size: 13px; color: var(--muted);">↗ Click a neighborhood name to search available listings.</p>
+    <div class="table-wrap">
+      <table id="hood-table">
+        <thead>
+          <tr>
+            <th data-sort="neighborhood">Neighborhood</th>
+            <th data-sort="studio" class="num">Studio</th>
+            <th data-sort="b1" class="num">1BR</th>
+            <th data-sort="b2" class="num">2BR</th>
+            <th data-sort="b3" class="num">3BR</th>
+            <th data-sort="b4" class="num">4+BR</th>
+            <th data-sort="n"  class="num">N</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- BUILDING TYPE -->
+    <h2>By building type</h2>
+    <p>Triple-deckers, brownstones, condos, apartments — they don't price the same in Boston. Here's what each building type is actually going for right now.</p>
+    <div class="table-wrap">
+      <table id="bt-table">
+        <thead>
+          <tr>
+            <th>Building type</th>
+            <th class="num">Studio</th>
+            <th class="num">1BR</th>
+            <th class="num">2BR</th>
+            <th class="num">3BR</th>
+            <th class="num">4+BR</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- DOWNLOADS / CTAs -->
+    <div style="margin: 28px 0;">
+      <a class="cta" data-bind-href="csv_url" download>Download the CSV</a>
+      <a class="cta outline" href="https://spoteasy.com/boston-apartments">Browse Boston listings</a>
+    </div>
+
+    <!-- METHODOLOGY -->
+    <details class="method">
+      <summary>How we calculate this</summary>
+      <p>Each Friday morning we snapshot every active listing on Spot Easy and partner sources across Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden. We exclude drafts, listings removed by admins, and asking rents below $500 or above $20,000 (typical bad-data territory). We dedupe across sources by address + unit number, normalize bedroom counts into Studio/1/2/3/4+, and require at least 20 active listings in any cell before publishing it. The resulting median is the one shown.</p>
+      <p>This isn't a transaction price. It's the median <em>asking</em> rent for what's currently listed — same as Zillow's ZORI or Apartment List's index, but built specifically for Greater Boston using Spot Easy's verified-agent inventory. Want the raw data? <a data-bind-href="csv_url">Download the CSV</a>.</p>
+      <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:press@spoteasy.com">press@spoteasy.com</a>.</p>
+    </details>
+
+    <!-- PAST REPORTS -->
+    <section class="past">
+      <h3>Past reports</h3>
+      <ul id="past-list"><!-- rendered from REPORT_DATA.past_reports --></ul>
+    </section>
+
+  </main>
+
+  
+
+  <!-- ============================================================
+       REPORT_DATA — replaced each Friday by the weekly script.
+       For production, point to /data/rent-report/{date}/data.json
+       and fetch it; this inline form is the simplest first pass.
+  ============================================================ -->
+  <script>
+  const REPORT_DATA = {
+  "week_ending": "2026-05-07",
+  "week_label": "May 7, 2026",
+  "csv_url": "/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv",
+  "lede": "Median asking rent across Greater Boston this week was $2,750 for a 1-bedroom — unchanged from last week.",
+  "headline": [
+    {
+      "beds": "Studio",
+      "median": 2325,
+      "wow": 0,
+      "yoy": 0
+    },
+    {
+      "beds": "1BR",
+      "median": 2750,
+      "wow": 0,
+      "yoy": 0
+    },
+    {
+      "beds": "2BR",
+      "median": 3295,
+      "wow": 0,
+      "yoy": 0
+    },
+    {
+      "beds": "3BR",
+      "median": 3995,
+      "wow": 0,
+      "yoy": 0
+    }
+  ],
+  "bullets": [
+    "Week-over-week data will appear after the first two runs."
+  ],
+  "quote": "Renters tell us the same thing every spring: it's loud, it's fast, and it's confusing. Publishing the actual numbers each Friday is the least we can do — knowing what 'fair' looks like in your neighborhood changes how you negotiate.",
+  "neighborhoods": [
+    {
+      "neighborhood": "Allston",
+      "slug": "allston",
+      "studio": 2100,
+      "b1": 2400,
+      "b2": 3163,
+      "b3": 3750,
+      "b4": 5200,
+      "n": 234
+    },
+    {
+      "neighborhood": "Aspinwall Hill",
+      "slug": "aspinwall-hill",
+      "studio": null,
+      "b1": null,
+      "b2": 3125,
+      "b3": null,
+      "b4": null,
+      "n": 27
+    },
+    {
+      "neighborhood": "Back Bay",
+      "slug": "back-bay",
+      "studio": 2550,
+      "b1": 3300,
+      "b2": 4400,
+      "b3": 5500,
+      "b4": null,
+      "n": 116
+    },
+    {
+      "neighborhood": "Baldwin",
+      "slug": "baldwin",
+      "studio": null,
+      "b1": null,
+      "b2": 3450,
+      "b3": null,
+      "b4": null,
+      "n": 22
+    },
+    {
+      "neighborhood": "Beacon Hill",
+      "slug": "beacon-hill",
+      "studio": 2400,
+      "b1": 2900,
+      "b2": 3630,
+      "b3": null,
+      "b4": null,
+      "n": 83
+    },
+    {
+      "neighborhood": "Boston Downtown",
+      "slug": "boston-downtown",
+      "studio": 2550,
+      "b1": 3075,
+      "b2": null,
+      "b3": null,
+      "b4": null,
+      "n": 25
+    },
+    {
+      "neighborhood": "Brighton",
+      "slug": "brighton",
+      "studio": 2075,
+      "b1": 2400,
+      "b2": 2950,
+      "b3": 3600,
+      "b4": 4800,
+      "n": 438
+    },
+    {
+      "neighborhood": "Brookline",
+      "slug": "brookline",
+      "studio": null,
+      "b1": 2525,
+      "b2": 3300,
+      "b3": 4800,
+      "b4": 6250,
+      "n": 58
+    },
+    {
+      "neighborhood": "Cambridgeport",
+      "slug": "cambridgeport",
+      "studio": null,
+      "b1": null,
+      "b2": null,
+      "b3": 4275,
+      "b4": null,
+      "n": 28
+    },
+    {
+      "neighborhood": "Central Square",
+      "slug": "central-square",
+      "studio": null,
+      "b1": null,
+      "b2": 3950,
+      "b3": null,
+      "b4": null,
+      "n": 41
+    },
+    {
+      "neighborhood": "Chestnut Hill",
+      "slug": "chestnut-hill",
+      "studio": null,
+      "b1": 2995,
+      "b2": 3710,
+      "b3": 5695,
+      "b4": null,
+      "n": 39
+    },
+    {
+      "neighborhood": "Coolidge Corner",
+      "slug": "coolidge-corner",
+      "studio": null,
+      "b1": 3100,
+      "b2": 3800,
+      "b3": 4600,
+      "b4": 6400,
+      "n": 78
+    },
+    {
+      "neighborhood": "Corey Hill",
+      "slug": "corey-hill",
+      "studio": null,
+      "b1": 2799,
+      "b2": 3195,
+      "b3": null,
+      "b4": null,
+      "n": 26
+    },
+    {
+      "neighborhood": "Dorchester",
+      "slug": "dorchester",
+      "studio": null,
+      "b1": 2503,
+      "b2": 2800,
+      "b3": 3363,
+      "b4": 3813,
+      "n": 132
+    },
+    {
+      "neighborhood": "East Boston",
+      "slug": "east-boston",
+      "studio": null,
+      "b1": 2363,
+      "b2": 2850,
+      "b3": 3000,
+      "b4": 3900,
+      "n": 113
+    },
+    {
+      "neighborhood": "East Cambridge",
+      "slug": "east-cambridge",
+      "studio": null,
+      "b1": 3045,
+      "b2": 3950,
+      "b3": null,
+      "b4": null,
+      "n": 41
+    },
+    {
+      "neighborhood": "East Somerville",
+      "slug": "east-somerville",
+      "studio": null,
+      "b1": null,
+      "b2": 3200,
+      "b3": null,
+      "b4": null,
+      "n": 25
+    },
+    {
+      "neighborhood": "Fenway",
+      "slug": "fenway",
+      "studio": 2395,
+      "b1": 2800,
+      "b2": 3700,
+      "b3": 4995,
+      "b4": null,
+      "n": 284
+    },
+    {
+      "neighborhood": "Harvard Square",
+      "slug": "harvard-square",
+      "studio": null,
+      "b1": 3200,
+      "b2": null,
+      "b3": null,
+      "b4": null,
+      "n": 35
+    },
+    {
+      "neighborhood": "Jamaica Plain",
+      "slug": "jamaica-plain",
+      "studio": null,
+      "b1": 2500,
+      "b2": 3200,
+      "b3": 3550,
+      "b4": 5000,
+      "n": 54
+    },
+    {
+      "neighborhood": "Longwood",
+      "slug": "longwood",
+      "studio": 2398,
+      "b1": 3075,
+      "b2": null,
+      "b3": null,
+      "b4": null,
+      "n": 34
+    },
+    {
+      "neighborhood": "Medford",
+      "slug": "medford",
+      "studio": null,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": 4823,
+      "n": 22
+    },
+    {
+      "neighborhood": "Mid-Cambridge",
+      "slug": "mid-cambridge",
+      "studio": null,
+      "b1": 3100,
+      "b2": 3200,
+      "b3": null,
+      "b4": null,
+      "n": 38
+    },
+    {
+      "neighborhood": "Mission Hill",
+      "slug": "mission-hill",
+      "studio": 2138,
+      "b1": 2498,
+      "b2": 3000,
+      "b3": 4500,
+      "b4": 6300,
+      "n": 162
+    },
+    {
+      "neighborhood": "Neighborhood Nine",
+      "slug": "neighborhood-nine",
+      "studio": null,
+      "b1": 2900,
+      "b2": 3935,
+      "b3": null,
+      "b4": null,
+      "n": 44
+    },
+    {
+      "neighborhood": "North Brookline",
+      "slug": "north-brookline",
+      "studio": 2750,
+      "b1": 2823,
+      "b2": 3400,
+      "b3": 4950,
+      "b4": 6495,
+      "n": 57
+    },
+    {
+      "neighborhood": "North Cambridge",
+      "slug": "north-cambridge",
+      "studio": null,
+      "b1": null,
+      "b2": 3550,
+      "b3": null,
+      "b4": null,
+      "n": 32
+    },
+    {
+      "neighborhood": "North End",
+      "slug": "north-end",
+      "studio": null,
+      "b1": 3175,
+      "b2": 3498,
+      "b3": 4845,
+      "b4": null,
+      "n": 44
+    },
+    {
+      "neighborhood": "Oak Square",
+      "slug": "oak-square",
+      "studio": null,
+      "b1": null,
+      "b2": 2800,
+      "b3": 3538,
+      "b4": 4250,
+      "n": 66
+    },
+    {
+      "neighborhood": "Porter Square",
+      "slug": "porter-square",
+      "studio": null,
+      "b1": 3213,
+      "b2": null,
+      "b3": null,
+      "b4": null,
+      "n": 20
+    },
+    {
+      "neighborhood": "Powder House Square",
+      "slug": "powder-house-square",
+      "studio": null,
+      "b1": null,
+      "b2": 3400,
+      "b3": null,
+      "b4": null,
+      "n": 21
+    },
+    {
+      "neighborhood": "Riverside",
+      "slug": "riverside",
+      "studio": null,
+      "b1": 3000,
+      "b2": 3763,
+      "b3": null,
+      "b4": null,
+      "n": 32
+    },
+    {
+      "neighborhood": "Roslindale",
+      "slug": "roslindale",
+      "studio": null,
+      "b1": 2800,
+      "b2": 3150,
+      "b3": null,
+      "b4": null,
+      "n": 29
+    },
+    {
+      "neighborhood": "Roxbury",
+      "slug": "roxbury",
+      "studio": null,
+      "b1": 2600,
+      "b2": 3800,
+      "b3": 4100,
+      "b4": 5150,
+      "n": 101
+    },
+    {
+      "neighborhood": "South Boston",
+      "slug": "south-boston",
+      "studio": null,
+      "b1": 3000,
+      "b2": 4000,
+      "b3": 5100,
+      "b4": 5800,
+      "n": 130
+    },
+    {
+      "neighborhood": "South End",
+      "slug": "south-end",
+      "studio": 2380,
+      "b1": 3375,
+      "b2": 4163,
+      "b3": 5000,
+      "b4": null,
+      "n": 66
+    },
+    {
+      "neighborhood": "South Medford",
+      "slug": "south-medford",
+      "studio": null,
+      "b1": null,
+      "b2": null,
+      "b3": null,
+      "b4": 5923,
+      "n": 26
+    },
+    {
+      "neighborhood": "Spring Hill",
+      "slug": "spring-hill",
+      "studio": 2250,
+      "b1": 2700,
+      "b2": 3500,
+      "b3": 4150,
+      "b4": 4900,
+      "n": 43
+    },
+    {
+      "neighborhood": "Ward Two",
+      "slug": "ward-two",
+      "studio": null,
+      "b1": null,
+      "b2": 3511,
+      "b3": 4200,
+      "b4": null,
+      "n": 30
+    },
+    {
+      "neighborhood": "West Cambridge",
+      "slug": "west-cambridge",
+      "studio": null,
+      "b1": 2900,
+      "b2": null,
+      "b3": null,
+      "b4": null,
+      "n": 20
+    }
+  ],
+  "by_building_type": [
+    {
+      "building_type": "Apartment",
+      "studio": 2300,
+      "b1": 2700,
+      "b2": 3210,
+      "b3": 4000,
+      "b4": 4900
+    },
+    {
+      "building_type": "Brownstone",
+      "studio": 2375,
+      "b1": 2798,
+      "b2": 3613,
+      "b3": 4750,
+      "b4": 6200
+    },
+    {
+      "building_type": "Condo",
+      "studio": 2500,
+      "b1": 2900,
+      "b2": 3500,
+      "b3": 4100,
+      "b4": 5600
+    },
+    {
+      "building_type": "Highrise",
+      "studio": null,
+      "b1": 3200,
+      "b2": null,
+      "b3": null,
+      "b4": null
+    },
+    {
+      "building_type": "Multi-Family",
+      "studio": null,
+      "b1": 2650,
+      "b2": 3000,
+      "b3": 3600,
+      "b4": 5300
+    },
+    {
+      "building_type": "Single-Family",
+      "studio": null,
+      "b1": null,
+      "b2": null,
+      "b3": 4500,
+      "b4": 6875
+    },
+    {
+      "building_type": "Townhouse",
+      "studio": null,
+      "b1": null,
+      "b2": 3348,
+      "b3": null,
+      "b4": 5500
+    },
+    {
+      "building_type": "Unspecified",
+      "studio": 2450,
+      "b1": 2650,
+      "b2": 3358,
+      "b3": 3900,
+      "b4": 5200
+    }
+  ],
+  "past_reports": [
+    {
+      "label": "Week of May 14, 2026",
+      "url": "/data/rent-report/2026-05-week-2/"
+    }
+  ]
+};
+
+  // ====== RENDERER (no framework, no build step) ======
+  const $ = sel => document.querySelector(sel);
+  const fmt = n => (n == null ? '—' : '$' + n.toLocaleString());
+  const deltaClass = d => d > 0 ? 'up' : (d < 0 ? 'down' : 'flat');
+  const deltaText  = d => (d > 0 ? '▲ +$' : (d < 0 ? '▼ −$' : '— ')) + Math.abs(d).toLocaleString() + ' WoW';
+
+  // Bind plain text/href fields tagged with data-bind / data-bind-href
+  document.querySelectorAll('[data-bind]').forEach(el => {
+    const k = el.getAttribute('data-bind');
+    if (REPORT_DATA[k] != null) el.textContent = REPORT_DATA[k];
+  });
+  document.querySelectorAll('[data-bind-href]').forEach(el => {
+    el.setAttribute('href', REPORT_DATA[el.getAttribute('data-bind-href')]);
+  });
+
+  // Hero tiles
+  $('#tiles').innerHTML = REPORT_DATA.headline.map(h => `
+    <div class="tile">
+      <div class="label">${h.beds} median</div>
+      <div class="num">${fmt(h.median)}</div>
+      <div class="delta ${deltaClass(h.wow)}">${deltaText(h.wow)}</div>
+    </div>`).join('');
+
+  // What changed bullets
+  $('#what-changed').innerHTML =
+    REPORT_DATA.bullets.map(b => `<li>${b}</li>`).join('');
+
+  // Neighborhood table
+  function renderHoodTable(rows) {
+    const body = $('#hood-table tbody');
+    body.innerHTML = rows.map(r => `
+      <tr>
+        <td><a href="https://spoteasy.com/${r.slug}-apartments">${r.neighborhood}</a></td>
+        <td class="num">${fmt(r.studio)}</td>
+        <td class="num">${fmt(r.b1)}</td>
+        <td class="num">${fmt(r.b2)}</td>
+        <td class="num">${fmt(r.b3)}</td>
+        <td class="num">${fmt(r.b4)}</td>
+        <td class="num dim">${r.n.toLocaleString()}</td>
+      </tr>`).join('');
+  }
+  let hoodSort = { key: 'neighborhood', dir: 1 };
+  function sortHood() {
+    const k = hoodSort.key, dir = hoodSort.dir;
+    const sorted = [...REPORT_DATA.neighborhoods].sort((a, b) => {
+      const av = a[k], bv = b[k];
+      if (av == null) return 1;
+      if (bv == null) return -1;
+      if (typeof av === 'string') return av.localeCompare(bv) * dir;
+      return (av - bv) * dir;
+    });
+    renderHoodTable(sorted);
+  }
+  document.querySelectorAll('#hood-table thead th[data-sort]').forEach(th => {
+    th.addEventListener('click', () => {
+      const k = th.dataset.sort;
+      hoodSort.dir = (hoodSort.key === k) ? -hoodSort.dir : 1;
+      hoodSort.key = k;
+      sortHood();
+    });
+  });
+  sortHood();
+
+  // Building-type table
+  $('#bt-table tbody').innerHTML = REPORT_DATA.by_building_type.map(r => `
+    <tr>
+      <td><strong>${r.building_type}</strong></td>
+      <td class="num">${fmt(r.studio)}</td>
+      <td class="num">${fmt(r.b1)}</td>
+      <td class="num">${fmt(r.b2)}</td>
+      <td class="num">${fmt(r.b3)}</td>
+      <td class="num">${fmt(r.b4)}</td>
+    </tr>`).join('');
+
+  // Past reports
+  $('#past-list').innerHTML = REPORT_DATA.past_reports.map(p =>
+    `<li><a href="${p.url}">${p.label}</a></li>`).join('');
+  </script>
+
+</body>
+</html>

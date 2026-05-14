@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============================================================
+       SWAP per week:
+         <title>, <meta description>, <link canonical>,
+         <script type="application/ld+json"> blocks (Dataset + Article),
+         the inline REPORT_DATA object near the bottom of this file.
+       The rest of the file does not change week to week.
+  ============================================================ -->
+  <title>September 1 Boston Apartments — Inventory & Asking Rent Tracker | Spot Easy</title>
+  <meta name="description" content="Inventory and pricing for September 1 lease starts. 112 days out, 847 units already listed. Updated every Friday.">
+  <link rel="canonical" href="https://spoteasy.com/data/sept-1-countdown/">
+  <meta property="og:title" content="September 1 Boston Apartments — Week of May 7, 2026">
+  <meta property="og:description" content="Inventory and pricing for September 1 lease starts. 112 days out, 847 units already listed. Updated every Friday.">
+  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-1/preview.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org: Dataset (this is what gets us into Google Dataset Search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "September 1 Boston Apartments — Week of May 7, 2026",
+    "description": "Weekly inventory and median asking rent for listings with a September 1 lease start, by Greater Boston neighborhood.",
+    "url": "https://spoteasy.com/data/rent-report/2026-05-week-1/",
+    "creator": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "url": "https://spoteasy.com"
+    },
+    "temporalCoverage": "2026-05-01/2026-05-07",
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "Greater Boston, Massachusetts"
+    },
+    "variableMeasured": [
+      "Median asking rent by neighborhood",
+      "Median asking rent by bedroom count",
+      "Sample size",
+      "25th and 75th rent percentiles",
+      "New listings on market"
+    ],
+    "distribution": [{
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv"
+    }],
+    "license": "https://spoteasy.com/data/license/",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <!-- Schema.org: Article (helps Discover / news surfaces) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "September 1 Boston Apartments — Week of May 7, 2026",
+    "datePublished": "2026-05-08T07:00:00-04:00",
+    "author": { "@type": "Person", "name": "Joel Mundele" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "logo": { "@type": "ImageObject", "url": "https://spoteasy.com/logo.png" }
+    },
+    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-1/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #001C41;
+      --sky: #00ACEE;
+      --ink: #1a1a1a;
+      --muted: #5b6b7a;
+      --rule: #E5E9EE;
+      --soft: #F4F8FB;
+      --good: #1a8c4f;
+      --bad:  #c0392b;
+      --bg:   #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Poppins', 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--sky); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- container ---------- */
+    .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    /* ---------- breadcrumb ---------- */
+    .breadcrumb { font-size: 13px; margin-bottom: 16px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--sky); }
+    .breadcrumb-sep { margin: 0 6px; }
+
+    .kicker {
+      color: var(--sky);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: var(--navy);
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 8px 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .lede {
+      color: var(--navy);
+      font-size: 19px;
+      line-height: 1.55;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    /* ---------- hero stat tiles ---------- */
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .tile {
+      background: var(--soft);
+      border-left: 4px solid var(--sky);
+      padding: 18px 16px;
+      border-radius: 4px;
+    }
+    .tile .label { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 4px; }
+    .tile .num   { color: var(--navy); font-size: 28px; font-weight: 700; line-height: 1.1; }
+    .tile .delta { font-size: 13px; margin-top: 4px; font-weight: 600; }
+    .delta.up   { color: var(--bad); }
+    .delta.down { color: var(--good); }
+    .delta.flat { color: var(--muted); }
+
+    /* ---------- sections ---------- */
+    h2 { color: var(--navy); font-size: 22px; margin: 36px 0 12px; }
+    h3 { color: var(--navy); font-size: 16px; margin: 24px 0 8px; }
+    p, li { color: var(--ink); }
+    .what-changed ul { padding-left: 20px; }
+    .what-changed li { margin-bottom: 8px; }
+
+    /* ---------- table ---------- */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th {
+      background: var(--navy); color: #fff; text-align: left;
+      padding: 10px 12px; font-weight: 600; font-size: 13px;
+      letter-spacing: .03em; cursor: pointer; user-select: none;
+    }
+    thead th[data-sort] { position: relative; }
+    thead th[data-sort]:hover { background: #002757; }
+    tbody td { padding: 10px 12px; border-top: 1px solid var(--rule); }
+    tbody tr:nth-child(even) td { background: var(--soft); }
+    tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody td.dim { color: var(--muted); }
+    tbody a { color: var(--navy); font-weight: 600; }
+
+    /* ---------- quote ---------- */
+    blockquote.spot {
+      background: var(--navy); color: #fff;
+      padding: 22px 24px; border-radius: 6px;
+      border-left: 4px solid var(--sky);
+      margin: 28px 0;
+      font-size: 17px; line-height: 1.6;
+    }
+    blockquote.spot .who { display: block; margin-top: 10px; color: #BFD9EE; font-size: 13px; font-style: normal; }
+
+    /* ---------- methodology ---------- */
+    details.method {
+      background: var(--soft); padding: 14px 18px; border-radius: 6px; margin: 28px 0;
+      border: 1px solid var(--rule);
+    }
+    details.method summary { cursor: pointer; color: var(--navy); font-weight: 600; }
+    details.method[open] summary { margin-bottom: 10px; }
+
+    /* ---------- CTA ---------- */
+    .cta {
+      display: inline-block; background: var(--sky); color: #fff;
+      padding: 12px 22px; border-radius: 4px; font-weight: 600;
+      margin-right: 8px;
+    }
+    .cta:hover { text-decoration: none; background: #0095cc; }
+    .cta.outline { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+    .cta.outline:hover { background: var(--navy); color: #fff; }
+
+    /* ---------- past reports ---------- */
+    .past { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 24px; }
+    .past ul { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
+    .past li { margin-bottom: 6px; }
+
+
+    /* ---------- mobile ---------- */
+    @media (max-width: 720px) {
+      h1 { font-size: 28px; }
+      .lede { font-size: 16px; }
+      .tiles { grid-template-columns: repeat(2, 1fr); }
+      .past ul { columns: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  
+
+  <main class="container">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://spoteasy.com/data/">Spot Easy Data</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Sept 1 Countdown</span>
+    </nav>
+    <div class="kicker">Sept 1 Countdown · Week of <span data-bind="week_label"></span></div>
+    <h1>Boston’s biggest move-in day, tracked weekly.</h1>
+    <p class="lede" data-bind="lede"></p>
+
+    <!-- HERO TILES -->
+    <div class="tiles" id="tiles"></div>
+
+    <!-- WHAT CHANGED -->
+    <section class="what-changed">
+      <h2>What moved this week</h2>
+      <ul id="what-changed"></ul>
+    </section>
+
+    <!-- QUOTE -->
+    <blockquote class="spot" cite="https://spoteasy.com">
+      <span data-bind="quote"></span>
+      <span class="who">— <strong>Joel Mundele</strong>, CEO, Spot Easy</span>
+    </blockquote>
+
+    <!-- TABLE -->
+    <h2>Sept 1 listings by neighborhood</h2>
+    <p>Active listings with a September 1 lease start date, by Greater Boston neighborhood. Tracks inventory build through the summer.</p>
+    <div class="table-wrap">
+      <table id="data-table">
+        <thead>
+          <tr><th>Neighborhood</th><th class="num">Sept 1 listings</th><th class="num">Median rent</th><th class="num">WoW listings</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- METHODOLOGY -->
+    <details class="method">
+      <summary>How we calculate this</summary>
+      <p>A listing counts as a Sept 1 listing if it has a lease start date of September 1, 2026 (or is flagged as a fall start). Active listings only — we exclude drafts, admin-removed, and rents outside $500–$20,000. Neighborhoods with fewer than 5 Sept 1 listings are suppressed.</p>
+      <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
+    </details>
+
+    <!-- PAST REPORTS -->
+    <section class="past">
+      <h3>Past reports</h3>
+      <ul id="past-list"></ul>
+    </section>
+
+  </main>
+
+
+
+  
+  <script>
+  const REPORT_DATA = {
+  "week_ending": "2026-05-07",
+  "week_label": "May 7, 2026",
+  "lede": "117 days until September 1. 3,024 units already listed for Sept 1 starts across Greater Boston.",
+  "tiles": [
+    {
+      "label": "Days until Sept 1",
+      "value": "117",
+      "delta_text": "2026 season"
+    },
+    {
+      "label": "Sept 1 units listed",
+      "value": "3,024",
+      "delta_text": "active right now",
+      "delta_dir": "up"
+    },
+    {
+      "label": "1BR median (Sept 1)",
+      "value": "$2,862",
+      "delta_text": "asking rent",
+      "delta_dir": "flat"
+    },
+    {
+      "label": "Top neighborhood",
+      "value": "Brighton",
+      "delta_text": "by Sept 1 inventory"
+    }
+  ],
+  "bullets": [
+    "<strong>3,024 units listed for Sept 1 2026</strong> — 117 days from now.",
+    "<strong>Brighton and Allston lead inventory</strong> — the perennial student-move epicenters.",
+    "<strong>1BR Sept 1 asking rent</strong> is $2,862 across tracked neighborhoods.",
+    "<strong>117 days out</strong> is the right time to start searching — Sept 1 inventory moves fast."
+  ],
+  "rows": [
+    [
+      "<a href=\"https://spoteasy.com/brighton-apartments\">Brighton</a>",
+      724,
+      "$2,400",
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/allston-apartments\">Allston</a>",
+      428,
+      "$2,400",
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/fenway-apartments\">Fenway</a>",
+      387,
+      "$3,125",
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/mission-hill-apartments\">Mission Hill</a>",
+      182,
+      "$2,560",
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/roxbury-apartments\">Roxbury</a>",
+      130,
+      null,
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/north-brookline-apartments\">North Brookline</a>",
+      118,
+      null,
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/beacon-hill-apartments\">Beacon Hill</a>",
+      110,
+      "$2,700",
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/back-bay-apartments\">Back Bay</a>",
+      99,
+      "$3,350",
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/oak-square-apartments\">Oak Square</a>",
+      90,
+      null,
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/jamaica-plain-apartments\">Jamaica Plain</a>",
+      67,
+      "$2,175",
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/south-boston-apartments\">South Boston</a>",
+      66,
+      "$3,125",
+      null
+    ],
+    [
+      "<a href=\"https://spoteasy.com/spring-hill-apartments\">Spring Hill</a>",
+      60,
+      "$2,475",
+      null
+    ]
+  ],
+  "quote": "Sept 1 is Boston's biggest day of the year. Tracking inventory week by week is the only honest way to give renters a head start on what's coming.",
+  "past_reports": [
+    {
+      "label": "Week of May 14, 2026",
+      "url": "/data/sept-1-countdown/2026-05-week-2/"
+    }
+  ]
+};
+
+  const $ = sel => document.querySelector(sel);
+
+  document.querySelectorAll('[data-bind]').forEach(el => {
+    const k = el.getAttribute('data-bind');
+    if (REPORT_DATA[k] != null) el.textContent = REPORT_DATA[k];
+  });
+
+  // Hero tiles
+  $('#tiles').innerHTML = REPORT_DATA.tiles.map(t => `
+    <div class="tile">
+      <div class="label">${t.label}</div>
+      <div class="num">${t.value}</div>
+      <div class="delta ${t.delta_dir || 'flat'}">${t.delta_text || '— preview only'}</div>
+    </div>`).join('');
+
+  // Bullets
+  $('#what-changed').innerHTML = REPORT_DATA.bullets.map(b => '<li>' + b + '</li>').join('');
+
+  // Table — rows are arrays. First cell renders as HTML (so anchors work).
+  // Numeric cells render plain text.
+  $('#data-table tbody').innerHTML = REPORT_DATA.rows.map(r =>
+    '<tr>' + r.map((c,i) => '<td' + (i===0 ? '' : ' class="num"') + '>' + (c == null ? '—' : c) + '</td>').join('') + '</tr>'
+  ).join('');
+
+  // Past reports
+  $('#past-list').innerHTML = (REPORT_DATA.past_reports || []).map(p =>
+    '<li><a href="' + p.url + '">' + p.label + '</a></li>').join('');
+  </script>
+
+</body>
+</html>
