@@ -214,6 +214,76 @@
 </head>
 
 <body>
+<style id="se-site-nav-styles">
+  #se-site-nav{position:sticky;top:0;z-index:999;width:100%;background:#fff;border-bottom:1px solid #E5E7EB;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  .se-nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between}
+  .se-nav-logo img{height:32px;display:block}
+  .se-nav-right{display:flex;align-items:center;gap:24px}
+  .se-nav-links{display:flex;align-items:center;gap:28px}
+  .se-nav-links a{color:#425466;text-decoration:none;font-size:14px;font-weight:500;transition:color .15s}
+  .se-nav-links a:hover{color:#00ACEE}
+  .se-nav-btn{display:inline-flex;align-items:center;padding:6px 18px;border:1px solid #00ACEE;border-radius:20px;color:#00ACEE;text-decoration:none;font-size:14px;font-weight:600;transition:background .15s,color .15s}
+  .se-nav-btn:hover{background:#00ACEE;color:#fff}
+  .se-hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;color:#425466;line-height:1}
+  .se-mobile-menu{display:none;background:#fff;border-top:1px solid #E5E7EB;padding:16px 24px}
+  .se-mobile-menu.open{display:block}
+  .se-mobile-menu a{display:block;padding:11px 0;color:#425466;text-decoration:none;font-size:15px;font-weight:500;border-bottom:1px solid #F3F4F6}
+  .se-mobile-menu a:last-child{border-bottom:none}
+  .se-mobile-menu a:hover{color:#00ACEE}
+  .se-mobile-signin{display:inline-block!important;margin-top:14px;padding:8px 20px;border:1px solid #00ACEE!important;border-radius:20px;color:#00ACEE!important;font-size:14px;font-weight:600;border-bottom:none!important}
+  @media(max-width:768px){.se-nav-links,.se-nav-btn{display:none}.se-hamburger{display:block}}
+  #se-site-footer{background:#F3F4F6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:64px;border-top:1px solid #E5E7EB}
+  .se-footer-inner{max-width:1280px;margin:0 auto;padding:56px 24px 72px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;align-items:start}
+  .se-footer-brand{display:flex;flex-direction:column;align-items:center;text-align:center}
+  .se-footer-brand-logo{height:32px;margin-bottom:12px}
+  .se-footer-tagline{font-size:13px;color:#425466;font-style:italic;max-width:200px;line-height:1.5;margin-bottom:20px}
+  .se-footer-social{display:flex;gap:16px}
+  .se-footer-social a{color:#7A8999;transition:color .15s;text-decoration:none}
+  .se-footer-social a:hover{color:#00ACEE}
+  .se-footer-copyright{display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+  .se-footer-copyright-text{font-size:13px;color:#425466;margin:0 0 16px}
+  .se-footer-eho{width:44px}
+  .se-footer-links{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+  .se-footer-links a{font-size:13px;color:#425466;text-decoration:none;transition:color .15s}
+  .se-footer-links a:hover{color:#00ACEE}
+  @media(max-width:768px){
+    .se-footer-inner{grid-template-columns:1fr;text-align:center;gap:32px}
+    .se-footer-copyright,.se-footer-brand,.se-footer-links{align-items:center}
+    .se-footer-copyright{order:3}.se-footer-brand{order:1}.se-footer-links{order:2}
+  }
+</style>
+<header id="se-site-nav">
+  <div class="se-nav-inner">
+    <a href="https://spoteasy.com" class="se-nav-logo" aria-label="Spot Easy home">
+      <img src="https://spoteasy.com/images/dark_logo.svg" alt="Spot Easy"
+           onerror="this.parentElement.innerHTML='<span style=&quot;font-weight:800;font-size:18px;color:#0A2540&quot;>Spot Easy</span>'">
+    </a>
+    <div class="se-nav-right">
+      <nav class="se-nav-links" aria-label="Main navigation">
+        <a href="https://spoteasy.com/on-market-apartments">Boston Apartments</a>
+        <a href="https://spoteasy.com/boston-realtors">Boston Realtors</a>
+        <a href="https://spoteasy.com/blog">Blog</a>
+        <a href="https://spoteasy.com/about">About</a>
+      </nav>
+      <a href="https://spoteasy.com/login" class="se-nav-btn">Sign In</a>
+      <button class="se-hamburger" id="se-nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="se-mobile-menu" id="se-mobile-menu" aria-hidden="true">
+    <a href="https://spoteasy.com/on-market-apartments">Boston Apartments</a>
+    <a href="https://spoteasy.com/boston-realtors">Boston Realtors</a>
+    <a href="https://spoteasy.com/blog">Blog</a>
+    <a href="https://spoteasy.com/about">About</a>
+    <a href="https://spoteasy.com/login" class="se-mobile-signin">Sign In</a>
+  </div>
+</header>
+<script>
+(function(){var b=document.getElementById('se-nav-toggle'),m=document.getElementById('se-mobile-menu');if(b&&m){b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',String(o));m.setAttribute('aria-hidden',String(!o));});}})();
+</script>
 
   
 
@@ -411,5 +481,46 @@
     '<li><a href="' + p.url + '">' + p.label + '</a></li>').join('');
   </script>
 
+
+<footer id="se-site-footer">
+  <div class="se-footer-inner">
+    <div class="se-footer-copyright">
+      <p class="se-footer-copyright-text">&copy; Spot Easy 2026. All rights reserved.</p>
+      <a href="https://www.boston.gov/departments/fair-housing-and-equity" target="_blank" rel="nofollow noreferrer">
+        <img src="https://spoteasy.com/images/shared/eho.svg" alt="Equal Housing Opportunity" class="se-footer-eho"
+             onerror="this.style.display='none'">
+      </a>
+    </div>
+    <div class="se-footer-brand">
+      <img src="https://spoteasy.com/images/dark_logo.svg" alt="Spot Easy" class="se-footer-brand-logo"
+           onerror="this.style.display='none'">
+      <p class="se-footer-tagline">Built for Boston renters by Bostonians</p>
+      <div class="se-footer-social">
+        <a href="https://www.facebook.com/SpotEasy" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://twitter.com/SpotEasyBOS" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.7 5.5 4.3 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/spoteasybos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/spot-easy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="se-footer-links">
+      <a href="https://spoteasy.com/privacy-policy">Privacy Policy</a>
+      <a href="https://spoteasy.com/terms-of-service">Terms of Service</a>
+      <a href="https://spoteasy.com/sitemap.xml">XML Sitemap</a>
+      <a href="https://spoteasy.com/on-market-apartments">On-market Listings</a>
+      <a href="https://spoteasy.com/off-market-apartments">Off-market Listings</a>
+      <a href="https://spoteasy.com/buildings">Premium Listings</a>
+      <a href="https://spoteasy.com/boston-realtors">Boston Realtors</a>
+      <a href="mailto:support@spoteasy.com">support@spoteasy.com</a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
