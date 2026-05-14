@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ============================================================
+       SWAP per week:
+         <title>, <meta description>, <link canonical>,
+         <script type="application/ld+json"> blocks (Dataset + Article),
+         the inline REPORT_DATA object near the bottom of this file.
+       The rest of the file does not change week to week.
+  ============================================================ -->
+  <title>Boston Rent by Building Type — Apartments, Multi-Family, Condos & Brownstones | Spot Easy</title>
+  <meta name="description" content="How much does building type affect rent in Boston? Compare median asking rents across apartments, multi-family buildings, brownstones, condos, and single-families. Updated weekly from verified listings.">
+  <link rel="canonical" href="https://spoteasy.com/data/building-types/">
+  <meta property="og:title" content="Boston Building Type Rent Report — Week of May 7, 2026">
+  <meta property="og:description" content="How much does building type affect rent in Boston? Compare median asking rents across apartments, multi-family buildings, brownstones, condos, and single-families. Updated weekly from verified listings.">
+  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-1/preview.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Schema.org: Dataset (this is what gets us into Google Dataset Search) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Boston Building Type Rent Report — Week of May 7, 2026",
+    "description": "Median asking rent by building type (Apartment, Multi-Family, Condo, Brownstone, etc.) across Greater Boston, per bedroom count.",
+    "url": "https://spoteasy.com/data/rent-report/2026-05-week-1/",
+    "creator": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "url": "https://spoteasy.com"
+    },
+    "temporalCoverage": "2026-05-01/2026-05-07",
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "Greater Boston, Massachusetts"
+    },
+    "variableMeasured": [
+      "Median asking rent by neighborhood",
+      "Median asking rent by bedroom count",
+      "Sample size",
+      "25th and 75th rent percentiles",
+      "New listings on market"
+    ],
+    "distribution": [{
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv"
+    }],
+    "license": "https://spoteasy.com/data/license/",
+    "isAccessibleForFree": true
+  }
+  </script>
+
+  <!-- Schema.org: Article (helps Discover / news surfaces) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Boston Building Type Rent Report — Week of May 7, 2026",
+    "datePublished": "2026-05-08T07:00:00-04:00",
+    "author": { "@type": "Person", "name": "Joel Mundele" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Spot Easy",
+      "logo": { "@type": "ImageObject", "url": "https://spoteasy.com/logo.png" }
+    },
+    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-1/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #001C41;
+      --sky: #00ACEE;
+      --ink: #1a1a1a;
+      --muted: #5b6b7a;
+      --rule: #E5E9EE;
+      --soft: #F4F8FB;
+      --good: #1a8c4f;
+      --bad:  #c0392b;
+      --bg:   #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', 'Poppins', 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--sky); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ---------- container ---------- */
+    .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    /* ---------- breadcrumb ---------- */
+    .breadcrumb { font-size: 13px; margin-bottom: 16px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--sky); }
+    .breadcrumb-sep { margin: 0 6px; }
+
+    .kicker {
+      color: var(--sky);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: var(--navy);
+      font-size: 38px;
+      line-height: 1.15;
+      margin: 8px 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .lede {
+      color: var(--navy);
+      font-size: 19px;
+      line-height: 1.55;
+      max-width: 720px;
+      margin-bottom: 28px;
+    }
+
+    /* ---------- hero stat tiles ---------- */
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .tile {
+      background: var(--soft);
+      border-left: 4px solid var(--sky);
+      padding: 18px 16px;
+      border-radius: 4px;
+    }
+    .tile .label { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 4px; }
+    .tile .num   { color: var(--navy); font-size: 28px; font-weight: 700; line-height: 1.1; }
+    .tile .delta { font-size: 13px; margin-top: 4px; font-weight: 600; }
+    .delta.up   { color: var(--bad); }
+    .delta.down { color: var(--good); }
+    .delta.flat { color: var(--muted); }
+
+    /* ---------- sections ---------- */
+    h2 { color: var(--navy); font-size: 22px; margin: 36px 0 12px; }
+    h3 { color: var(--navy); font-size: 16px; margin: 24px 0 8px; }
+    p, li { color: var(--ink); }
+    .what-changed ul { padding-left: 20px; }
+    .what-changed li { margin-bottom: 8px; }
+
+    /* ---------- table ---------- */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; margin: 12px 0 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th {
+      background: var(--navy); color: #fff; text-align: left;
+      padding: 10px 12px; font-weight: 600; font-size: 13px;
+      letter-spacing: .03em; cursor: pointer; user-select: none;
+    }
+    thead th[data-sort] { position: relative; }
+    thead th[data-sort]:hover { background: #002757; }
+    tbody td { padding: 10px 12px; border-top: 1px solid var(--rule); }
+    tbody tr:nth-child(even) td { background: var(--soft); }
+    tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody td.dim { color: var(--muted); }
+    tbody a { color: var(--navy); font-weight: 600; }
+
+    /* ---------- quote ---------- */
+    blockquote.spot {
+      background: var(--navy); color: #fff;
+      padding: 22px 24px; border-radius: 6px;
+      border-left: 4px solid var(--sky);
+      margin: 28px 0;
+      font-size: 17px; line-height: 1.6;
+    }
+    blockquote.spot .who { display: block; margin-top: 10px; color: #BFD9EE; font-size: 13px; font-style: normal; }
+
+    /* ---------- methodology ---------- */
+    details.method {
+      background: var(--soft); padding: 14px 18px; border-radius: 6px; margin: 28px 0;
+      border: 1px solid var(--rule);
+    }
+    details.method summary { cursor: pointer; color: var(--navy); font-weight: 600; }
+    details.method[open] summary { margin-bottom: 10px; }
+
+    /* ---------- CTA ---------- */
+    .cta {
+      display: inline-block; background: var(--sky); color: #fff;
+      padding: 12px 22px; border-radius: 4px; font-weight: 600;
+      margin-right: 8px;
+    }
+    .cta:hover { text-decoration: none; background: #0095cc; }
+    .cta.outline { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+    .cta.outline:hover { background: var(--navy); color: #fff; }
+
+    /* ---------- past reports ---------- */
+    .past { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 24px; }
+    .past ul { list-style: none; padding: 0; columns: 2; column-gap: 32px; }
+    .past li { margin-bottom: 6px; }
+
+
+    /* ---------- mobile ---------- */
+    @media (max-width: 720px) {
+      h1 { font-size: 28px; }
+      .lede { font-size: 16px; }
+      .tiles { grid-template-columns: repeat(2, 1fr); }
+      .past ul { columns: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  
+
+  <main class="container">
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://spoteasy.com/data/">Spot Easy Data</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Building Type Report</span>
+    </nav>
+    <div class="kicker">Building Type Report · Week of <span data-bind="week_label"></span></div>
+    <h1>Rent in Boston depends a lot on what kind of building you’re in.</h1>
+    <p class="lede" data-bind="lede"></p>
+
+    <!-- HERO TILES -->
+    <div class="tiles" id="tiles"></div>
+
+    <!-- WHAT CHANGED -->
+    <section class="what-changed">
+      <h2>What the numbers show</h2>
+      <ul id="what-changed"></ul>
+    </section>
+
+    <!-- QUOTE -->
+    <blockquote class="spot" cite="https://spoteasy.com">
+      <span data-bind="quote"></span>
+      <span class="who">— <strong>Joel Mundele</strong>, CEO, Spot Easy</span>
+    </blockquote>
+
+    <!-- TABLE -->
+    <h2>Median asking rent by building type</h2>
+    <p>Boston has a mix of housing stock you won’t find in most cities — large apartment buildings, multi-family homes, brownstones, condos, single-families. The price differences by building type are bigger than most renters realize. Active listings only, deduped by address + unit + bedroom count.</p>
+    <div class="table-wrap">
+      <table id="data-table">
+        <thead>
+          <tr><th>Building type</th><th class="num">Studio</th><th class="num">1BR</th><th class="num">2BR</th><th class="num">3BR</th><th class="num">4+BR</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- METHODOLOGY -->
+    <details class="method">
+      <summary>How we calculate this</summary>
+      <p>Each listing is classified by the building_type field set by the listing agent. Active listings only (is_on_market = true), rents $500–$20,000, deduped by address + unit + bedroom count keeping the most recent listing. Multi-Family covers duplexes, small apartment buildings, and other multi-unit residential properties. Cells with fewer than 15 active listings are suppressed.</p>
+      <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
+    </details>
+
+    <!-- PAST REPORTS -->
+    <section class="past">
+      <h3>Past reports</h3>
+      <ul id="past-list"></ul>
+    </section>
+
+  </main>
+
+
+
+  
+  <script>
+  const REPORT_DATA = {
+  "week_ending": "2026-05-07",
+  "week_label": "May 7, 2026",
+  "lede": "A 4-bedroom in a Boston multi-family building rents for $5,300 — $400 more per month than the same unit in a standard apartment building.",
+  "tiles": [
+    {
+      "label": "Apartment 4BR median",
+      "value": "$4,900",
+      "delta_text": "active listings"
+    },
+    {
+      "label": "Multi-Family 4BR median",
+      "value": "$5,300",
+      "delta_text": "active listings"
+    },
+    {
+      "label": "Brownstone 4BR median",
+      "value": "$6,200",
+      "delta_text": "active listings"
+    },
+    {
+      "label": "Multi-Family vs apartment",
+      "value": "+$400",
+      "delta_text": "per month at 4BR",
+      "delta_dir": "up"
+    }
+  ],
+  "bullets": [
+    "<strong>Multi-Family 4BR rents for $400 more than a comparable apartment</strong> — a gap that tends to flip at 2BR, where Multi-Family is often the cheapest option.",
+    "<strong>Brownstone 4BR commands the highest rents</strong> of any category we track. Smaller sample sizes mean week-to-week swings are larger.",
+    "<strong>Condos price like apartments at 1-2BR</strong> but pull ahead at 3-4BR — likely reflecting owner-occupied units listed by individual landlords.",
+    "<strong>Multi-Family covers duplexes, small apartment buildings, and other multi-unit properties.</strong> Boston carries a higher share of this stock than any other major metro."
+  ],
+  "rows": [
+    [
+      "<strong>Apartment</strong>",
+      "$2,300",
+      "$2,700",
+      "$3,210",
+      "$4,000",
+      "$4,900"
+    ],
+    [
+      "<strong>Multi-Family</strong>",
+      null,
+      "$2,650",
+      "$3,000",
+      "$3,600",
+      "$5,300"
+    ],
+    [
+      "<strong>Condo</strong>",
+      "$2,500",
+      "$2,900",
+      "$3,500",
+      "$4,100",
+      "$5,600"
+    ],
+    [
+      "<strong>Brownstone</strong>",
+      "$2,375",
+      "$2,798",
+      "$3,613",
+      "$4,750",
+      "$6,200"
+    ],
+    [
+      "<strong>Single-Family</strong>",
+      null,
+      null,
+      null,
+      "$4,500",
+      "$6,875"
+    ],
+    [
+      "<strong>Townhouse</strong>",
+      null,
+      null,
+      "$3,348",
+      null,
+      "$5,500"
+    ]
+  ],
+  "quote": "The building stock is the story in Boston. National platforms flatten everything into 'apartment.' Once you break it out by type, the price gaps are real and renters should know about them.",
+  "past_reports": [
+    {
+      "label": "Week of May 14, 2026",
+      "url": "/data/building-types/2026-05-week-2/"
+    }
+  ]
+};
+
+  const $ = sel => document.querySelector(sel);
+
+  document.querySelectorAll('[data-bind]').forEach(el => {
+    const k = el.getAttribute('data-bind');
+    if (REPORT_DATA[k] != null) el.textContent = REPORT_DATA[k];
+  });
+
+  // Hero tiles
+  $('#tiles').innerHTML = REPORT_DATA.tiles.map(t => `
+    <div class="tile">
+      <div class="label">${t.label}</div>
+      <div class="num">${t.value}</div>
+      <div class="delta ${t.delta_dir || 'flat'}">${t.delta_text || '— preview only'}</div>
+    </div>`).join('');
+
+  // Bullets
+  $('#what-changed').innerHTML = REPORT_DATA.bullets.map(b => '<li>' + b + '</li>').join('');
+
+  // Table — rows are arrays. First cell renders as HTML (so anchors work).
+  // Numeric cells render plain text.
+  $('#data-table tbody').innerHTML = REPORT_DATA.rows.map(r =>
+    '<tr>' + r.map((c,i) => '<td' + (i===0 ? '' : ' class="num"') + '>' + (c == null ? '—' : c) + '</td>').join('') + '</tr>'
+  ).join('');
+
+  // Past reports
+  $('#past-list').innerHTML = (REPORT_DATA.past_reports || []).map(p =>
+    '<li><a href="' + p.url + '">' + p.label + '</a></li>').join('');
+  </script>
+
+</body>
+</html>
