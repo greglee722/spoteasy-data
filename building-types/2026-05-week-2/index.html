@@ -10,11 +10,11 @@
          the inline REPORT_DATA object near the bottom of this file.
        The rest of the file does not change week to week.
   ============================================================ -->
-  <title>Boston Triple-Decker Rent Prices — vs Apartments, Condos & Brownstones | Spot Easy</title>
-  <meta name="description" content="Boston triple-decker pricing vs apartments and condos. Multi-family 4BR median rent: $5,350 — $427 more than a 4BR in a big apartment building.">
-  <link rel="canonical" href="https://spoteasy.com/data/triple-decker/">
-  <meta property="og:title" content="Boston Triple-Decker Rent Prices — Week of May 7, 2026">
-  <meta property="og:description" content="Boston triple-decker pricing vs apartments and condos. Multi-family 4BR median rent: $5,350 — $427 more than a 4BR in a big apartment building.">
+  <title>Boston Rent by Building Type — Apartments, Multi-Family, Condos & Brownstones | Spot Easy</title>
+  <meta name="description" content="How much does building type affect rent in Boston? Compare median asking rents across apartments, multi-family buildings, brownstones, condos, and single-families. Updated weekly from verified listings.">
+  <link rel="canonical" href="https://spoteasy.com/data/building-types/">
+  <meta property="og:title" content="Boston Building Type Rent Report — Week of May 7, 2026">
+  <meta property="og:description" content="How much does building type affect rent in Boston? Compare median asking rents across apartments, multi-family buildings, brownstones, condos, and single-families. Updated weekly from verified listings.">
   <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-1/preview.png">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -24,7 +24,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    "name": "Boston Triple-Decker Rent Prices — Week of May 7, 2026",
+    "name": "Boston Building Type Rent Report — Week of May 7, 2026",
     "description": "Median asking rent by building type (Apartment, Multi-Family, Condo, Brownstone, etc.) across Greater Boston, per bedroom count.",
     "url": "https://spoteasy.com/data/rent-report/2026-05-week-1/",
     "creator": {
@@ -59,7 +59,7 @@
   {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Boston Triple-Decker Rent Prices — Week of May 7, 2026",
+    "headline": "Boston Building Type Rent Report — Week of May 7, 2026",
     "datePublished": "2026-05-08T07:00:00-04:00",
     "author": { "@type": "Person", "name": "Joel Mundele" },
     "publisher": {
@@ -97,6 +97,12 @@
 
     /* ---------- container ---------- */
     .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
+
+    /* ---------- breadcrumb ---------- */
+    .breadcrumb { font-size: 13px; margin-bottom: 16px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--sky); }
+    .breadcrumb-sep { margin: 0 6px; }
 
     .kicker {
       color: var(--sky);
@@ -213,8 +219,13 @@
 
   <main class="container">
 
-    <div class="kicker">Triple-Decker Report · Week of <span data-bind="week_label"></span></div>
-    <h1>The housing-stock story big rental sites miss.</h1>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://spoteasy.com/data/">Spot Easy Data</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Building Type Report</span>
+    </nav>
+    <div class="kicker">Building Type Report · Week of <span data-bind="week_label"></span></div>
+    <h1>Rent in Boston depends a lot on what kind of building you’re in.</h1>
     <p class="lede" data-bind="lede"></p>
 
     <!-- HERO TILES -->
@@ -222,7 +233,7 @@
 
     <!-- WHAT CHANGED -->
     <section class="what-changed">
-      <h2>What the building-type cut shows</h2>
+      <h2>What the numbers show</h2>
       <ul id="what-changed"></ul>
     </section>
 
@@ -234,7 +245,7 @@
 
     <!-- TABLE -->
     <h2>Median asking rent by building type</h2>
-    <p>Boston’s housing stock is mixed in a way you won’t find anywhere else. Triple-deckers (Multi-Family) sit alongside brownstones, condos, and big apartment buildings — and the per-bedroom price tells very different stories. Active listings only, dedupe by address + unit + bedrooms.</p>
+    <p>Boston has a mix of housing stock you won’t find in most cities — large apartment buildings, multi-family homes, brownstones, condos, single-families. The price differences by building type are bigger than most renters realize. Active listings only, deduped by address + unit + bedroom count.</p>
     <div class="table-wrap">
       <table id="data-table">
         <thead>
@@ -247,7 +258,7 @@
     <!-- METHODOLOGY -->
     <details class="method">
       <summary>How we calculate this</summary>
-      <p>We classify each listing by the building_type field set by the listing agent. Active listings only (is_on_market = true), rents $500–$20,000, deduped by address + unit + bedroom count keeping the most recent. Cells with fewer than 15 active listings are suppressed.</p>
+      <p>Each listing is classified by the building_type field set by the listing agent. Active listings only (is_on_market = true), rents $500–$20,000, deduped by address + unit + bedroom count keeping the most recent listing. Multi-Family covers duplexes, small apartment buildings, and other multi-unit residential properties. Cells with fewer than 15 active listings are suppressed.</p>
       <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 
@@ -266,36 +277,36 @@
   const REPORT_DATA = {
   "week_ending": "2026-05-07",
   "week_label": "May 7, 2026",
-  "lede": "A 4-bedroom in a Boston triple-decker rents for $5,350 — $427 more per month than the same beds in an apartment building. Boston’s housing stock isn’t priced like anywhere else, and the per-building-type cut is the proof.",
-  "quote": "The triple-decker is Boston. National rent sites don’t track them separately, so the story disappears. Once you split it out, the math gets really interesting really fast.",
+  "lede": "A 4-bedroom in a Boston multi-family building rents for $5,350 — $427 more per month than the same unit in a standard apartment building.",
+  "quote": "The building stock is the story in Boston. National platforms flatten everything into ‘apartment.’ Once you break it out by type, the price gaps are real and renters should know about them.",
   "tiles": [
-    {
-      "label": "Multi-Family 4BR median",
-      "value": "$5,350",
-      "delta_text": "n=331 active listings"
-    },
     {
       "label": "Apartment 4BR median",
       "value": "$4,923",
-      "delta_text": "n=838 active listings"
+      "delta_text": "active listings"
     },
     {
-      "label": "Triple-decker premium",
+      "label": "Multi-Family 4BR median",
+      "value": "$5,350",
+      "delta_text": "active listings"
+    },
+    {
+      "label": "Brownstone 4BR median",
+      "value": "$6,200",
+      "delta_text": "active listings"
+    },
+    {
+      "label": "Multi-Family vs apartment",
       "value": "+$427",
-      "delta_text": "per month vs apt 4BR",
+      "delta_text": "per month at 4BR",
       "delta_dir": "up"
-    },
-    {
-      "label": "Multi-Family share",
-      "value": "11%",
-      "delta_text": "of Greater Boston listings"
     }
   ],
   "bullets": [
-    "<strong>Triple-deckers (Multi-Family) rent for MORE</strong> than equivalent apartment buildings at 4+BR — flips the usual \"newer = pricier\" assumption.",
-    "<strong>The Multi-Family premium is concentrated at 4+BR</strong> — at 2BR it’s the cheapest segment ($3,000 vs $3,245 apartment).",
-    "<strong>Brownstone 4+BR ($6,200) is the priciest category</strong> we track. 52 active listings only.",
-    "<strong>11% of Greater Boston active inventory is Multi-Family.</strong> No other city carries this mix."
+    "<strong>Multi-Family 4BR rents for $427 more than a comparable apartment</strong> — a gap that flips at 2BR, where Multi-Family is often the cheapest option.",
+    "<strong>Brownstone 4BR commands the highest rents</strong> of any category we track. Smaller sample sizes mean week-to-week swings are larger.",
+    "<strong>Condos price like apartments at 1-2BR</strong> but pull ahead at 3-4BR — likely reflecting owner-occupied units listed by individual landlords.",
+    "<strong>Multi-Family covers duplexes, small apartment buildings, and other multi-unit properties.</strong> Boston carries a higher share of this stock than any other major metro."
   ],
   "rows": [
     [

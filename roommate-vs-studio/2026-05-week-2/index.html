@@ -98,6 +98,12 @@
     /* ---------- container ---------- */
     .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
 
+    /* ---------- breadcrumb ---------- */
+    .breadcrumb { font-size: 13px; margin-bottom: 16px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--sky); }
+    .breadcrumb-sep { margin: 0 6px; }
+
     .kicker {
       color: var(--sky);
       font-weight: 700;
@@ -213,6 +219,11 @@
 
   <main class="container">
 
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://spoteasy.com/data/">Spot Easy Data</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Roommate vs. Studio</span>
+    </nav>
     <div class="kicker">Studio Squeeze · Week of <span data-bind="week_label"></span></div>
     <h1>What roommates cost in Boston — and what they save you.</h1>
     <p class="lede" data-bind="lede"></p>

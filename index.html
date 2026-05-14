@@ -656,7 +656,7 @@ const PAGE_DATA = {
     rent_index:    { stat: "$3,375", label: "2BR median · Greater Boston", delta: "+$75 vs. last week" },
     hot_hoods:     { stat: "Fenway",  label: "most in-demand neighborhood this week", delta: "Back Bay #2 · Beacon Hill #3" },
     sept1:         { stat: "111",    label: "days until Sept 1", delta: "3,323 units already listed" },
-    triple_decker: { stat: "$5,350", label: "Triple-decker 4BR median", delta: "+$400 vs. apartment 4BRs" },
+    building_types: { stat: "$5,350", label: "Multi-Family 4BR median", delta: "+$427 vs. apartment 4BR" },
     studio_squeeze:{ stat: "$650",   label: "monthly savings splitting a 2BR in Allston", delta: "vs. solo studio" },
     brokerages:    { stat: "993",    label: "active listings · Encore Realty #1 this week", delta: "across Greater Boston" }
   }
@@ -685,7 +685,7 @@ const PAGE_DATA = {
 
   <!-- Intro -->
   <div class="intro-band fade-up">
-    <p>Every week, Spot Easy publishes verified rental data sourced exclusively from listings posted by <strong>verified, licensed real estate agents</strong> on our platform. No estimates. No national averages. Real numbers from real agents — covering Boston, Cambridge, Somerville, Brookline, and surrounding cities.</p>
+    <p>Boston rent doesn't make sense until you see the actual numbers. Every Friday we publish asking prices from <strong>licensed agents'</strong> active listings — Boston, Cambridge, Somerville, Brookline, and the surrounding cities. Not national estimates.</p>
   </div>
 
   <!-- Featured -->
@@ -698,7 +698,7 @@ const PAGE_DATA = {
       <div>
         <div class="feat-live-badge">Live · Every Friday</div>
         <div class="feat-title">Boston Rent Index</div>
-        <p class="feat-desc">Median asking rent by neighborhood and bedroom count across Greater Boston — with week-over-week and year-over-year deltas. The definitive weekly snapshot of Boston's rental market.</p>
+        <p class="feat-desc">Allston, Jamaica Plain, South End — the price gap between them is bigger than most people expect. Every Friday we publish a neighborhood-by-neighborhood breakdown with sample sizes, so you can see exactly how much data is behind each number.</p>
         <div class="feat-meta" id="feat-meta">Published every Friday morning</div>
       </div>
       <div>
@@ -719,7 +719,7 @@ const PAGE_DATA = {
         <span class="report-row-num">01</span>
         <div>
           <div class="report-row-name">Boston Rent Index</div>
-          <div class="report-row-desc">Median rent by neighborhood × bedroom count, WoW and YoY deltas. The weekly benchmark for Greater Boston asking rents.</div>
+          <div class="report-row-desc">What does a 1-bedroom go for in Allston this week? A studio in Fenway? Median asking rents for every major Boston neighborhood, every Friday.</div>
           <div class="report-teaser" id="teaser-rent_index"></div>
         </div>
         <span class="status-tag live">Live · Weekly</span>
@@ -729,7 +729,7 @@ const PAGE_DATA = {
         <span class="report-row-num">02</span>
         <div>
           <div class="report-row-name">Hot Neighborhoods Report</div>
-          <div class="report-row-desc">Where renter search volume jumped most week-over-week — broken down by working professionals vs. students. The story behind the numbers.</div>
+          <div class="report-row-desc">Which neighborhoods are getting the most renter attention right now, and which are cooling off. We track lead volume week over week, with a working professional / student split.</div>
           <div class="report-teaser" id="teaser-hot_hoods"></div>
         </div>
         <span class="status-tag coming">Coming Soon</span>
@@ -739,18 +739,18 @@ const PAGE_DATA = {
         <span class="report-row-num">03</span>
         <div>
           <div class="report-row-name">Sept 1 Countdown</div>
-          <div class="report-row-desc">Weekly inventory and pricing for September 1 lease starts — Boston's biggest turnover day. Tracks student demand from May through August.</div>
+          <div class="report-row-desc">Most Boston leases start September 1. Nowhere else in the country works this way. We track how many Sept 1 units are listed right now and what they're asking.</div>
           <div class="report-teaser" id="teaser-sept1"></div>
         </div>
         <span class="status-tag june">Starts June</span>
       </li>
 
-      <li class="report-row coming" data-teaser="triple_decker">
+      <li class="report-row coming" data-teaser="building_types">
         <span class="report-row-num">04</span>
         <div>
-          <div class="report-row-name">Triple-Decker Report</div>
-          <div class="report-row-desc">Pricing and inventory for Boston's triple-deckers vs. apartment buildings vs. condos. A housing-stock cut national sites can't replicate.</div>
-          <div class="report-teaser" id="teaser-triple_decker"></div>
+          <div class="report-row-name">Building Type Report</div>
+          <div class="report-row-desc">Apartment, condo, multi-family, brownstone — what you pay in Boston depends a lot on what you're renting. We break down median asking rent by building type and bedroom count across Greater Boston.</div>
+          <div class="report-teaser" id="teaser-building_types"></div>
         </div>
         <span class="status-tag coming">Coming Soon</span>
       </li>
@@ -759,7 +759,7 @@ const PAGE_DATA = {
         <span class="report-row-num">05</span>
         <div>
           <div class="report-row-name">Studio Squeeze &amp; Roommate Premium</div>
-          <div class="report-row-desc">Cost per bedroom living solo vs. with one or two roommates, by neighborhood. See exactly what the roommate premium buys you in Boston.</div>
+          <div class="report-row-desc">Solo studio or split a 2-bedroom? We calculate monthly cost per person for both across every major Boston neighborhood.</div>
           <div class="report-teaser" id="teaser-studio_squeeze"></div>
         </div>
         <span class="status-tag coming">Coming Soon</span>
@@ -769,7 +769,7 @@ const PAGE_DATA = {
         <span class="report-row-num">06</span>
         <div>
           <div class="report-row-name">Top Boston Brokerages</div>
-          <div class="report-row-desc">Most active brokerages by listing volume and new inventory this week — signals where fresh options and faster agent responses are.</div>
+          <div class="report-row-desc">Which agencies have the most listings on the market right now. Useful if you want more options or a faster response.</div>
           <div class="report-teaser" id="teaser-brokerages"></div>
         </div>
         <span class="status-tag coming">Coming Soon</span>
@@ -835,7 +835,7 @@ const PAGE_DATA = {
         <p><strong>Active listings only:</strong> <code>is_on_market = true</code>, not a draft, not admin-removed, rent between $500 and $20,000.</p>
         <p><strong>Deduplication:</strong> One listing per unique address + unit + bedroom count, keeping the most recently updated record.</p>
         <p><strong>Bedroom buckets:</strong> Studio / 1 BR / 2 BR / 3 BR / 4+ BR.</p>
-        <p><strong>Minimum sample size:</strong> Cells with fewer than 10 listings are suppressed and shown as —.</p>
+        <p><strong>Minimum sample size:</strong> Cells with fewer than 20 listings are suppressed and shown as —.</p>
         <p><strong>Metrics:</strong> Median asking rent, 25th and 75th percentile, week-over-week and year-over-year change.</p>
         <ul>
           <li>Week-over-week: same neighborhood × bedroom cell from the prior Friday's snapshot.</li>

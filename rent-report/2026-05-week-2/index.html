@@ -98,6 +98,12 @@
     /* ---------- container ---------- */
     .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
 
+    /* ---------- breadcrumb ---------- */
+    .breadcrumb { font-size: 13px; margin-bottom: 16px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--sky); }
+    .breadcrumb-sep { margin: 0 6px; }
+
     .kicker {
       color: var(--sky);
       font-weight: 700;
@@ -213,6 +219,11 @@
 
   <main class="container">
 
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://spoteasy.com/data/">Spot Easy Data</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Boston Rent Index</span>
+    </nav>
     <div class="kicker">Boston Rent Index · Week of <span data-bind="week_label"></span></div>
     <h1>The price of a Boston apartment, neighborhood by neighborhood.</h1>
     <p class="lede" data-bind="lede"></p>
@@ -234,7 +245,8 @@
 
     <!-- NEIGHBORHOOD TABLE -->
     <h2>Median asking rent by neighborhood</h2>
-    <p>Sample sizes shown so you can judge for yourself. Cells with fewer than 10 active listings are suppressed.</p>
+    <p>N is the number of listings behind each figure. Any cell with fewer than 20 is suppressed — the sample isn't big enough to mean anything.</p>
+    <p style="margin-top: 6px; font-size: 13px; color: var(--muted);">↗ Click a neighborhood name to search available listings.</p>
     <div class="table-wrap">
       <table id="hood-table">
         <thead>
@@ -254,7 +266,7 @@
 
     <!-- BUILDING TYPE -->
     <h2>By building type</h2>
-    <p>Boston's housing stock is a mix you won't find anywhere else. Triple-deckers (Multi-Family) sit alongside brownstones, condos, and big apartment buildings — the per-bedroom price tells very different stories.</p>
+    <p>Triple-deckers, brownstones, condos, apartments — they don't price the same in Boston. Here's what each building type is actually going for right now.</p>
     <div class="table-wrap">
       <table id="bt-table">
         <thead>
@@ -274,13 +286,13 @@
     <!-- DOWNLOADS / CTAs -->
     <div style="margin: 28px 0;">
       <a class="cta" data-bind-href="csv_url" download>Download the CSV</a>
-      <a class="cta outline" href="/listings">Browse Boston listings</a>
+      <a class="cta outline" href="https://spoteasy.com/boston-apartments">Browse Boston listings</a>
     </div>
 
     <!-- METHODOLOGY -->
     <details class="method">
       <summary>How we calculate this</summary>
-      <p>Each Friday morning we snapshot every active listing on Spot Easy and partner sources across Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden. We exclude drafts, listings removed by admins, and asking rents below $500 or above $20,000 (typical bad-data territory). We dedupe across sources by address + unit number, normalize bedroom counts into Studio/1/2/3/4+, and require at least 10 active listings in any cell before publishing it. The resulting median is the one shown.</p>
+      <p>Each Friday morning we snapshot every active listing on Spot Easy and partner sources across Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden. We exclude drafts, listings removed by admins, and asking rents below $500 or above $20,000 (typical bad-data territory). We dedupe across sources by address + unit number, normalize bedroom counts into Studio/1/2/3/4+, and require at least 20 active listings in any cell before publishing it. The resulting median is the one shown.</p>
       <p>This isn't a transaction price. It's the median <em>asking</em> rent for what's currently listed — same as Zillow's ZORI or Apartment List's index, but built specifically for Greater Boston using Spot Easy's verified-agent inventory. Want the raw data? <a data-bind-href="csv_url">Download the CSV</a>.</p>
       <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:press@spoteasy.com">press@spoteasy.com</a>.</p>
     </details>
