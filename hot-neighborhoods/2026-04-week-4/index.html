@@ -10,12 +10,12 @@
          the inline REPORT_DATA object near the bottom of this file.
        The rest of the file does not change week to week.
   ============================================================ -->
-  <title>Top Boston Real Estate Brokerages — Most Active Rental Listings This Week | Spot Easy</title>
-  <meta name="description" content="Boston’s most active brokerages this week by listing volume and new inventory. Updated every Friday.">
-  <link rel="canonical" href="https://spoteasy.com/data/top-brokerages/">
-  <meta property="og:title" content="Top Boston Brokerages — Week of May 14, 2026">
-  <meta property="og:description" content="Boston’s most active brokerages this week by listing volume and new inventory. Updated every Friday.">
-  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-2/preview.png">
+  <title>Most In-Demand Boston Neighborhoods — Weekly Rental Demand Report | Spot Easy</title>
+  <meta name="description" content="Where Boston renter search volume jumped most this week, broken down by working professionals vs. students. Updated every Friday.">
+  <link rel="canonical" href="https://spoteasy.com/data/hot-neighborhoods/">
+  <meta property="og:title" content="Most In-Demand Boston Neighborhoods — Week of May 8, 2026">
+  <meta property="og:description" content="Where Boston renter search volume jumped most this week, broken down by working professionals vs. students. Updated every Friday.">
+  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-1/preview.png">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -24,15 +24,15 @@
   {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    "name": "Top Boston Brokerages — Week of May 14, 2026",
-    "description": "Weekly ranking of brokerages by active listing count and new listings this week across Greater Boston.",
-    "url": "https://spoteasy.com/data/rent-report/2026-05-week-2/",
+    "name": "Most In-Demand Boston Neighborhoods — Week of May 8, 2026",
+    "description": "Weekly change in renter lead volume by Greater Boston neighborhood, segmented by job_status (Working Professional / Student).",
+    "url": "https://spoteasy.com/data/rent-report/2026-05-week-1/",
     "creator": {
       "@type": "Organization",
       "name": "Spot Easy",
       "url": "https://spoteasy.com"
     },
-    "temporalCoverage": "2026-05-01/2026-05-14",
+    "temporalCoverage": "2026-05-01/2026-05-07",
     "spatialCoverage": {
       "@type": "Place",
       "name": "Greater Boston, Massachusetts"
@@ -47,7 +47,7 @@
     "distribution": [{
       "@type": "DataDownload",
       "encodingFormat": "text/csv",
-      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-2/rent-index-2026-05-14.csv"
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv"
     }],
     "license": "https://spoteasy.com/data/license/",
     "isAccessibleForFree": true
@@ -59,7 +59,7 @@
   {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Top Boston Brokerages — Week of May 14, 2026",
+    "headline": "Most In-Demand Boston Neighborhoods — Week of May 8, 2026",
     "datePublished": "2026-05-08T07:00:00-04:00",
     "author": { "@type": "Person", "name": "Joel Mundele" },
     "publisher": {
@@ -67,7 +67,7 @@
       "name": "Spot Easy",
       "logo": { "@type": "ImageObject", "url": "https://spoteasy.com/logo.png" }
     },
-    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-2/"
+    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-1/"
   }
   </script>
 
@@ -163,8 +163,11 @@
       padding: 10px 12px; font-weight: 600; font-size: 13px;
       letter-spacing: .03em; cursor: pointer; user-select: none;
     }
-    thead th[data-sort] { position: relative; }
+    thead th[data-sort] { position: relative; cursor: pointer; user-select: none; }
     thead th[data-sort]:hover { background: #002757; }
+    thead th[data-sort]::after { content: " \2195"; opacity: .4; font-size: 11px; }
+    thead th[data-sort][data-dir="desc"]::after { content: " \2193"; opacity: 1; }
+    thead th[data-sort][data-dir="asc"]::after { content: " \2191"; opacity: 1; }
     tbody td { padding: 10px 12px; border-top: 1px solid var(--rule); }
     tbody tr:nth-child(even) td { background: var(--soft); }
     tbody td.num { text-align: center; font-variant-numeric: tabular-nums; }
@@ -223,10 +226,10 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://data.spoteasy.com/">Spot Easy Data</a>
       <span class="breadcrumb-sep">›</span>
-      <span>Top Boston Brokerages</span>
+      <span>Hot Neighborhoods</span>
     </nav>
-    <div class="kicker">Top Brokerages · Week of <span data-bind="week_label"></span></div>
-    <h1>Boston’s most active brokerages, ranked weekly.</h1>
+    <div class="kicker">Hot Neighborhoods · Week of <span data-bind="week_label"></span></div>
+    <h1>Where Boston renters are searching this week.</h1>
     <p class="lede" data-bind="lede"></p>
 
     <!-- HERO TILES -->
@@ -234,7 +237,7 @@
 
     <!-- WHAT CHANGED -->
     <section class="what-changed">
-      <h2>What moved on the leaderboard</h2>
+      <h2>What moved this week</h2>
       <ul id="what-changed"></ul>
     </section>
 
@@ -245,12 +248,12 @@
     </blockquote>
 
     <!-- TABLE -->
-    <h2>Top 10 brokerages by active listings</h2>
-    <p>Active rentals only. "New this week" is listings that came on market in the last Fri–Thu window. Brokerage is the company affiliation of the listing agent.</p>
+    <h2>Neighborhoods ranked by WoW lead volume change</h2>
+    <p>Search and inquiry volume on Spot Easy, this week vs. last. "Working Professional" and "Student" are how renters self-identified at signup. Click any neighborhood to search listings.</p>
     <div class="table-wrap">
       <table id="data-table">
         <thead>
-          <tr><th>Rank</th><th class="num">Brokerage</th><th class="num">Active listings</th><th class="num">New this week</th><th class="num">Neighborhoods</th></tr>
+          <tr><th>Neighborhood</th><th class="num" data-sort="1">Leads this week</th><th class="num">WoW change</th><th class="num">Working Pro %</th><th class="num">Student %</th></tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -259,7 +262,7 @@
     <!-- METHODOLOGY -->
     <details class="method">
       <summary>How we calculate this</summary>
-      <p>We count active listings per brokerage based on the listing agent’s company affiliation. Active means is_on_market = true and not removed by admin. "New this week" is listings whose marked_on_market_at falls in the report window. Brokerages with fewer than 15 active listings are suppressed.</p>
+      <p>Lead counts are organic leads from Spot Easy renters who completed a profile. We exclude scraped/manual leads from the Working Pro / Student split because those leads do not have a job_status value. Neighborhoods with fewer than 20 leads this week are suppressed. We compare against the prior Fri–Thu window.</p>
       <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 
@@ -274,152 +277,248 @@
   
   <script>
   const REPORT_DATA = {
-  "week_ending": "2026-05-14",
-  "week_label": "May 14, 2026",
-  "lede": "Encore Realty leads the week with 993 active listings across Greater Boston.",
+  "week_ending": "2026-05-07",
+  "week_label": "May 8, 2026",
+  "lede": "Union Square search volume +100% week-over-week — the biggest move of any neighborhood tracked this week.",
   "tiles": [
     {
-      "label": "#1 brokerage",
-      "value": "Encore Realty",
-      "delta_text": "this week"
-    },
-    {
-      "label": "Active listings",
-      "value": "993",
-      "delta_text": "in Greater Boston",
+      "label": "Union Square",
+      "value": "+100%",
+      "delta_text": "WoW lead volume",
       "delta_dir": "up"
     },
     {
-      "label": "Active brokerages",
-      "value": "500+",
-      "delta_text": "on Spot Easy"
+      "label": "South End",
+      "value": "+75%",
+      "delta_text": "WoW lead volume",
+      "delta_dir": "up"
     },
     {
-      "label": "Top 10 share",
-      "value": "~12%",
-      "delta_text": "of Greater Boston listings"
+      "label": "Beacon Hill",
+      "value": "+67%",
+      "delta_text": "WoW lead volume",
+      "delta_dir": "up"
+    },
+    {
+      "label": "Davis Square",
+      "value": "+67%",
+      "delta_text": "WoW lead volume",
+      "delta_dir": "up"
     }
   ],
   "bullets": [
-    "<strong>#1 Encore Realty</strong> — 993 active listings across Greater Boston.",
-    "<strong>#2 Edge Realty Advisors</strong> — 832 active listings across Greater Boston.",
-    "<strong>#3 East Coast Realty</strong> — 680 active listings across Greater Boston.",
-    "<strong>#4 Red Tree Real Estate</strong> — 665 active listings across Greater Boston."
+    "<strong>Union Square +100% WoW</strong> — 83% Working Pro / 17% Student this week.",
+    "<strong>South End +75% WoW</strong> — 100% Working Pro / 0% Student this week.",
+    "<strong>Beacon Hill +67% WoW</strong> — 100% Working Pro / 0% Student this week.",
+    "<strong>Davis Square +67% WoW</strong> — 100% Working Pro / 0% Student this week."
   ],
   "rows": [
     [
-      "1",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Encore Realty</a>",
-      993,
-      "—",
-      "—"
+      "<a href=\"https://spoteasy.com/union-square-apartments\">Union Square</a>",
+      6,
+      "+100%",
+      "83%",
+      "17%"
     ],
     [
-      "2",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Edge Realty Advisors</a>",
-      832,
-      "—",
-      "—"
+      "<a href=\"https://spoteasy.com/south-end-apartments\">South End</a>",
+      7,
+      "+75%",
+      "100%",
+      "0%"
     ],
     [
-      "3",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">East Coast Realty</a>",
-      680,
-      "—",
-      "—"
+      "<a href=\"https://spoteasy.com/beacon-hill-apartments\">Beacon Hill</a>",
+      25,
+      "+67%",
+      "100%",
+      "0%"
     ],
     [
-      "4",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Red Tree Real Estate</a>",
-      665,
-      "—",
-      "—"
+      "<a href=\"https://spoteasy.com/davis-square-apartments\">Davis Square</a>",
+      5,
+      "+67%",
+      "100%",
+      "0%"
     ],
     [
-      "5",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Centre Realty Group</a>",
-      509,
+      "<a href=\"https://spoteasy.com/east-cambridge-apartments\">East Cambridge</a>",
+      8,
       "—",
-      "—"
+      "88%",
+      "13%"
     ],
     [
-      "6",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Colonial Realty Associates, LLC</a>",
-      353,
+      "<a href=\"https://spoteasy.com/porter-square-apartments\">Porter Square</a>",
+      6,
       "—",
-      "—"
+      "83%",
+      "17%"
     ],
     [
-      "7",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Kingston Real Estate & Management</a>",
-      281,
+      "<a href=\"https://spoteasy.com/inman-square-apartments\">Inman Square</a>",
+      6,
       "—",
-      "—"
+      "83%",
+      "17%"
     ],
     [
-      "8",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Boston Brokerage Group</a>",
-      229,
+      "<a href=\"https://spoteasy.com/boston-downtown-apartments\">Boston Downtown</a>",
+      5,
       "—",
-      "—"
+      "100%",
+      "0%"
     ],
     [
-      "9",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">REALTY20</a>",
-      222,
+      "<a href=\"https://spoteasy.com/alewife-apartments\">Alewife</a>",
+      5,
       "—",
-      "—"
+      "100%",
+      "0%"
     ],
     [
-      "10",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Boston Proper Real Estate</a>",
-      211,
+      "<a href=\"https://spoteasy.com/north-end-apartments\">North End</a>",
+      3,
       "—",
-      "—"
+      "100%",
+      "0%"
     ],
     [
-      "11",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Benjamin Apartments + Cityside Homes</a>",
-      187,
+      "<a href=\"https://spoteasy.com/bay-village-apartments\">Bay Village</a>",
+      3,
       "—",
-      "—"
+      "100%",
+      "0%"
     ],
     [
-      "12",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Apartment Rental Experts, LLC</a>",
-      162,
+      "<a href=\"https://spoteasy.com/central-square-apartments\">Central Square</a>",
+      3,
       "—",
-      "—"
+      "33%",
+      "67%"
     ],
     [
-      "13",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">Apartment Rental Experts - Davis Square</a>",
-      147,
+      "<a href=\"https://spoteasy.com/seaport-district-apartments\">Seaport District</a>",
+      2,
       "—",
-      "—"
+      "100%",
+      "0%"
     ],
     [
-      "14",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">CWS Realty</a>",
-      141,
+      "<a href=\"https://spoteasy.com/financial-district-apartments\">Financial District</a>",
+      2,
       "—",
-      "—"
+      "100%",
+      "0%"
     ],
     [
-      "15",
-      "<a href=\"#\" target=\"_blank\" rel=\"noopener\">StreetPads, LLC</a>",
-      131,
+      "<a href=\"https://spoteasy.com/mid-cambridge-apartments\">Mid Cambridge</a>",
+      2,
+      "+0%",
+      "50%",
+      "50%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/theatre-district-apartments\">Theatre District</a>",
+      2,
       "—",
-      "—"
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/brookline-hills-apartments\">Brookline Hills</a>",
+      1,
+      "+0%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/columbus-park-apartments\">Columbus Park</a>",
+      1,
+      "—",
+      "0%",
+      "100%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/dorchester-apartments\">Dorchester</a>",
+      1,
+      "—",
+      "0%",
+      "100%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/fenway-apartments\">Fenway</a>",
+      13,
+      "-7%",
+      "92%",
+      "8%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/washington-square-apartments\">Washington Square</a>",
+      5,
+      "-17%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/back-bay-apartments\">Back Bay</a>",
+      13,
+      "-24%",
+      "92%",
+      "8%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/harvard-square-apartments\">Harvard Square</a>",
+      6,
+      "-33%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/allston-apartments\">Allston</a>",
+      2,
+      "-33%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/kendall-square-apartments\">Kendall Square</a>",
+      5,
+      "-44%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/cambridgeport-apartments\">Cambridgeport</a>",
+      7,
+      "-50%",
+      "86%",
+      "14%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/brighton-apartments\">Brighton</a>",
+      6,
+      "-67%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/coolidge-corner-apartments\">Coolidge Corner</a>",
+      5,
+      "-71%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/south-boston-apartments\">South Boston</a>",
+      1,
+      "-75%",
+      "100%",
+      "0%"
     ]
   ],
-  "quote": "Renters always want to know who they're working with. Showing brokerage activity each week is just transparency — same as we do with everything else.",
-  "past_reports": [
-    {
-      "label": "Week of May 7, 2026",
-      "url": "/data/top-brokerages/2026-05-week-1/"
-    }
-  ]
+  "quote": "Boston rental demand isn't one story — it's two. Working professionals and students chase different neighborhoods, on different timelines. Publishing the split each week makes that visible.",
+  "past_reports": []
 };
 
   const $ = sel => document.querySelector(sel);
@@ -440,11 +539,29 @@
   // Bullets
   $('#what-changed').innerHTML = REPORT_DATA.bullets.map(b => '<li>' + b + '</li>').join('');
 
-  // Table — rows are arrays. First cell renders as HTML (so anchors work).
-  // Numeric cells render plain text.
-  $('#data-table tbody').innerHTML = REPORT_DATA.rows.map(r =>
-    '<tr>' + r.map((c,i) => '<td' + (i > 1 ? ' class="num"' : '') + '>' + (c == null ? '—' : c) + '</td>').join('') + '</tr>'
-  ).join('');
+  // Table — sortable. Default: Leads this week descending.
+  (function(){
+    var rows=REPORT_DATA.rows.slice(),sortCol=1,sortDir=-1;
+    function numVal(v){if(v==null||v==='—')return-Infinity;var n=parseFloat(String(v).replace(/[^0-9.\-]/g,''));return isNaN(n)?-Infinity:n;}
+    function render(){
+      var sorted=rows.slice().sort(function(a,b){return sortDir*(numVal(a[sortCol])-numVal(b[sortCol]));});
+      $('#data-table tbody').innerHTML=sorted.map(function(r){
+        return'<tr>'+r.map(function(c,i){'use strict';return'<td'+(i===0?'':' class="num"')+'>'+(c==null?'—':c)+'</td>';}).join('')+'</tr>';
+      }).join('');
+      document.querySelectorAll('#data-table thead th[data-sort]').forEach(function(th){
+        var col=parseInt(th.getAttribute('data-sort'));
+        th.setAttribute('data-dir',col===sortCol?(sortDir===-1?'desc':'asc'):'');
+      });
+    }
+    document.querySelectorAll('#data-table thead th[data-sort]').forEach(function(th){
+      th.addEventListener('click',function(){
+        var col=parseInt(th.getAttribute('data-sort'));
+        if(sortCol===col){sortDir*=-1;}else{sortCol=col;sortDir=-1;}
+        render();
+      });
+    });
+    render();
+  })();
 
   // Past reports
   $('#past-list').innerHTML = (REPORT_DATA.past_reports || []).map(p =>

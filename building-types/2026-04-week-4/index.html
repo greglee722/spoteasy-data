@@ -10,12 +10,12 @@
          the inline REPORT_DATA object near the bottom of this file.
        The rest of the file does not change week to week.
   ============================================================ -->
-  <title>Boston Roommate vs Studio Cost — 2BR Split Savings by Neighborhood | Spot Easy</title>
-  <meta name="description" content="What roommates cost in Boston, and what they save you. Per-bedroom math by neighborhood. Updated every Friday.">
-  <link rel="canonical" href="https://spoteasy.com/data/roommate-vs-studio/">
-  <meta property="og:title" content="Boston Roommate vs Studio Cost — Week of May 14, 2026">
-  <meta property="og:description" content="What roommates cost in Boston, and what they save you. Per-bedroom math by neighborhood. Updated every Friday.">
-  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-2/preview.png">
+  <title>Boston Rent by Building Type — Apartments, Multi-Family, Condos & Brownstones | Spot Easy</title>
+  <meta name="description" content="How much does building type affect rent in Boston? Compare median asking rents across apartments, multi-family buildings, brownstones, condos, and single-families. Updated weekly from verified listings.">
+  <link rel="canonical" href="https://spoteasy.com/data/building-types/">
+  <meta property="og:title" content="Boston Building Type Rent Report — Week of May 8, 2026">
+  <meta property="og:description" content="How much does building type affect rent in Boston? Compare median asking rents across apartments, multi-family buildings, brownstones, condos, and single-families. Updated weekly from verified listings.">
+  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-1/preview.png">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -24,15 +24,15 @@
   {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    "name": "Boston Roommate vs Studio Cost — Week of May 14, 2026",
-    "description": "Cost per person for solo studios vs. shared 2BR and 3BR apartments by Greater Boston neighborhood.",
-    "url": "https://spoteasy.com/data/rent-report/2026-05-week-2/",
+    "name": "Boston Building Type Rent Report — Week of May 8, 2026",
+    "description": "Median asking rent by building type (Apartment, Multi-Family, Condo, Brownstone, etc.) across Greater Boston, per bedroom count.",
+    "url": "https://spoteasy.com/data/rent-report/2026-05-week-1/",
     "creator": {
       "@type": "Organization",
       "name": "Spot Easy",
       "url": "https://spoteasy.com"
     },
-    "temporalCoverage": "2026-05-01/2026-05-14",
+    "temporalCoverage": "2026-05-01/2026-05-07",
     "spatialCoverage": {
       "@type": "Place",
       "name": "Greater Boston, Massachusetts"
@@ -47,7 +47,7 @@
     "distribution": [{
       "@type": "DataDownload",
       "encodingFormat": "text/csv",
-      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-2/rent-index-2026-05-14.csv"
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv"
     }],
     "license": "https://spoteasy.com/data/license/",
     "isAccessibleForFree": true
@@ -59,7 +59,7 @@
   {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Boston Roommate vs Studio Cost — Week of May 14, 2026",
+    "headline": "Boston Building Type Rent Report — Week of May 8, 2026",
     "datePublished": "2026-05-08T07:00:00-04:00",
     "author": { "@type": "Person", "name": "Joel Mundele" },
     "publisher": {
@@ -67,7 +67,7 @@
       "name": "Spot Easy",
       "logo": { "@type": "ImageObject", "url": "https://spoteasy.com/logo.png" }
     },
-    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-2/"
+    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-1/"
   }
   </script>
 
@@ -223,10 +223,10 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://data.spoteasy.com/">Spot Easy Data</a>
       <span class="breadcrumb-sep">›</span>
-      <span>Roommate vs. Studio</span>
+      <span>Building Type Report</span>
     </nav>
-    <div class="kicker">Studio Squeeze · Week of <span data-bind="week_label"></span></div>
-    <h1>What roommates cost in Boston — and what they save you.</h1>
+    <div class="kicker">Building Type Report · Week of <span data-bind="week_label"></span></div>
+    <h1>Rent in Boston depends a lot on what kind of building you’re in.</h1>
     <p class="lede" data-bind="lede"></p>
 
     <!-- HERO TILES -->
@@ -234,7 +234,7 @@
 
     <!-- WHAT CHANGED -->
     <section class="what-changed">
-      <h2>What the per-bedroom math shows</h2>
+      <h2>What the numbers show</h2>
       <ul id="what-changed"></ul>
     </section>
 
@@ -245,12 +245,12 @@
     </blockquote>
 
     <!-- TABLE -->
-    <h2>Cost per person: solo studio vs splitting a 2BR</h2>
-    <p>Per-person cost = neighborhood 2BR median ÷ 2. The roommate premium is what you "pay" to live alone in that neighborhood. Active listings only, deduped, $500–$20,000 rent filter.</p>
+    <h2>Median asking rent by building type</h2>
+    <p>Boston has a mix of housing stock you won’t find in most cities — large apartment buildings, multi-family homes, brownstones, condos, single-families. The price differences by building type are bigger than most renters realize. Active listings only, deduped by address + unit + bedroom count.</p>
     <div class="table-wrap">
       <table id="data-table">
         <thead>
-          <tr><th>Neighborhood</th><th class="num">Solo studio</th><th class="num">2BR ÷ 2</th><th class="num">Monthly savings</th><th class="num">% saved</th></tr>
+          <tr><th>Building type</th><th class="num">Studio</th><th class="num">1BR</th><th class="num">2BR</th><th class="num">3BR</th><th class="num">4+BR</th></tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -259,7 +259,7 @@
     <!-- METHODOLOGY -->
     <details class="method">
       <summary>How we calculate this</summary>
-      <p>For each neighborhood we take the median asking rent for a Studio and a 2BR. The per-person cost of a roommate-shared 2BR is the 2BR median divided by 2. "Monthly savings" is the studio median minus the per-person 2BR. Neighborhoods need at least 10 active listings in each bedroom bucket to appear.</p>
+      <p>Each listing is classified by the building_type field set by the listing agent. Active listings only (is_on_market = true), rents $500–$20,000, deduped by address + unit + bedroom count keeping the most recent listing. Multi-Family covers duplexes, small apartment buildings, and other multi-unit residential properties. Cells with fewer than 15 active listings are suppressed.</p>
       <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 
@@ -274,111 +274,90 @@
   
   <script>
   const REPORT_DATA = {
-  "week_ending": "2026-05-14",
-  "week_label": "May 14, 2026",
-  "lede": "Splitting a 2-bedroom with a roommate in North Brookline costs $1,725 per person — about $1,025 less per month than a solo studio. Roommate math, neighborhood by neighborhood.",
+  "week_ending": "2026-05-07",
+  "week_label": "May 8, 2026",
+  "lede": "A 4-bedroom in a Boston multi-family building rents for $5,300 — $400 more per month than the same unit in a standard apartment building.",
   "tiles": [
     {
-      "label": "North Brookline solo studio",
-      "value": "$2,750",
-      "delta_text": "median asking rent"
+      "label": "Apartment 4BR median",
+      "value": "$4,900",
+      "delta_text": "active listings"
     },
     {
-      "label": "North Brookline 2BR ÷ 2",
-      "value": "$1,725",
-      "delta_text": "per person",
-      "delta_dir": "down"
+      "label": "Multi-Family 4BR median",
+      "value": "$5,300",
+      "delta_text": "active listings"
     },
     {
-      "label": "Monthly savings",
-      "value": "$1,025",
-      "delta_text": "roommate vs solo",
+      "label": "Brownstone 4BR median",
+      "value": "$6,200",
+      "delta_text": "active listings"
+    },
+    {
+      "label": "Multi-Family vs apartment",
+      "value": "+$400",
+      "delta_text": "per month at 4BR",
       "delta_dir": "up"
-    },
-    {
-      "label": "% saved with roommate",
-      "value": "37%",
-      "delta_text": "cheaper than solo"
     }
   ],
   "bullets": [
-    "<strong>North Brookline: $1,025/mo cheaper</strong> to split a 2BR than rent a studio solo — 37% savings.",
-    "<strong>Mission Hill: $638/mo cheaper</strong> to split a 2BR than rent a studio solo — 30% savings.",
-    "<strong>Brighton: $593/mo cheaper</strong> to split a 2BR than rent a studio solo — 29% savings.",
-    "<strong>Beacon Hill: $585/mo cheaper</strong> to split a 2BR than rent a studio solo — 24% savings."
+    "<strong>Multi-Family 4BR rents for $400 more than a comparable apartment</strong> — a gap that tends to flip at 2BR, where Multi-Family is often the cheapest option.",
+    "<strong>Brownstone 4BR commands the highest rents</strong> of any category we track. Smaller sample sizes mean week-to-week swings are larger.",
+    "<strong>Condos price like apartments at 1-2BR</strong> but pull ahead at 3-4BR — likely reflecting owner-occupied units listed by individual landlords.",
+    "<strong>Multi-Family covers duplexes, small apartment buildings, and other multi-unit properties.</strong> Boston carries a higher share of this stock than any other major metro."
   ],
   "rows": [
     [
-      "<a href=\"https://spoteasy.com/north-brookline-apartments\">North Brookline</a>",
-      "$2,750",
-      "$1,725",
-      "$1,025",
-      "37%"
+      "<strong>Apartment</strong>",
+      "$2,300",
+      "$2,700",
+      "$3,210",
+      "$4,000",
+      "$4,900"
     ],
     [
-      "<a href=\"https://spoteasy.com/mission-hill-apartments\">Mission Hill</a>",
-      "$2,138",
-      "$1,500",
-      "$638",
-      "30%"
+      "<strong>Multi-Family</strong>",
+      null,
+      "$2,650",
+      "$3,000",
+      "$3,600",
+      "$5,300"
     ],
     [
-      "<a href=\"https://spoteasy.com/brighton-apartments\">Brighton</a>",
-      "$2,075",
-      "$1,482",
-      "$593",
-      "29%"
+      "<strong>Condo</strong>",
+      "$2,500",
+      "$2,900",
+      "$3,500",
+      "$4,100",
+      "$5,600"
     ],
     [
-      "<a href=\"https://spoteasy.com/beacon-hill-apartments\">Beacon Hill</a>",
-      "$2,400",
-      "$1,815",
-      "$585",
-      "24%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/fenway-apartments\">Fenway</a>",
-      "$2,395",
-      "$1,849",
-      "$546",
-      "23%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/allston-apartments\">Allston</a>",
-      "$2,100",
-      "$1,582",
-      "$518",
-      "25%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/spring-hill-apartments\">Spring Hill</a>",
-      "$2,250",
-      "$1,750",
-      "$500",
-      "22%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/back-bay-apartments\">Back Bay</a>",
-      "$2,550",
-      "$2,200",
-      "$350",
-      "14%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/south-end-apartments\">South End</a>",
+      "<strong>Brownstone</strong>",
       "$2,375",
-      "$2,063",
-      "$312",
-      "13%"
+      "$2,798",
+      "$3,613",
+      "$4,750",
+      "$6,200"
+    ],
+    [
+      "<strong>Single-Family</strong>",
+      null,
+      null,
+      null,
+      "$4,500",
+      "$6,875"
+    ],
+    [
+      "<strong>Townhouse</strong>",
+      null,
+      null,
+      "$3,348",
+      null,
+      "$5,500"
     ]
   ],
-  "quote": "Renters ask \"should I get a studio or a roommate?\" every single spring. The honest answer depends on the neighborhood — and we can finally show that to people, week by week.",
-  "past_reports": [
-    {
-      "label": "Week of May 7, 2026",
-      "url": "/data/roommate-vs-studio/2026-05-week-1/"
-    }
-  ]
+  "quote": "The building stock is the story in Boston. National platforms flatten everything into 'apartment.' Once you break it out by type, the price gaps are real and renters should know about them.",
+  "past_reports": []
 };
 
   const $ = sel => document.querySelector(sel);

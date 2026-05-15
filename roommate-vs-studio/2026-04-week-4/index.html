@@ -10,12 +10,12 @@
          the inline REPORT_DATA object near the bottom of this file.
        The rest of the file does not change week to week.
   ============================================================ -->
-  <title>September 1 Boston Apartments — Inventory & Asking Rent Tracker | Spot Easy</title>
-  <meta name="description" content="Inventory and pricing for September 1 lease starts. 112 days out, 847 units already listed. Updated every Friday.">
-  <link rel="canonical" href="https://spoteasy.com/data/sept-1-countdown/">
-  <meta property="og:title" content="September 1 Boston Apartments — Week of May 14, 2026">
-  <meta property="og:description" content="Inventory and pricing for September 1 lease starts. 112 days out, 847 units already listed. Updated every Friday.">
-  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-2/preview.png">
+  <title>Boston Roommate vs Studio Cost — 2BR Split Savings by Neighborhood | Spot Easy</title>
+  <meta name="description" content="What roommates cost in Boston, and what they save you. Per-bedroom math by neighborhood. Updated every Friday.">
+  <link rel="canonical" href="https://spoteasy.com/data/roommate-vs-studio/">
+  <meta property="og:title" content="Boston Roommate vs Studio Cost — Week of May 8, 2026">
+  <meta property="og:description" content="What roommates cost in Boston, and what they save you. Per-bedroom math by neighborhood. Updated every Friday.">
+  <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-05-week-1/preview.png">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -24,15 +24,15 @@
   {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    "name": "September 1 Boston Apartments — Week of May 14, 2026",
-    "description": "Weekly inventory and median asking rent for listings with a September 1 lease start, by Greater Boston neighborhood.",
-    "url": "https://spoteasy.com/data/rent-report/2026-05-week-2/",
+    "name": "Boston Roommate vs Studio Cost — Week of May 8, 2026",
+    "description": "Cost per person for solo studios vs. shared 2BR and 3BR apartments by Greater Boston neighborhood.",
+    "url": "https://spoteasy.com/data/rent-report/2026-05-week-1/",
     "creator": {
       "@type": "Organization",
       "name": "Spot Easy",
       "url": "https://spoteasy.com"
     },
-    "temporalCoverage": "2026-05-01/2026-05-14",
+    "temporalCoverage": "2026-05-01/2026-05-07",
     "spatialCoverage": {
       "@type": "Place",
       "name": "Greater Boston, Massachusetts"
@@ -47,7 +47,7 @@
     "distribution": [{
       "@type": "DataDownload",
       "encodingFormat": "text/csv",
-      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-2/rent-index-2026-05-14.csv"
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-1/rent-index-2026-05-07.csv"
     }],
     "license": "https://spoteasy.com/data/license/",
     "isAccessibleForFree": true
@@ -59,7 +59,7 @@
   {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "September 1 Boston Apartments — Week of May 14, 2026",
+    "headline": "Boston Roommate vs Studio Cost — Week of May 8, 2026",
     "datePublished": "2026-05-08T07:00:00-04:00",
     "author": { "@type": "Person", "name": "Joel Mundele" },
     "publisher": {
@@ -67,7 +67,7 @@
       "name": "Spot Easy",
       "logo": { "@type": "ImageObject", "url": "https://spoteasy.com/logo.png" }
     },
-    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-2/"
+    "mainEntityOfPage": "https://spoteasy.com/data/rent-report/2026-05-week-1/"
   }
   </script>
 
@@ -223,10 +223,10 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://data.spoteasy.com/">Spot Easy Data</a>
       <span class="breadcrumb-sep">›</span>
-      <span>Sept 1 Countdown</span>
+      <span>Roommate vs. Studio</span>
     </nav>
-    <div class="kicker">Sept 1 Countdown · Week of <span data-bind="week_label"></span></div>
-    <h1>Boston’s biggest move-in day, tracked weekly.</h1>
+    <div class="kicker">Studio Squeeze · Week of <span data-bind="week_label"></span></div>
+    <h1>What roommates cost in Boston — and what they save you.</h1>
     <p class="lede" data-bind="lede"></p>
 
     <!-- HERO TILES -->
@@ -234,7 +234,7 @@
 
     <!-- WHAT CHANGED -->
     <section class="what-changed">
-      <h2>What moved this week</h2>
+      <h2>What the per-bedroom math shows</h2>
       <ul id="what-changed"></ul>
     </section>
 
@@ -245,12 +245,12 @@
     </blockquote>
 
     <!-- TABLE -->
-    <h2>Sept 1 listings by neighborhood</h2>
-    <p>Active listings with a September 1 lease start date, by Greater Boston neighborhood. Tracks inventory build through the summer.</p>
+    <h2>Cost per person: solo studio vs splitting a 2BR</h2>
+    <p>Per-person cost = neighborhood 2BR median ÷ 2. The roommate premium is what you "pay" to live alone in that neighborhood. Active listings only, deduped, $500–$20,000 rent filter.</p>
     <div class="table-wrap">
       <table id="data-table">
         <thead>
-          <tr><th>Neighborhood</th><th class="num">Sept 1 listings</th><th class="num">Median rent</th><th class="num">WoW listings</th></tr>
+          <tr><th>Neighborhood</th><th class="num">Solo studio</th><th class="num">2BR ÷ 2</th><th class="num">Monthly savings</th><th class="num">% saved</th></tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -259,7 +259,7 @@
     <!-- METHODOLOGY -->
     <details class="method">
       <summary>How we calculate this</summary>
-      <p>A listing counts as a Sept 1 listing if it has a lease start date of September 1, 2026 (or is flagged as a fall start). Active listings only — we exclude drafts, admin-removed, and rents outside $500–$20,000. Neighborhoods with fewer than 5 Sept 1 listings are suppressed.</p>
+      <p>For each neighborhood we take the median asking rent for a Studio and a 2BR. The per-person cost of a roommate-shared 2BR is the 2BR median divided by 2. "Monthly savings" is the studio median minus the per-person 2BR. Neighborhoods need at least 10 active listings in each bedroom bucket to appear.</p>
       <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 
@@ -274,120 +274,106 @@
   
   <script>
   const REPORT_DATA = {
-  "week_ending": "2026-05-14",
-  "week_label": "May 14, 2026",
-  "lede": "110 days until September 1. 3,042 units already listed for Sept 1 starts across Greater Boston.",
+  "week_ending": "2026-05-07",
+  "week_label": "May 8, 2026",
+  "lede": "Splitting a 2-bedroom with a roommate in North Brookline costs $1,700 per person — about $1,050 less per month than a solo studio. Roommate math, neighborhood by neighborhood.",
   "tiles": [
     {
-      "label": "Days until Sept 1",
-      "value": "110",
-      "delta_text": "2026 season"
+      "label": "North Brookline solo studio",
+      "value": "$2,750",
+      "delta_text": "median asking rent"
     },
     {
-      "label": "Sept 1 units listed",
-      "value": "3,042",
-      "delta_text": "active right now",
+      "label": "North Brookline 2BR ÷ 2",
+      "value": "$1,700",
+      "delta_text": "per person",
+      "delta_dir": "down"
+    },
+    {
+      "label": "Monthly savings",
+      "value": "$1,050",
+      "delta_text": "roommate vs solo",
       "delta_dir": "up"
     },
     {
-      "label": "1BR median (Sept 1)",
-      "value": "$2,884",
-      "delta_text": "asking rent",
-      "delta_dir": "flat"
-    },
-    {
-      "label": "Top neighborhood",
-      "value": "Brighton",
-      "delta_text": "by Sept 1 inventory"
+      "label": "% saved with roommate",
+      "value": "38%",
+      "delta_text": "cheaper than solo"
     }
   ],
   "bullets": [
-    "<strong>3,042 units listed for Sept 1 2026</strong> — 110 days from now.",
-    "<strong>Brighton and Allston lead inventory</strong> — the perennial student-move epicenters.",
-    "<strong>1BR Sept 1 asking rent</strong> is $2,884 across tracked neighborhoods.",
-    "<strong>110 days out</strong> is the right time to start searching — Sept 1 inventory moves fast."
+    "<strong>North Brookline: $1,050/mo cheaper</strong> to split a 2BR than rent a studio solo — 38% savings.",
+    "<strong>Mission Hill: $638/mo cheaper</strong> to split a 2BR than rent a studio solo — 30% savings.",
+    "<strong>Brighton: $600/mo cheaper</strong> to split a 2BR than rent a studio solo — 29% savings.",
+    "<strong>Beacon Hill: $585/mo cheaper</strong> to split a 2BR than rent a studio solo — 24% savings."
   ],
   "rows": [
     [
-      "<a href=\"https://spoteasy.com/brighton-apartments\">Brighton</a>",
-      732,
-      "$2,400",
-      null
-    ],
-    [
-      "<a href=\"https://spoteasy.com/allston-apartments\">Allston</a>",
-      429,
-      "$2,398",
-      null
-    ],
-    [
-      "<a href=\"https://spoteasy.com/fenway-apartments\">Fenway</a>",
-      392,
-      "$3,100",
-      null
+      "<a href=\"https://spoteasy.com/north-brookline-apartments\">North Brookline</a>",
+      "$2,750",
+      "$1,700",
+      "$1,050",
+      "38%"
     ],
     [
       "<a href=\"https://spoteasy.com/mission-hill-apartments\">Mission Hill</a>",
-      182,
-      "$2,560",
-      null
+      "$2,138",
+      "$1,500",
+      "$638",
+      "30%"
     ],
     [
-      "<a href=\"https://spoteasy.com/roxbury-apartments\">Roxbury</a>",
-      130,
-      null,
-      null
-    ],
-    [
-      "<a href=\"https://spoteasy.com/north-brookline-apartments\">North Brookline</a>",
-      118,
-      null,
-      null
+      "<a href=\"https://spoteasy.com/brighton-apartments\">Brighton</a>",
+      "$2,075",
+      "$1,475",
+      "$600",
+      "29%"
     ],
     [
       "<a href=\"https://spoteasy.com/beacon-hill-apartments\">Beacon Hill</a>",
-      118,
-      "$2,700",
-      null
+      "$2,400",
+      "$1,815",
+      "$585",
+      "24%"
     ],
     [
-      "<a href=\"https://spoteasy.com/back-bay-apartments\">Back Bay</a>",
-      99,
-      "$3,350",
-      null
+      "<a href=\"https://spoteasy.com/fenway-apartments\">Fenway</a>",
+      "$2,395",
+      "$1,850",
+      "$545",
+      "23%"
     ],
     [
-      "<a href=\"https://spoteasy.com/oak-square-apartments\">Oak Square</a>",
-      90,
-      null,
-      null
-    ],
-    [
-      "<a href=\"https://spoteasy.com/jamaica-plain-apartments\">Jamaica Plain</a>",
-      67,
-      "$2,175",
-      null
-    ],
-    [
-      "<a href=\"https://spoteasy.com/south-boston-apartments\">South Boston</a>",
-      65,
-      "$3,125",
-      null
+      "<a href=\"https://spoteasy.com/allston-apartments\">Allston</a>",
+      "$2,100",
+      "$1,582",
+      "$518",
+      "25%"
     ],
     [
       "<a href=\"https://spoteasy.com/spring-hill-apartments\">Spring Hill</a>",
-      59,
-      "$2,500",
-      null
+      "$2,250",
+      "$1,750",
+      "$500",
+      "22%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/back-bay-apartments\">Back Bay</a>",
+      "$2,550",
+      "$2,200",
+      "$350",
+      "14%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/south-end-apartments\">South End</a>",
+      "$2,380",
+      "$2,082",
+      "$298",
+      "13%"
     ]
   ],
-  "quote": "Sept 1 is Boston's biggest day of the year. Tracking inventory week by week is the only honest way to give renters a head start on what's coming.",
-  "past_reports": [
-    {
-      "label": "Week of May 7, 2026",
-      "url": "/data/sept-1-countdown/2026-05-week-1/"
-    }
-  ]
+  "quote": "Renters ask \"should I get a studio or a roommate?\" every single spring. The honest answer depends on the neighborhood — and we can finally show that to people, week by week.",
+  "past_reports": []
 };
 
   const $ = sel => document.querySelector(sel);
