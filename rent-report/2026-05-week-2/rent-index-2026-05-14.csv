@@ -1,9 +1,9 @@
 week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-05-14,metro,Greater Boston,0,2318,1102,2100,2600
 2026-05-14,metro,Greater Boston,1,2750,2469,2400,3150
-2026-05-14,metro,Greater Boston,2,3300,2801,2875,3900
-2026-05-14,metro,Greater Boston,3,3995,1935,3500,4698
-2026-05-14,metro,Greater Boston,4+,5200,1685,4400,6300
+2026-05-14,metro,Greater Boston,2,3300,2800,2875,3900
+2026-05-14,metro,Greater Boston,3,3995,1933,3500,4695
+2026-05-14,metro,Greater Boston,4+,5200,1683,4400,6325
 2026-05-14,neighborhood,Allston,0,2100,125,2000,2375
 2026-05-14,neighborhood,Allston,1,2400,231,2325,2978
 2026-05-14,neighborhood,Allston,2,3163,214,2800,3888
@@ -53,7 +53,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-05-14,neighborhood,Fenway,0,2395,204,2249,2500
 2026-05-14,neighborhood,Fenway,1,2800,279,2500,3100
 2026-05-14,neighborhood,Fenway,2,3698,194,3250,4150
-2026-05-14,neighborhood,Fenway,3,4995,92,4688,5505
+2026-05-14,neighborhood,Fenway,3,4995,91,4675,5510
 2026-05-14,neighborhood,Harvard Square,1,3200,35,3150,3375
 2026-05-14,neighborhood,Jamaica Plain,1,2500,33,2275,2650
 2026-05-14,neighborhood,Jamaica Plain,2,3200,41,2900,3550
@@ -80,7 +80,6 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-05-14,neighborhood,North End,1,3100,32,2584,3563
 2026-05-14,neighborhood,North End,2,3495,45,3200,3800
 2026-05-14,neighborhood,North End,3,4650,21,3900,5055
-2026-05-14,neighborhood,Oak Square,2,2800,20,2738,3200
 2026-05-14,neighborhood,Oak Square,3,3538,66,3263,3600
 2026-05-14,neighborhood,Oak Square,4+,4250,38,3950,5100
 2026-05-14,neighborhood,Porter Square,1,3213,20,3000,3300
@@ -96,7 +95,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-05-14,neighborhood,South Boston,1,3000,50,2750,3356
 2026-05-14,neighborhood,South Boston,2,4000,132,3511,4400
 2026-05-14,neighborhood,South Boston,3,5100,63,4400,5875
-2026-05-14,neighborhood,South Boston,4+,5800,24,5150,6200
+2026-05-14,neighborhood,South Boston,4+,5800,23,5100,6200
 2026-05-14,neighborhood,South End,0,2375,25,2295,2500
 2026-05-14,neighborhood,South End,1,3350,65,2900,3750
 2026-05-14,neighborhood,South End,2,4125,65,3600,4600
