@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Boston Rental Market Data · Spot Easy</title>
-  <meta name="description" content="Weekly median rent by neighborhood, bedroom count, and building type — Greater Boston rental data from Spot Easy's verified listings database, updated every Friday." />
+  <meta name="description" content="Weekly median rent by neighborhood, bedroom count, and building type — Greater Boston rental data from Spot Easy's verified listings database, updated every Tuesday." />
   <link rel="canonical" href="https://spoteasy.com/data" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Boston Rental Market Data · Spot Easy" />
-  <meta property="og:description" content="Real numbers from verified, licensed real estate agents. Median rents, neighborhood trends, and market signals for Greater Boston — updated every Friday." />
+  <meta property="og:description" content="Real numbers from verified, licensed real estate agents. Median rents, neighborhood trends, and market signals for Greater Boston — updated every Tuesday." />
   <meta property="og:url" content="https://spoteasy.com/data" />
   <meta property="og:image" content="https://spoteasy.com/data/og-data-desk.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Boston Rental Market Data · Spot Easy" />
-  <meta name="twitter:description" content="Real numbers from verified agents. Median rents by neighborhood, updated every Friday." />
+  <meta name="twitter:description" content="Real numbers from verified agents. Median rents by neighborhood, updated every Tuesday." />
   <meta name="twitter:image" content="https://spoteasy.com/data/og-data-desk.png" />
 
   <script type="application/ld+json">
@@ -680,7 +680,7 @@
 </head>
 <body>
 
-<!-- ══════════ DATA LAYER — update every Friday ══════════ -->
+<!-- ══════════ DATA LAYER — update every Tuesday ══════════ -->
 <script>
 const PAGE_DATA = {
   "as_of_date": "May 14, 2026",
@@ -750,9 +750,9 @@ const PAGE_DATA = {
 <!-- ══════════ HERO ══════════ -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">Boston Data Desk · Updated Every Friday</div>
+    <div class="hero-eyebrow">Boston Data Desk · Updated Every Tuesday</div>
     <h1>Boston Rental<br><em>Market Data</em></h1>
-    <p class="hero-sub">Real rent numbers from verified, licensed real estate agents — not estimates, not national averages. Published every Friday, free for anyone to use.</p>
+    <p class="hero-sub">Real rent numbers from verified, licensed real estate agents — not estimates, not national averages. Published every Tuesday, free for anyone to use.</p>
 
     <div class="stat-strip-header">Median asking rent — Greater Boston</div>
     <div class="stat-strip" id="stat-strip">
@@ -767,7 +767,7 @@ const PAGE_DATA = {
 
   <!-- Intro -->
   <div class="intro-band fade-up">
-    <p>Boston rent doesn't make sense until you see the actual numbers. Every Friday we publish asking prices from <strong>licensed agents'</strong> active listings — Boston, Cambridge, Somerville, Brookline, and the surrounding cities. Not national estimates.</p>
+    <p>Boston rent doesn't make sense until you see the actual numbers. Every Tuesday we publish asking prices from <strong>licensed agents'</strong> active listings — Boston, Cambridge, Somerville, Brookline, and the surrounding cities. Not national estimates.</p>
   </div>
 
   <!-- Featured -->
@@ -778,10 +778,10 @@ const PAGE_DATA = {
     </div>
     <a href="rent-report/" id="featured-link" class="featured-card">
       <div>
-        <div class="feat-live-badge">Live · Every Friday</div>
+        <div class="feat-live-badge">Live · Every Tuesday</div>
         <div class="feat-title">Boston Rent Index</div>
-        <p class="feat-desc">Allston, Jamaica Plain, South End — the price gap between them is bigger than most people expect. Every Friday we publish a neighborhood-by-neighborhood breakdown with sample sizes, so you can see exactly how much data is behind each number.</p>
-        <div class="feat-meta" id="feat-meta">Published every Friday morning</div>
+        <p class="feat-desc">Allston, Jamaica Plain, South End — the price gap between them is bigger than most people expect. Every Tuesday we publish a neighborhood-by-neighborhood breakdown with sample sizes, so you can see exactly how much data is behind each number.</p>
+        <div class="feat-meta" id="feat-meta">Published every Tuesday morning</div>
       </div>
       <div>
         <button class="btn-primary">View Latest Report →</button>
@@ -802,7 +802,7 @@ const PAGE_DATA = {
         <span class="report-row-num">01</span>
         <div>
           <div class="report-row-name">Boston Rent Index</div>
-          <div class="report-row-desc">What does a 1-bedroom go for in Allston this week? A studio in Fenway? Median asking rents for every major Boston neighborhood, every Friday.</div>
+          <div class="report-row-desc">What does a 1-bedroom go for in Allston this week? A studio in Fenway? Median asking rents for every major Boston neighborhood, every Tuesday.</div>
           <div class="report-teaser" id="teaser-rent_index"></div>
         </div>
         <button class="report-row-btn">View Report →</button>
@@ -921,10 +921,10 @@ const PAGE_DATA = {
         <p><strong>Minimum sample size:</strong> Cells with fewer than 20 listings are suppressed and shown as —.</p>
         <p><strong>Metrics:</strong> Median asking rent, 25th and 75th percentile, week-over-week and year-over-year change.</p>
         <ul>
-          <li>Week-over-week: same neighborhood × bedroom cell from the prior Friday's snapshot.</li>
+          <li>Week-over-week: same neighborhood × bedroom cell from the prior Tuesday's snapshot.</li>
           <li>Year-over-year: same cell from 52 weeks prior.</li>
         </ul>
-        <p style="margin-top:14px; color:var(--muted);">Updated every Friday morning. Questions? <a href="mailto:joel@spoteasy.com" style="color:var(--sky)">joel@spoteasy.com</a></p>
+        <p style="margin-top:14px; color:var(--muted);">Updated every Tuesday morning. Questions? <a href="mailto:joel@spoteasy.com" style="color:var(--sky)">joel@spoteasy.com</a></p>
       </div>
     </details>
   </section>
@@ -979,7 +979,7 @@ const PAGE_DATA = {
   const metaEl = document.getElementById('hero-meta');
   metaEl.textContent = d.as_of_date && d.sample_count
     ? `Data as of ${d.as_of_date}  ·  ${d.sample_count.toLocaleString()} active listings`
-    : 'First report publishing Friday, May 16, 2026';
+    : 'First report publishing Tuesday, May 16, 2026';
 
   /* ── Featured card ── */
   const featMeta = document.getElementById('feat-meta');

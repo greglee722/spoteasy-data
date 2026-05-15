@@ -14,7 +14,7 @@
   <meta name="description" content="Median asking rent across Greater Boston is $3,100 for a 1-bedroom this week. Neighborhood-by-neighborhood breakdown, sample sizes, and a downloadable CSV.">
   <link rel="canonical" href="https://spoteasy.com/data/rent-report/2026-04-week-4/">
   <meta property="og:title" content="Boston Rent Index — Week of May 8, 2026">
-  <meta property="og:description" content="Median asking rent by Boston neighborhood. Updated every Friday.">
+  <meta property="og:description" content="Median asking rent by Boston neighborhood. Updated every Tuesday.">
   <meta property="og:image" content="https://spoteasy.com/data/rent-report/2026-04-week-4/preview.png">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -293,7 +293,7 @@
     <!-- METHODOLOGY -->
     <details class="method">
       <summary>How we calculate this</summary>
-      <p>Each Friday morning we snapshot every active listing on Spot Easy and partner sources across Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden. We exclude drafts, listings removed by admins, and asking rents below $500 or above $20,000 (typical bad-data territory). We dedupe across sources by address + unit number, normalize bedroom counts into Studio/1/2/3/4+, and require at least 20 active listings in any cell before publishing it. The resulting median is the one shown.</p>
+      <p>Each Tuesday morning we snapshot every active listing on Spot Easy and partner sources across Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden. We exclude drafts, listings removed by admins, and asking rents below $500 or above $20,000 (typical bad-data territory). We dedupe across sources by address + unit number, normalize bedroom counts into Studio/1/2/3/4+, and require at least 20 active listings in any cell before publishing it. The resulting median is the one shown.</p>
       <p>This isn't a transaction price. It's the median <em>asking</em> rent for what's currently listed — same as Zillow's ZORI or Apartment List's index, but built specifically for Greater Boston using Spot Easy's verified-agent inventory. Want the raw data? <a data-bind-href="csv_url">Download the CSV</a>.</p>
       <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:press@spoteasy.com">press@spoteasy.com</a>.</p>
     </details>
@@ -309,7 +309,7 @@
   
 
   <!-- ============================================================
-       REPORT_DATA — replaced each Friday by the weekly script.
+       REPORT_DATA — replaced each Tuesday by the weekly script.
        For production, point to /data/rent-report/{date}/data.json
        and fetch it; this inline form is the simplest first pass.
   ============================================================ -->
@@ -348,7 +348,7 @@
   "bullets": [
     "Week-over-week data will appear after the first two runs."
   ],
-  "quote": "Renters tell us the same thing every spring: it's loud, it's fast, and it's confusing. Publishing the actual numbers each Friday is the least we can do — knowing what 'fair' looks like in your neighborhood changes how you negotiate.",
+  "quote": "Renters tell us the same thing every spring: it's loud, it's fast, and it's confusing. Publishing the actual numbers each Tuesday is the least we can do — knowing what 'fair' looks like in your neighborhood changes how you negotiate.",
   "neighborhoods": [
     {
       "neighborhood": "Allston",
