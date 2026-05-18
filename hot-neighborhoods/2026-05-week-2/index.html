@@ -32,7 +32,7 @@
       "name": "Spot Easy",
       "url": "https://spoteasy.com"
     },
-    "temporalCoverage": "2026-05-01/2026-05-14",
+    "temporalCoverage": "2026-05-01/2026-05-11",
     "spatialCoverage": {
       "@type": "Place",
       "name": "Greater Boston, Massachusetts"
@@ -47,7 +47,7 @@
     "distribution": [{
       "@type": "DataDownload",
       "encodingFormat": "text/csv",
-      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-2/rent-index-2026-05-14.csv"
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-2/rent-index-2026-05-11.csv"
     }],
     "license": "https://spoteasy.com/data/license/",
     "isAccessibleForFree": true
@@ -262,7 +262,7 @@
     <!-- METHODOLOGY -->
     <details class="method">
       <summary>How we calculate this</summary>
-      <p>Tour request volume from Spot Easy renters who completed a profile, expressed as week-over-week change. We exclude scraped/manual leads from the Working Pro / Student split because those leads do not have a job_status value. Neighborhoods with fewer than 20 tour requests this week are suppressed. We compare against the prior week's window.</p>
+      <p>Tour request volume from Spot Easy renters who completed a profile, expressed as week-over-week change. We exclude scraped/manual leads from the Working Pro / Student split because those leads do not have a job_status value. Neighborhoods with fewer than 20 tour requests this week are suppressed. We compare against the prior week’s window.</p>
       <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 
@@ -277,164 +277,140 @@
   
   <script>
   const REPORT_DATA = {
-  "week_ending": "2026-05-14",
-  "week_label": "May 12 - May 18, 2026",
-  "lede": "Financial District search volume +1250% week-over-week — the biggest move of any neighborhood tracked this week.",
+  "week_ending": "2026-05-11",
+  "week_label": "May 11, 2026",
+  "lede": "Bay Village search volume +733% week-over-week — the biggest move of any neighborhood tracked this week.",
   "tiles": [
     {
-      "label": "Financial District",
-      "value": "+1250%",
+      "label": "Bay Village",
+      "value": "+733%",
+      "delta_text": "WoW lead volume",
+      "delta_dir": "up"
+    },
+    {
+      "label": "Boston Downtown",
+      "value": "+567%",
+      "delta_text": "WoW lead volume",
+      "delta_dir": "up"
+    },
+    {
+      "label": "South End",
+      "value": "+417%",
       "delta_text": "WoW lead volume",
       "delta_dir": "up"
     },
     {
       "label": "Mid Cambridge",
-      "value": "+750%",
-      "delta_text": "WoW lead volume",
-      "delta_dir": "up"
-    },
-    {
-      "label": "Seaport District",
-      "value": "+700%",
-      "delta_text": "WoW lead volume",
-      "delta_dir": "up"
-    },
-    {
-      "label": "North End",
-      "value": "+667%",
+      "value": "+400%",
       "delta_text": "WoW lead volume",
       "delta_dir": "up"
     }
   ],
   "bullets": [
-    "<strong>Financial District +1250% WoW</strong> — 100% Working Pro / 0% Student this week.",
-    "<strong>Mid Cambridge +750% WoW</strong> — 100% Working Pro / 0% Student this week.",
-    "<strong>Seaport District +700% WoW</strong> — 100% Working Pro / 0% Student this week.",
-    "<strong>North End +667% WoW</strong> — 100% Working Pro / 0% Student this week."
+    "<strong>Bay Village +733% WoW</strong> — 100% Working Pro / 0% Student this week.",
+    "<strong>Boston Downtown +567% WoW</strong> — 100% Working Pro / 0% Student this week.",
+    "<strong>South End +417% WoW</strong> — 100% Working Pro / 0% Student this week.",
+    "<strong>Mid Cambridge +400% WoW</strong> — 100% Working Pro / 0% Student this week."
   ],
   "rows": [
     [
-      "<a href=\"https://spoteasy.com/financial-district-apartments\">Financial District</a>",
-      "+1250%",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/mid-cambridge-apartments\">Mid Cambridge</a>",
-      "+750%",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/seaport-district-apartments\">Seaport District</a>",
-      "+700%",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/north-end-apartments\">North End</a>",
-      "+667%",
-      "100%",
-      "0%"
-    ],
-    [
       "<a href=\"https://spoteasy.com/bay-village-apartments\">Bay Village</a>",
-      "+633%",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/south-end-apartments\">South End</a>",
-      "+300%",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/porter-square-apartments\">Porter Square</a>",
-      "+283%",
+      "+733%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/boston-downtown-apartments\">Boston Downtown</a>",
-      "+240%",
+      "+567%",
       "100%",
       "0%"
     ],
     [
-      "<a href=\"https://spoteasy.com/coolidge-corner-apartments\">Coolidge Corner</a>",
-      "+240%",
+      "<a href=\"https://spoteasy.com/south-end-apartments\">South End</a>",
+      "+417%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/mid-cambridge-apartments\">Mid Cambridge</a>",
+      "+400%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/porter-square-apartments\">Porter Square</a>",
+      "+317%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/inman-square-apartments\">Inman Square</a>",
-      "+183%",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/union-square-apartments\">Union Square</a>",
-      "+183%",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/back-bay-apartments\">Back Bay</a>",
-      "+162%",
-      "79%",
-      "21%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/theatre-district-apartments\">Theatre District</a>",
-      "+150%",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/cambridgeport-apartments\">Cambridgeport</a>",
-      "+143%",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/central-square-apartments\">Central Square</a>",
-      "+100%",
+      "+233%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/fenway-apartments\">Fenway</a>",
-      "+85%",
-      "71%",
-      "29%"
+      "+186%",
+      "100%",
+      "0%"
     ],
     [
-      "<a href=\"https://spoteasy.com/brighton-apartments\">Brighton</a>",
+      "<a href=\"https://spoteasy.com/union-square-apartments\">Union Square</a>",
+      "+122%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/back-bay-apartments\">Back Bay</a>",
+      "+119%",
+      "91%",
+      "9%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/cambridgeport-apartments\">Cambridgeport</a>",
+      "+82%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/central-square-apartments\">Central Square</a>",
+      "+67%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/coolidge-corner-apartments\">Coolidge Corner</a>",
+      "+53%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/south-boston-apartments\">South Boston</a>",
       "+50%",
-      "89%",
-      "11%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/davis-square-apartments\">Davis Square</a>",
-      "+40%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/beacon-hill-apartments\">Beacon Hill</a>",
-      "+20%",
+      "+22%",
       "100%",
       "0%"
     ],
     [
-      "<a href=\"https://spoteasy.com/charlestown-apartments\">Charlestown</a>",
+      "<a href=\"https://spoteasy.com/financial-district-apartments\">Financial District</a>",
       "—",
       "100%",
       "0%"
     ],
     [
-      "<a href=\"https://spoteasy.com/jamaica-plain-apartments\">Jamaica Plain</a>",
+      "<a href=\"https://spoteasy.com/north-end-apartments\">North End</a>",
+      "—",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/charlestown-apartments\">Charlestown</a>",
       "—",
       "100%",
       "0%"
@@ -446,19 +422,13 @@
       "0%"
     ],
     [
-      "<a href=\"https://spoteasy.com/north-cambridge-apartments\">North Cambridge</a>",
+      "<a href=\"https://spoteasy.com/jamaica-plain-apartments\">Jamaica Plain</a>",
       "—",
       "100%",
       "0%"
     ],
     [
-      "<a href=\"https://spoteasy.com/west-end-apartments\">West End</a>",
-      "—",
-      "100%",
-      "0%"
-    ],
-    [
-      "<a href=\"https://spoteasy.com/seaport-apartments\">Seaport</a>",
+      "<a href=\"https://spoteasy.com/seaport-district-apartments\">Seaport District</a>",
       "—",
       "100%",
       "0%"
@@ -470,7 +440,19 @@
       "0%"
     ],
     [
-      "<a href=\"https://spoteasy.com/brookline-village-apartments\">Brookline Village</a>",
+      "<a href=\"https://spoteasy.com/seaport-apartments\">Seaport</a>",
+      "—",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/west-end-apartments\">West End</a>",
+      "—",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/north-cambridge-apartments\">North Cambridge</a>",
       "—",
       "100%",
       "0%"
@@ -482,14 +464,32 @@
       "0%"
     ],
     [
-      "<a href=\"https://spoteasy.com/harvard-square-apartments\">Harvard Square</a>",
-      "-17%",
+      "<a href=\"https://spoteasy.com/east-somerville-apartments\">East Somerville</a>",
+      "—",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/theatre-district-apartments\">Theatre District</a>",
+      "—",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/davis-square-apartments\">Davis Square</a>",
+      "-25%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/east-cambridge-apartments\">East Cambridge</a>",
-      "-25%",
+      "-29%",
+      "100%",
+      "0%"
+    ],
+    [
+      "<a href=\"https://spoteasy.com/harvard-square-apartments\">Harvard Square</a>",
+      "-37%",
       "100%",
       "0%"
     ]
@@ -497,12 +497,12 @@
   "quote": "Boston rental demand isn't one story — it's two. Working professionals and students chase different neighborhoods, on different timelines. Publishing the split each week makes that visible.",
   "past_reports": [
     {
-      "label": "Data from May 5 - May 11, 2026",
-      "url": "/hot-neighborhoods/2026-05-week-1/"
+      "label": "Week of May 4, 2026",
+      "url": "/data/hot-neighborhoods/2026-05-week-1/"
     },
     {
-      "label": "Data from April 28 - May 4, 2026",
-      "url": "/hot-neighborhoods/2026-04-week-4/"
+      "label": "Week of April 27, 2026",
+      "url": "/data/hot-neighborhoods/2026-04-week-4/"
     }
   ]
 };
