@@ -221,7 +221,7 @@
   <main class="report-wrap">
 
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="https://data.spoteasy.com/">Spot Easy Data
+      <a href="https://data.spoteasy.com/">Spot Easy Data</a>
       <span class="breadcrumb-sep">›</span>
       <span>Top Boston Brokerages</span>
     </nav>
@@ -260,7 +260,7 @@
     <details class="method">
       <summary>How we calculate this</summary>
       <p>We count active listings per brokerage based on the listing agent’s company affiliation. Active means is_on_market = true and not removed by admin. "New this week" is listings whose marked_on_market_at falls in the report window. Brokerages with fewer than 15 active listings are suppressed.</p>
-      <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com.</p>
+      <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 
     <!-- PAST REPORTS -->
@@ -452,7 +452,7 @@
 
   // Past reports
   $('#past-list').innerHTML = (REPORT_DATA.past_reports || []).map(p =>
-    '<li><a href="' + p.url + '">' + p.label + '</li>').join('');
+    '<li><a href="' + p.url + '">' + p.label + '</a></li>').join('');
   </script>
 
 </body>
