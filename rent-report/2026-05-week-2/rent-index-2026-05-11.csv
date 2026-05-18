@@ -1,0 +1,108 @@
+week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
+2026-05-11,metro,Greater Boston,0,2308,1098,2100,2600
+2026-05-11,metro,Greater Boston,1,2750,2468,2400,3150
+2026-05-11,metro,Greater Boston,2,3275,2757,2875,3850
+2026-05-11,metro,Greater Boston,3,3980,1908,3495,4675
+2026-05-11,metro,Greater Boston,4+,5200,1600,4400,6295
+2026-05-11,neighborhood,Allston,0,2100,124,2000,2375
+2026-05-11,neighborhood,Allston,1,2400,229,2325,2980
+2026-05-11,neighborhood,Allston,2,3185,214,2800,3900
+2026-05-11,neighborhood,Allston,3,3750,171,3385,4073
+2026-05-11,neighborhood,Allston,4+,5200,223,4525,6050
+2026-05-11,neighborhood,Aspinwall Hill,2,3125,27,3025,3195
+2026-05-11,neighborhood,Back Bay,0,2550,118,2246,2850
+2026-05-11,neighborhood,Back Bay,1,3250,115,3000,3450
+2026-05-11,neighborhood,Back Bay,2,4500,51,3900,4898
+2026-05-11,neighborhood,Baldwin,2,3500,21,3350,3600
+2026-05-11,neighborhood,Beacon Hill,0,2400,80,2200,2556
+2026-05-11,neighborhood,Beacon Hill,1,2900,86,2681,3200
+2026-05-11,neighborhood,Beacon Hill,2,3630,79,3463,4000
+2026-05-11,neighborhood,Boston Downtown,0,2525,24,2438,2600
+2026-05-11,neighborhood,Boston Downtown,1,3075,25,2900,3399
+2026-05-11,neighborhood,Brighton,0,2075,162,1995,2200
+2026-05-11,neighborhood,Brighton,1,2400,442,2225,2600
+2026-05-11,neighborhood,Brighton,2,2950,442,2680,3300
+2026-05-11,neighborhood,Brighton,3,3625,350,3400,4000
+2026-05-11,neighborhood,Brighton,4+,4800,369,4295,6000
+2026-05-11,neighborhood,Brookline,1,2500,31,2200,2748
+2026-05-11,neighborhood,Brookline,2,3300,58,3146,3499
+2026-05-11,neighborhood,Brookline,3,4800,34,4100,4800
+2026-05-11,neighborhood,Brookline,4+,6300,29,5900,7700
+2026-05-11,neighborhood,Cambridgeport,2,3848,20,3469,4025
+2026-05-11,neighborhood,Cambridgeport,3,4275,28,4100,4500
+2026-05-11,neighborhood,Central Square,2,3950,37,3200,4330
+2026-05-11,neighborhood,Chestnut Hill,1,2995,39,2795,3175
+2026-05-11,neighborhood,Chestnut Hill,2,3710,38,3074,3988
+2026-05-11,neighborhood,Chestnut Hill,3,5695,21,4200,6715
+2026-05-11,neighborhood,Coolidge Corner,1,3100,80,2800,3500
+2026-05-11,neighborhood,Coolidge Corner,2,3850,52,3606,4050
+2026-05-11,neighborhood,Coolidge Corner,3,4500,30,4500,4875
+2026-05-11,neighborhood,Coolidge Corner,4+,6450,20,5000,6500
+2026-05-11,neighborhood,Corey Hill,1,2750,23,2250,3193
+2026-05-11,neighborhood,Corey Hill,2,3195,26,3158,3249
+2026-05-11,neighborhood,Dorchester,1,2505,27,2340,2998
+2026-05-11,neighborhood,Dorchester,2,2800,80,2600,3295
+2026-05-11,neighborhood,Dorchester,3,3350,128,3000,3600
+2026-05-11,neighborhood,Dorchester,4+,3825,81,3600,4200
+2026-05-11,neighborhood,East Boston,1,2388,32,2100,2663
+2026-05-11,neighborhood,East Boston,2,2850,112,2600,3000
+2026-05-11,neighborhood,East Boston,3,3200,26,2925,3400
+2026-05-11,neighborhood,East Boston,4+,3900,25,3700,4375
+2026-05-11,neighborhood,East Cambridge,1,3040,40,2815,3313
+2026-05-11,neighborhood,East Cambridge,2,3950,37,3545,4700
+2026-05-11,neighborhood,East Somerville,2,3273,26,2675,3875
+2026-05-11,neighborhood,Fenway,0,2395,206,2250,2500
+2026-05-11,neighborhood,Fenway,1,2800,282,2500,3100
+2026-05-11,neighborhood,Fenway,2,3700,193,3250,4150
+2026-05-11,neighborhood,Fenway,3,4925,90,4663,5500
+2026-05-11,neighborhood,Harvard Square,1,3200,34,3150,3375
+2026-05-11,neighborhood,Jamaica Plain,1,2500,32,2294,2650
+2026-05-11,neighborhood,Jamaica Plain,2,3200,41,2900,3500
+2026-05-11,neighborhood,Jamaica Plain,3,3550,51,3395,3800
+2026-05-11,neighborhood,Jamaica Plain,4+,4900,51,4450,5500
+2026-05-11,neighborhood,Longwood,0,2395,27,2070,2450
+2026-05-11,neighborhood,Longwood,1,3075,32,2795,3200
+2026-05-11,neighborhood,Medford,4+,4800,21,3900,5600
+2026-05-11,neighborhood,Mid-Cambridge,1,3100,38,2725,3288
+2026-05-11,neighborhood,Mid-Cambridge,2,3200,28,2988,3763
+2026-05-11,neighborhood,Mission Hill,0,2138,32,1950,2263
+2026-05-11,neighborhood,Mission Hill,1,2495,49,2300,2948
+2026-05-11,neighborhood,Mission Hill,2,3000,53,2800,3495
+2026-05-11,neighborhood,Mission Hill,3,4500,69,3900,4950
+2026-05-11,neighborhood,Mission Hill,4+,6350,138,5625,6950
+2026-05-11,neighborhood,Neighborhood Nine,1,2900,43,2700,3198
+2026-05-11,neighborhood,Neighborhood Nine,2,3940,23,3375,4225
+2026-05-11,neighborhood,North Brookline,0,2700,20,2300,2961
+2026-05-11,neighborhood,North Brookline,1,2823,38,2613,3381
+2026-05-11,neighborhood,North Brookline,2,3400,49,3100,3795
+2026-05-11,neighborhood,North Brookline,3,4950,46,4699,5088
+2026-05-11,neighborhood,North Brookline,4+,6495,57,6050,6700
+2026-05-11,neighborhood,North Cambridge,2,3575,30,3200,4452
+2026-05-11,neighborhood,North End,1,3100,32,2584,3563
+2026-05-11,neighborhood,North End,2,3495,45,3200,3800
+2026-05-11,neighborhood,North End,3,4770,22,3975,5055
+2026-05-11,neighborhood,Oak Square,3,3538,66,3263,3600
+2026-05-11,neighborhood,Oak Square,4+,4250,38,3950,5100
+2026-05-11,neighborhood,Riverside,1,3000,29,2800,3400
+2026-05-11,neighborhood,Riverside,2,3800,34,3500,4325
+2026-05-11,neighborhood,Roslindale,2,3150,28,2913,3238
+2026-05-11,neighborhood,Roxbury,1,2600,21,2250,3050
+2026-05-11,neighborhood,Roxbury,2,3800,94,2913,4100
+2026-05-11,neighborhood,Roxbury,3,4075,100,3600,5250
+2026-05-11,neighborhood,Roxbury,4+,5150,76,4088,6450
+2026-05-11,neighborhood,South Boston,1,3000,51,2748,3300
+2026-05-11,neighborhood,South Boston,2,3863,102,3500,4343
+2026-05-11,neighborhood,South Boston,3,5050,56,4494,5863
+2026-05-11,neighborhood,South End,0,2375,25,2300,2500
+2026-05-11,neighborhood,South End,1,3400,67,2925,3825
+2026-05-11,neighborhood,South End,2,4000,62,3525,4594
+2026-05-11,neighborhood,South End,3,4650,21,4400,5100
+2026-05-11,neighborhood,South Medford,4+,5850,25,4995,6000
+2026-05-11,neighborhood,Spring Hill,0,2250,23,2125,2500
+2026-05-11,neighborhood,Spring Hill,1,2700,31,2525,3113
+2026-05-11,neighborhood,Spring Hill,2,3500,29,2850,3675
+2026-05-11,neighborhood,Spring Hill,3,4150,39,3973,4600
+2026-05-11,neighborhood,Ward Two,2,3606,30,3106,4050
+2026-05-11,neighborhood,Ward Two,3,4200,30,3196,4475
+2026-05-11,neighborhood,West Cambridge,1,2900,20,2735,2925
+2026-05-11,neighborhood,Winter Hill,2,3100,20,2999,3478
