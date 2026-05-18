@@ -977,8 +977,8 @@ const PAGE_DATA = {
 
   /* ── Attribution ── */
   const metaEl = document.getElementById('hero-meta');
-  metaEl.textContent = d.as_of_date && d.sample_count
-    ? `Data as of ${d.as_of_date}  ·  ${d.sample_count.toLocaleString()} active listings`
+  metaEl.innerHTML = d.as_of_date && d.sample_count
+    ? `Data as of ${d.as_of_date}  ·  ${d.sample_count.toLocaleString()} <abbr title="Deduplicated listings across 10 Greater Boston cities used in this index. The public search covers a wider geography and counts each listing version separately." style="text-decoration:underline dotted;cursor:help;border-bottom:none">active listings</abbr>`
     : 'First report publishing Tuesday, May 16, 2026';
 
   /* ── Featured card ── */

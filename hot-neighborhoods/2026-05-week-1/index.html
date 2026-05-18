@@ -253,7 +253,7 @@
     <div class="table-wrap">
       <table id="data-table">
         <thead>
-          <tr><th>Neighborhood</th><th class="num" data-sort="1">Leads this week</th><th class="num">WoW change</th><th class="num">Working Pro %</th><th class="num">Student %</th></tr>
+          <tr><th>Neighborhood</th><th class="num" data-sort="1">WoW lead volume</th><th class="num">Working Pro %</th><th class="num">Student %</th></tr>
         </thead>
         <tbody></tbody>
       </table>
@@ -262,7 +262,7 @@
     <!-- METHODOLOGY -->
     <details class="method">
       <summary>How we calculate this</summary>
-      <p>Lead counts are organic leads from Spot Easy renters who completed a profile. We exclude scraped/manual leads from the Working Pro / Student split because those leads do not have a job_status value. Neighborhoods with fewer than 20 leads this week are suppressed. We compare against the prior Fri–Thu window.</p>
+      <p>Tour request volume from Spot Easy renters who completed a profile, expressed as week-over-week change. We exclude scraped/manual leads from the Working Pro / Student split because those leads do not have a job_status value. Neighborhoods with fewer than 20 tour requests this week are suppressed. We compare against the prior week's window.</p>
       <p class="dim" style="color:var(--muted); font-size: 13px;">Questions or want a custom data pull for a story? Email <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 
@@ -315,210 +315,180 @@
   "rows": [
     [
       "<a href=\"https://spoteasy.com/financial-district-apartments\">Financial District</a>",
-      27,
       "+1250%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/mid-cambridge-apartments\">Mid Cambridge</a>",
-      17,
       "+750%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/seaport-district-apartments\">Seaport District</a>",
-      16,
       "+700%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/north-end-apartments\">North End</a>",
-      23,
       "+667%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/bay-village-apartments\">Bay Village</a>",
-      22,
       "+633%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/south-end-apartments\">South End</a>",
-      28,
       "+300%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/porter-square-apartments\">Porter Square</a>",
-      23,
       "+283%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/boston-downtown-apartments\">Boston Downtown</a>",
-      17,
       "+240%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/coolidge-corner-apartments\">Coolidge Corner</a>",
-      17,
       "+240%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/inman-square-apartments\">Inman Square</a>",
-      17,
       "+183%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/union-square-apartments\">Union Square</a>",
-      17,
       "+183%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/back-bay-apartments\">Back Bay</a>",
-      34,
       "+162%",
       "79%",
       "21%"
     ],
     [
       "<a href=\"https://spoteasy.com/theatre-district-apartments\">Theatre District</a>",
-      5,
       "+150%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/cambridgeport-apartments\">Cambridgeport</a>",
-      17,
       "+143%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/central-square-apartments\">Central Square</a>",
-      6,
       "+100%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/fenway-apartments\">Fenway</a>",
-      24,
       "+85%",
       "71%",
       "29%"
     ],
     [
       "<a href=\"https://spoteasy.com/brighton-apartments\">Brighton</a>",
-      9,
       "+50%",
       "89%",
       "11%"
     ],
     [
       "<a href=\"https://spoteasy.com/davis-square-apartments\">Davis Square</a>",
-      7,
       "+40%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/beacon-hill-apartments\">Beacon Hill</a>",
-      30,
       "+20%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/charlestown-apartments\">Charlestown</a>",
-      22,
       "—",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/jamaica-plain-apartments\">Jamaica Plain</a>",
-      17,
       "—",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/midtown-apartments\">Midtown</a>",
-      17,
       "—",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/north-cambridge-apartments\">North Cambridge</a>",
-      16,
       "—",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/west-end-apartments\">West End</a>",
-      16,
       "—",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/seaport-apartments\">Seaport</a>",
-      16,
       "—",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/prospect-hill-apartments\">Prospect Hill</a>",
-      16,
       "—",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/brookline-village-apartments\">Brookline Village</a>",
-      8,
       "—",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/assembly-square-apartments\">Assembly Square</a>",
-      5,
       "—",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/harvard-square-apartments\">Harvard Square</a>",
-      5,
       "-17%",
       "100%",
       "0%"
     ],
     [
       "<a href=\"https://spoteasy.com/east-cambridge-apartments\">East Cambridge</a>",
-      6,
       "-25%",
       "100%",
       "0%"
