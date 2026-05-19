@@ -32,7 +32,7 @@
       "name": "Spot Easy",
       "url": "https://spoteasy.com"
     },
-    "temporalCoverage": "2026-05-01/2026-05-11",
+    "temporalCoverage": "2026-05-01/2026-05-12",
     "spatialCoverage": {
       "@type": "Place",
       "name": "Greater Boston, Massachusetts"
@@ -47,7 +47,7 @@
     "distribution": [{
       "@type": "DataDownload",
       "encodingFormat": "text/csv",
-      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-2/rent-index-2026-05-11.csv"
+      "contentUrl": "https://spoteasy.com/data/rent-report/2026-05-week-2/rent-index-2026-05-12.csv"
     }],
     "license": "https://spoteasy.com/data/license/",
     "isAccessibleForFree": true
@@ -315,53 +315,50 @@
   ============================================================ -->
   <script>
   const REPORT_DATA = {
-  "week_ending": "2026-05-11",
-  "week_label": "May 11, 2026",
-  "csv_url": "/data/rent-report/2026-05-week-2/rent-index-2026-05-11.csv",
-  "lede": "Median asking rent across Greater Boston this week was $2,750 for a 1-bedroom — unchanged from last week.",
+  "week_ending": "2026-05-12",
+  "week_label": "May 12 - May 18, 2026",
+  "csv_url": "/data/rent-report/2026-05-week-2/rent-index-2026-05-12.csv",
+  "lede": "Median asking rent across Greater Boston this week was $2,728 for a 1-bedroom — unchanged from last week.",
   "headline": [
     {
       "beds": "Studio",
-      "median": 2308,
-      "wow": -10,
+      "median": 2300,
+      "wow": 0,
       "yoy": 0
     },
     {
       "beds": "1BR",
-      "median": 2750,
+      "median": 2728,
       "wow": 0,
       "yoy": 0
     },
     {
       "beds": "2BR",
-      "median": 3275,
-      "wow": -25,
+      "median": 3250,
+      "wow": 0,
       "yoy": 0
     },
     {
       "beds": "3BR",
-      "median": 3980,
-      "wow": -15,
+      "median": 3975,
+      "wow": 0,
       "yoy": 0
     }
   ],
   "bullets": [
-    "<strong>Chestnut Hill 1BR median down $58 WoW</strong> — $2,995 this week.",
-    "<strong>Back Bay 1BR median down $50 WoW</strong> — $3,250 this week.",
-    "<strong>South End 1BR median up $50 WoW</strong> — $3,400 this week.",
-    "<strong>Corey Hill 1BR median down $49 WoW</strong> — $2,750 this week."
+    "Week-over-week data will appear after the first two runs."
   ],
-  "quote": "Renters tell us the same thing every spring: it's loud, it's fast, and it's confusing. Publishing the actual numbers each Friday is the least we can do — knowing what 'fair' looks like in your neighborhood changes how you negotiate.",
+  "quote": "Renters tell us the same thing every spring: it's loud, it's fast, and it's confusing. Publishing the actual numbers each Tuesday is the least we can do — knowing what 'fair' looks like in your neighborhood changes how you negotiate.",
   "neighborhoods": [
     {
       "neighborhood": "Allston",
       "slug": "allston",
-      "studio": 2100,
+      "studio": 2095,
       "b1": 2400,
       "b2": 3185,
       "b3": 3750,
       "b4": 5200,
-      "n": 229
+      "n": 231
     },
     {
       "neighborhood": "Aspinwall Hill",
@@ -397,11 +394,11 @@
       "neighborhood": "Beacon Hill",
       "slug": "beacon-hill",
       "studio": 2400,
-      "b1": 2900,
-      "b2": 3630,
+      "b1": 2925,
+      "b2": 3640,
       "b3": null,
       "b4": null,
-      "n": 86
+      "n": 84
     },
     {
       "neighborhood": "Boston Downtown",
@@ -419,9 +416,9 @@
       "studio": 2075,
       "b1": 2400,
       "b2": 2950,
-      "b3": 3625,
+      "b3": 3600,
       "b4": 4800,
-      "n": 442
+      "n": 445
     },
     {
       "neighborhood": "Brookline",
@@ -438,7 +435,7 @@
       "slug": "cambridgeport",
       "studio": null,
       "b1": null,
-      "b2": 3848,
+      "b2": null,
       "b3": 4275,
       "b4": null,
       "n": 28
@@ -470,8 +467,8 @@
       "b1": 3100,
       "b2": 3850,
       "b3": 4500,
-      "b4": 6450,
-      "n": 80
+      "b4": 6400,
+      "n": 79
     },
     {
       "neighborhood": "Corey Hill",
@@ -497,7 +494,7 @@
       "neighborhood": "East Boston",
       "slug": "east-boston",
       "studio": null,
-      "b1": 2388,
+      "b1": 2400,
       "b2": 2850,
       "b3": 3200,
       "b4": 3900,
@@ -529,9 +526,9 @@
       "studio": 2395,
       "b1": 2800,
       "b2": 3700,
-      "b3": 4925,
+      "b3": 4995,
       "b4": null,
-      "n": 282
+      "n": 278
     },
     {
       "neighborhood": "Harvard Square",
@@ -581,17 +578,17 @@
       "b2": 3200,
       "b3": null,
       "b4": null,
-      "n": 38
+      "n": 37
     },
     {
       "neighborhood": "Mission Hill",
       "slug": "mission-hill",
-      "studio": 2138,
-      "b1": 2495,
+      "studio": 2125,
+      "b1": 2498,
       "b2": 3000,
       "b3": 4500,
-      "b4": 6350,
-      "n": 138
+      "b4": 6298,
+      "n": 140
     },
     {
       "neighborhood": "Neighborhood Nine",
@@ -608,7 +605,7 @@
       "slug": "north-brookline",
       "studio": 2700,
       "b1": 2823,
-      "b2": 3400,
+      "b2": 3398,
       "b3": 4950,
       "b4": 6495,
       "n": 57
@@ -618,10 +615,10 @@
       "slug": "north-cambridge",
       "studio": null,
       "b1": null,
-      "b2": 3575,
+      "b2": 3650,
       "b3": null,
       "b4": null,
-      "n": 30
+      "n": 29
     },
     {
       "neighborhood": "North End",
@@ -631,7 +628,7 @@
       "b2": 3495,
       "b3": 4770,
       "b4": null,
-      "n": 45
+      "n": 44
     },
     {
       "neighborhood": "Oak Square",
@@ -640,7 +637,7 @@
       "b1": null,
       "b2": null,
       "b3": 3538,
-      "b4": 4250,
+      "b4": 4300,
       "n": 66
     },
     {
@@ -679,14 +676,14 @@
       "studio": null,
       "b1": 3000,
       "b2": 3863,
-      "b3": 5050,
+      "b3": 5100,
       "b4": null,
       "n": 102
     },
     {
       "neighborhood": "South End",
       "slug": "south-end",
-      "studio": 2375,
+      "studio": 2378,
       "b1": 3400,
       "b2": 4000,
       "b3": 4650,
@@ -710,7 +707,7 @@
       "b1": 2700,
       "b2": 3500,
       "b3": 4150,
-      "b4": null,
+      "b4": 4800,
       "n": 39
     },
     {
@@ -718,7 +715,7 @@
       "slug": "ward-two",
       "studio": null,
       "b1": null,
-      "b2": 3606,
+      "b2": 3700,
       "b3": 4200,
       "b4": null,
       "n": 30
@@ -741,13 +738,13 @@
       "b2": 3100,
       "b3": null,
       "b4": null,
-      "n": 20
+      "n": 21
     }
   ],
   "by_building_type": [
     {
       "building_type": "Apartment",
-      "studio": 2295,
+      "studio": 2290,
       "b1": 2700,
       "b2": 3200,
       "b3": 4000,
@@ -756,9 +753,9 @@
     {
       "building_type": "Brownstone",
       "studio": 2395,
-      "b1": 2798,
-      "b2": 3625,
-      "b3": 4600,
+      "b1": 2795,
+      "b2": 3650,
+      "b3": 4638,
       "b4": 6200
     },
     {
@@ -767,7 +764,7 @@
       "b1": 2900,
       "b2": 3500,
       "b3": 4100,
-      "b4": 5600
+      "b4": 5550
     },
     {
       "building_type": "Highrise",
@@ -790,8 +787,8 @@
       "studio": null,
       "b1": null,
       "b2": null,
-      "b3": 4250,
-      "b4": 6600
+      "b3": 4275,
+      "b4": 6550
     },
     {
       "building_type": "Townhouse",
@@ -805,19 +802,19 @@
       "building_type": "Unspecified",
       "studio": 2450,
       "b1": 2650,
-      "b2": 3370,
+      "b2": 3365,
       "b3": 3900,
       "b4": 5200
     }
   ],
   "past_reports": [
     {
-      "label": "Week of May 4, 2026",
-      "url": "/data/rent-report/2026-05-week-1/"
+      "label": "Data from May 5 - May 11, 2026",
+      "url": "/rent-report/2026-05-week-1/"
     },
     {
-      "label": "Week of April 27, 2026",
-      "url": "/data/rent-report/2026-04-week-4/"
+      "label": "Data from April 28 - May 4, 2026",
+      "url": "/rent-report/2026-04-week-4/"
     }
   ]
 };
