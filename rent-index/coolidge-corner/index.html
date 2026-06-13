@@ -78,7 +78,7 @@
       "name": "How much is rent in Coolidge Corner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of June 2 - June 8, 2026, the median asking rent in Coolidge Corner is $3,100 for a one-bedroom and $3,800 for a two-bedroom. For other sizes: studios around $2,900, three-bedrooms $4,700, four-plus-bedrooms $6,075."
+        "text": "As of June 2 - June 8, 2026, the median asking rent in Coolidge Corner is $3,100 for a one-bedroom and $3,800 for a two-bedroom. For other sizes: studios around $2,900, three-bedrooms $4,650, four-plus-bedrooms $6,075."
       }
     },
     {
@@ -128,8 +128,9 @@
     .lede{color:var(--navy);font-size:19px;line-height:1.55;max-width:680px;margin-bottom:28px;}
     h2{color:var(--navy);font-size:22px;margin:36px 0 12px;}
     p,li{color:var(--ink);}
-    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;}
-    table{width:100%;border-collapse:collapse;font-size:15px;}
+    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;display:inline-block;max-width:100%;vertical-align:top;}
+    table{width:auto;border-collapse:collapse;font-size:15px;}
+    thead th{white-space:nowrap;}
     thead th{background:var(--navy);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;letter-spacing:.03em;}
     thead th.num{text-align:right;}
     tbody td{padding:11px 14px;border-top:1px solid var(--rule);}
@@ -180,10 +181,10 @@
           <tr><th>Apartment size</th><th class="num">Median rent</th><th class="num">Typical range (25th–75th)</th></tr>
         </thead>
         <tbody>
-          <tr><td>Studio</td><td class="num">$2,900</td><td class="num dim">$2,423 – $3,033</td></tr>
+          <tr><td>Studio</td><td class="num">$2,900</td><td class="num dim">$2,371 – $3,024</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$3,100</td><td class="num dim">$2,769 – $3,425</td></tr>
           <tr><td>2 Bedroom</td><td class="num">$3,800</td><td class="num dim">$3,500 – $4,200</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$4,700</td><td class="num dim">$4,500 – $5,068</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$4,650</td><td class="num dim">$4,500 – $5,026</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$6,075</td><td class="num dim">$5,000 – $6,500</td></tr>
         </tbody>
       </table>
@@ -195,10 +196,10 @@
       <table>
         <thead><tr><th>Apartment size</th><th class="num">Coolidge Corner</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
-          <tr><td>Studio</td><td class="num">$2,900</td><td class="num dim">$2,308</td><td class="num">+$592</td></tr>
+          <tr><td>Studio</td><td class="num">$2,900</td><td class="num dim">$2,303</td><td class="num">+$597</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$3,100</td><td class="num dim">$2,750</td><td class="num">+$350</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,800</td><td class="num dim">$3,345</td><td class="num">+$455</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$4,700</td><td class="num dim">$3,975</td><td class="num">+$725</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,800</td><td class="num dim">$3,325</td><td class="num">+$475</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$4,650</td><td class="num dim">$3,975</td><td class="num">+$675</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$6,075</td><td class="num dim">$5,200</td><td class="num">+$875</td></tr>
         </tbody>
       </table>
@@ -224,7 +225,7 @@
     
     <h2>Coolidge Corner rent — frequently asked questions</h2>
     <h3>How much is rent in Coolidge Corner?</h3>
-    <p>As of June 2 - June 8, 2026, the median asking rent in Coolidge Corner is $3,100 for a one-bedroom and $3,800 for a two-bedroom. For other sizes: studios around $2,900, three-bedrooms $4,700, four-plus-bedrooms $6,075.</p>
+    <p>As of June 2 - June 8, 2026, the median asking rent in Coolidge Corner is $3,100 for a one-bedroom and $3,800 for a two-bedroom. For other sizes: studios around $2,900, three-bedrooms $4,650, four-plus-bedrooms $6,075.</p>
     <h3>How much is a 1-bedroom in Coolidge Corner?</h3>
     <p>The median is $3,100, with most 1-bedroom listings falling between $2,769 and $3,425.</p>
     <h3>Is it cheaper to rent a studio or split a 2-bedroom in Coolidge Corner?</h3>
@@ -237,7 +238,7 @@
     <details class="method">
       <summary>How we calculate this</summary>
       <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-      <p class="n-line">Sample sizes this week (N): Studio 27 · 1BR 100 · 2BR 85 · 3BR 47 · 4+BR 40.</p>
+      <p class="n-line">Sample sizes this week (N): Studio 28 · 1BR 100 · 2BR 85 · 3BR 46 · 4+BR 40.</p>
       <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 

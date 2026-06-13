@@ -689,8 +689,8 @@ const PAGE_DATA = {
   "tiles": [
     {
       "label": "Studio",
-      "value": 2308,
-      "delta": 12,
+      "value": 2303,
+      "delta": 17,
       "dir": "down"
     },
     {
@@ -701,8 +701,8 @@ const PAGE_DATA = {
     },
     {
       "label": "2 BR",
-      "value": 3345,
-      "delta": 50,
+      "value": 3325,
+      "delta": 30,
       "dir": "up"
     },
     {
@@ -714,14 +714,14 @@ const PAGE_DATA = {
   ],
   "teasers": {
     "rent_index": {
-      "stat": "$3,345",
+      "stat": "$3,325",
       "label": "2BR median · Greater Boston",
-      "delta": "+$50 vs. last week"
+      "delta": "+$30 vs. last week"
     },
     "sept1": {
       "stat": "91",
       "label": "days until Sept 1",
-      "delta": "3,321 units already listed"
+      "delta": "3,317 units already listed"
     }
   }
 };
@@ -884,7 +884,7 @@ const PAGE_DATA = {
     const dir = t.dir || 'flat';
     const arrow = dir === 'up' ? '↑' : dir === 'down' ? '↓' : '';
     const deltaText = t.delta != null
-      ? `${arrow}${Math.abs(t.delta)}% WoW`
+      ? `${arrow}$${Math.abs(t.delta)} WoW`
       : '— WoW';
     strip.innerHTML += `
       <div class="stat-cell">

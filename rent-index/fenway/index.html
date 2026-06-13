@@ -86,7 +86,7 @@
       "name": "How much is a 1-bedroom in Fenway?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The median is $2,825, with most 1-bedroom listings falling between $2,511 and $3,100."
+        "text": "The median is $2,825, with most 1-bedroom listings falling between $2,515 and $3,100."
       }
     },
     {
@@ -128,8 +128,9 @@
     .lede{color:var(--navy);font-size:19px;line-height:1.55;max-width:680px;margin-bottom:28px;}
     h2{color:var(--navy);font-size:22px;margin:36px 0 12px;}
     p,li{color:var(--ink);}
-    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;}
-    table{width:100%;border-collapse:collapse;font-size:15px;}
+    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;display:inline-block;max-width:100%;vertical-align:top;}
+    table{width:auto;border-collapse:collapse;font-size:15px;}
+    thead th{white-space:nowrap;}
     thead th{background:var(--navy);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;letter-spacing:.03em;}
     thead th.num{text-align:right;}
     tbody td{padding:11px 14px;border-top:1px solid var(--rule);}
@@ -181,7 +182,7 @@
         </thead>
         <tbody>
           <tr><td>Studio</td><td class="num">$2,400</td><td class="num dim">$2,250 – $2,500</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$2,825</td><td class="num dim">$2,511 – $3,100</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$2,825</td><td class="num dim">$2,515 – $3,100</td></tr>
           <tr><td>2 Bedroom</td><td class="num">$3,700</td><td class="num dim">$3,300 – $4,095</td></tr>
           <tr><td>3 Bedroom</td><td class="num">$4,995</td><td class="num dim">$4,650 – $5,519</td></tr>
         </tbody>
@@ -194,14 +195,14 @@
       <table>
         <thead><tr><th>Apartment size</th><th class="num">Fenway</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
-          <tr><td>Studio</td><td class="num">$2,400</td><td class="num dim">$2,308</td><td class="num">+$92</td></tr>
+          <tr><td>Studio</td><td class="num">$2,400</td><td class="num dim">$2,303</td><td class="num">+$97</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$2,825</td><td class="num dim">$2,750</td><td class="num">+$75</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,700</td><td class="num dim">$3,345</td><td class="num">+$355</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,700</td><td class="num dim">$3,325</td><td class="num">+$375</td></tr>
           <tr><td>3 Bedroom</td><td class="num">$4,995</td><td class="num dim">$3,975</td><td class="num">+$1,020</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Half of 1-bedroom listings in Fenway fall between <strong>$2,511</strong> and <strong>$3,100</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
+    <p>Half of 1-bedroom listings in Fenway fall between <strong>$2,515</strong> and <strong>$3,100</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
     
     <div class="module">
       <h2>Studio vs. roommate in Fenway</h2>
@@ -224,7 +225,7 @@
     <h3>How much is rent in Fenway?</h3>
     <p>As of June 2 - June 8, 2026, the median asking rent in Fenway is $2,825 for a one-bedroom and $3,700 for a two-bedroom. For other sizes: studios around $2,400, three-bedrooms $4,995.</p>
     <h3>How much is a 1-bedroom in Fenway?</h3>
-    <p>The median is $2,825, with most 1-bedroom listings falling between $2,511 and $3,100.</p>
+    <p>The median is $2,825, with most 1-bedroom listings falling between $2,515 and $3,100.</p>
     <h3>Is it cheaper to rent a studio or split a 2-bedroom in Fenway?</h3>
     <p>Splitting a two-bedroom costs about $1,850 per person — roughly $550 a month less than renting a studio solo ($2,400).</p>
     <h3>How does Fenway compare to the Boston average?</h3>
@@ -235,7 +236,7 @@
     <details class="method">
       <summary>How we calculate this</summary>
       <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-      <p class="n-line">Sample sizes this week (N): Studio 201 · 1BR 296 · 2BR 200 · 3BR 89.</p>
+      <p class="n-line">Sample sizes this week (N): Studio 200 · 1BR 297 · 2BR 200 · 3BR 89.</p>
       <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 

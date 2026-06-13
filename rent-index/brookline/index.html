@@ -120,8 +120,9 @@
     .lede{color:var(--navy);font-size:19px;line-height:1.55;max-width:680px;margin-bottom:28px;}
     h2{color:var(--navy);font-size:22px;margin:36px 0 12px;}
     p,li{color:var(--ink);}
-    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;}
-    table{width:100%;border-collapse:collapse;font-size:15px;}
+    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;display:inline-block;max-width:100%;vertical-align:top;}
+    table{width:auto;border-collapse:collapse;font-size:15px;}
+    thead th{white-space:nowrap;}
     thead th{background:var(--navy);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;letter-spacing:.03em;}
     thead th.num{text-align:right;}
     tbody td{padding:11px 14px;border-top:1px solid var(--rule);}
@@ -187,7 +188,7 @@
         <thead><tr><th>Apartment size</th><th class="num">Brookline</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
           <tr><td>1 Bedroom</td><td class="num">$2,500</td><td class="num dim">$2,750</td><td class="num">−$250</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,345</td><td class="num dim">$3,345</td><td class="num">even</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,345</td><td class="num dim">$3,325</td><td class="num">+$20</td></tr>
           <tr><td>3 Bedroom</td><td class="num">$4,800</td><td class="num dim">$3,975</td><td class="num">+$825</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$5,998</td><td class="num dim">$5,200</td><td class="num">+$798</td></tr>
         </tbody>

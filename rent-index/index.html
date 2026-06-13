@@ -199,8 +199,9 @@
     .lede{color:var(--navy);font-size:19px;line-height:1.55;max-width:680px;margin-bottom:28px;}
     h2{color:var(--navy);font-size:22px;margin:36px 0 12px;}
     p,li{color:var(--ink);}
-    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;}
-    table{width:100%;border-collapse:collapse;font-size:15px;}
+    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;display:inline-block;max-width:100%;vertical-align:top;}
+    table{width:auto;border-collapse:collapse;font-size:15px;}
+    thead th{white-space:nowrap;}
     thead th{background:var(--navy);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;letter-spacing:.03em;}
     thead th.num{text-align:right;}
     tbody td{padding:11px 14px;border-top:1px solid var(--rule);}
@@ -249,10 +250,10 @@
           <tr><th>Apartment size</th><th class="num">Median rent</th><th class="num">Typical range (25th–75th)</th></tr>
         </thead>
         <tbody>
-          <tr><td>Studio</td><td class="num">$2,308</td><td class="num dim">$2,100 – $2,600</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$2,750</td><td class="num dim">$2,400 – $3,195</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,345</td><td class="num dim">$2,900 – $3,900</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$3,975</td><td class="num dim">$3,495 – $4,713</td></tr>
+          <tr><td>Studio</td><td class="num">$2,303</td><td class="num dim">$2,100 – $2,600</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$2,750</td><td class="num dim">$2,400 – $3,194</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,325</td><td class="num dim">$2,900 – $3,900</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$3,975</td><td class="num dim">$3,495 – $4,700</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$5,200</td><td class="num dim">$4,400 – $6,295</td></tr>
         </tbody>
       </table>
@@ -268,11 +269,11 @@
         <tbody>
           <tr><td>Apartment</td><td class="num">$2,295</td><td class="num">$2,700</td><td class="num">$3,245</td><td class="num">$3,950</td><td class="num">$4,895</td></tr>
           <tr><td>Multi-Family</td><td class="num">—</td><td class="num">$2,625</td><td class="num">$3,000</td><td class="num">$3,600</td><td class="num">$5,200</td></tr>
-          <tr><td>Condo</td><td class="num">$2,500</td><td class="num">$3,000</td><td class="num">$3,673</td><td class="num">$4,200</td><td class="num">$5,398</td></tr>
-          <tr><td>Brownstone</td><td class="num">$2,350</td><td class="num">$2,850</td><td class="num">$3,625</td><td class="num">$4,738</td><td class="num">$6,100</td></tr>
+          <tr><td>Condo</td><td class="num">$2,500</td><td class="num">$3,000</td><td class="num">$3,695</td><td class="num">$4,200</td><td class="num">$5,398</td></tr>
+          <tr><td>Brownstone</td><td class="num">$2,350</td><td class="num">$2,850</td><td class="num">$3,625</td><td class="num">$4,725</td><td class="num">$6,100</td></tr>
           <tr><td>Single-Family</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">$4,500</td><td class="num">$6,500</td></tr>
           <tr><td>Townhouse</td><td class="num">—</td><td class="num">—</td><td class="num">$3,400</td><td class="num">$3,600</td><td class="num">$5,500</td></tr>
-          <tr><td>Unspecified</td><td class="num">$2,450</td><td class="num">$2,640</td><td class="num">$3,323</td><td class="num">$3,898</td><td class="num">$5,300</td></tr>
+          <tr><td>Unspecified</td><td class="num">$2,450</td><td class="num">$2,633</td><td class="num">$3,325</td><td class="num">$3,900</td><td class="num">$5,300</td></tr>
         </tbody>
       </table>
     </div>

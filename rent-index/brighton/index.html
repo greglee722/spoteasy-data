@@ -128,8 +128,9 @@
     .lede{color:var(--navy);font-size:19px;line-height:1.55;max-width:680px;margin-bottom:28px;}
     h2{color:var(--navy);font-size:22px;margin:36px 0 12px;}
     p,li{color:var(--ink);}
-    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;}
-    table{width:100%;border-collapse:collapse;font-size:15px;}
+    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;display:inline-block;max-width:100%;vertical-align:top;}
+    table{width:auto;border-collapse:collapse;font-size:15px;}
+    thead th{white-space:nowrap;}
     thead th{background:var(--navy);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;letter-spacing:.03em;}
     thead th.num{text-align:right;}
     tbody td{padding:11px 14px;border-top:1px solid var(--rule);}
@@ -195,9 +196,9 @@
       <table>
         <thead><tr><th>Apartment size</th><th class="num">Brighton</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
-          <tr><td>Studio</td><td class="num">$2,095</td><td class="num dim">$2,308</td><td class="num">−$213</td></tr>
+          <tr><td>Studio</td><td class="num">$2,095</td><td class="num dim">$2,303</td><td class="num">−$208</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$2,400</td><td class="num dim">$2,750</td><td class="num">−$350</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$2,950</td><td class="num dim">$3,345</td><td class="num">−$395</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$2,950</td><td class="num dim">$3,325</td><td class="num">−$375</td></tr>
           <tr><td>3 Bedroom</td><td class="num">$3,660</td><td class="num dim">$3,975</td><td class="num">−$315</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$4,800</td><td class="num dim">$5,200</td><td class="num">−$400</td></tr>
         </tbody>
@@ -237,7 +238,7 @@
     <details class="method">
       <summary>How we calculate this</summary>
       <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-      <p class="n-line">Sample sizes this week (N): Studio 178 · 1BR 473 · 2BR 450 · 3BR 365 · 4+BR 402.</p>
+      <p class="n-line">Sample sizes this week (N): Studio 178 · 1BR 474 · 2BR 451 · 3BR 365 · 4+BR 402.</p>
       <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 

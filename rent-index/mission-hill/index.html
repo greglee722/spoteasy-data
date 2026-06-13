@@ -128,8 +128,9 @@
     .lede{color:var(--navy);font-size:19px;line-height:1.55;max-width:680px;margin-bottom:28px;}
     h2{color:var(--navy);font-size:22px;margin:36px 0 12px;}
     p,li{color:var(--ink);}
-    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;}
-    table{width:100%;border-collapse:collapse;font-size:15px;}
+    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;display:inline-block;max-width:100%;vertical-align:top;}
+    table{width:auto;border-collapse:collapse;font-size:15px;}
+    thead th{white-space:nowrap;}
     thead th{background:var(--navy);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;letter-spacing:.03em;}
     thead th.num{text-align:right;}
     tbody td{padding:11px 14px;border-top:1px solid var(--rule);}
@@ -183,7 +184,7 @@
           <tr><td>Studio</td><td class="num">$2,200</td><td class="num dim">$1,950 – $2,300</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$2,450</td><td class="num dim">$2,371 – $2,875</td></tr>
           <tr><td>2 Bedroom</td><td class="num">$3,000</td><td class="num dim">$2,800 – $3,499</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$4,425</td><td class="num dim">$4,000 – $4,987</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$4,425</td><td class="num dim">$3,950 – $4,975</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$6,300</td><td class="num dim">$5,363 – $6,950</td></tr>
         </tbody>
       </table>
@@ -195,9 +196,9 @@
       <table>
         <thead><tr><th>Apartment size</th><th class="num">Mission Hill</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
-          <tr><td>Studio</td><td class="num">$2,200</td><td class="num dim">$2,308</td><td class="num">−$108</td></tr>
+          <tr><td>Studio</td><td class="num">$2,200</td><td class="num dim">$2,303</td><td class="num">−$103</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$2,450</td><td class="num dim">$2,750</td><td class="num">−$300</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,000</td><td class="num dim">$3,345</td><td class="num">−$345</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,000</td><td class="num dim">$3,325</td><td class="num">−$325</td></tr>
           <tr><td>3 Bedroom</td><td class="num">$4,425</td><td class="num dim">$3,975</td><td class="num">+$450</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$6,300</td><td class="num dim">$5,200</td><td class="num">+$1,100</td></tr>
         </tbody>
@@ -237,7 +238,7 @@
     <details class="method">
       <summary>How we calculate this</summary>
       <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-      <p class="n-line">Sample sizes this week (N): Studio 28 · 1BR 48 · 2BR 54 · 3BR 58 · 4+BR 138.</p>
+      <p class="n-line">Sample sizes this week (N): Studio 28 · 1BR 48 · 2BR 54 · 3BR 59 · 4+BR 138.</p>
       <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 
