@@ -18,6 +18,7 @@
   "name": "Average Rent in Mission Hill, Boston (2026)",
   "description": "Median asking rent for active rental listings in Mission Hill, broken down by bedroom count, with 25th–75th percentile ranges and sample sizes. Updated weekly by Spot Easy.",
   "url": "https://spoteasy.com/data/rent-index/mission-hill/",
+  "dateModified": "2026-06-02",
   "creator": {
     "@type": "Organization",
     "name": "Spot Easy",
@@ -155,6 +156,9 @@
     .dir-list{list-style:none;padding:0;margin:0;columns:2;column-gap:32px;}
     .dir-list li{margin-bottom:6px;}
     .note{color:var(--muted);font-size:14px;}
+    .updated{color:var(--muted);font-size:13px;margin:-14px 0 26px;}
+    .updated b{color:var(--good);font-weight:700;}
+    .spark{display:block;margin:6px 0 12px;}
     .nearby{margin:18px 0;color:var(--muted);font-size:15px;}
     .nearby a{color:var(--navy);font-weight:600;}
     @media(max-width:720px){
@@ -178,6 +182,7 @@
     <div class="kicker">Boston Rent Index</div>
     <h1>Average Rent in Mission Hill (2026)</h1>
     <p class="lede">The median asking rent for a 1-bedroom in Mission Hill is <strong>$2,450</strong> as of June 2 - June 8, 2026, based on verified active listings across Spot Easy — $300 less than the Greater Boston median of $2,750.</p>
+    <p class="updated">↻ <b>Updated weekly</b> · data as of June 2 - June 8, 2026</p>
 
     <div class="trend"><strong>$2,450</strong> — 1-bedroom median · −$48 vs. last week.</div>
 
@@ -197,6 +202,20 @@
       </table>
     </div>
     <p class="note">Typical range = where the middle 50% of listings fall — a quarter rent for less, a quarter for more.</p>
+    
+    <h2>Mission Hill rent over time</h2>
+    <p>How the 1-bedroom median has moved, month over month — refreshed weekly.</p>
+    <svg class="spark" viewBox="0 0 260 44" width="260" height="44" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Rent trend sparkline"><polyline points="5.0,5.0 130.0,5.0 255.0,39.0" fill="none" stroke="#00ACEE" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Month</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
+        <tbody>
+          <tr><td>Apr 2026</td><td class="num">$2,498</td><td class="num">—</td></tr>
+          <tr><td>May 2026</td><td class="num">$2,498</td><td class="num">even</td></tr>
+          <tr><td>Jun 2026</td><td class="num">$2,450</td><td class="num">−$48</td></tr>
+        </tbody>
+      </table>
+    </div>
     
     <h2>How Mission Hill rent compares to Greater Boston</h2>
     <p>A 1-bedroom in Mission Hill runs $300 less than the Greater Boston median of $2,750 — about 11% below the metro average. Among the 19 Greater Boston areas we publish, that ranks Mission Hill 17th most expensive for 1-bedrooms.</p>

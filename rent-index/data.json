@@ -22,15 +22,15 @@
         "beds": "1",
         "median": 2750,
         "p25": 2400,
-        "p75": 3194,
-        "n": 2602
+        "p75": 3187,
+        "n": 2600
       },
       {
         "beds": "2",
         "median": 3325,
         "p25": 2900,
         "p75": 3900,
-        "n": 3017
+        "n": 3018
       },
       {
         "beds": "3",
@@ -43,7 +43,7 @@
         "beds": "4+",
         "median": 5200,
         "p25": 4400,
-        "p75": 6295,
+        "p75": 6284,
         "n": 1690
       }
     ],
@@ -113,9 +113,9 @@
         "beds": {
           "0": 2450,
           "1": 2633,
-          "2": 3325,
+          "2": 3338,
           "3": 3900,
-          "4+": 5263
+          "4+": 5213
         }
       }
     ]
@@ -152,7 +152,7 @@
         "4+": {
           "median": 5200,
           "p25": 4550,
-          "p75": 6050,
+          "p75": 6000,
           "n": 215
         }
       },
@@ -166,7 +166,25 @@
         "b1_median": 2450,
         "wow": 30,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2400
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2420
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2450
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Aspinwall Hill",
@@ -188,7 +206,25 @@
         "b1_median": null,
         "wow": null,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3125
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3125
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3125
+        }
+      ],
+      "historyBedLabel": "2-bedroom"
     },
     {
       "neighborhood": "Back Bay",
@@ -225,7 +261,25 @@
         "b1_median": 3250,
         "wow": 50,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3300
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3200
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3250
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Beacon Hill",
@@ -262,7 +316,25 @@
         "b1_median": 2950,
         "wow": 0,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2950
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2950
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2950
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Boston Downtown",
@@ -277,8 +349,8 @@
         "1": {
           "median": 3075,
           "p25": 3000,
-          "p75": 3603,
-          "n": 35
+          "p75": 3511,
+          "n": 34
         },
         "2": null,
         "3": null,
@@ -289,7 +361,25 @@
         "b1_median": 3075,
         "wow": 0,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3075
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3075
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3075
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Brighton",
@@ -311,7 +401,7 @@
           "median": 2950,
           "p25": 2700,
           "p75": 3300,
-          "n": 451
+          "n": 452
         },
         "3": {
           "median": 3668,
@@ -336,7 +426,25 @@
         "b1_median": 2400,
         "wow": 0,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2400
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2400
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2400
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Brookline",
@@ -373,7 +481,25 @@
         "b1_median": 2500,
         "wow": 0,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2525
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2500
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2500
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Cambridge",
@@ -420,7 +546,15 @@
         "b1_median": 3000,
         "wow": null,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3000
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Chestnut Hill",
@@ -452,7 +586,25 @@
         "b1_median": 3130,
         "wow": 135,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3053
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2995
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3130
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Chinatown",
@@ -474,7 +626,15 @@
         "b1_median": null,
         "wow": null,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 4933
+        }
+      ],
+      "historyBedLabel": "2-bedroom"
     },
     {
       "neighborhood": "Coolidge Corner",
@@ -496,7 +656,7 @@
           "median": 3800,
           "p25": 3500,
           "p75": 4200,
-          "n": 85
+          "n": 84
         },
         "3": {
           "median": 4650,
@@ -521,7 +681,25 @@
         "b1_median": 3100,
         "wow": 0,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3100
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3100
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3100
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Corey Hill",
@@ -548,7 +726,25 @@
         "b1_median": 2675,
         "wow": -75,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2799
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2750
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2675
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Dorchester",
@@ -585,7 +781,25 @@
         "b1_median": 2503,
         "wow": -2,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2503
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2505
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2503
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "East Boston",
@@ -622,7 +836,25 @@
         "b1_median": 2400,
         "wow": 0,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2375
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2400
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2400
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Fenway",
@@ -664,7 +896,25 @@
         "b1_median": 2825,
         "wow": 25,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2800
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2800
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2825
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Jamaica Plain",
@@ -701,7 +951,25 @@
         "b1_median": 2495,
         "wow": 0,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2498
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2495
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2495
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Longwood",
@@ -728,7 +996,25 @@
         "b1_median": 3000,
         "wow": -100,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3075
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3100
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3000
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Medford",
@@ -750,7 +1036,25 @@
         "b1_median": null,
         "wow": null,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 4823
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 4800
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 4800
+        }
+      ],
+      "historyBedLabel": "4+ bedroom"
     },
     {
       "neighborhood": "Mission Hill",
@@ -797,7 +1101,25 @@
         "b1_median": 2450,
         "wow": -48,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2498
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2498
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2450
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "North Brookline",
@@ -834,7 +1156,25 @@
         "b1_median": 2738,
         "wow": -87,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2823
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2825
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2738
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "North End",
@@ -866,7 +1206,25 @@
         "b1_median": 3200,
         "wow": 150,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3100
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3050
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3200
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Oak Square",
@@ -893,7 +1251,25 @@
         "b1_median": null,
         "wow": null,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3538
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3575
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3575
+        }
+      ],
+      "historyBedLabel": "3-bedroom"
     },
     {
       "neighborhood": "Roslindale",
@@ -915,7 +1291,25 @@
         "b1_median": null,
         "wow": null,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3150
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3150
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3054
+        }
+      ],
+      "historyBedLabel": "2-bedroom"
     },
     {
       "neighborhood": "Roxbury",
@@ -952,7 +1346,25 @@
         "b1_median": 2650,
         "wow": 50,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 2600
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2600
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2650
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "Somerville",
@@ -999,7 +1411,15 @@
         "b1_median": 2725,
         "wow": null,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 2725
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "South Boston",
@@ -1036,7 +1456,25 @@
         "b1_median": 3000,
         "wow": 0,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3000
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3000
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3000
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "South End",
@@ -1078,7 +1516,25 @@
         "b1_median": 3300,
         "wow": -45,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3350
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 3345
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3300
+        }
+      ],
+      "historyBedLabel": "1-bedroom"
     },
     {
       "neighborhood": "South Medford",
@@ -1100,7 +1556,25 @@
         "b1_median": null,
         "wow": null,
         "mom": null
-      }
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 5923
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 5923
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 5625
+        }
+      ],
+      "historyBedLabel": "4+ bedroom"
     }
   ]
 }

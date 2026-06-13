@@ -1,14 +1,14 @@
 week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-02,metro,Greater Boston,0,2303,1100,2100,2600
-2026-06-02,metro,Greater Boston,1,2750,2602,2400,3194
-2026-06-02,metro,Greater Boston,2,3325,3017,2900,3900
+2026-06-02,metro,Greater Boston,1,2750,2600,2400,3187
+2026-06-02,metro,Greater Boston,2,3325,3018,2900,3900
 2026-06-02,metro,Greater Boston,3,3975,1990,3495,4700
-2026-06-02,metro,Greater Boston,4+,5200,1690,4400,6295
+2026-06-02,metro,Greater Boston,4+,5200,1690,4400,6284
 2026-06-02,neighborhood,Allston,0,2050,125,1995,2300
 2026-06-02,neighborhood,Allston,1,2450,243,2325,2950
 2026-06-02,neighborhood,Allston,2,3200,230,2800,3984
 2026-06-02,neighborhood,Allston,3,3725,190,3313,4084
-2026-06-02,neighborhood,Allston,4+,5200,215,4550,6050
+2026-06-02,neighborhood,Allston,4+,5200,215,4550,6000
 2026-06-02,neighborhood,Aspinwall Hill,2,3125,25,3075,3195
 2026-06-02,neighborhood,Back Bay,0,2550,123,2325,2850
 2026-06-02,neighborhood,Back Bay,1,3250,150,3000,3588
@@ -17,10 +17,10 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-02,neighborhood,Beacon Hill,1,2950,88,2700,3250
 2026-06-02,neighborhood,Beacon Hill,2,3600,71,3425,4000
 2026-06-02,neighborhood,Boston Downtown,0,2500,30,2400,2600
-2026-06-02,neighborhood,Boston Downtown,1,3075,35,3000,3603
+2026-06-02,neighborhood,Boston Downtown,1,3075,34,3000,3511
 2026-06-02,neighborhood,Brighton,0,2095,178,1995,2238
 2026-06-02,neighborhood,Brighton,1,2400,474,2250,2600
-2026-06-02,neighborhood,Brighton,2,2950,451,2700,3300
+2026-06-02,neighborhood,Brighton,2,2950,452,2700,3300
 2026-06-02,neighborhood,Brighton,3,3668,366,3400,4100
 2026-06-02,neighborhood,Brighton,4+,4800,402,4296,5900
 2026-06-02,neighborhood,Brookline,1,2500,30,2200,2771
@@ -38,7 +38,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-02,neighborhood,Chinatown,2,4933,28,4686,5198
 2026-06-02,neighborhood,Coolidge Corner,0,2900,28,2371,3024
 2026-06-02,neighborhood,Coolidge Corner,1,3100,100,2769,3425
-2026-06-02,neighborhood,Coolidge Corner,2,3800,85,3500,4200
+2026-06-02,neighborhood,Coolidge Corner,2,3800,84,3500,4200
 2026-06-02,neighborhood,Coolidge Corner,3,4650,46,4500,5026
 2026-06-02,neighborhood,Coolidge Corner,4+,5900,42,5000,6500
 2026-06-02,neighborhood,Corey Hill,1,2675,23,2250,3193
