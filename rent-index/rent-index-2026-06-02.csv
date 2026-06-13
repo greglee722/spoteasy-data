@@ -2,8 +2,8 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-02,metro,Greater Boston,0,2303,1100,2100,2600
 2026-06-02,metro,Greater Boston,1,2750,2602,2400,3194
 2026-06-02,metro,Greater Boston,2,3325,3017,2900,3900
-2026-06-02,metro,Greater Boston,3,3975,1989,3495,4700
-2026-06-02,metro,Greater Boston,4+,5200,1688,4400,6295
+2026-06-02,metro,Greater Boston,3,3975,1990,3495,4700
+2026-06-02,metro,Greater Boston,4+,5200,1690,4400,6295
 2026-06-02,neighborhood,Allston,0,2050,125,1995,2300
 2026-06-02,neighborhood,Allston,1,2450,243,2325,2950
 2026-06-02,neighborhood,Allston,2,3200,230,2800,3984
@@ -21,7 +21,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-02,neighborhood,Brighton,0,2095,178,1995,2238
 2026-06-02,neighborhood,Brighton,1,2400,474,2250,2600
 2026-06-02,neighborhood,Brighton,2,2950,451,2700,3300
-2026-06-02,neighborhood,Brighton,3,3660,365,3400,4100
+2026-06-02,neighborhood,Brighton,3,3668,366,3400,4100
 2026-06-02,neighborhood,Brighton,4+,4800,402,4296,5900
 2026-06-02,neighborhood,Brookline,1,2500,30,2200,2771
 2026-06-02,neighborhood,Brookline,2,3345,55,3150,3495
@@ -40,7 +40,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-02,neighborhood,Coolidge Corner,1,3100,100,2769,3425
 2026-06-02,neighborhood,Coolidge Corner,2,3800,85,3500,4200
 2026-06-02,neighborhood,Coolidge Corner,3,4650,46,4500,5026
-2026-06-02,neighborhood,Coolidge Corner,4+,6075,40,5000,6500
+2026-06-02,neighborhood,Coolidge Corner,4+,5900,42,5000,6500
 2026-06-02,neighborhood,Corey Hill,1,2675,23,2250,3193
 2026-06-02,neighborhood,Corey Hill,2,3195,23,3170,3248
 2026-06-02,neighborhood,Dorchester,1,2503,40,2300,3011
@@ -65,7 +65,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-02,neighborhood,Mission Hill,0,2200,28,1950,2300
 2026-06-02,neighborhood,Mission Hill,1,2450,48,2371,2875
 2026-06-02,neighborhood,Mission Hill,2,3000,54,2800,3499
-2026-06-02,neighborhood,Mission Hill,3,4425,59,3950,4975
+2026-06-02,neighborhood,Mission Hill,3,4425,59,3950,4904
 2026-06-02,neighborhood,Mission Hill,4+,6300,138,5363,6950
 2026-06-02,neighborhood,North Brookline,1,2738,30,2544,2971
 2026-06-02,neighborhood,North Brookline,2,3500,45,3100,3800

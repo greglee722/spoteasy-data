@@ -78,7 +78,7 @@
       "name": "How much is rent in Coolidge Corner?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of June 2 - June 8, 2026, the median asking rent in Coolidge Corner is $3,100 for a one-bedroom and $3,800 for a two-bedroom. For other sizes: studios around $2,900, three-bedrooms $4,650, four-plus-bedrooms $6,075."
+        "text": "As of June 2 - June 8, 2026, the median asking rent in Coolidge Corner is $3,100 for a one-bedroom and $3,800 for a two-bedroom. For other sizes: studios around $2,900, three-bedrooms $4,650, four-plus-bedrooms $5,900."
       }
     },
     {
@@ -157,7 +157,14 @@
     .note{color:var(--muted);font-size:14px;}
     .nearby{margin:18px 0;color:var(--muted);font-size:15px;}
     .nearby a{color:var(--navy);font-weight:600;}
-    @media(max-width:720px){h1{font-size:28px;} .lede{font-size:16px;} .dir-list{columns:1;}}
+    @media(max-width:720px){
+      h1{font-size:28px;} .lede{font-size:16px;} .dir-list{columns:1;}
+      .container{padding:24px 16px 64px;}
+      table{font-size:14px;}
+      thead th,tbody td{padding:9px 10px;}
+      thead th{white-space:normal;}
+      .table-wrap{display:block;}
+    }
   </style>
 </head>
 <body>
@@ -185,7 +192,7 @@
           <tr><td>1 Bedroom</td><td class="num">$3,100</td><td class="num dim">$2,769 – $3,425</td></tr>
           <tr><td>2 Bedroom</td><td class="num">$3,800</td><td class="num dim">$3,500 – $4,200</td></tr>
           <tr><td>3 Bedroom</td><td class="num">$4,650</td><td class="num dim">$4,500 – $5,026</td></tr>
-          <tr><td>4+ Bedroom</td><td class="num">$6,075</td><td class="num dim">$5,000 – $6,500</td></tr>
+          <tr><td>4+ Bedroom</td><td class="num">$5,900</td><td class="num dim">$5,000 – $6,500</td></tr>
         </tbody>
       </table>
     </div>
@@ -201,7 +208,7 @@
           <tr><td>1 Bedroom</td><td class="num">$3,100</td><td class="num dim">$2,750</td><td class="num">+$350</td></tr>
           <tr><td>2 Bedroom</td><td class="num">$3,800</td><td class="num dim">$3,325</td><td class="num">+$475</td></tr>
           <tr><td>3 Bedroom</td><td class="num">$4,650</td><td class="num dim">$3,975</td><td class="num">+$675</td></tr>
-          <tr><td>4+ Bedroom</td><td class="num">$6,075</td><td class="num dim">$5,200</td><td class="num">+$875</td></tr>
+          <tr><td>4+ Bedroom</td><td class="num">$5,900</td><td class="num dim">$5,200</td><td class="num">+$700</td></tr>
         </tbody>
       </table>
     </div>
@@ -226,7 +233,7 @@
     
     <h2>Coolidge Corner rent — frequently asked questions</h2>
     <h3>How much is rent in Coolidge Corner?</h3>
-    <p>As of June 2 - June 8, 2026, the median asking rent in Coolidge Corner is $3,100 for a one-bedroom and $3,800 for a two-bedroom. For other sizes: studios around $2,900, three-bedrooms $4,650, four-plus-bedrooms $6,075.</p>
+    <p>As of June 2 - June 8, 2026, the median asking rent in Coolidge Corner is $3,100 for a one-bedroom and $3,800 for a two-bedroom. For other sizes: studios around $2,900, three-bedrooms $4,650, four-plus-bedrooms $5,900.</p>
     <h3>How much is a 1-bedroom in Coolidge Corner?</h3>
     <p>The median is $3,100, with most 1-bedroom listings falling between $2,769 and $3,425.</p>
     <h3>Is it cheaper to rent a studio or split a 2-bedroom in Coolidge Corner?</h3>
@@ -239,7 +246,7 @@
     <details class="method">
       <summary>How we calculate this</summary>
       <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-      <p class="n-line">Sample sizes this week (N): Studio 28 · 1BR 100 · 2BR 85 · 3BR 46 · 4+BR 40.</p>
+      <p class="n-line">Sample sizes this week (N): Studio 28 · 1BR 100 · 2BR 85 · 3BR 46 · 4+BR 42.</p>
       <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
     </details>
 
