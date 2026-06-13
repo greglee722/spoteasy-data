@@ -684,26 +684,26 @@
 <script>
 const PAGE_DATA = {
   "as_of_date": "Data from June 2 - June 8, 2026",
-  "sample_count": 2863,
-  "latest_report_url": "/data/rent-report/2026-06-week-1/",
+  "sample_count": 3113,
+  "latest_report_url": "/data/rent-index/",
   "tiles": [
     {
       "label": "Studio",
-      "value": 2305,
-      "delta": 15,
+      "value": 2308,
+      "delta": 12,
       "dir": "down"
     },
     {
       "label": "1 BR",
-      "value": 2720,
-      "delta": 20,
+      "value": 2750,
+      "delta": 50,
       "dir": "up"
     },
     {
       "label": "2 BR",
-      "value": 3280,
-      "delta": 15,
-      "dir": "down"
+      "value": 3345,
+      "delta": 50,
+      "dir": "up"
     },
     {
       "label": "3 BR",
@@ -714,34 +714,14 @@ const PAGE_DATA = {
   ],
   "teasers": {
     "rent_index": {
-      "stat": "$3,280",
+      "stat": "$3,345",
       "label": "2BR median · Greater Boston",
-      "delta": "-$15 vs. last week"
-    },
-    "hot_hoods": {
-      "stat": "Bay Village",
-      "label": "most in-demand neighborhood this week",
-      "delta": "Boston Downtown #2 · Porter Square #3"
+      "delta": "+$50 vs. last week"
     },
     "sept1": {
       "stat": "91",
       "label": "days until Sept 1",
-      "delta": "3,250 units already listed"
-    },
-    "building_types": {
-      "stat": "+$425",
-      "label": "Multi-Family vs apartment premium at 4BR",
-      "delta": "per month"
-    },
-    "studio_squeeze": {
-      "stat": "$950",
-      "label": "monthly savings splitting a 2BR",
-      "delta": "vs. solo studio · top neighborhood"
-    },
-    "brokerages": {
-      "stat": "989",
-      "label": "active listings · Encore Realty #1 this week",
-      "delta": "across Greater Boston"
+      "delta": "3,321 units already listed"
     }
   }
 };
@@ -776,7 +756,7 @@ const PAGE_DATA = {
       <span class="section-num">01</span>
       <span class="section-title">Featured Report</span>
     </div>
-    <a href="rent-report/" id="featured-link" class="featured-card">
+    <a href="rent-index/" id="featured-link" class="featured-card">
       <div>
         <div class="feat-live-badge">Live · Every Tuesday</div>
         <div class="feat-title">Boston Rent Index</div>
@@ -798,62 +778,22 @@ const PAGE_DATA = {
     </div>
     <ul class="reports-list">
 
-      <li class="report-row is-live" onclick="location.href='rent-report/'" data-teaser="rent_index">
+      <li class="report-row is-live" onclick="location.href='rent-index/'" data-teaser="rent_index">
         <span class="report-row-num">01</span>
         <div>
           <div class="report-row-name">Boston Rent Index</div>
-          <div class="report-row-desc">What does a 1-bedroom go for in Allston this week? A studio in Fenway? Median asking rents for every major Boston neighborhood, every Tuesday.</div>
+          <div class="report-row-desc">What does a 1-bedroom go for in Allston this week? A studio in Fenway? Median asking rents for every major Boston neighborhood, plus building-type and triple-decker breakdowns.</div>
           <div class="report-teaser" id="teaser-rent_index"></div>
         </div>
         <button class="report-row-btn">View Report →</button>
       </li>
 
-      <li class="report-row is-live" onclick="location.href='hot-neighborhoods/'" data-teaser="hot_hoods">
-        <span class="report-row-num">02</span>
-        <div>
-          <div class="report-row-name">Hot Neighborhoods Report</div>
-          <div class="report-row-desc">Which neighborhoods are getting the most renter attention right now, and which are cooling off. We track lead volume week over week, with a working professional / student split.</div>
-          <div class="report-teaser" id="teaser-hot_hoods"></div>
-        </div>
-        <button class="report-row-btn">View Report →</button>
-      </li>
-
       <li class="report-row is-live" onclick="location.href='sept-1-countdown/'" data-teaser="sept1">
-        <span class="report-row-num">03</span>
+        <span class="report-row-num">02</span>
         <div>
           <div class="report-row-name">Sept 1 Countdown</div>
           <div class="report-row-desc">Most Boston leases start September 1. Nowhere else in the country works this way. We track how many Sept 1 units are listed right now and what they're asking.</div>
           <div class="report-teaser" id="teaser-sept1"></div>
-        </div>
-        <button class="report-row-btn">View Report →</button>
-      </li>
-
-      <li class="report-row is-live" onclick="location.href='building-types/'" data-teaser="building_types">
-        <span class="report-row-num">04</span>
-        <div>
-          <div class="report-row-name">Building Type Report</div>
-          <div class="report-row-desc">Apartment, condo, multi-family, brownstone — what you pay in Boston depends a lot on what you're renting. We break down median asking rent by building type and bedroom count across Greater Boston.</div>
-          <div class="report-teaser" id="teaser-building_types"></div>
-        </div>
-        <button class="report-row-btn">View Report →</button>
-      </li>
-
-      <li class="report-row is-live" onclick="location.href='roommate-vs-studio/'" data-teaser="studio_squeeze">
-        <span class="report-row-num">05</span>
-        <div>
-          <div class="report-row-name">Studio Squeeze &amp; Roommate Premium</div>
-          <div class="report-row-desc">Solo studio or split a 2-bedroom? We calculate monthly cost per person for both across every major Boston neighborhood.</div>
-          <div class="report-teaser" id="teaser-studio_squeeze"></div>
-        </div>
-        <button class="report-row-btn">View Report →</button>
-      </li>
-
-      <li class="report-row is-live" onclick="location.href='top-brokerages/'" data-teaser="brokerages">
-        <span class="report-row-num">06</span>
-        <div>
-          <div class="report-row-name">Top Boston Brokerages</div>
-          <div class="report-row-desc">Which agencies have the most listings on the market right now. Useful if you want more options or a faster response.</div>
-          <div class="report-teaser" id="teaser-brokerages"></div>
         </div>
         <button class="report-row-btn">View Report →</button>
       </li>
