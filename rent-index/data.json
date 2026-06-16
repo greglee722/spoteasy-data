@@ -1,6 +1,6 @@
 {
-  "generated_week_ending": "2026-06-10",
-  "week_label": "June 10 - June 16, 2026",
+  "generated_week_ending": "2026-06-09",
+  "week_label": "June 9 - June 15, 2026",
   "methodology": {
     "cities": "Greater Boston (10 cities)",
     "n_threshold": 20,
@@ -16,7 +16,7 @@
         "median": 2300,
         "p25": 2100,
         "p75": 2600,
-        "n": 1102
+        "n": 1105
       },
       {
         "beds": "1",
@@ -30,28 +30,28 @@
         "median": 3300,
         "p25": 2895,
         "p75": 3900,
-        "n": 3028
+        "n": 3029
       },
       {
         "beds": "3",
         "median": 3950,
         "p25": 3450,
         "p75": 4700,
-        "n": 1988
+        "n": 1983
       },
       {
         "beds": "4+",
         "median": 5200,
         "p25": 4400,
         "p75": 6250,
-        "n": 1676
+        "n": 1675
       }
     ],
     "building_type": [
       {
         "building_type": "Apartment",
         "beds": {
-          "0": 2295,
+          "0": 2300,
           "1": 2700,
           "2": 3200,
           "3": 3900,
@@ -83,7 +83,7 @@
         "beds": {
           "0": 2350,
           "1": 2850,
-          "2": 3625,
+          "2": 3600,
           "3": 4725,
           "4+": 6200
         }
@@ -112,7 +112,7 @@
         "building_type": "Unspecified",
         "beds": {
           "0": 2450,
-          "1": 2633,
+          "1": 2620,
           "2": 3350,
           "3": 3900,
           "4+": 5200
@@ -164,8 +164,8 @@
       },
       "trend": {
         "b1_median": 2450,
-        "wow": null,
-        "mom": null
+        "wow": 50,
+        "mom": 50
       },
       "history": [
         {
@@ -181,43 +181,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2450
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2400
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2400
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2400
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2420
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2420
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2400
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2450
         }
       ],
@@ -261,43 +224,6 @@
           "median": 3125
         }
       ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3125
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3125
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3125
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3125
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3125
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3125
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 3125
-        }
-      ],
       "historyBedLabel": "2-bedroom"
     },
     {
@@ -308,7 +234,7 @@
           "median": 2550,
           "p25": 2300,
           "p75": 2850,
-          "n": 119
+          "n": 120
         },
         "1": {
           "median": 3250,
@@ -333,8 +259,8 @@
       },
       "trend": {
         "b1_median": 3250,
-        "wow": null,
-        "mom": null
+        "wow": 50,
+        "mom": 0
       },
       "history": [
         {
@@ -353,43 +279,6 @@
           "median": 3250
         }
       ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3300
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3300
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3250
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3200
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3200
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3200
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 3250
-        }
-      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -404,9 +293,9 @@
         },
         "1": {
           "median": 2950,
-          "p25": 2669,
+          "p25": 2675,
           "p75": 3250,
-          "n": 88
+          "n": 89
         },
         "2": {
           "median": 3575,
@@ -425,8 +314,8 @@
       },
       "trend": {
         "b1_median": 2950,
-        "wow": null,
-        "mom": null
+        "wow": 0,
+        "mom": 25
       },
       "history": [
         {
@@ -442,43 +331,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2950
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2950
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2900
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2925
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2950
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2950
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2950
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2950
         }
       ],
@@ -507,8 +359,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 3088,
-        "wow": null,
-        "mom": null
+        "wow": 13,
+        "mom": 13
       },
       "history": [
         {
@@ -527,43 +379,6 @@
           "median": 3088
         }
       ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3075
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3075
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3075
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3075
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3075
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3075
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 3088
-        }
-      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -573,8 +388,8 @@
         "0": {
           "median": 2095,
           "p25": 1995,
-          "p75": 2238,
-          "n": 178
+          "p75": 2225,
+          "n": 179
         },
         "1": {
           "median": 2400,
@@ -609,8 +424,8 @@
       },
       "trend": {
         "b1_median": 2400,
-        "wow": null,
-        "mom": null
+        "wow": 0,
+        "mom": 0
       },
       "history": [
         {
@@ -626,43 +441,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2400
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2400
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2400
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2400
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2400
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2400
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2400
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2400
         }
       ],
@@ -701,8 +479,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 2500,
-        "wow": null,
-        "mom": null
+        "wow": 0,
+        "mom": 0
       },
       "history": [
         {
@@ -718,43 +496,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2500
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2525
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2525
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2500
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2500
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2500
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2500
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2500
         }
       ],
@@ -813,13 +554,6 @@
           "median": 3000
         }
       ],
-      "histWeekly": [
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 3000
-        }
-      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -850,8 +584,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 3160,
-        "wow": null,
-        "mom": null
+        "wow": 50,
+        "mom": 165
       },
       "history": [
         {
@@ -867,43 +601,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3160
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3053
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3053
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2995
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2995
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2995
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3110
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 3160
         }
       ],
@@ -937,13 +634,6 @@
           "median": 4933
         }
       ],
-      "histWeekly": [
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 4933
-        }
-      ],
       "historyBedLabel": "2-bedroom"
     },
     {
@@ -957,16 +647,16 @@
           "n": 28
         },
         "1": {
-          "median": 3015,
+          "median": 3030,
           "p25": 2700,
-          "p75": 3395,
-          "n": 110
+          "p75": 3390,
+          "n": 111
         },
         "2": {
-          "median": 3798,
+          "median": 3800,
           "p25": 3500,
-          "p75": 4000,
-          "n": 86
+          "p75": 4100,
+          "n": 87
         },
         "3": {
           "median": 4725,
@@ -975,22 +665,22 @@
           "n": 46
         },
         "4+": {
-          "median": 5900,
+          "median": 6000,
           "p25": 5000,
           "p75": 6500,
-          "n": 42
+          "n": 41
         }
       },
       "roommate": {
         "studio": 2900,
-        "perPerson": 1899,
-        "savings": 1001,
-        "pctSaved": 35
+        "perPerson": 1900,
+        "savings": 1000,
+        "pctSaved": 34
       },
       "trend": {
-        "b1_median": 3015,
-        "wow": null,
-        "mom": null
+        "b1_median": 3030,
+        "wow": -65,
+        "mom": -70
       },
       "history": [
         {
@@ -1006,44 +696,7 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3015
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3100
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3100
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3100
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3100
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3100
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3095
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 3015
+          "median": 3030
         }
       ],
       "historyBedLabel": "1-bedroom"
@@ -1071,8 +724,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 2675,
-        "wow": null,
-        "mom": null
+        "wow": -38,
+        "mom": -75
       },
       "history": [
         {
@@ -1088,43 +741,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2675
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2799
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2799
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2750
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2750
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2750
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2713
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2675
         }
       ],
@@ -1156,15 +772,15 @@
         "4+": {
           "median": 3800,
           "p25": 3600,
-          "p75": 4200,
+          "p75": 4250,
           "n": 81
         }
       },
       "roommate": null,
       "trend": {
         "b1_median": 2565,
-        "wow": null,
-        "mom": null
+        "wow": 60,
+        "mom": 60
       },
       "history": [
         {
@@ -1180,43 +796,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2565
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2503
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2503
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2505
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2505
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2505
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2505
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2565
         }
       ],
@@ -1240,10 +819,10 @@
           "n": 125
         },
         "3": {
-          "median": 3200,
-          "p25": 2875,
-          "p75": 3450,
-          "n": 28
+          "median": 3175,
+          "p25": 2825,
+          "p75": 3400,
+          "n": 26
         },
         "4+": {
           "median": 4000,
@@ -1255,8 +834,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 2400,
-        "wow": null,
-        "mom": null
+        "wow": 0,
+        "mom": 0
       },
       "history": [
         {
@@ -1272,43 +851,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2400
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2375
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2375
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2400
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2400
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2400
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2400
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2400
         }
       ],
@@ -1326,34 +868,34 @@
         },
         "1": {
           "median": 2800,
-          "p25": 2515,
+          "p25": 2511,
           "p75": 3100,
-          "n": 297
+          "n": 296
         },
         "2": {
-          "median": 3725,
-          "p25": 3338,
+          "median": 3750,
+          "p25": 3350,
           "p75": 4100,
-          "n": 200
+          "n": 201
         },
         "3": {
           "median": 5000,
           "p25": 4750,
           "p75": 5600,
-          "n": 83
+          "n": 84
         },
         "4+": null
       },
       "roommate": {
         "studio": 2400,
-        "perPerson": 1863,
-        "savings": 537,
+        "perPerson": 1875,
+        "savings": 525,
         "pctSaved": 22
       },
       "trend": {
         "b1_median": 2800,
-        "wow": null,
-        "mom": null
+        "wow": 0,
+        "mom": 0
       },
       "history": [
         {
@@ -1369,43 +911,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2800
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2800
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2800
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2800
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2800
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2800
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2800
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2800
         }
       ],
@@ -1444,8 +949,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 2495,
-        "wow": null,
-        "mom": null
+        "wow": -3,
+        "mom": -5
       },
       "history": [
         {
@@ -1461,43 +966,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2495
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2498
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2500
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2500
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2500
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2495
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2498
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2495
         }
       ],
@@ -1526,8 +994,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 3000,
-        "wow": null,
-        "mom": null
+        "wow": -100,
+        "mom": -75
       },
       "history": [
         {
@@ -1543,43 +1011,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3000
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3075
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3075
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3075
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3075
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3100
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3100
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 3000
         }
       ],
@@ -1620,43 +1051,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 4800
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 4823
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 4823
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 4800
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 4800
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 4800
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 4800
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 4800
         }
       ],
@@ -1705,8 +1099,8 @@
       },
       "trend": {
         "b1_median": 2450,
-        "wow": null,
-        "mom": null
+        "wow": -50,
+        "mom": -48
       },
       "history": [
         {
@@ -1722,43 +1116,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2450
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2498
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2495
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2498
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2498
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2498
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2500
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2450
         }
       ],
@@ -1797,8 +1154,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 2725,
-        "wow": null,
-        "mom": null
+        "wow": -125,
+        "mom": -98
       },
       "history": [
         {
@@ -1814,43 +1171,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2725
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2823
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2823
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2823
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2850
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2825
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2850
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2725
         }
       ],
@@ -1884,8 +1204,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 3200,
-        "wow": null,
-        "mom": null
+        "wow": 200,
+        "mom": 100
       },
       "history": [
         {
@@ -1901,43 +1221,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3200
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3100
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3100
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3100
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3100
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3050
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3000
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 3200
         }
       ],
@@ -1986,43 +1269,6 @@
           "median": 3538
         }
       ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3538
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3538
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3538
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3575
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3575
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3575
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 3538
-        }
-      ],
       "historyBedLabel": "3-bedroom"
     },
     {
@@ -2063,43 +1309,6 @@
           "median": 3125
         }
       ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3150
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3150
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3150
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3150
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3150
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3150
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 3125
-        }
-      ],
       "historyBedLabel": "2-bedroom"
     },
     {
@@ -2109,9 +1318,9 @@
         "0": null,
         "1": {
           "median": 2650,
-          "p25": 2288,
+          "p25": 2275,
           "p75": 3000,
-          "n": 28
+          "n": 27
         },
         "2": {
           "median": 3800,
@@ -2135,8 +1344,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 2650,
-        "wow": null,
-        "mom": null
+        "wow": 50,
+        "mom": 50
       },
       "history": [
         {
@@ -2152,43 +1361,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2650
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 2600
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 2600
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 2600
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 2600
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 2600
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 2600
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2650
         }
       ],
@@ -2217,10 +1389,10 @@
           "n": 202
         },
         "3": {
-          "median": 4100,
+          "median": 4088,
           "p25": 3600,
           "p75": 4400,
-          "n": 169
+          "n": 168
         },
         "4+": {
           "median": 4995,
@@ -2247,13 +1419,6 @@
           "median": 2700
         }
       ],
-      "histWeekly": [
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 2700
-        }
-      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -2268,21 +1433,21 @@
         },
         "1": {
           "median": 3000,
-          "p25": 2606,
-          "p75": 3288,
-          "n": 62
+          "p25": 2600,
+          "p75": 3300,
+          "n": 61
         },
         "2": {
-          "median": 3775,
+          "median": 3750,
           "p25": 3400,
-          "p75": 4250,
-          "n": 156
+          "p75": 4225,
+          "n": 155
         },
         "3": {
           "median": 5050,
           "p25": 4500,
           "p75": 5750,
-          "n": 77
+          "n": 75
         },
         "4+": {
           "median": 6200,
@@ -2293,14 +1458,14 @@
       },
       "roommate": {
         "studio": 2500,
-        "perPerson": 1888,
-        "savings": 612,
-        "pctSaved": 24
+        "perPerson": 1875,
+        "savings": 625,
+        "pctSaved": 25
       },
       "trend": {
         "b1_median": 3000,
-        "wow": null,
-        "mom": null
+        "wow": 0,
+        "mom": 0
       },
       "history": [
         {
@@ -2316,43 +1481,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3000
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3000
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3000
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3000
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3000
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3000
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3000
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 3000
         }
       ],
@@ -2396,8 +1524,8 @@
       },
       "trend": {
         "b1_median": 3300,
-        "wow": null,
-        "mom": null
+        "wow": 0,
+        "mom": -100
       },
       "history": [
         {
@@ -2413,43 +1541,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3300
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 3350
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 3350
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 3400
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 3345
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 3345
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 3300
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 3300
         }
       ],
@@ -2493,43 +1584,6 @@
           "median": 5625
         }
       ],
-      "histWeekly": [
-        {
-          "wk": "2026-04-27",
-          "label": "Apr 27 – May 3",
-          "median": 5923
-        },
-        {
-          "wk": "2026-05-04",
-          "label": "May 4–10",
-          "median": 5850
-        },
-        {
-          "wk": "2026-05-12",
-          "label": "May 12–18",
-          "median": 5850
-        },
-        {
-          "wk": "2026-05-19",
-          "label": "May 19–25",
-          "median": 5923
-        },
-        {
-          "wk": "2026-05-26",
-          "label": "May 26 – Jun 1",
-          "median": 5923
-        },
-        {
-          "wk": "2026-06-02",
-          "label": "Jun 2–8",
-          "median": 5625
-        },
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
-          "median": 5625
-        }
-      ],
       "historyBedLabel": "4+ bedroom"
     },
     {
@@ -2557,13 +1611,6 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2800
-        }
-      ],
-      "histWeekly": [
-        {
-          "wk": "2026-06-10",
-          "label": "Jun 10–16",
           "median": 2800
         }
       ],
