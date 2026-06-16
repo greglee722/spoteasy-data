@@ -1,16 +1,16 @@
 week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
-2026-06-09,metro,Greater Boston,0,2300,1105,2100,2600
+2026-06-09,metro,Greater Boston,0,2300,1109,2100,2600
 2026-06-09,metro,Greater Boston,1,2750,2636,2400,3175
-2026-06-09,metro,Greater Boston,2,3300,3029,2895,3900
-2026-06-09,metro,Greater Boston,3,3950,1983,3450,4700
+2026-06-09,metro,Greater Boston,2,3300,3031,2895,3900
+2026-06-09,metro,Greater Boston,3,3950,1984,3450,4700
 2026-06-09,metro,Greater Boston,4+,5200,1675,4400,6250
 2026-06-09,neighborhood,Allston,0,2050,125,1995,2300
 2026-06-09,neighborhood,Allston,1,2450,240,2325,2956
-2026-06-09,neighborhood,Allston,2,3200,231,2813,3998
-2026-06-09,neighborhood,Allston,3,3700,188,3300,4096
+2026-06-09,neighborhood,Allston,2,3200,232,2819,3996
+2026-06-09,neighborhood,Allston,3,3700,189,3300,4095
 2026-06-09,neighborhood,Allston,4+,5200,212,4550,6025
 2026-06-09,neighborhood,Aspinwall Hill,2,3125,25,3075,3195
-2026-06-09,neighborhood,Back Bay,0,2550,120,2300,2850
+2026-06-09,neighborhood,Back Bay,0,2550,121,2300,2850
 2026-06-09,neighborhood,Back Bay,1,3250,149,3000,3600
 2026-06-09,neighborhood,Back Bay,2,4500,52,3888,5021
 2026-06-09,neighborhood,Beacon Hill,0,2450,64,2188,2646
@@ -18,9 +18,9 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-09,neighborhood,Beacon Hill,2,3575,69,3350,4000
 2026-06-09,neighborhood,Boston Downtown,0,2500,31,2400,2598
 2026-06-09,neighborhood,Boston Downtown,1,3088,36,3000,3559
-2026-06-09,neighborhood,Brighton,0,2095,179,1995,2225
+2026-06-09,neighborhood,Brighton,0,2095,181,1995,2200
 2026-06-09,neighborhood,Brighton,1,2400,473,2250,2600
-2026-06-09,neighborhood,Brighton,2,2950,454,2700,3300
+2026-06-09,neighborhood,Brighton,2,2950,455,2700,3300
 2026-06-09,neighborhood,Brighton,3,3668,366,3400,4100
 2026-06-09,neighborhood,Brighton,4+,4800,405,4300,5900
 2026-06-09,neighborhood,Brookline,1,2500,30,2200,2771
@@ -36,7 +36,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-09,neighborhood,Chestnut Hill,2,3710,52,3221,4484
 2026-06-09,neighborhood,Chestnut Hill,4+,6500,21,6300,7200
 2026-06-09,neighborhood,Chinatown,2,4933,28,4686,5198
-2026-06-09,neighborhood,Coolidge Corner,0,2900,28,2371,3024
+2026-06-09,neighborhood,Coolidge Corner,0,2900,29,2395,3015
 2026-06-09,neighborhood,Coolidge Corner,1,3030,111,2700,3390
 2026-06-09,neighborhood,Coolidge Corner,2,3800,87,3500,4100
 2026-06-09,neighborhood,Coolidge Corner,3,4725,46,4500,5084

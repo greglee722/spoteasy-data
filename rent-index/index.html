@@ -188,135 +188,250 @@
   ]
 }
   </script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root{--navy:#001C41;--sky:#00ACEE;--ink:#1a1a1a;--muted:#5b6b7a;--rule:#E5E9EE;--soft:#F4F8FB;--good:#1a8c4f;--bad:#c0392b;--bg:#fff;}
-    *{box-sizing:border-box;} html,body{margin:0;padding:0;}
-    body{font-family:'Inter','Poppins','Nunito Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased;}
-    a{color:var(--sky);text-decoration:none;} a:hover{text-decoration:underline;}
-    .container{max-width:680px;margin:0 auto;padding:32px 32px 80px;}
-    .crumbs{font-size:13px;color:var(--muted);margin-bottom:18px;} .crumbs a{color:var(--muted);font-weight:600;} .crumbs span{color:var(--navy);}
-    .kicker{color:var(--sky);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;}
-    h1{color:var(--navy);font-size:36px;line-height:1.15;margin:8px 0 12px;letter-spacing:-0.01em;}
-    .lede{color:var(--navy);font-size:19px;line-height:1.55;margin-bottom:28px;}
-    h2{color:var(--navy);font-size:22px;margin:36px 0 12px;}
-    p,li{color:var(--ink);}
-    .table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;margin:12px 0 20px;display:inline-block;max-width:100%;vertical-align:top;}
-    table{width:auto;border-collapse:collapse;font-size:15px;}
-    thead th{white-space:nowrap;}
-    thead th{background:var(--navy);color:#fff;text-align:left;padding:11px 14px;font-weight:600;font-size:13px;letter-spacing:.03em;}
-    thead th.num{text-align:right;}
-    tbody td{padding:11px 14px;border-top:1px solid var(--rule);}
-    tbody tr:nth-child(even) td{background:var(--soft);}
-    tbody td.num{text-align:right;font-variant-numeric:tabular-nums;}
-    tbody td.dim{color:var(--muted);}
-    .trend{background:var(--soft);border-left:4px solid var(--sky);padding:14px 18px;border-radius:4px;margin:8px 0 24px;font-size:16px;color:var(--navy);}
-    .module{border:1px solid var(--rule);border-radius:6px;padding:18px 20px;margin:24px 0;}
-    .module h2{margin-top:0;}
-    .cta{display:inline-block;background:var(--sky);color:#fff;padding:12px 22px;border-radius:4px;font-weight:600;margin:8px 8px 8px 0;}
-    .cta:hover{text-decoration:none;background:#0095cc;}
-    .cta.outline{background:transparent;color:var(--navy);border:1px solid var(--navy);}
-    .cta.outline:hover{background:var(--navy);color:#fff;}
-    details.method{background:var(--soft);padding:14px 18px;border-radius:6px;margin:28px 0;border:1px solid var(--rule);}
-    details.method summary{cursor:pointer;color:var(--navy);font-weight:600;}
-    details.method[open] summary{margin-bottom:10px;}
-    details.method p{font-size:14px;}
-    .n-line{color:var(--muted);font-size:13px;}
-    .related{border-top:1px solid var(--rule);margin-top:40px;padding-top:20px;}
-    .dir-group{margin:20px 0;}
-    .dir-group h3{color:var(--navy);font-size:15px;margin:0 0 8px;}
-    .dir-list{list-style:none;padding:0;margin:0;columns:2;column-gap:32px;}
-    .dir-list li{margin-bottom:6px;}
-    .note{color:var(--muted);font-size:14px;}
-    .updated{color:var(--muted);font-size:13px;margin:-14px 0 26px;}
-    .updated b{color:var(--good);font-weight:700;}
-    .nearby{margin:18px 0;color:var(--muted);font-size:15px;}
-    .nearby a{color:var(--navy);font-weight:600;}
-    @media(max-width:720px){
-      h1{font-size:28px;} .lede{font-size:16px;} .dir-list{columns:1;}
-      .container{padding:24px 16px 64px;}
-      table{font-size:14px;}
-      thead th,tbody td{padding:9px 10px;}
-      thead th{white-space:normal;}
-      .table-wrap{display:block;}
+    :root {
+      --navy: #0A2540;
+      --sky:  #00ACEE;
+      --ink:  #425466;
+      --muted:#7A8999;
+      --rule: #E2E8F0;
+      --soft: #F7F9FB;
+      --good: #059669;
+      --bad:  #DC2626;
+      --bg:   #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Mulish', sans-serif; font-size: 15px; line-height: 1.6; color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; }
+    a { color: var(--sky); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Container — structural only */
+    .container { max-width: 100%; padding: 0; }
+
+    /* ─── Header hero ─── */
+    .nh-header { background: var(--navy); position: relative; overflow: hidden; padding: 52px 32px 48px; }
+    .nh-header::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(0,172,238,.15) 1px, transparent 1px); background-size: 28px 28px; pointer-events: none; }
+    .nh-header::after { content: ''; position: absolute; top: -40%; right: -10%; width: 500px; height: 500px; background: radial-gradient(ellipse at center, rgba(0,172,238,.1) 0%, transparent 70%); pointer-events: none; }
+    .nh-header-inner { max-width: 1040px; margin: 0 auto; position: relative; z-index: 1; }
+
+    /* Breadcrumbs */
+    .crumbs { font-size: 12px; color: rgba(255,255,255,.45); margin-bottom: 24px; letter-spacing: .02em; }
+    .crumbs a { color: rgba(255,255,255,.55); font-weight: 600; }
+    .crumbs a:hover { color: var(--sky); text-decoration: none; }
+    .crumbs span { color: rgba(255,255,255,.8); }
+
+    /* Kicker */
+    .kicker { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--sky); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .kicker::before { content: ''; display: block; width: 28px; height: 1px; background: var(--sky); }
+
+    /* Hero typography */
+    h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 900; color: #fff !important; line-height: 1.08; letter-spacing: -.02em; margin-bottom: 16px; }
+    .lede { font-size: 16px; color: rgba(255,255,255,.7) !important; line-height: 1.65; margin-bottom: 20px; max-width: 640px; }
+    .lede strong { color: #fff !important; }
+    .updated { font-size: 11px; color: rgba(255,255,255,.35); letter-spacing: .04em; }
+    .updated b { color: rgba(255,255,255,.6); font-weight: 700; }
+
+    /* ─── Body content ─── */
+    .nh-body { max-width: 1040px; margin: 0 auto; padding: 44px 32px 80px; }
+    p, li { color: var(--ink); line-height: 1.7; }
+    p + p { margin-top: 12px; }
+
+    /* Section headings */
+    h2 { font-size: 20px; font-weight: 800; color: var(--navy) !important; letter-spacing: -.01em; margin: 48px 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--navy); }
+    h3 { font-size: 16px; font-weight: 700; color: var(--navy) !important; margin: 24px 0 8px; }
+
+    /* Trend callout */
+    .trend { background: var(--soft); border-left: 3px solid var(--sky); padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 0 0 36px; font-size: 17px; color: var(--navy); font-weight: 600; }
+
+    /* ─── Tables ─── */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; margin: 16px 24px 8px; display: block; max-width: calc(100% - 48px); box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th { white-space: nowrap; background: var(--navy); color: #fff; text-align: left; padding: 12px 16px; font-weight: 700; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+    thead th.num { text-align: right; }
+    tbody td { padding: 12px 16px; border-top: 1px solid var(--rule); }
+    tbody tr:nth-child(even) td { background: var(--soft); }
+    tbody tr:hover td { background: #EDF5FB; }
+    tbody td.num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+    tbody td.dim { color: var(--muted); font-weight: 400; }
+    /* History "Change" arrows: arrow shows direction, color shows renter sentiment —
+       rent ↓ is GOOD for renters (green), rent ↑ is BAD (red). */
+    .chg-up { color: var(--bad) !important; font-weight: 600; white-space: nowrap; }
+    .chg-down { color: var(--good) !important; font-weight: 600; white-space: nowrap; }
+    .chg-flat { color: var(--muted) !important; }
+
+    /* Notes */
+    .note { font-size: 13px; color: var(--muted); margin: 6px 24px 28px; }
+    .n-line { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+    /* Module box */
+    .module { border: 1px solid var(--rule); border-radius: 8px; padding: 20px 24px; margin: 32px 0; background: var(--soft); }
+    .module h2 { margin: 0 0 10px; border-bottom: none; font-size: 17px; letter-spacing: -.01em; padding-bottom: 0; font-weight: 800; color: var(--navy); }
+
+    /* CTAs */
+    .cta-row { margin: 32px 0 24px; }
+    .cta { display: inline-block; background: var(--sky); color: #fff; padding: 12px 24px; border-radius: 6px; font-weight: 700; font-size: 14px; margin: 4px 8px 4px 0; letter-spacing: .01em; }
+    .cta:hover { background: #0095cc; text-decoration: none; }
+    .cta.outline { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+    .cta.outline:hover { background: var(--navy); color: #fff; }
+
+    /* Nearby */
+    .nearby { margin: 20px 0 0; color: var(--muted); font-size: 14px; }
+    .nearby a { color: var(--navy); font-weight: 600; }
+
+    /* Related */
+    .related { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 24px; }
+
+    /* Methodology */
+    details.method { background: var(--soft); padding: 16px 20px; border-radius: 8px; margin: 40px 0 0; border: 1px solid var(--rule); }
+    details.method summary { cursor: pointer; color: var(--navy); font-weight: 700; font-size: 13px; }
+    details.method[open] summary { margin-bottom: 12px; }
+    details.method p { font-size: 13px; color: var(--muted); }
+
+    /* Directory (hub) */
+    .dir-group { margin: 24px 0; }
+    .dir-group h3 { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 10px; border-bottom: none; padding-bottom: 0; }
+    .dir-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .dir-list li { margin: 0; }
+    .dir-list a { display: block; padding: 12px 16px; border: 1.5px solid var(--rule); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--bg); transition: border-color .15s, background .15s, color .15s; }
+    .dir-list a:hover { border-color: var(--sky); background: var(--soft); color: var(--sky); text-decoration: none; }
+
+    /* Rent-over-time Week/Month toggle (CSS-only; hardened vs. Ant Design globals) */
+    .hist { margin: 48px 0 0; }
+    /* Clip-hide the radios (NOT display:none) so they stay keyboard-focusable + survive Ant resets */
+    .hist .hv-week, .hist .hv-month { position: absolute !important; width: 1px; height: 1px; clip-path: inset(50%); opacity: 0; pointer-events: none; }
+    .hist-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: 0 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--navy); }
+    .hist-head h2 { margin: 0 !important; padding: 0 !important; border-bottom: none !important; }
+    .hist-toggle { display: inline-flex !important; border: 1.5px solid var(--rule); border-radius: 8px; overflow: hidden; }
+    .hist-toggle label { display: inline-block !important; padding: 6px 16px; font-size: 13px; font-weight: 700; color: var(--muted) !important; cursor: pointer; background: var(--bg); transition: background .15s, color .15s; }
+    .hist-toggle label + label { border-left: 1.5px solid var(--rule); }
+    .hist .hv-week:checked ~ .hist-head label[for="hv-week"],
+    .hist .hv-month:checked ~ .hist-head label[for="hv-month"] { background: var(--navy); color: #fff !important; }
+    .hist .hv-week:focus-visible ~ .hist-head label[for="hv-week"],
+    .hist .hv-month:focus-visible ~ .hist-head label[for="hv-month"] { outline: 2px solid var(--sky); outline-offset: 2px; }
+    .hist-p { font-size: 14px; color: var(--muted); margin: 0 0 4px; }
+    /* Weekly is the default-visible pane; monthly is revealed on toggle */
+    .pane-month, .hist-p-month { display: none; }
+    .hist .hv-month:checked ~ .pane-month, .hist .hv-month:checked ~ .hist-p-month { display: block; }
+    .hist .hv-month:checked ~ .pane-week, .hist .hv-month:checked ~ .hist-p-week { display: none; }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 768px) {
+      .nh-header { padding: 40px 20px 36px; }
+      .nh-body { padding: 32px 20px 64px; }
+      table { font-size: 13px; }
+      thead th, tbody td { padding: 10px 12px; }
+      thead th { white-space: normal; }
+      .table-wrap { margin: 16px 0 8px; max-width: 100%; }
+      .note { margin-left: 0; margin-right: 0; }
+      .dir-list { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
 <body>
 
   <main class="container">
-
-    <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="/data">Data</a> › <span>Rent Index</span>
-    </nav>
-
-    <div class="kicker">Boston Rent Index</div>
-    <h1>Average Rent in Boston by Neighborhood (2026)</h1>
-    <p class="lede">Median asking rent for a 1-bedroom across Greater Boston is <strong>$2,750</strong> as of June 9 - June 15, 2026. Pick a neighborhood below for its full studio-to-4-bedroom breakdown, updated weekly from verified active listings.</p>
-    <p class="updated">↻ <b>Updated weekly</b> · data as of June 9 - June 15, 2026</p>
-
-    <h2>Greater Boston median, by bedroom</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Apartment size</th><th class="num">Median rent</th><th class="num">Typical range</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Studio</td><td class="num">$2,300</td><td class="num dim">$2,100 – $2,600</td></tr>
+    <header class="nh-header">
+      <div class="nh-header-inner">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="/data">Data</a> › <span>Rent Index</span>
+        </nav>
+        <div class="kicker">Boston Rent Index</div>
+        <h1>Average Rent in Boston by Neighborhood (2026)</h1>
+        <p class="lede">Median asking rent for a 1-bedroom across Greater Boston is <strong>$2,750</strong> as of June 9 - June 15, 2026. Pick a neighborhood below for its full studio-to-4-bedroom breakdown, updated weekly from verified active listings.</p>
+        <p class="updated">↻ <b>Updated weekly</b> · data as of June 9 - June 15, 2026</p>
+      </div>
+    </header>
+    <div class="nh-body">
+      <h2>Greater Boston median, by bedroom</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Apartment size</th><th class="num">Median rent</th><th class="num">Typical range</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Studio</td><td class="num">$2,300</td><td class="num dim">$2,100 – $2,600</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$2,750</td><td class="num dim">$2,400 – $3,175</td></tr>
           <tr><td>2 Bedroom</td><td class="num">$3,300</td><td class="num dim">$2,895 – $3,900</td></tr>
           <tr><td>3 Bedroom</td><td class="num">$3,950</td><td class="num dim">$3,450 – $4,700</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$5,200</td><td class="num dim">$4,400 – $6,250</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Typical range = where the middle 50% of listings fall — a quarter rent for less, a quarter for more.</p>
+      
+    <section class="hist">
+      <input type="radio" name="histview" id="hv-week" class="hv-week" checked>
+      <input type="radio" name="histview" id="hv-month" class="hv-month">
+      <div class="hist-head">
+        <h2>Greater Boston rent over time</h2>
+        <div class="hist-toggle"><label for="hv-week">Weekly</label><label for="hv-month">Monthly</label></div>
+      </div>
+      <p class="hist-p hist-p-week">How the 1-bedroom median has moved week over week — refreshed every Tuesday.</p>
+      <p class="hist-p hist-p-month">How the 1-bedroom median has moved month over month.</p>
+      <div class="table-wrap pane-week">
+      <table>
+        <thead><tr><th>Week of</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
+        <tbody>
+          <tr><td>Apr 27 – May 3</td><td class="num">$2,750</td><td class="num"><span class="chg-flat">—</span></td></tr>
+          <tr><td>May 4–10</td><td class="num">$2,750</td><td class="num"><span class="chg-flat">even</span></td></tr>
+          <tr><td>May 12–18</td><td class="num">$2,728</td><td class="num"><span class="chg-down">↓ −$22</span></td></tr>
+          <tr><td>May 19–25</td><td class="num">$2,707</td><td class="num"><span class="chg-down">↓ −$21</span></td></tr>
+          <tr><td>May 26 – Jun 1</td><td class="num">$2,700</td><td class="num"><span class="chg-down">↓ −$7</span></td></tr>
+          <tr><td>Jun 2–8</td><td class="num">$2,720</td><td class="num"><span class="chg-up">↑ +$20</span></td></tr>
+          <tr><td>Jun 9–15</td><td class="num">$2,750</td><td class="num"><span class="chg-up">↑ +$30</span></td></tr>
         </tbody>
       </table>
     </div>
-    <p class="note">Typical range = where the middle 50% of listings fall — a quarter rent for less, a quarter for more.</p>
-    
-    <h2>Greater Boston rent over time</h2>
-    <p>How the 1-bedroom median has moved, month over month — refreshed weekly.</p>
-    <div class="table-wrap">
+      <div class="table-wrap pane-month">
       <table>
         <thead><tr><th>Month</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
         <tbody>
-          <tr><td>Apr 2026</td><td class="num">$2,750</td><td class="num">—</td></tr>
-          <tr><td>May 2026</td><td class="num">$2,700</td><td class="num">−$50</td></tr>
-          <tr><td>Jun 2026</td><td class="num">$2,750</td><td class="num">+$50</td></tr>
+          <tr><td>Apr 2026</td><td class="num">$2,750</td><td class="num"><span class="chg-flat">—</span></td></tr>
+          <tr><td>May 2026</td><td class="num">$2,700</td><td class="num"><span class="chg-down">↓ −$50</span></td></tr>
+          <tr><td>Jun 2026</td><td class="num">$2,750</td><td class="num"><span class="chg-up">↑ +$50</span></td></tr>
         </tbody>
       </table>
     </div>
+    </section>
 
-    <h2 id="triple-deckers">Triple-Deckers & Multi-Family</h2>
-    <p>Boston's housing stock is unusual: a huge share of rentals sit in <strong>triple-deckers</strong> and other small multi-family buildings rather than big apartment complexes. Below is the median asking rent by building type and bedroom count across Greater Boston. At the 2-bedroom level, a unit in a triple-decker / multi-family building runs about $200/month less than the same size in a standard apartment building.</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Building type</th><th class="num">Studio</th><th class="num">1BR</th><th class="num">2BR</th><th class="num">3BR</th><th class="num">4+BR</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Apartment</td><td class="num">$2,300</td><td class="num">$2,700</td><td class="num">$3,200</td><td class="num">$3,900</td><td class="num">$4,895</td></tr>
+      <h2 id="triple-deckers">Triple-Deckers & Multi-Family</h2>
+      <p>Boston's housing stock is unusual: a huge share of rentals sit in <strong>triple-deckers</strong> and other small multi-family buildings rather than big apartment complexes. Below is the median asking rent by building type and bedroom count across Greater Boston. At the 2-bedroom level, a unit in a triple-decker / multi-family building runs about $200/month less than the same size in a standard apartment building.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Building type</th><th class="num">Studio</th><th class="num">1BR</th><th class="num">2BR</th><th class="num">3BR</th><th class="num">4+BR</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Apartment</td><td class="num">$2,298</td><td class="num">$2,700</td><td class="num">$3,200</td><td class="num">$3,900</td><td class="num">$4,895</td></tr>
           <tr><td>Multi-Family</td><td class="num">$2,300</td><td class="num">$2,650</td><td class="num">$3,000</td><td class="num">$3,600</td><td class="num">$5,200</td></tr>
           <tr><td>Condo</td><td class="num">$2,500</td><td class="num">$3,000</td><td class="num">$3,650</td><td class="num">$4,200</td><td class="num">$5,275</td></tr>
-          <tr><td>Brownstone</td><td class="num">$2,350</td><td class="num">$2,850</td><td class="num">$3,600</td><td class="num">$4,725</td><td class="num">$6,200</td></tr>
+          <tr><td>Brownstone</td><td class="num">$2,355</td><td class="num">$2,850</td><td class="num">$3,600</td><td class="num">$4,725</td><td class="num">$6,200</td></tr>
           <tr><td>Single-Family</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">$4,500</td><td class="num">$6,500</td></tr>
           <tr><td>Townhouse</td><td class="num">—</td><td class="num">—</td><td class="num">$3,348</td><td class="num">$3,600</td><td class="num">$5,500</td></tr>
           <tr><td>Unspecified</td><td class="num">$2,450</td><td class="num">$2,620</td><td class="num">$3,350</td><td class="num">$3,900</td><td class="num">$5,200</td></tr>
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Building-type figures hold at the metro level only; neighborhood-level samples are too thin to split by building type reliably.</p>
+
+      <h2>Average rent by neighborhood</h2>
+      <p>Median asking rent for every Greater Boston neighborhood with enough active listings to publish.</p>
+      <div class="dir-group"><h3>Allston, Brighton &amp; Brookline</h3><ul class="dir-list"><li><a href="/data/rent-index/allston/">Allston</a></li><li><a href="/data/rent-index/brighton/">Brighton</a></li><li><a href="/data/rent-index/brookline/">Brookline</a></li><li><a href="/data/rent-index/coolidge-corner/">Coolidge Corner</a></li><li><a href="/data/rent-index/north-brookline/">North Brookline</a></li><li><a href="/data/rent-index/chestnut-hill/">Chestnut Hill</a></li></ul></div>
+      <div class="dir-group"><h3>Downtown &amp; Central Boston</h3><ul class="dir-list"><li><a href="/data/rent-index/back-bay/">Back Bay</a></li><li><a href="/data/rent-index/beacon-hill/">Beacon Hill</a></li><li><a href="/data/rent-index/north-end/">North End</a></li><li><a href="/data/rent-index/south-end/">South End</a></li><li><a href="/data/rent-index/fenway/">Fenway</a></li><li><a href="/data/rent-index/mission-hill/">Mission Hill</a></li></ul></div>
+      <div class="dir-group"><h3>South, East &amp; Dorchester</h3><ul class="dir-list"><li><a href="/data/rent-index/south-boston/">South Boston</a></li><li><a href="/data/rent-index/east-boston/">East Boston</a></li><li><a href="/data/rent-index/dorchester/">Dorchester</a></li><li><a href="/data/rent-index/roxbury/">Roxbury</a></li><li><a href="/data/rent-index/jamaica-plain/">Jamaica Plain</a></li></ul></div>
+      <div class="dir-group"><h3>Somerville &amp; Cambridge</h3><ul class="dir-list"><li><a href="/data/rent-index/cambridge/">Cambridge</a></li><li><a href="/data/rent-index/somerville/">Somerville</a></li></ul></div>
+
+      <details class="method">
+        <summary>How we calculate this</summary>
+        <p>Each week we snapshot every active listing on Spot Easy across Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden — exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells (and thinner neighborhoods) are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
+        <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
+      </details>
     </div>
-    <p class="note">Building-type figures hold at the metro level only; neighborhood-level samples are too thin to split by building type reliably.</p>
-
-    <h2>Average rent by neighborhood</h2>
-    <p>Median asking rent for every Greater Boston neighborhood with enough active listings to publish.</p>
-    <div class="dir-group"><h3>Allston, Brighton &amp; Brookline</h3><ul class="dir-list"><li><a href="/data/rent-index/allston/">Allston</a></li><li><a href="/data/rent-index/brighton/">Brighton</a></li><li><a href="/data/rent-index/brookline/">Brookline</a></li><li><a href="/data/rent-index/coolidge-corner/">Coolidge Corner</a></li><li><a href="/data/rent-index/north-brookline/">North Brookline</a></li><li><a href="/data/rent-index/chestnut-hill/">Chestnut Hill</a></li></ul></div>
-    <div class="dir-group"><h3>Downtown &amp; Central Boston</h3><ul class="dir-list"><li><a href="/data/rent-index/back-bay/">Back Bay</a></li><li><a href="/data/rent-index/beacon-hill/">Beacon Hill</a></li><li><a href="/data/rent-index/north-end/">North End</a></li><li><a href="/data/rent-index/south-end/">South End</a></li><li><a href="/data/rent-index/fenway/">Fenway</a></li><li><a href="/data/rent-index/mission-hill/">Mission Hill</a></li></ul></div>
-    <div class="dir-group"><h3>South, East &amp; Dorchester</h3><ul class="dir-list"><li><a href="/data/rent-index/south-boston/">South Boston</a></li><li><a href="/data/rent-index/east-boston/">East Boston</a></li><li><a href="/data/rent-index/dorchester/">Dorchester</a></li><li><a href="/data/rent-index/roxbury/">Roxbury</a></li><li><a href="/data/rent-index/jamaica-plain/">Jamaica Plain</a></li></ul></div>
-    <div class="dir-group"><h3>Somerville &amp; Cambridge</h3><ul class="dir-list"><li><a href="/data/rent-index/cambridge/">Cambridge</a></li><li><a href="/data/rent-index/somerville/">Somerville</a></li></ul></div>
-
-    <details class="method">
-      <summary>How we calculate this</summary>
-      <p>Each week we snapshot every active listing on Spot Easy across Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden — exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells (and thinner neighborhoods) are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-      <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
-    </details>
-
   </main>
 
 </body>

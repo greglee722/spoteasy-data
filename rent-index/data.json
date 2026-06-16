@@ -16,7 +16,7 @@
         "median": 2300,
         "p25": 2100,
         "p75": 2600,
-        "n": 1105
+        "n": 1109
       },
       {
         "beds": "1",
@@ -30,14 +30,14 @@
         "median": 3300,
         "p25": 2895,
         "p75": 3900,
-        "n": 3029
+        "n": 3031
       },
       {
         "beds": "3",
         "median": 3950,
         "p25": 3450,
         "p75": 4700,
-        "n": 1983
+        "n": 1984
       },
       {
         "beds": "4+",
@@ -51,7 +51,7 @@
       {
         "building_type": "Apartment",
         "beds": {
-          "0": 2300,
+          "0": 2298,
           "1": 2700,
           "2": 3200,
           "3": 3900,
@@ -81,7 +81,7 @@
       {
         "building_type": "Brownstone",
         "beds": {
-          "0": 2350,
+          "0": 2355,
           "1": 2850,
           "2": 3600,
           "3": 4725,
@@ -139,15 +139,15 @@
         },
         "2": {
           "median": 3200,
-          "p25": 2813,
-          "p75": 3998,
-          "n": 231
+          "p25": 2819,
+          "p75": 3996,
+          "n": 232
         },
         "3": {
           "median": 3700,
           "p25": 3300,
-          "p75": 4096,
-          "n": 188
+          "p75": 4095,
+          "n": 189
         },
         "4+": {
           "median": 5200,
@@ -181,6 +181,43 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
+          "median": 2450
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2400
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2400
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2400
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2420
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2420
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2400
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
           "median": 2450
         }
       ],
@@ -224,6 +261,43 @@
           "median": 3125
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3125
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3125
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3125
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3125
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3125
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3125
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3125
+        }
+      ],
       "historyBedLabel": "2-bedroom"
     },
     {
@@ -234,7 +308,7 @@
           "median": 2550,
           "p25": 2300,
           "p75": 2850,
-          "n": 120
+          "n": 121
         },
         "1": {
           "median": 3250,
@@ -276,6 +350,43 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
+          "median": 3250
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3300
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3300
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3250
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3200
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3200
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3200
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
           "median": 3250
         }
       ],
@@ -334,6 +445,43 @@
           "median": 2950
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2950
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2900
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2925
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2950
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2950
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2950
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 2950
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -379,6 +527,43 @@
           "median": 3088
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3075
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3075
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3075
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3075
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3075
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3075
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3088
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -388,8 +573,8 @@
         "0": {
           "median": 2095,
           "p25": 1995,
-          "p75": 2225,
-          "n": 179
+          "p75": 2200,
+          "n": 181
         },
         "1": {
           "median": 2400,
@@ -401,7 +586,7 @@
           "median": 2950,
           "p25": 2700,
           "p75": 3300,
-          "n": 454
+          "n": 455
         },
         "3": {
           "median": 3668,
@@ -441,6 +626,43 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
+          "median": 2400
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2400
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2400
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2400
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2400
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2400
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2400
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
           "median": 2400
         }
       ],
@@ -499,6 +721,43 @@
           "median": 2500
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2525
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2525
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2500
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2500
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2500
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2500
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 2500
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -554,6 +813,13 @@
           "median": 3000
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3000
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -604,6 +870,43 @@
           "median": 3160
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3053
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3053
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2995
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2995
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2995
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3110
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3160
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -634,6 +937,13 @@
           "median": 4933
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 4933
+        }
+      ],
       "historyBedLabel": "2-bedroom"
     },
     {
@@ -642,9 +952,9 @@
       "beds": {
         "0": {
           "median": 2900,
-          "p25": 2371,
-          "p75": 3024,
-          "n": 28
+          "p25": 2395,
+          "p75": 3015,
+          "n": 29
         },
         "1": {
           "median": 3030,
@@ -699,6 +1009,43 @@
           "median": 3030
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3100
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3100
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3100
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3100
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3100
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3095
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3030
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -741,6 +1088,43 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
+          "median": 2675
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2799
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2799
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2750
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2750
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2750
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2713
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
           "median": 2675
         }
       ],
@@ -799,6 +1183,43 @@
           "median": 2565
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2503
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2503
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2505
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2505
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2505
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2505
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 2565
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -851,6 +1272,43 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
+          "median": 2400
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2375
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2375
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2400
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2400
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2400
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2400
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
           "median": 2400
         }
       ],
@@ -914,6 +1372,43 @@
           "median": 2800
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2800
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2800
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2800
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2800
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2800
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2800
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 2800
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -969,6 +1464,43 @@
           "median": 2495
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2498
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2500
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2500
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2500
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2495
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2498
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 2495
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -1014,6 +1546,43 @@
           "median": 3000
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3075
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3075
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3075
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3075
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3100
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3100
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3000
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -1051,6 +1620,43 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
+          "median": 4800
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 4823
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 4823
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 4800
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 4800
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 4800
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 4800
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
           "median": 4800
         }
       ],
@@ -1119,6 +1725,43 @@
           "median": 2450
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2498
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2495
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2498
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2498
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2498
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2500
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 2450
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -1174,6 +1817,43 @@
           "median": 2725
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2823
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2823
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2823
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2850
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2825
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2850
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 2725
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -1224,6 +1904,43 @@
           "median": 3200
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3100
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3100
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3100
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3100
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3050
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3000
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3200
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -1269,6 +1986,43 @@
           "median": 3538
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3538
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3538
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3538
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3575
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3575
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3575
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3538
+        }
+      ],
       "historyBedLabel": "3-bedroom"
     },
     {
@@ -1306,6 +2060,43 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
+          "median": 3125
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3150
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3150
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3150
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3150
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3150
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3150
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
           "median": 3125
         }
       ],
@@ -1364,6 +2155,43 @@
           "median": 2650
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 2600
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 2600
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2600
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2600
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2600
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 2600
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 2650
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -1416,6 +2244,13 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
+          "median": 2700
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
           "median": 2700
         }
       ],
@@ -1484,6 +2319,43 @@
           "median": 3000
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3000
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3000
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3000
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3000
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3000
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3000
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3000
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -1544,6 +2416,43 @@
           "median": 3300
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3350
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3350
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 3400
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 3345
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 3345
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3300
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3300
+        }
+      ],
       "historyBedLabel": "1-bedroom"
     },
     {
@@ -1584,6 +2493,43 @@
           "median": 5625
         }
       ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 5923
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 5850
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 5850
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 5923
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 5923
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 5625
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 5625
+        }
+      ],
       "historyBedLabel": "4+ bedroom"
     },
     {
@@ -1611,6 +2557,13 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
+          "median": 2800
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
           "median": 2800
         }
       ],
