@@ -79,7 +79,7 @@
       "name": "How much is rent in Beacon Hill?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of June 10 - June 16, 2026, the median asking rent in Beacon Hill is $2,950 for a one-bedroom and $3,600 for a two-bedroom. For other sizes: studios around $2,400."
+        "text": "As of June 10 - June 16, 2026, the median asking rent in Beacon Hill is $2,950 for a one-bedroom and $3,575 for a two-bedroom. For other sizes: studios around $2,450."
       }
     },
     {
@@ -87,7 +87,7 @@
       "name": "How much is a 1-bedroom in Beacon Hill?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The median is $2,950, with most 1-bedroom listings falling between $2,700 and $3,250."
+        "text": "The median is $2,950, with most 1-bedroom listings falling between $2,669 and $3,250."
       }
     },
     {
@@ -95,7 +95,7 @@
       "name": "Is it cheaper to rent a studio or split a 2-bedroom in Beacon Hill?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Splitting a two-bedroom costs about $1,800 per person — roughly $600 a month less than renting a studio solo ($2,400)."
+        "text": "Splitting a two-bedroom costs about $1,788 per person — roughly $662 a month less than renting a studio solo ($2,450)."
       }
     },
     {
@@ -224,6 +224,25 @@
     .dir-list a { display: block; padding: 12px 16px; border: 1.5px solid var(--rule); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--bg); transition: border-color .15s, background .15s, color .15s; }
     .dir-list a:hover { border-color: var(--sky); background: var(--soft); color: var(--sky); text-decoration: none; }
 
+    /* Rent-over-time Week/Month toggle (CSS-only; hardened vs. Ant Design globals) */
+    .hist { margin: 48px 0 0; }
+    /* Clip-hide the radios (NOT display:none) so they stay keyboard-focusable + survive Ant resets */
+    .hist .hv-week, .hist .hv-month { position: absolute !important; width: 1px; height: 1px; clip-path: inset(50%); opacity: 0; pointer-events: none; }
+    .hist-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: 0 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--navy); }
+    .hist-head h2 { margin: 0 !important; padding: 0 !important; border-bottom: none !important; }
+    .hist-toggle { display: inline-flex !important; border: 1.5px solid var(--rule); border-radius: 8px; overflow: hidden; }
+    .hist-toggle label { display: inline-block !important; padding: 6px 16px; font-size: 13px; font-weight: 700; color: var(--muted) !important; cursor: pointer; background: var(--bg); transition: background .15s, color .15s; }
+    .hist-toggle label + label { border-left: 1.5px solid var(--rule); }
+    .hist .hv-week:checked ~ .hist-head label[for="hv-week"],
+    .hist .hv-month:checked ~ .hist-head label[for="hv-month"] { background: var(--navy); color: #fff !important; }
+    .hist .hv-week:focus-visible ~ .hist-head label[for="hv-week"],
+    .hist .hv-month:focus-visible ~ .hist-head label[for="hv-month"] { outline: 2px solid var(--sky); outline-offset: 2px; }
+    .hist-p { font-size: 14px; color: var(--muted); margin: 0 0 4px; }
+    /* Weekly is the default-visible pane; monthly is revealed on toggle */
+    .pane-month, .hist-p-month { display: none; }
+    .hist .hv-month:checked ~ .pane-month, .hist .hv-month:checked ~ .hist-p-month { display: block; }
+    .hist .hv-month:checked ~ .pane-week, .hist .hv-month:checked ~ .hist-p-week { display: none; }
+
     /* ─── Responsive ─── */
     @media (max-width: 768px) {
       .nh-header { padding: 40px 20px 36px; }
@@ -260,17 +279,38 @@
             <tr><th>Apartment size</th><th class="num">Median rent</th><th class="num">Typical range</th></tr>
           </thead>
           <tbody>
-            <tr><td>Studio</td><td class="num">$2,400</td><td class="num dim">$2,163 – $2,600</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$2,950</td><td class="num dim">$2,700 – $3,250</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,600</td><td class="num dim">$3,388 – $4,000</td></tr>
+            <tr><td>Studio</td><td class="num">$2,450</td><td class="num dim">$2,188 – $2,646</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$2,950</td><td class="num dim">$2,669 – $3,250</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,575</td><td class="num dim">$3,350 – $4,000</td></tr>
           </tbody>
         </table>
       </div>
       <p class="note">Typical range = where the middle 50% of listings fall — a quarter rent for less, a quarter for more.</p>
       
-    <h2>Beacon Hill rent over time</h2>
-    <p>How the 1-bedroom median has moved, month over month — refreshed weekly.</p>
-    <div class="table-wrap">
+    <section class="hist">
+      <input type="radio" name="histview" id="hv-week" class="hv-week" checked>
+      <input type="radio" name="histview" id="hv-month" class="hv-month">
+      <div class="hist-head">
+        <h2>Beacon Hill rent over time</h2>
+        <div class="hist-toggle"><label for="hv-week">Weekly</label><label for="hv-month">Monthly</label></div>
+      </div>
+      <p class="hist-p hist-p-week">How the 1-bedroom median has moved week over week — refreshed every Tuesday.</p>
+      <p class="hist-p hist-p-month">How the 1-bedroom median has moved month over month.</p>
+      <div class="table-wrap pane-week">
+      <table>
+        <thead><tr><th>Week of</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
+        <tbody>
+          <tr><td>Apr 27 – May 3</td><td class="num">$2,950</td><td class="num">—</td></tr>
+          <tr><td>May 4–10</td><td class="num">$2,900</td><td class="num">−$50</td></tr>
+          <tr><td>May 12–18</td><td class="num">$2,925</td><td class="num">+$25</td></tr>
+          <tr><td>May 19–25</td><td class="num">$2,950</td><td class="num">+$25</td></tr>
+          <tr><td>May 26 – Jun 1</td><td class="num">$2,950</td><td class="num">even</td></tr>
+          <tr><td>Jun 2–8</td><td class="num">$2,950</td><td class="num">even</td></tr>
+          <tr><td>Jun 10–16</td><td class="num">$2,950</td><td class="num">even</td></tr>
+        </tbody>
+      </table>
+    </div>
+      <div class="table-wrap pane-month">
       <table>
         <thead><tr><th>Month</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
         <tbody>
@@ -280,6 +320,7 @@
         </tbody>
       </table>
     </div>
+    </section>
       
     <h2>How Beacon Hill rent compares to Greater Boston</h2>
     <p>A 1-bedroom in Beacon Hill runs $200 more than the Greater Boston median of $2,750 — about 7% above the metro average. Among the 19 Greater Boston areas we publish, that ranks Beacon Hill 8th most expensive for 1-bedrooms.</p>
@@ -287,17 +328,17 @@
       <table>
         <thead><tr><th>Apartment size</th><th class="num">Beacon Hill</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
-          <tr><td>Studio</td><td class="num">$2,400</td><td class="num dim">$2,300</td><td class="num">+$100</td></tr>
+          <tr><td>Studio</td><td class="num">$2,450</td><td class="num dim">$2,300</td><td class="num">+$150</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$2,950</td><td class="num dim">$2,750</td><td class="num">+$200</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,600</td><td class="num dim">$3,325</td><td class="num">+$275</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,575</td><td class="num dim">$3,300</td><td class="num">+$275</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Half of 1-bedroom listings in Beacon Hill fall between <strong>$2,700</strong> and <strong>$3,250</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
+    <p>Half of 1-bedroom listings in Beacon Hill fall between <strong>$2,669</strong> and <strong>$3,250</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
       
     <div class="module">
       <h2>Studio vs. roommate in Beacon Hill</h2>
-      <p>Renting a studio solo runs about <strong>$2,400</strong>. Splitting a 2-bedroom two ways works out to <strong>$1,800</strong> per person — roughly <strong>$600/month cheaper</strong> than going solo (25% savings).</p>
+      <p>Renting a studio solo runs about <strong>$2,450</strong>. Splitting a 2-bedroom two ways works out to <strong>$1,788</strong> per person — roughly <strong>$662/month cheaper</strong> than going solo (27% savings).</p>
     </div>
       
       
@@ -313,11 +354,11 @@
       
     <h2>Beacon Hill rent — frequently asked questions</h2>
     <h3>How much is rent in Beacon Hill?</h3>
-    <p>As of June 10 - June 16, 2026, the median asking rent in Beacon Hill is $2,950 for a one-bedroom and $3,600 for a two-bedroom. For other sizes: studios around $2,400.</p>
+    <p>As of June 10 - June 16, 2026, the median asking rent in Beacon Hill is $2,950 for a one-bedroom and $3,575 for a two-bedroom. For other sizes: studios around $2,450.</p>
     <h3>How much is a 1-bedroom in Beacon Hill?</h3>
-    <p>The median is $2,950, with most 1-bedroom listings falling between $2,700 and $3,250.</p>
+    <p>The median is $2,950, with most 1-bedroom listings falling between $2,669 and $3,250.</p>
     <h3>Is it cheaper to rent a studio or split a 2-bedroom in Beacon Hill?</h3>
-    <p>Splitting a two-bedroom costs about $1,800 per person — roughly $600 a month less than renting a studio solo ($2,400).</p>
+    <p>Splitting a two-bedroom costs about $1,788 per person — roughly $662 a month less than renting a studio solo ($2,450).</p>
     <h3>How does Beacon Hill compare to the Boston average?</h3>
     <p>A 1-bedroom in Beacon Hill costs $200 more than the Greater Boston median of $2,750.</p>
     <h3>When do Beacon Hill apartments become available?</h3>
@@ -325,7 +366,7 @@
       <details class="method">
         <summary>How we calculate this</summary>
         <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-        <p class="n-line">Sample sizes this week (N): Studio 66 · 1BR 88 · 2BR 72.</p>
+        <p class="n-line">Sample sizes this week (N): Studio 64 · 1BR 88 · 2BR 69.</p>
         <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
       </details>
     </div>

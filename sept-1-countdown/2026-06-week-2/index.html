@@ -112,9 +112,9 @@
     .kicker::before { content: ''; display: block; width: 28px; height: 1px; background: var(--sky); }
 
     /* Hero typography */
-    h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 900; color: #fff; line-height: 1.08; letter-spacing: -.02em; margin-bottom: 16px; }
-    .lede { font-size: 16px; color: rgba(255,255,255,.7); line-height: 1.65; margin-bottom: 28px; max-width: 640px; }
-    .lede strong { color: #fff; }
+    h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 900; color: #fff !important; line-height: 1.08; letter-spacing: -.02em; margin-bottom: 16px; }
+    .lede { font-size: 16px; color: rgba(255,255,255,.7) !important; line-height: 1.65; margin-bottom: 28px; max-width: 640px; }
+    .lede strong { color: #fff !important; }
 
     /* Hero stat tiles */
     .tiles { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid rgba(255,255,255,.12); border-radius: 6px; overflow: hidden; }
@@ -252,7 +252,7 @@
   const REPORT_DATA = {
   "week_ending": "2026-06-10",
   "week_label": "June 10 - June 16, 2026",
-  "lede": "83 days until September 1. 3,346 units already listed for Sept 1 starts across Greater Boston.",
+  "lede": "83 days until September 1. 3,281 units already listed for Sept 1 starts across Greater Boston.",
   "tiles": [
     {
       "label": "Days until Sept 1",
@@ -261,13 +261,13 @@
     },
     {
       "label": "Sept 1 units listed",
-      "value": "3,346",
+      "value": "3,281",
       "delta_text": "active right now",
       "delta_dir": "up"
     },
     {
       "label": "1BR median (Sept 1)",
-      "value": "$2,818",
+      "value": "$2,821",
       "delta_text": "asking rent",
       "delta_dir": "flat"
     },
@@ -278,27 +278,27 @@
     }
   ],
   "bullets": [
-    "<strong>3,346 units listed for Sept 1 2026</strong> — 83 days from now.",
+    "<strong>3,281 units listed for Sept 1 2026</strong> — 83 days from now.",
     "<strong>Brighton and Allston lead inventory</strong> — the perennial student-move epicenters.",
-    "<strong>1BR Sept 1 asking rent</strong> is $2,818 across tracked neighborhoods.",
+    "<strong>1BR Sept 1 asking rent</strong> is $2,821 across tracked neighborhoods.",
     "<strong>83 days out</strong> is the right time to start searching — Sept 1 inventory moves fast."
   ],
   "rows": [
     [
       "<a href=\"https://spoteasy.com/brighton-apartments\">Brighton</a>",
-      857,
+      859,
       "$2,400",
       null
     ],
     [
       "<a href=\"https://spoteasy.com/allston-apartments\">Allston</a>",
-      448,
+      434,
       "$2,400",
       null
     ],
     [
       "<a href=\"https://spoteasy.com/fenway-apartments\">Fenway</a>",
-      396,
+      380,
       "$3,100",
       null
     ],
@@ -310,7 +310,7 @@
     ],
     [
       "<a href=\"https://spoteasy.com/roxbury-apartments\">Roxbury</a>",
-      135,
+      134,
       "$2,900",
       null
     ],
@@ -321,20 +321,20 @@
       null
     ],
     [
-      "<a href=\"https://spoteasy.com/north-brookline-apartments\">North Brookline</a>",
-      125,
+      "<a href=\"https://spoteasy.com/oak-square-apartments\">Oak Square</a>",
+      102,
       null,
       null
     ],
     [
       "<a href=\"https://spoteasy.com/beacon-hill-apartments\">Beacon Hill</a>",
-      103,
+      101,
       "$2,763",
       null
     ],
     [
-      "<a href=\"https://spoteasy.com/oak-square-apartments\">Oak Square</a>",
-      102,
+      "<a href=\"https://spoteasy.com/north-brookline-apartments\">North Brookline</a>",
+      98,
       null,
       null
     ],
@@ -345,14 +345,14 @@
       null
     ],
     [
-      "<a href=\"https://spoteasy.com/coolidge-corner-apartments\">Coolidge Corner</a>",
-      58,
-      "$3,200",
+      "<a href=\"https://spoteasy.com/south-end-apartments\">South End</a>",
+      60,
+      "$3,300",
       null
     ],
     [
-      "<a href=\"https://spoteasy.com/south-end-apartments\">South End</a>",
-      56,
+      "<a href=\"https://spoteasy.com/coolidge-corner-apartments\">Coolidge Corner</a>",
+      58,
       "$3,200",
       null
     ]

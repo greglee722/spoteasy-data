@@ -295,6 +295,25 @@
     .dir-list a { display: block; padding: 12px 16px; border: 1.5px solid var(--rule); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--bg); transition: border-color .15s, background .15s, color .15s; }
     .dir-list a:hover { border-color: var(--sky); background: var(--soft); color: var(--sky); text-decoration: none; }
 
+    /* Rent-over-time Week/Month toggle (CSS-only; hardened vs. Ant Design globals) */
+    .hist { margin: 48px 0 0; }
+    /* Clip-hide the radios (NOT display:none) so they stay keyboard-focusable + survive Ant resets */
+    .hist .hv-week, .hist .hv-month { position: absolute !important; width: 1px; height: 1px; clip-path: inset(50%); opacity: 0; pointer-events: none; }
+    .hist-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: 0 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--navy); }
+    .hist-head h2 { margin: 0 !important; padding: 0 !important; border-bottom: none !important; }
+    .hist-toggle { display: inline-flex !important; border: 1.5px solid var(--rule); border-radius: 8px; overflow: hidden; }
+    .hist-toggle label { display: inline-block !important; padding: 6px 16px; font-size: 13px; font-weight: 700; color: var(--muted) !important; cursor: pointer; background: var(--bg); transition: background .15s, color .15s; }
+    .hist-toggle label + label { border-left: 1.5px solid var(--rule); }
+    .hist .hv-week:checked ~ .hist-head label[for="hv-week"],
+    .hist .hv-month:checked ~ .hist-head label[for="hv-month"] { background: var(--navy); color: #fff !important; }
+    .hist .hv-week:focus-visible ~ .hist-head label[for="hv-week"],
+    .hist .hv-month:focus-visible ~ .hist-head label[for="hv-month"] { outline: 2px solid var(--sky); outline-offset: 2px; }
+    .hist-p { font-size: 14px; color: var(--muted); margin: 0 0 4px; }
+    /* Weekly is the default-visible pane; monthly is revealed on toggle */
+    .pane-month, .hist-p-month { display: none; }
+    .hist .hv-month:checked ~ .pane-month, .hist .hv-month:checked ~ .hist-p-month { display: block; }
+    .hist .hv-month:checked ~ .pane-week, .hist .hv-month:checked ~ .hist-p-week { display: none; }
+
     /* ─── Responsive ─── */
     @media (max-width: 768px) {
       .nh-header { padding: 40px 20px 36px; }
@@ -331,18 +350,39 @@
           </thead>
           <tbody>
             <tr><td>Studio</td><td class="num">$2,300</td><td class="num dim">$2,100 – $2,600</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$2,750</td><td class="num dim">$2,400 – $3,185</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,325</td><td class="num dim">$2,900 – $3,913</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$3,975</td><td class="num dim">$3,495 – $4,700</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$2,750</td><td class="num dim">$2,400 – $3,175</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,300</td><td class="num dim">$2,895 – $3,900</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$3,950</td><td class="num dim">$3,450 – $4,700</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$5,200</td><td class="num dim">$4,400 – $6,250</td></tr>
           </tbody>
         </table>
       </div>
       <p class="note">Typical range = where the middle 50% of listings fall — a quarter rent for less, a quarter for more.</p>
       
-    <h2>Greater Boston rent over time</h2>
-    <p>How the 1-bedroom median has moved, month over month — refreshed weekly.</p>
-    <div class="table-wrap">
+    <section class="hist">
+      <input type="radio" name="histview" id="hv-week" class="hv-week" checked>
+      <input type="radio" name="histview" id="hv-month" class="hv-month">
+      <div class="hist-head">
+        <h2>Greater Boston rent over time</h2>
+        <div class="hist-toggle"><label for="hv-week">Weekly</label><label for="hv-month">Monthly</label></div>
+      </div>
+      <p class="hist-p hist-p-week">How the 1-bedroom median has moved week over week — refreshed every Tuesday.</p>
+      <p class="hist-p hist-p-month">How the 1-bedroom median has moved month over month.</p>
+      <div class="table-wrap pane-week">
+      <table>
+        <thead><tr><th>Week of</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
+        <tbody>
+          <tr><td>Apr 27 – May 3</td><td class="num">$2,750</td><td class="num">—</td></tr>
+          <tr><td>May 4–10</td><td class="num">$2,750</td><td class="num">even</td></tr>
+          <tr><td>May 12–18</td><td class="num">$2,728</td><td class="num">−$22</td></tr>
+          <tr><td>May 19–25</td><td class="num">$2,707</td><td class="num">−$21</td></tr>
+          <tr><td>May 26 – Jun 1</td><td class="num">$2,700</td><td class="num">−$7</td></tr>
+          <tr><td>Jun 2–8</td><td class="num">$2,720</td><td class="num">+$20</td></tr>
+          <tr><td>Jun 10–16</td><td class="num">$2,750</td><td class="num">+$30</td></tr>
+        </tbody>
+      </table>
+    </div>
+      <div class="table-wrap pane-month">
       <table>
         <thead><tr><th>Month</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
         <tbody>
@@ -352,22 +392,23 @@
         </tbody>
       </table>
     </div>
+    </section>
 
       <h2 id="triple-deckers">Triple-Deckers & Multi-Family</h2>
-      <p>Boston's housing stock is unusual: a huge share of rentals sit in <strong>triple-deckers</strong> and other small multi-family buildings rather than big apartment complexes. Below is the median asking rent by building type and bedroom count across Greater Boston. At the 2-bedroom level, a unit in a triple-decker / multi-family building runs about $215/month less than the same size in a standard apartment building.</p>
+      <p>Boston's housing stock is unusual: a huge share of rentals sit in <strong>triple-deckers</strong> and other small multi-family buildings rather than big apartment complexes. Below is the median asking rent by building type and bedroom count across Greater Boston. At the 2-bedroom level, a unit in a triple-decker / multi-family building runs about $200/month less than the same size in a standard apartment building.</p>
       <div class="table-wrap">
         <table>
           <thead>
             <tr><th>Building type</th><th class="num">Studio</th><th class="num">1BR</th><th class="num">2BR</th><th class="num">3BR</th><th class="num">4+BR</th></tr>
           </thead>
           <tbody>
-            <tr><td>Apartment</td><td class="num">$2,295</td><td class="num">$2,700</td><td class="num">$3,215</td><td class="num">$3,950</td><td class="num">$4,895</td></tr>
+            <tr><td>Apartment</td><td class="num">$2,295</td><td class="num">$2,700</td><td class="num">$3,200</td><td class="num">$3,900</td><td class="num">$4,895</td></tr>
           <tr><td>Multi-Family</td><td class="num">$2,300</td><td class="num">$2,650</td><td class="num">$3,000</td><td class="num">$3,600</td><td class="num">$5,200</td></tr>
-          <tr><td>Condo</td><td class="num">$2,500</td><td class="num">$3,000</td><td class="num">$3,650</td><td class="num">$4,200</td><td class="num">$5,395</td></tr>
-          <tr><td>Brownstone</td><td class="num">$2,350</td><td class="num">$2,850</td><td class="num">$3,625</td><td class="num">$4,725</td><td class="num">$6,100</td></tr>
+          <tr><td>Condo</td><td class="num">$2,500</td><td class="num">$3,000</td><td class="num">$3,650</td><td class="num">$4,200</td><td class="num">$5,275</td></tr>
+          <tr><td>Brownstone</td><td class="num">$2,350</td><td class="num">$2,850</td><td class="num">$3,625</td><td class="num">$4,725</td><td class="num">$6,200</td></tr>
           <tr><td>Single-Family</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">$4,500</td><td class="num">$6,500</td></tr>
-          <tr><td>Townhouse</td><td class="num">—</td><td class="num">—</td><td class="num">$3,400</td><td class="num">$3,600</td><td class="num">$5,500</td></tr>
-          <tr><td>Unspecified</td><td class="num">$2,450</td><td class="num">$2,614</td><td class="num">$3,350</td><td class="num">$3,900</td><td class="num">$5,213</td></tr>
+          <tr><td>Townhouse</td><td class="num">—</td><td class="num">—</td><td class="num">$3,348</td><td class="num">$3,600</td><td class="num">$5,500</td></tr>
+          <tr><td>Unspecified</td><td class="num">$2,450</td><td class="num">$2,633</td><td class="num">$3,350</td><td class="num">$3,900</td><td class="num">$5,200</td></tr>
           </tbody>
         </table>
       </div>
