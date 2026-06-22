@@ -79,7 +79,7 @@
       "name": "How much is rent in Fenway?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of June 9 - June 15, 2026, the median asking rent in Fenway is $2,813 for a one-bedroom and $3,750 for a two-bedroom. For other sizes: studios around $2,400, three-bedrooms $4,998."
+        "text": "As of June 9 - June 15, 2026, the median asking rent in Fenway is $2,800 for a one-bedroom and $3,725 for a two-bedroom. For other sizes: studios around $2,400, three-bedrooms $5,025."
       }
     },
     {
@@ -87,7 +87,7 @@
       "name": "How much is a 1-bedroom in Fenway?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The median is $2,813, with most 1-bedroom listings falling between $2,527 and $3,100."
+        "text": "The median is $2,800, with most 1-bedroom listings falling between $2,500 and $3,100."
       }
     },
     {
@@ -95,7 +95,7 @@
       "name": "Is it cheaper to rent a studio or split a 2-bedroom in Fenway?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Splitting a two-bedroom costs about $1,875 per person — roughly $525 a month less than renting a studio solo ($2,400)."
+        "text": "Splitting a two-bedroom costs about $1,863 per person — roughly $537 a month less than renting a studio solo ($2,400)."
       }
     },
     {
@@ -103,7 +103,7 @@
       "name": "How does Fenway compare to the Boston average?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A 1-bedroom in Fenway costs $63 more than the Greater Boston median of $2,750."
+        "text": "A 1-bedroom in Fenway costs $50 more than the Greater Boston median of $2,750."
       }
     },
     {
@@ -228,6 +228,8 @@
     .dir-list li { margin: 0; }
     .dir-list a { display: block; padding: 12px 16px; border: 1.5px solid var(--rule); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--bg); transition: border-color .15s, background .15s, color .15s; }
     .dir-list a:hover { border-color: var(--sky); background: var(--soft); color: var(--sky); text-decoration: none; }
+    .dir-fee { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .01em; }
+    .dir-list a:hover .dir-fee { color: var(--muted); }
 
     /* Rent-over-time Week/Month toggle (CSS-only; hardened vs. Ant Design globals) */
     .hist { margin: 48px 0 0; }
@@ -271,12 +273,12 @@
         </nav>
         <div class="kicker">Boston Rent Index</div>
         <h1>Average Rent in Fenway (2026)</h1>
-        <p class="lede">The median asking rent for a 1-bedroom in Fenway is <strong>$2,813</strong> as of June 9 - June 15, 2026, based on verified active listings across Spot Easy — $63 more than the Greater Boston median of $2,750.</p>
+        <p class="lede">The median asking rent for a 1-bedroom in Fenway is <strong>$2,800</strong> as of June 9 - June 15, 2026, based on verified active listings across Spot Easy — $50 more than the Greater Boston median of $2,750.</p>
         <p class="updated">↻ <b>Updated weekly</b> · data as of June 9 - June 15, 2026</p>
       </div>
     </header>
     <div class="nh-body">
-      <div class="trend"><strong>$2,813</strong> — 1-bedroom median · +$13 vs. last week · +$13 vs. a month ago.</div>
+      <div class="trend"><strong>$2,800</strong> — 1-bedroom median · flat vs. last week · flat vs. a month ago.</div>
       <h2>Median asking rent by bedroom</h2>
       <div class="table-wrap">
         <table>
@@ -285,9 +287,9 @@
           </thead>
           <tbody>
             <tr><td>Studio</td><td class="num">$2,400</td><td class="num dim">$2,250 – $2,500</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$2,813</td><td class="num dim">$2,527 – $3,100</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,750</td><td class="num dim">$3,350 – $4,100</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$4,998</td><td class="num dim">$4,750 – $5,580</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$2,800</td><td class="num dim">$2,500 – $3,100</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,725</td><td class="num dim">$3,338 – $4,100</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$5,025</td><td class="num dim">$4,750 – $5,600</td></tr>
           </tbody>
         </table>
       </div>
@@ -312,7 +314,7 @@
           <tr><td>May 19–25</td><td class="num">$2,800</td><td class="num"><span class="chg-flat">even</span></td></tr>
           <tr><td>May 26 – Jun 1</td><td class="num">$2,800</td><td class="num"><span class="chg-flat">even</span></td></tr>
           <tr><td>Jun 2–8</td><td class="num">$2,800</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Jun 9–15</td><td class="num">$2,813</td><td class="num"><span class="chg-up">↑ +$13</span></td></tr>
+          <tr><td>Jun 9–15</td><td class="num">$2,800</td><td class="num"><span class="chg-flat">even</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -322,30 +324,36 @@
         <tbody>
           <tr><td>Apr 2026</td><td class="num">$2,800</td><td class="num"><span class="chg-flat">—</span></td></tr>
           <tr><td>May 2026</td><td class="num">$2,800</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Jun 2026</td><td class="num">$2,813</td><td class="num"><span class="chg-up">↑ +$13</span></td></tr>
+          <tr><td>Jun 2026</td><td class="num">$2,800</td><td class="num"><span class="chg-flat">even</span></td></tr>
         </tbody>
       </table>
     </div>
     </section>
       
     <h2>How Fenway rent compares to Greater Boston</h2>
-    <p>A 1-bedroom in Fenway runs $63 more than the Greater Boston median of $2,750 — about 2% above the metro average. Among the 19 Greater Boston areas we publish, that ranks Fenway 9th most expensive for 1-bedrooms.</p>
+    <p>A 1-bedroom in Fenway runs $50 more than the Greater Boston median of $2,750 — about 2% above the metro average. Among the 19 Greater Boston areas we publish, that ranks Fenway 9th most expensive for 1-bedrooms.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Apartment size</th><th class="num">Fenway</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
           <tr><td>Studio</td><td class="num">$2,400</td><td class="num dim">$2,300</td><td class="num">+$100</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$2,813</td><td class="num dim">$2,750</td><td class="num">+$63</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,750</td><td class="num dim">$3,300</td><td class="num">+$450</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$4,998</td><td class="num dim">$3,950</td><td class="num">+$1,048</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$2,800</td><td class="num dim">$2,750</td><td class="num">+$50</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,725</td><td class="num dim">$3,300</td><td class="num">+$425</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$5,025</td><td class="num dim">$3,900</td><td class="num">+$1,125</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Half of 1-bedroom listings in Fenway fall between <strong>$2,527</strong> and <strong>$3,100</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
+    <p>Half of 1-bedroom listings in Fenway fall between <strong>$2,500</strong> and <strong>$3,100</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
       
     <div class="module">
       <h2>Studio vs. roommate in Fenway</h2>
-      <p>Renting a studio solo runs about <strong>$2,400</strong>. Splitting a 2-bedroom two ways works out to <strong>$1,875</strong> per person — roughly <strong>$525/month cheaper</strong> than going solo (22% savings).</p>
+      <p>Renting a studio solo runs about <strong>$2,400</strong>. Splitting a 2-bedroom two ways works out to <strong>$1,863</strong> per person — roughly <strong>$537/month cheaper</strong> than going solo (22% savings).</p>
+    </div>
+      
+    <div class="module">
+      <h2>No broker fee in Fenway</h2>
+      <p><strong>72.6%</strong> of Fenway listings with a stated fee have no broker fee. That's below the Greater Boston average of <strong>78.4%</strong> — broker fees remain more common here than in most Greater Boston neighborhoods.</p>
+      <a class="cta" href="https://www.spoteasy.com/fenway-apartments/no-broker-fee">Browse no-fee listings in Fenway</a>
     </div>
       
       
@@ -361,19 +369,19 @@
       
     <h2>Fenway rent — frequently asked questions</h2>
     <h3>How much is rent in Fenway?</h3>
-    <p>As of June 9 - June 15, 2026, the median asking rent in Fenway is $2,813 for a one-bedroom and $3,750 for a two-bedroom. For other sizes: studios around $2,400, three-bedrooms $4,998.</p>
+    <p>As of June 9 - June 15, 2026, the median asking rent in Fenway is $2,800 for a one-bedroom and $3,725 for a two-bedroom. For other sizes: studios around $2,400, three-bedrooms $5,025.</p>
     <h3>How much is a 1-bedroom in Fenway?</h3>
-    <p>The median is $2,813, with most 1-bedroom listings falling between $2,527 and $3,100.</p>
+    <p>The median is $2,800, with most 1-bedroom listings falling between $2,500 and $3,100.</p>
     <h3>Is it cheaper to rent a studio or split a 2-bedroom in Fenway?</h3>
-    <p>Splitting a two-bedroom costs about $1,875 per person — roughly $525 a month less than renting a studio solo ($2,400).</p>
+    <p>Splitting a two-bedroom costs about $1,863 per person — roughly $537 a month less than renting a studio solo ($2,400).</p>
     <h3>How does Fenway compare to the Boston average?</h3>
-    <p>A 1-bedroom in Fenway costs $63 more than the Greater Boston median of $2,750.</p>
+    <p>A 1-bedroom in Fenway costs $50 more than the Greater Boston median of $2,750.</p>
     <h3>When do Fenway apartments become available?</h3>
     <p>Most Greater Boston leases start September 1. Inventory peaks from late spring through summer and tightens in August; for a fall move-in, the best selection is usually six to eight weeks out.</p>
       <details class="method">
         <summary>How we calculate this</summary>
         <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-        <p class="n-line">Sample sizes this week (N): Studio 207 · 1BR 294 · 2BR 201 · 3BR 82.</p>
+        <p class="n-line">Sample sizes this week (N): Studio 205 · 1BR 290 · 2BR 204 · 3BR 80.</p>
         <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
       </details>
     </div>

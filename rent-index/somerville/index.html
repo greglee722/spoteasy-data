@@ -79,7 +79,7 @@
       "name": "How much is rent in Somerville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of June 9 - June 15, 2026, the median asking rent in Somerville is $2,700 for a one-bedroom and $3,300 for a two-bedroom. For other sizes: studios around $2,348, three-bedrooms $4,088, four-plus-bedrooms $5,000."
+        "text": "As of June 9 - June 15, 2026, the median asking rent in Somerville is $2,700 for a one-bedroom and $3,300 for a two-bedroom. For other sizes: studios around $2,335, three-bedrooms $4,075, four-plus-bedrooms $4,985."
       }
     },
     {
@@ -95,7 +95,7 @@
       "name": "Is it cheaper to rent a studio or split a 2-bedroom in Somerville?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Splitting a two-bedroom costs about $1,650 per person — roughly $698 a month less than renting a studio solo ($2,348)."
+        "text": "Splitting a two-bedroom costs about $1,650 per person — roughly $685 a month less than renting a studio solo ($2,335)."
       }
     },
     {
@@ -228,6 +228,8 @@
     .dir-list li { margin: 0; }
     .dir-list a { display: block; padding: 12px 16px; border: 1.5px solid var(--rule); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--bg); transition: border-color .15s, background .15s, color .15s; }
     .dir-list a:hover { border-color: var(--sky); background: var(--soft); color: var(--sky); text-decoration: none; }
+    .dir-fee { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .01em; }
+    .dir-list a:hover .dir-fee { color: var(--muted); }
 
     /* Rent-over-time Week/Month toggle (CSS-only; hardened vs. Ant Design globals) */
     .hist { margin: 48px 0 0; }
@@ -284,11 +286,11 @@
             <tr><th>Apartment size</th><th class="num">Median rent</th><th class="num">Typical range</th></tr>
           </thead>
           <tbody>
-            <tr><td>Studio</td><td class="num">$2,348</td><td class="num dim">$2,194 – $2,551</td></tr>
+            <tr><td>Studio</td><td class="num">$2,335</td><td class="num dim">$2,175 – $2,550</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$2,700</td><td class="num dim">$2,500 – $3,000</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,300</td><td class="num dim">$2,950 – $3,700</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$4,088</td><td class="num dim">$3,600 – $4,400</td></tr>
-          <tr><td>4+ Bedroom</td><td class="num">$5,000</td><td class="num dim">$4,700 – $5,500</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,300</td><td class="num dim">$2,996 – $3,700</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$4,075</td><td class="num dim">$3,600 – $4,400</td></tr>
+          <tr><td>4+ Bedroom</td><td class="num">$4,985</td><td class="num dim">$4,700 – $5,500</td></tr>
           </tbody>
         </table>
       </div>
@@ -301,11 +303,11 @@
       <table>
         <thead><tr><th>Apartment size</th><th class="num">Somerville</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
-          <tr><td>Studio</td><td class="num">$2,348</td><td class="num dim">$2,300</td><td class="num">+$48</td></tr>
+          <tr><td>Studio</td><td class="num">$2,335</td><td class="num dim">$2,300</td><td class="num">+$35</td></tr>
           <tr><td>1 Bedroom</td><td class="num">$2,700</td><td class="num dim">$2,750</td><td class="num">−$50</td></tr>
           <tr><td>2 Bedroom</td><td class="num">$3,300</td><td class="num dim">$3,300</td><td class="num">even</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$4,088</td><td class="num dim">$3,950</td><td class="num">+$138</td></tr>
-          <tr><td>4+ Bedroom</td><td class="num">$5,000</td><td class="num dim">$5,200</td><td class="num">−$200</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$4,075</td><td class="num dim">$3,900</td><td class="num">+$175</td></tr>
+          <tr><td>4+ Bedroom</td><td class="num">$4,985</td><td class="num dim">$5,200</td><td class="num">−$215</td></tr>
         </tbody>
       </table>
     </div>
@@ -313,7 +315,13 @@
       
     <div class="module">
       <h2>Studio vs. roommate in Somerville</h2>
-      <p>Renting a studio solo runs about <strong>$2,348</strong>. Splitting a 2-bedroom two ways works out to <strong>$1,650</strong> per person — roughly <strong>$698/month cheaper</strong> than going solo (30% savings).</p>
+      <p>Renting a studio solo runs about <strong>$2,335</strong>. Splitting a 2-bedroom two ways works out to <strong>$1,650</strong> per person — roughly <strong>$685/month cheaper</strong> than going solo (29% savings).</p>
+    </div>
+      
+    <div class="module">
+      <h2>No broker fee in Somerville</h2>
+      <p><strong>76.5%</strong> of Somerville listings with a stated fee have no broker fee. That's below the Greater Boston average of <strong>78.4%</strong> — broker fees remain more common here than in most Greater Boston neighborhoods.</p>
+      <a class="cta" href="https://www.spoteasy.com/somerville-apartments/no-broker-fee">Browse no-fee listings in Somerville</a>
     </div>
       
       
@@ -329,11 +337,11 @@
       
     <h2>Somerville rent — frequently asked questions</h2>
     <h3>How much is rent in Somerville?</h3>
-    <p>As of June 9 - June 15, 2026, the median asking rent in Somerville is $2,700 for a one-bedroom and $3,300 for a two-bedroom. For other sizes: studios around $2,348, three-bedrooms $4,088, four-plus-bedrooms $5,000.</p>
+    <p>As of June 9 - June 15, 2026, the median asking rent in Somerville is $2,700 for a one-bedroom and $3,300 for a two-bedroom. For other sizes: studios around $2,335, three-bedrooms $4,075, four-plus-bedrooms $4,985.</p>
     <h3>How much is a 1-bedroom in Somerville?</h3>
     <p>The median is $2,700, with most 1-bedroom listings falling between $2,500 and $3,000.</p>
     <h3>Is it cheaper to rent a studio or split a 2-bedroom in Somerville?</h3>
-    <p>Splitting a two-bedroom costs about $1,650 per person — roughly $698 a month less than renting a studio solo ($2,348).</p>
+    <p>Splitting a two-bedroom costs about $1,650 per person — roughly $685 a month less than renting a studio solo ($2,335).</p>
     <h3>How does Somerville compare to the Boston average?</h3>
     <p>A 1-bedroom in Somerville costs $50 less than the Greater Boston median of $2,750.</p>
     <h3>When do Somerville apartments become available?</h3>
@@ -341,7 +349,7 @@
       <details class="method">
         <summary>How we calculate this</summary>
         <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-        <p class="n-line">Sample sizes this week (N): Studio 60 · 1BR 125 · 2BR 199 · 3BR 168 · 4+BR 131.</p>
+        <p class="n-line">Sample sizes this week (N): Studio 59 · 1BR 117 · 2BR 190 · 3BR 170 · 4+BR 126.</p>
         <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
       </details>
     </div>

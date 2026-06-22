@@ -299,6 +299,8 @@
     .dir-list li { margin: 0; }
     .dir-list a { display: block; padding: 12px 16px; border: 1.5px solid var(--rule); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--bg); transition: border-color .15s, background .15s, color .15s; }
     .dir-list a:hover { border-color: var(--sky); background: var(--soft); color: var(--sky); text-decoration: none; }
+    .dir-fee { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .01em; }
+    .dir-list a:hover .dir-fee { color: var(--muted); }
 
     /* Rent-over-time Week/Month toggle (CSS-only; hardened vs. Ant Design globals) */
     .hist { margin: 48px 0 0; }
@@ -355,9 +357,9 @@
           </thead>
           <tbody>
             <tr><td>Studio</td><td class="num">$2,300</td><td class="num dim">$2,100 – $2,600</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$2,750</td><td class="num dim">$2,400 – $3,175</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,300</td><td class="num dim">$2,895 – $3,919</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$3,950</td><td class="num dim">$3,450 – $4,700</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$2,750</td><td class="num dim">$2,400 – $3,185</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,300</td><td class="num dim">$2,900 – $3,900</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$3,900</td><td class="num dim">$3,450 – $4,650</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$5,200</td><td class="num dim">$4,400 – $6,250</td></tr>
           </tbody>
         </table>
@@ -400,20 +402,20 @@
     </section>
 
       <h2 id="triple-deckers">Triple-Deckers & Multi-Family</h2>
-      <p>Boston's housing stock is unusual: a huge share of rentals sit in <strong>triple-deckers</strong> and other small multi-family buildings rather than big apartment complexes. Below is the median asking rent by building type and bedroom count across Greater Boston. At the 2-bedroom level, a unit in a triple-decker / multi-family building runs about $220/month less than the same size in a standard apartment building.</p>
+      <p>Boston's housing stock is unusual: a huge share of rentals sit in <strong>triple-deckers</strong> and other small multi-family buildings rather than big apartment complexes. Below is the median asking rent by building type and bedroom count across Greater Boston. At the 2-bedroom level, a unit in a triple-decker / multi-family building runs about $200/month less than the same size in a standard apartment building.</p>
       <div class="table-wrap">
         <table>
           <thead>
             <tr><th>Building type</th><th class="num">Studio</th><th class="num">1BR</th><th class="num">2BR</th><th class="num">3BR</th><th class="num">4+BR</th></tr>
           </thead>
           <tbody>
-            <tr><td>Apartment</td><td class="num">$2,300</td><td class="num">$2,700</td><td class="num">$3,220</td><td class="num">$3,900</td><td class="num">$4,895</td></tr>
-          <tr><td>Multi-Family</td><td class="num">$2,300</td><td class="num">$2,650</td><td class="num">$3,000</td><td class="num">$3,600</td><td class="num">$5,200</td></tr>
-          <tr><td>Condo</td><td class="num">$2,500</td><td class="num">$3,000</td><td class="num">$3,650</td><td class="num">$4,200</td><td class="num">$5,275</td></tr>
-          <tr><td>Brownstone</td><td class="num">$2,360</td><td class="num">$2,850</td><td class="num">$3,600</td><td class="num">$4,725</td><td class="num">$6,150</td></tr>
-          <tr><td>Single-Family</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">$4,375</td><td class="num">$6,500</td></tr>
-          <tr><td>Townhouse</td><td class="num">—</td><td class="num">—</td><td class="num">$3,348</td><td class="num">$3,600</td><td class="num">$5,500</td></tr>
-          <tr><td>Unspecified</td><td class="num">$2,450</td><td class="num">$2,645</td><td class="num">$3,370</td><td class="num">$3,925</td><td class="num">$5,213</td></tr>
+            <tr><td>Apartment</td><td class="num">$2,295</td><td class="num">$2,700</td><td class="num">$3,200</td><td class="num">$3,900</td><td class="num">$4,900</td></tr>
+          <tr><td>Multi-Family</td><td class="num">—</td><td class="num">$2,600</td><td class="num">$3,000</td><td class="num">$3,600</td><td class="num">$5,200</td></tr>
+          <tr><td>Condo</td><td class="num">$2,500</td><td class="num">$3,000</td><td class="num">$3,700</td><td class="num">$4,200</td><td class="num">$5,275</td></tr>
+          <tr><td>Brownstone</td><td class="num">$2,350</td><td class="num">$2,850</td><td class="num">$3,600</td><td class="num">$4,738</td><td class="num">$6,200</td></tr>
+          <tr><td>Single-Family</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">$4,250</td><td class="num">$6,475</td></tr>
+          <tr><td>Townhouse</td><td class="num">—</td><td class="num">—</td><td class="num">$3,450</td><td class="num">$3,700</td><td class="num">$5,550</td></tr>
+          <tr><td>Unspecified</td><td class="num">$2,450</td><td class="num">$2,620</td><td class="num">$3,375</td><td class="num">$3,925</td><td class="num">$5,300</td></tr>
           </tbody>
         </table>
       </div>
@@ -421,10 +423,10 @@
 
       <h2>Average rent by neighborhood</h2>
       <p>Median asking rent for every Greater Boston neighborhood with enough active listings to publish.</p>
-      <div class="dir-group"><h3>Allston, Brighton &amp; Brookline</h3><ul class="dir-list"><li><a href="/data/rent-index/allston/">Allston</a></li><li><a href="/data/rent-index/brighton/">Brighton</a></li><li><a href="/data/rent-index/brookline/">Brookline</a></li><li><a href="/data/rent-index/coolidge-corner/">Coolidge Corner</a></li><li><a href="/data/rent-index/north-brookline/">North Brookline</a></li><li><a href="/data/rent-index/chestnut-hill/">Chestnut Hill</a></li></ul></div>
-      <div class="dir-group"><h3>Downtown &amp; Central Boston</h3><ul class="dir-list"><li><a href="/data/rent-index/back-bay/">Back Bay</a></li><li><a href="/data/rent-index/beacon-hill/">Beacon Hill</a></li><li><a href="/data/rent-index/north-end/">North End</a></li><li><a href="/data/rent-index/south-end/">South End</a></li><li><a href="/data/rent-index/fenway/">Fenway</a></li><li><a href="/data/rent-index/mission-hill/">Mission Hill</a></li></ul></div>
-      <div class="dir-group"><h3>South, East &amp; Dorchester</h3><ul class="dir-list"><li><a href="/data/rent-index/south-boston/">South Boston</a></li><li><a href="/data/rent-index/east-boston/">East Boston</a></li><li><a href="/data/rent-index/dorchester/">Dorchester</a></li><li><a href="/data/rent-index/roxbury/">Roxbury</a></li><li><a href="/data/rent-index/jamaica-plain/">Jamaica Plain</a></li></ul></div>
-      <div class="dir-group"><h3>Somerville &amp; Cambridge</h3><ul class="dir-list"><li><a href="/data/rent-index/cambridge/">Cambridge</a></li><li><a href="/data/rent-index/somerville/">Somerville</a></li></ul></div>
+      <div class="dir-group"><h3>Allston, Brighton &amp; Brookline</h3><ul class="dir-list"><li><a href="/data/rent-index/allston/">Allston<span class="dir-fee">87% no fee</span></a></li><li><a href="/data/rent-index/brighton/">Brighton<span class="dir-fee">87% no fee</span></a></li><li><a href="/data/rent-index/brookline/">Brookline<span class="dir-fee">66% no fee</span></a></li><li><a href="/data/rent-index/coolidge-corner/">Coolidge Corner<span class="dir-fee">52% no fee</span></a></li><li><a href="/data/rent-index/north-brookline/">North Brookline<span class="dir-fee">80% no fee</span></a></li><li><a href="/data/rent-index/chestnut-hill/">Chestnut Hill<span class="dir-fee">69% no fee</span></a></li></ul></div>
+      <div class="dir-group"><h3>Downtown &amp; Central Boston</h3><ul class="dir-list"><li><a href="/data/rent-index/back-bay/">Back Bay<span class="dir-fee">81% no fee</span></a></li><li><a href="/data/rent-index/beacon-hill/">Beacon Hill<span class="dir-fee">77% no fee</span></a></li><li><a href="/data/rent-index/north-end/">North End<span class="dir-fee">75% no fee</span></a></li><li><a href="/data/rent-index/south-end/">South End<span class="dir-fee">73% no fee</span></a></li><li><a href="/data/rent-index/fenway/">Fenway<span class="dir-fee">73% no fee</span></a></li><li><a href="/data/rent-index/mission-hill/">Mission Hill<span class="dir-fee">64% no fee</span></a></li></ul></div>
+      <div class="dir-group"><h3>South, East &amp; Dorchester</h3><ul class="dir-list"><li><a href="/data/rent-index/south-boston/">South Boston<span class="dir-fee">82% no fee</span></a></li><li><a href="/data/rent-index/east-boston/">East Boston<span class="dir-fee">45% no fee</span></a></li><li><a href="/data/rent-index/dorchester/">Dorchester<span class="dir-fee">75% no fee</span></a></li><li><a href="/data/rent-index/roxbury/">Roxbury<span class="dir-fee">74% no fee</span></a></li><li><a href="/data/rent-index/jamaica-plain/">Jamaica Plain<span class="dir-fee">78% no fee</span></a></li></ul></div>
+      <div class="dir-group"><h3>Somerville &amp; Cambridge</h3><ul class="dir-list"><li><a href="/data/rent-index/cambridge/">Cambridge<span class="dir-fee">78% no fee</span></a></li><li><a href="/data/rent-index/somerville/">Somerville<span class="dir-fee">77% no fee</span></a></li></ul></div>
 
       <details class="method">
         <summary>How we calculate this</summary>

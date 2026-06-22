@@ -79,7 +79,7 @@
       "name": "How much is rent in Allston?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of June 9 - June 15, 2026, the median asking rent in Allston is $2,450 for a one-bedroom and $3,200 for a two-bedroom. For other sizes: studios around $2,050, three-bedrooms $3,700, four-plus-bedrooms $5,200."
+        "text": "As of June 9 - June 15, 2026, the median asking rent in Allston is $2,463 for a one-bedroom and $3,200 for a two-bedroom. For other sizes: studios around $2,050, three-bedrooms $3,700, four-plus-bedrooms $5,200."
       }
     },
     {
@@ -87,7 +87,7 @@
       "name": "How much is a 1-bedroom in Allston?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The median is $2,450, with most 1-bedroom listings falling between $2,325 and $2,950."
+        "text": "The median is $2,463, with most 1-bedroom listings falling between $2,325 and $2,946."
       }
     },
     {
@@ -103,7 +103,7 @@
       "name": "How does Allston compare to the Boston average?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A 1-bedroom in Allston costs $300 less than the Greater Boston median of $2,750."
+        "text": "A 1-bedroom in Allston costs $287 less than the Greater Boston median of $2,750."
       }
     },
     {
@@ -228,6 +228,8 @@
     .dir-list li { margin: 0; }
     .dir-list a { display: block; padding: 12px 16px; border: 1.5px solid var(--rule); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--bg); transition: border-color .15s, background .15s, color .15s; }
     .dir-list a:hover { border-color: var(--sky); background: var(--soft); color: var(--sky); text-decoration: none; }
+    .dir-fee { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .01em; }
+    .dir-list a:hover .dir-fee { color: var(--muted); }
 
     /* Rent-over-time Week/Month toggle (CSS-only; hardened vs. Ant Design globals) */
     .hist { margin: 48px 0 0; }
@@ -271,12 +273,12 @@
         </nav>
         <div class="kicker">Boston Rent Index</div>
         <h1>Average Rent in Allston (2026)</h1>
-        <p class="lede">The median asking rent for a 1-bedroom in Allston is <strong>$2,450</strong> as of June 9 - June 15, 2026, based on verified active listings across Spot Easy — $300 less than the Greater Boston median of $2,750.</p>
+        <p class="lede">The median asking rent for a 1-bedroom in Allston is <strong>$2,463</strong> as of June 9 - June 15, 2026, based on verified active listings across Spot Easy — $287 less than the Greater Boston median of $2,750.</p>
         <p class="updated">↻ <b>Updated weekly</b> · data as of June 9 - June 15, 2026</p>
       </div>
     </header>
     <div class="nh-body">
-      <div class="trend"><strong>$2,450</strong> — 1-bedroom median · +$50 vs. last week · +$50 vs. a month ago.</div>
+      <div class="trend"><strong>$2,463</strong> — 1-bedroom median · +$63 vs. last week · +$63 vs. a month ago.</div>
       <h2>Median asking rent by bedroom</h2>
       <div class="table-wrap">
         <table>
@@ -285,10 +287,10 @@
           </thead>
           <tbody>
             <tr><td>Studio</td><td class="num">$2,050</td><td class="num dim">$1,995 – $2,300</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$2,450</td><td class="num dim">$2,325 – $2,950</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$3,200</td><td class="num dim">$2,800 – $4,000</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$3,700</td><td class="num dim">$3,356 – $4,099</td></tr>
-          <tr><td>4+ Bedroom</td><td class="num">$5,200</td><td class="num dim">$4,588 – $6,025</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$2,463</td><td class="num dim">$2,325 – $2,946</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$3,200</td><td class="num dim">$2,850 – $4,032</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$3,700</td><td class="num dim">$3,300 – $4,096</td></tr>
+          <tr><td>4+ Bedroom</td><td class="num">$5,200</td><td class="num dim">$4,600 – $6,000</td></tr>
           </tbody>
         </table>
       </div>
@@ -313,7 +315,7 @@
           <tr><td>May 19–25</td><td class="num">$2,420</td><td class="num"><span class="chg-up">↑ +$20</span></td></tr>
           <tr><td>May 26 – Jun 1</td><td class="num">$2,420</td><td class="num"><span class="chg-flat">even</span></td></tr>
           <tr><td>Jun 2–8</td><td class="num">$2,400</td><td class="num"><span class="chg-down">↓ −$20</span></td></tr>
-          <tr><td>Jun 9–15</td><td class="num">$2,450</td><td class="num"><span class="chg-up">↑ +$50</span></td></tr>
+          <tr><td>Jun 9–15</td><td class="num">$2,463</td><td class="num"><span class="chg-up">↑ +$63</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -323,31 +325,37 @@
         <tbody>
           <tr><td>Apr 2026</td><td class="num">$2,400</td><td class="num"><span class="chg-flat">—</span></td></tr>
           <tr><td>May 2026</td><td class="num">$2,420</td><td class="num"><span class="chg-up">↑ +$20</span></td></tr>
-          <tr><td>Jun 2026</td><td class="num">$2,450</td><td class="num"><span class="chg-up">↑ +$30</span></td></tr>
+          <tr><td>Jun 2026</td><td class="num">$2,463</td><td class="num"><span class="chg-up">↑ +$43</span></td></tr>
         </tbody>
       </table>
     </div>
     </section>
       
     <h2>How Allston rent compares to Greater Boston</h2>
-    <p>A 1-bedroom in Allston runs $300 less than the Greater Boston median of $2,750 — about 11% below the metro average. Among the 19 Greater Boston areas we publish, that ranks Allston 15th most expensive for 1-bedrooms.</p>
+    <p>A 1-bedroom in Allston runs $287 less than the Greater Boston median of $2,750 — about 10% below the metro average. Among the 19 Greater Boston areas we publish, that ranks Allston 15th most expensive for 1-bedrooms.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Apartment size</th><th class="num">Allston</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
           <tr><td>Studio</td><td class="num">$2,050</td><td class="num dim">$2,300</td><td class="num">−$250</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$2,450</td><td class="num dim">$2,750</td><td class="num">−$300</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$2,463</td><td class="num dim">$2,750</td><td class="num">−$287</td></tr>
           <tr><td>2 Bedroom</td><td class="num">$3,200</td><td class="num dim">$3,300</td><td class="num">−$100</td></tr>
-          <tr><td>3 Bedroom</td><td class="num">$3,700</td><td class="num dim">$3,950</td><td class="num">−$250</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$3,700</td><td class="num dim">$3,900</td><td class="num">−$200</td></tr>
           <tr><td>4+ Bedroom</td><td class="num">$5,200</td><td class="num dim">$5,200</td><td class="num">even</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Half of 1-bedroom listings in Allston fall between <strong>$2,325</strong> and <strong>$2,950</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
+    <p>Half of 1-bedroom listings in Allston fall between <strong>$2,325</strong> and <strong>$2,946</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
       
     <div class="module">
       <h2>Studio vs. roommate in Allston</h2>
       <p>Renting a studio solo runs about <strong>$2,050</strong>. Splitting a 2-bedroom two ways works out to <strong>$1,600</strong> per person — roughly <strong>$450/month cheaper</strong> than going solo (22% savings).</p>
+    </div>
+      
+    <div class="module">
+      <h2>No broker fee in Allston</h2>
+      <p><strong>87.4%</strong> of Allston listings with a stated fee have no broker fee. That's above the Greater Boston average of <strong>78.4%</strong> — renters here tend to have more no-fee options than most neighborhoods.</p>
+      <a class="cta" href="https://www.spoteasy.com/allston-apartments/no-broker-fee">Browse no-fee listings in Allston</a>
     </div>
       
       
@@ -363,19 +371,19 @@
       
     <h2>Allston rent — frequently asked questions</h2>
     <h3>How much is rent in Allston?</h3>
-    <p>As of June 9 - June 15, 2026, the median asking rent in Allston is $2,450 for a one-bedroom and $3,200 for a two-bedroom. For other sizes: studios around $2,050, three-bedrooms $3,700, four-plus-bedrooms $5,200.</p>
+    <p>As of June 9 - June 15, 2026, the median asking rent in Allston is $2,463 for a one-bedroom and $3,200 for a two-bedroom. For other sizes: studios around $2,050, three-bedrooms $3,700, four-plus-bedrooms $5,200.</p>
     <h3>How much is a 1-bedroom in Allston?</h3>
-    <p>The median is $2,450, with most 1-bedroom listings falling between $2,325 and $2,950.</p>
+    <p>The median is $2,463, with most 1-bedroom listings falling between $2,325 and $2,946.</p>
     <h3>Is it cheaper to rent a studio or split a 2-bedroom in Allston?</h3>
     <p>Splitting a two-bedroom costs about $1,600 per person — roughly $450 a month less than renting a studio solo ($2,050).</p>
     <h3>How does Allston compare to the Boston average?</h3>
-    <p>A 1-bedroom in Allston costs $300 less than the Greater Boston median of $2,750.</p>
+    <p>A 1-bedroom in Allston costs $287 less than the Greater Boston median of $2,750.</p>
     <h3>When do Allston apartments become available?</h3>
     <p>Most Greater Boston leases start September 1. Inventory peaks from late spring through summer and tightens in August; for a fall move-in, the best selection is usually six to eight weeks out.</p>
       <details class="method">
         <summary>How we calculate this</summary>
         <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-        <p class="n-line">Sample sizes this week (N): Studio 125 · 1BR 241 · 2BR 233 · 3BR 190 · 4+BR 212.</p>
+        <p class="n-line">Sample sizes this week (N): Studio 129 · 1BR 246 · 2BR 257 · 3BR 188 · 4+BR 213.</p>
         <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
       </details>
     </div>

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boston Broker-Fee Index — No-Fee Rate by Neighborhood (2026) | Spot Easy Data</title>
+  <meta name="description" content="Which Boston neighborhoods have the most no-fee apartments? Updated weekly from verified Spot Easy listings. Among listings with a stated fee, 78.4% have no broker fee.">
+  <link rel="canonical" href="https://www.spoteasy.com/data/broker-fee-index/">
+  <meta property="og:title" content="Boston Broker-Fee Index — No-Fee Rate by Neighborhood">
+  <meta property="og:description" content="Which Boston neighborhoods have the most no-fee apartments? Updated weekly from verified active listings by Spot Easy.">
+  <meta property="og:image" content="https://www.spoteasy.com/data/og-data-desk.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Boston Broker-Fee Index — No-Fee Rate by Neighborhood (2026)",
+  "description": "Share of Spot Easy listings with a stated fee structure that carry no broker fee, by Greater Boston neighborhood. Excludes ~40% of listings that do not specify a fee. Self-reported by listing agents; directional.",
+  "url": "https://www.spoteasy.com/data/broker-fee-index/",
+  "dateModified": "2026-06-09",
+  "creator": {
+    "@type": "Organization",
+    "name": "Spot Easy",
+    "url": "https://www.spoteasy.com"
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Greater Boston, Massachusetts"
+  },
+  "variableMeasured": [
+    "No-broker-fee share by neighborhood",
+    "Listings with stated fee status"
+  ],
+  "isAccessibleForFree": true,
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://www.spoteasy.com/data/broker-fee-index/broker-fee-index-2026-06-09.csv"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Data",
+      "item": "https://www.spoteasy.com/data"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Broker-Fee Index",
+      "item": "https://www.spoteasy.com/data/broker-fee-index/"
+    }
+  ]
+}
+  </script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0A2540;
+      --sky:  #00ACEE;
+      --ink:  #425466;
+      --muted:#7A8999;
+      --rule: #E2E8F0;
+      --soft: #F7F9FB;
+      --good: #059669;
+      --bad:  #DC2626;
+      --bg:   #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Mulish', sans-serif; font-size: 15px; line-height: 1.6; color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; }
+    a { color: var(--sky); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Container — structural only */
+    .container { max-width: 100%; padding: 0; }
+
+    /* ─── Header hero ─── */
+    .nh-header { background: var(--navy); position: relative; overflow: hidden; padding: 52px 32px 48px; }
+    .nh-header::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(0,172,238,.15) 1px, transparent 1px); background-size: 28px 28px; pointer-events: none; }
+    .nh-header::after { content: ''; position: absolute; top: -40%; right: -10%; width: 500px; height: 500px; background: radial-gradient(ellipse at center, rgba(0,172,238,.1) 0%, transparent 70%); pointer-events: none; }
+    .nh-header-inner { max-width: 1040px; margin: 0 auto; position: relative; z-index: 1; }
+
+    /* Breadcrumbs */
+    .crumbs { font-size: 12px; color: rgba(255,255,255,.45); margin-bottom: 24px; letter-spacing: .02em; }
+    .crumbs a { color: rgba(255,255,255,.55); font-weight: 600; }
+    .crumbs a:hover { color: var(--sky); text-decoration: none; }
+    .crumbs span { color: rgba(255,255,255,.8); }
+
+    /* Kicker */
+    .kicker { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--sky); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .kicker::before { content: ''; display: block; width: 28px; height: 1px; background: var(--sky); }
+
+    /* Hero typography */
+    h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 900; color: #fff !important; line-height: 1.08; letter-spacing: -.02em; margin-bottom: 16px; }
+    .lede { font-size: 16px; color: rgba(255,255,255,.7) !important; line-height: 1.65; margin-bottom: 20px; max-width: 640px; }
+    .lede strong { color: #fff !important; }
+    .updated { font-size: 11px; color: rgba(255,255,255,.35); letter-spacing: .04em; }
+    .updated b { color: rgba(255,255,255,.6); font-weight: 700; }
+
+    /* ─── Body content ─── */
+    .nh-body { max-width: 1040px; margin: 0 auto; padding: 44px 32px 80px; }
+    p, li { color: var(--ink); line-height: 1.7; }
+    p + p { margin-top: 12px; }
+
+    /* Section headings */
+    h2 { font-size: 20px; font-weight: 800; color: var(--navy) !important; letter-spacing: -.01em; margin: 48px 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--navy); }
+    h3 { font-size: 16px; font-weight: 700; color: var(--navy) !important; margin: 24px 0 8px; }
+
+    /* Trend callout */
+    .trend { background: var(--soft); border-left: 3px solid var(--sky); padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 0 0 36px; font-size: 17px; color: var(--navy); font-weight: 600; }
+
+    /* ─── Tables ─── */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; margin: 16px 24px 8px; display: block; max-width: calc(100% - 48px); box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th { white-space: nowrap; background: var(--navy); color: #fff; text-align: left; padding: 12px 16px; font-weight: 700; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+    thead th.num { text-align: right; }
+    tbody td { padding: 12px 16px; border-top: 1px solid var(--rule); }
+    tbody tr:nth-child(even) td { background: var(--soft); }
+    tbody tr:hover td { background: #EDF5FB; }
+    tbody td.num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+    tbody td.dim { color: var(--muted); font-weight: 400; }
+    /* History "Change" arrows: arrow shows direction, color shows renter sentiment —
+       rent ↓ is GOOD for renters (green), rent ↑ is BAD (red). */
+    .chg-up { color: var(--bad) !important; font-weight: 600; white-space: nowrap; }
+    .chg-down { color: var(--good) !important; font-weight: 600; white-space: nowrap; }
+    .chg-flat { color: var(--muted) !important; }
+
+    /* Notes */
+    .note { font-size: 13px; color: var(--muted); margin: 6px 24px 28px; }
+    .n-line { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+    /* Module box */
+    .module { border: 1px solid var(--rule); border-radius: 8px; padding: 20px 24px; margin: 32px 0; background: var(--soft); }
+    .module h2 { margin: 0 0 10px; border-bottom: none; font-size: 17px; letter-spacing: -.01em; padding-bottom: 0; font-weight: 800; color: var(--navy); }
+
+    /* CTAs */
+    .cta-row { margin: 32px 0 24px; }
+    .cta { display: inline-block; background: var(--sky); color: #fff; padding: 12px 24px; border-radius: 6px; font-weight: 700; font-size: 14px; margin: 4px 8px 4px 0; letter-spacing: .01em; }
+    .cta:hover { background: #0095cc; text-decoration: none; }
+    .cta.outline { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+    .cta.outline:hover { background: var(--navy); color: #fff; }
+
+    /* Nearby */
+    .nearby { margin: 20px 0 0; color: var(--muted); font-size: 14px; }
+    .nearby a { color: var(--navy); font-weight: 600; }
+
+    /* Related */
+    .related { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 24px; }
+
+    /* Methodology */
+    details.method { background: var(--soft); padding: 16px 20px; border-radius: 8px; margin: 40px 0 0; border: 1px solid var(--rule); }
+    details.method summary { cursor: pointer; color: var(--navy); font-weight: 700; font-size: 13px; }
+    details.method[open] summary { margin-bottom: 12px; }
+    details.method p { font-size: 13px; color: var(--muted); }
+
+    /* Directory (hub) */
+    .dir-group { margin: 24px 0; }
+    .dir-group h3 { color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 10px; border-bottom: none; padding-bottom: 0; }
+    .dir-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .dir-list li { margin: 0; }
+    .dir-list a { display: block; padding: 12px 16px; border: 1.5px solid var(--rule); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--bg); transition: border-color .15s, background .15s, color .15s; }
+    .dir-list a:hover { border-color: var(--sky); background: var(--soft); color: var(--sky); text-decoration: none; }
+    .dir-fee { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .01em; }
+    .dir-list a:hover .dir-fee { color: var(--muted); }
+
+    /* Rent-over-time Week/Month toggle (CSS-only; hardened vs. Ant Design globals) */
+    .hist { margin: 48px 0 0; }
+    /* Clip-hide the radios (NOT display:none) so they stay keyboard-focusable + survive Ant resets */
+    .hist .hv-week, .hist .hv-month { position: absolute !important; width: 1px; height: 1px; clip-path: inset(50%); opacity: 0; pointer-events: none; }
+    .hist-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: 0 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--navy); }
+    .hist-head h2 { margin: 0 !important; padding: 0 !important; border-bottom: none !important; }
+    .hist-toggle { display: inline-flex !important; border: 1.5px solid var(--rule); border-radius: 8px; overflow: hidden; }
+    .hist-toggle label { display: inline-block !important; padding: 6px 16px; font-size: 13px; font-weight: 700; color: var(--muted) !important; cursor: pointer; background: var(--bg); transition: background .15s, color .15s; }
+    .hist-toggle label + label { border-left: 1.5px solid var(--rule); }
+    .hist .hv-week:checked ~ .hist-head label[for="hv-week"],
+    .hist .hv-month:checked ~ .hist-head label[for="hv-month"] { background: var(--navy); color: #fff !important; }
+    .hist .hv-week:focus-visible ~ .hist-head label[for="hv-week"],
+    .hist .hv-month:focus-visible ~ .hist-head label[for="hv-month"] { outline: 2px solid var(--sky); outline-offset: 2px; }
+    .hist-p { font-size: 14px; color: var(--muted); margin: 0 0 4px; }
+    /* Weekly is the default-visible pane; monthly is revealed on toggle */
+    .pane-month, .hist-p-month { display: none; }
+    .hist .hv-month:checked ~ .pane-month, .hist .hv-month:checked ~ .hist-p-month { display: block; }
+    .hist .hv-month:checked ~ .pane-week, .hist .hv-month:checked ~ .hist-p-week { display: none; }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 768px) {
+      .nh-header { padding: 40px 20px 36px; }
+      .nh-body { padding: 32px 20px 64px; }
+      table { font-size: 13px; }
+      thead th, tbody td { padding: 10px 12px; }
+      thead th { white-space: normal; }
+      .table-wrap { margin: 16px 0 8px; max-width: 100%; }
+      .note { margin-left: 0; margin-right: 0; }
+      .dir-list { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+  <style>
+    .bfi-coverage   { font-size: 13px; color: var(--muted); background: var(--soft); border: 1px solid var(--rule); border-radius: 6px; padding: 10px 16px; margin: 0 0 8px; }
+    .bfi-quote  { background: var(--navy); color: #fff; border-radius: 10px; padding: 24px 28px; margin: 32px 0; }
+    .bfi-quote p    { color: rgba(255,255,255,.85); font-size: 16px; line-height: 1.65; font-style: italic; margin-bottom: 12px; }
+    .bfi-quote cite { font-size: 13px; font-weight: 700; color: var(--sky); font-style: normal; }
+    .bfi-bar-cell   { width: 180px; }
+    .bfi-bar { display: inline-block; font-size: 13px; font-weight: 700; color: var(--navy);
+      padding: 4px 8px 4px 0; min-width: 120px;
+      background: linear-gradient(to right, rgba(0,172,238,.18) calc(var(--pct) * 1%), transparent calc(var(--pct) * 1%)); }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <header class="nh-header">
+      <div class="nh-header-inner">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="/data">Data</a> › <span>Broker-Fee Index</span>
+        </nav>
+        <div class="kicker">Boston Broker-Fee Index · June 2026</div>
+        <h1>Boston Broker-Fee Index — No-Fee Rate by Neighborhood</h1>
+        <p class="lede">How many Boston listings charge <strong>no broker fee</strong> — and which neighborhoods give renters the most choice? We track the share of Spot Easy listings with a stated fee that carry no broker fee, updated every week from verified active listings.</p>
+        <p class="updated">↻ <b>Updated weekly</b> · data as of June 9 - June 15, 2026</p>
+      </div>
+    </header>
+    <div class="nh-body">
+
+      <div class="trend"><strong>78.4%</strong> of Greater Boston listings with a stated fee carry no broker fee — from <strong>90.6%</strong> in Oak Square down to <strong>44.7%</strong> in East Boston.</div>
+      <p>As of <strong>August 1, 2025</strong>, Massachusetts law bars landlords from passing their broker's fee to tenants — making no-fee-to-the-renter increasingly the norm. This index tracks how that shift is showing up in listings advertised across Greater Boston.</p>
+      <p>When a fee is charged, it's typically about one month's rent — the metro median one-bedroom is <strong>$2,750</strong>.</p>
+
+      <p class="bfi-coverage">About 4 in 10 listings don't specify a fee. We leave those out rather than guess — every figure here is based only on listings that state one. This report covers <strong>6,321</strong> of <strong>10,473</strong> active Spot Easy listings.</p>
+
+      <h2>What the data shows</h2>
+      <ul>
+        <li>No-fee listings are most common — among Spot Easy listings with a stated fee — in Oak Square (90.6%), Allston (87.4%), Longwood (87.0%).</li>
+        <li>Broker fees are most prevalent in East Boston (44.7%) and Coolidge Corner (52.3%), where a smaller share of stated-fee listings carry no fee.</li>
+        <li>Greater Boston overall: 78.4% of stated-fee Spot Easy listings have no broker fee, based on 6,321 listings that disclose their fee status.</li>
+      </ul>
+
+      <div class="bfi-quote">
+        <p>"Boston's shift toward no-fee rentals is one of the clearest market signals we track. Neighborhood-level data helps renters know exactly where to focus their search."</p>
+        <cite>— Joel Mundele, CEO, Spot Easy · <a href="mailto:joel@spoteasy.com" style="color:var(--sky)">joel@spoteasy.com</a></cite>
+      </div>
+
+      <h2>No-fee share by neighborhood</h2>
+      <p style="font-size:13px;color:var(--muted);margin:0 0 12px">Among listings with a stated fee. Sorted by no-fee share. We publish a neighborhood only when at least 50 listings state a fee across at least 8 buildings, so no single building drives the rate.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Neighborhood</th>
+              <th>City</th>
+              <th class="num">Share with no broker fee</th>
+              <th class="num">Median 1BR rent</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td><a href="https://www.spoteasy.com/oak-square-apartments">Oak Square</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:90.6">90.6%</span>
+            </td>
+            <td class="num">—</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/allston-apartments">Allston</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:87.4">87.4%</span>
+            </td>
+            <td class="num">$2,463</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/longwood-apartments">Longwood</a></td>
+            <td class="dim">Brookline</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:87.0">87.0%</span>
+            </td>
+            <td class="num">$3,000</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/brighton-apartments">Brighton</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:86.9">86.9%</span>
+            </td>
+            <td class="num">$2,400</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/boston-downtown-apartments">Boston Downtown</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:85.9">85.9%</span>
+            </td>
+            <td class="num">$3,100</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/south-boston-apartments">South Boston</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:82.0">82.0%</span>
+            </td>
+            <td class="num">$3,000</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/back-bay-apartments">Back Bay</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:81.1">81.1%</span>
+            </td>
+            <td class="num">$3,250</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/aspinwall-hill-apartments">Aspinwall Hill</a></td>
+            <td class="dim">Brookline</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:80.0">80.0%</span>
+            </td>
+            <td class="num">—</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/north-brookline-apartments">North Brookline</a></td>
+            <td class="dim">Brookline</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:79.9">79.9%</span>
+            </td>
+            <td class="num">$2,713</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/jamaica-plain-apartments">Jamaica Plain</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:78.4">78.4%</span>
+            </td>
+            <td class="num">$2,448</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/cambridge-apartments">Cambridge</a></td>
+            <td class="dim">—</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:77.6">77.6%</span>
+            </td>
+            <td class="num">$3,000</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/beacon-hill-apartments">Beacon Hill</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:77.0">77.0%</span>
+            </td>
+            <td class="num">$3,000</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/somerville-apartments">Somerville</a></td>
+            <td class="dim">—</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:76.5">76.5%</span>
+            </td>
+            <td class="num">$2,700</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/dorchester-apartments">Dorchester</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:75.3">75.3%</span>
+            </td>
+            <td class="num">$2,503</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/north-end-apartments">North End</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:75.0">75.0%</span>
+            </td>
+            <td class="num">$3,100</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/roxbury-apartments">Roxbury</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:73.8">73.8%</span>
+            </td>
+            <td class="num">$2,650</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/south-end-apartments">South End</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:73.3">73.3%</span>
+            </td>
+            <td class="num">$3,425</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/fenway-apartments">Fenway</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:72.6">72.6%</span>
+            </td>
+            <td class="num">$2,800</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/chestnut-hill-apartments">Chestnut Hill</a></td>
+            <td class="dim">Brookline</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:68.8">68.8%</span>
+            </td>
+            <td class="num">$3,150</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/brookline-apartments">Brookline</a></td>
+            <td class="dim">—</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:66.2">66.2%</span>
+            </td>
+            <td class="num">$2,500</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/corey-hill-apartments">Corey Hill</a></td>
+            <td class="dim">Brookline</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:66.2">66.2%</span>
+            </td>
+            <td class="num">$2,675</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/mission-hill-apartments">Mission Hill</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:63.7">63.7%</span>
+            </td>
+            <td class="num">$2,400</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/coolidge-corner-apartments">Coolidge Corner</a></td>
+            <td class="dim">Brookline</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:52.3">52.3%</span>
+            </td>
+            <td class="num">$3,015</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/east-boston-apartments">East Boston</a></td>
+            <td class="dim">Boston</td>
+            <td class="num bfi-bar-cell">
+              <span class="bfi-bar" style="--pct:44.7">44.7%</span>
+            </td>
+            <td class="num">$2,400</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cta-row">
+        <a class="cta" href="https://www.spoteasy.com/boston-apartments/no-broker-fee">Browse no-fee listings in Boston</a>
+        <a class="cta outline" href="/data/rent-index/">See the Rent Index</a>
+      </div>
+
+      <details class="method">
+        <summary>Methodology</summary>
+        <p>Each listing's broker-fee field is set by the listing agent. Roughly 40% of active listings leave it blank or marked "unknown." We exclude those entirely — we don't assume they do or don't charge a fee — so the Index reflects only the ~60% of listings that state a fee structure. Because the missing data varies by neighborhood but shows no strong correlation with the no-fee rate (r ≈ −0.2), it doesn't distort the neighborhood-to-neighborhood comparison; it only means the headline share should be read as <em>"of listings that disclose a fee,"</em> not <em>"of all apartments."</em> As with any self-reported marketplace data, we can't verify every agent entered the field correctly — treat these figures as directional, not exact.</p>
+        <p style="margin-top:10px">Since August 1, 2025, Massachusetts law prohibits landlords from requiring tenants to pay the landlord's broker fee — a renter pays a fee only if they separately hire their own agent. These figures reflect fee structures as advertised on listings, not a judgment about any individual listing's compliance.</p>
+        <p style="margin-top:10px">We also exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, and publish a neighborhood only when at least 50 listings state a fee across at least 8 distinct buildings — so a single building's inventory can't drive a neighborhood's rate. Greater Boston = Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, Malden. Updated weekly.</p>
+        <p class="n-line">Press or custom data: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
+      </details>
+
+    </div>
+  </main>
+
+</body>
+</html>

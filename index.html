@@ -684,7 +684,7 @@
 <script>
 const PAGE_DATA = {
   "as_of_date": "Data from June 9 - June 15, 2026",
-  "sample_count": 3149,
+  "sample_count": 3118,
   "latest_report_url": "/data/rent-index/",
   "tiles": [
     {
@@ -707,8 +707,8 @@ const PAGE_DATA = {
     },
     {
       "label": "3 BR",
-      "value": 3950,
-      "delta": 25,
+      "value": 3900,
+      "delta": 75,
       "dir": "down"
     }
   ],
@@ -721,7 +721,12 @@ const PAGE_DATA = {
     "sept1": {
       "stat": "84",
       "label": "days until Sept 1",
-      "delta": "3,287 units already listed"
+      "delta": "3,284 units already listed"
+    },
+    "broker_fee": {
+      "stat": "78.4%",
+      "label": "of stated-fee listings have no broker fee · Greater Boston",
+      "delta": "updated weekly"
     }
   }
 };
@@ -796,6 +801,16 @@ const PAGE_DATA = {
           <div class="report-teaser" id="teaser-sept1"></div>
         </div>
         <button class="report-row-btn">View Report →</button>
+      </li>
+
+      <li class="report-row is-live" onclick="location.href='broker-fee-index/'" data-teaser="broker_fee">
+        <span class="report-row-num">03</span>
+        <div>
+          <div class="report-row-name">Boston Broker-Fee Index</div>
+          <div class="report-row-desc">What share of Boston listings charge no broker fee — and which neighborhoods lead? Updated weekly from verified active listings by Spot Easy.</div>
+          <div class="report-teaser" id="teaser-broker_fee"></div>
+        </div>
+        <button class="report-row-btn">View Report &#8594;</button>
       </li>
 
     </ul>
