@@ -1,6 +1,6 @@
 {
-  "generated_week_ending": "2026-06-09",
-  "week_label": "June 9 - June 15, 2026",
+  "generated_week_ending": "2026-06-16",
+  "week_label": "June 16 - June 22, 2026",
   "methodology": {
     "cities": "Greater Boston (10 cities)",
     "n_threshold": 20,
@@ -15,36 +15,36 @@
         "beds": "0",
         "median": 2300,
         "p25": 2100,
-        "p75": 2600,
-        "n": 1114
+        "p75": 2598,
+        "n": 1122
       },
       {
         "beds": "1",
         "median": 2750,
         "p25": 2400,
-        "p75": 3185,
-        "n": 2620
+        "p75": 3186,
+        "n": 2635
       },
       {
         "beds": "2",
         "median": 3300,
         "p25": 2900,
         "p75": 3900,
-        "n": 3075
+        "n": 3083
       },
       {
         "beds": "3",
         "median": 3900,
         "p25": 3450,
-        "p75": 4650,
-        "n": 1999
+        "p75": 4654,
+        "n": 2004
       },
       {
         "beds": "4+",
         "median": 5200,
         "p25": 4400,
         "p75": 6250,
-        "n": 1665
+        "n": 1669
       }
     ],
     "building_type": [
@@ -55,7 +55,7 @@
           "1": 2700,
           "2": 3200,
           "3": 3900,
-          "4+": 4900
+          "4+": 4895
         }
       },
       {
@@ -73,7 +73,7 @@
         "beds": {
           "0": 2500,
           "1": 3000,
-          "2": 3700,
+          "2": 3675,
           "3": 4200,
           "4+": 5275
         }
@@ -84,7 +84,7 @@
           "0": 2350,
           "1": 2850,
           "2": 3600,
-          "3": 4738,
+          "3": 4725,
           "4+": 6200
         }
       },
@@ -94,8 +94,8 @@
           "0": null,
           "1": null,
           "2": null,
-          "3": 4250,
-          "4+": 6475
+          "3": 4500,
+          "4+": 6450
         }
       },
       {
@@ -112,10 +112,10 @@
         "building_type": "Unspecified",
         "beds": {
           "0": 2450,
-          "1": 2620,
-          "2": 3375,
-          "3": 3925,
-          "4+": 5300
+          "1": 2633,
+          "2": 3378,
+          "3": 3950,
+          "4+": 5225
         }
       }
     ]
@@ -128,20 +128,20 @@
         "0": {
           "median": 2050,
           "p25": 1995,
-          "p75": 2300,
-          "n": 129
+          "p75": 2299,
+          "n": 130
         },
         "1": {
-          "median": 2463,
+          "median": 2475,
           "p25": 2325,
-          "p75": 2946,
-          "n": 246
+          "p75": 2950,
+          "n": 247
         },
         "2": {
           "median": 3200,
-          "p25": 2850,
-          "p75": 4032,
-          "n": 257
+          "p25": 2831,
+          "p75": 4024,
+          "n": 258
         },
         "3": {
           "median": 3700,
@@ -151,9 +151,9 @@
         },
         "4+": {
           "median": 5200,
-          "p25": 4600,
-          "p75": 6000,
-          "n": 213
+          "p25": 4588,
+          "p75": 6025,
+          "n": 212
         }
       },
       "roommate": {
@@ -163,9 +163,9 @@
         "pctSaved": 22
       },
       "trend": {
-        "b1_median": 2463,
-        "wow": 63,
-        "mom": 63
+        "b1_median": 2475,
+        "wow": 25,
+        "mom": 55
       },
       "history": [
         {
@@ -181,7 +181,7 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2463
+          "median": 2475
         }
       ],
       "histWeekly": [
@@ -219,6 +219,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2463
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2475
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -226,8 +231,8 @@
         "area": "Allston",
         "slug": "allston",
         "city": "Boston",
-        "known": 707,
-        "no_fee": 618,
+        "known": 708,
+        "no_fee": 619,
         "pct_no_fee": 87.4,
         "buildings": 436
       }
@@ -305,6 +310,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3125
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3125
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -337,8 +347,8 @@
         "2": {
           "median": 4500,
           "p25": 3875,
-          "p75": 4973,
-          "n": 51
+          "p75": 5048,
+          "n": 55
         },
         "3": null,
         "4+": null
@@ -351,8 +361,8 @@
       },
       "trend": {
         "b1_median": 3250,
-        "wow": 50,
-        "mom": 0
+        "wow": 0,
+        "mom": 50
       },
       "history": [
         {
@@ -406,6 +416,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3250
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3250
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -413,10 +428,10 @@
         "area": "Back Bay",
         "slug": "back-bay",
         "city": "Boston",
-        "known": 217,
-        "no_fee": 176,
-        "pct_no_fee": 81.1,
-        "buildings": 161
+        "known": 218,
+        "no_fee": 177,
+        "pct_no_fee": 81.2,
+        "buildings": 164
       }
     },
     {
@@ -424,36 +439,36 @@
       "slug": "beacon-hill",
       "beds": {
         "0": {
-          "median": 2425,
+          "median": 2400,
           "p25": 2150,
           "p75": 2650,
-          "n": 64
+          "n": 65
         },
         "1": {
           "median": 3000,
           "p25": 2700,
-          "p75": 3275,
-          "n": 95
+          "p75": 3300,
+          "n": 93
         },
         "2": {
           "median": 3575,
           "p25": 3350,
           "p75": 4000,
-          "n": 69
+          "n": 71
         },
         "3": null,
         "4+": null
       },
       "roommate": {
-        "studio": 2425,
+        "studio": 2400,
         "perPerson": 1788,
-        "savings": 637,
+        "savings": 612,
         "pctSaved": 26
       },
       "trend": {
         "b1_median": 3000,
         "wow": 50,
-        "mom": 75
+        "mom": 50
       },
       "history": [
         {
@@ -507,6 +522,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3000
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3000
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -514,9 +534,9 @@
         "area": "Beacon Hill",
         "slug": "beacon-hill",
         "city": "Boston",
-        "known": 178,
-        "no_fee": 137,
-        "pct_no_fee": 77,
+        "known": 179,
+        "no_fee": 138,
+        "pct_no_fee": 77.1,
         "buildings": 112
       }
     },
@@ -533,8 +553,8 @@
         "1": {
           "median": 3100,
           "p25": 3000,
-          "p75": 3549,
-          "n": 40
+          "p75": 3650,
+          "n": 41
         },
         "2": null,
         "3": null,
@@ -543,7 +563,7 @@
       "roommate": null,
       "trend": {
         "b1_median": 3100,
-        "wow": 25,
+        "wow": 12,
         "mom": 25
       },
       "history": [
@@ -598,6 +618,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3100
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3100
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -608,7 +633,7 @@
         "known": 64,
         "no_fee": 55,
         "pct_no_fee": 85.9,
-        "buildings": 44
+        "buildings": 45
       }
     },
     {
@@ -619,7 +644,7 @@
           "median": 2095,
           "p25": 1995,
           "p75": 2238,
-          "n": 178
+          "n": 182
         },
         "1": {
           "median": 2400,
@@ -630,20 +655,20 @@
         "2": {
           "median": 2950,
           "p25": 2700,
-          "p75": 3250,
-          "n": 467
+          "p75": 3295,
+          "n": 471
         },
         "3": {
-          "median": 3655,
+          "median": 3668,
           "p25": 3400,
           "p75": 4100,
-          "n": 372
+          "n": 376
         },
         "4+": {
           "median": 4800,
           "p25": 4300,
-          "p75": 5900,
-          "n": 405
+          "p75": 5888,
+          "n": 406
         }
       },
       "roommate": {
@@ -709,6 +734,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2400
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2400
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -716,10 +746,10 @@
         "area": "Brighton",
         "slug": "brighton",
         "city": "Boston",
-        "known": 1421,
-        "no_fee": 1235,
-        "pct_no_fee": 86.9,
-        "buildings": 884
+        "known": 1429,
+        "no_fee": 1243,
+        "pct_no_fee": 87,
+        "buildings": 891
       }
     },
     {
@@ -810,6 +840,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2500
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2500
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -830,20 +865,20 @@
         "0": {
           "median": 2450,
           "p25": 2200,
-          "p75": 2613,
+          "p75": 2600,
           "n": 84
         },
         "1": {
           "median": 3000,
-          "p25": 2800,
-          "p75": 3300,
-          "n": 291
+          "p25": 2796,
+          "p75": 3296,
+          "n": 294
         },
         "2": {
           "median": 3700,
           "p25": 3300,
           "p75": 4250,
-          "n": 328
+          "n": 329
         },
         "3": {
           "median": 4448,
@@ -854,8 +889,8 @@
         "4+": {
           "median": 5200,
           "p25": 4750,
-          "p75": 6355,
-          "n": 90
+          "p75": 6250,
+          "n": 89
         }
       },
       "roommate": {
@@ -866,7 +901,7 @@
       },
       "trend": {
         "b1_median": 3000,
-        "wow": null,
+        "wow": 0,
         "mom": null
       },
       "history": [
@@ -881,6 +916,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3000
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3000
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -888,10 +928,10 @@
         "area": "Cambridge",
         "slug": "cambridge",
         "city": "Cambridge",
-        "known": 532,
-        "no_fee": 413,
-        "pct_no_fee": 77.6,
-        "buildings": 532
+        "known": 539,
+        "no_fee": 420,
+        "pct_no_fee": 77.9,
+        "buildings": 533
       }
     },
     {
@@ -900,10 +940,10 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 3150,
+          "median": 3140,
           "p25": 2800,
-          "p75": 3305,
-          "n": 45
+          "p75": 3303,
+          "n": 46
         },
         "2": {
           "median": 3710,
@@ -921,9 +961,9 @@
       },
       "roommate": null,
       "trend": {
-        "b1_median": 3150,
-        "wow": 40,
-        "mom": 155
+        "b1_median": 3140,
+        "wow": -20,
+        "mom": 145
       },
       "history": [
         {
@@ -939,7 +979,7 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3150
+          "median": 3140
         }
       ],
       "histWeekly": [
@@ -977,6 +1017,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3150
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3140
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -987,7 +1032,7 @@
         "known": 64,
         "no_fee": 44,
         "pct_no_fee": 68.8,
-        "buildings": 74
+        "buildings": 75
       }
     },
     {
@@ -1023,6 +1068,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 4933
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 4933
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -1039,16 +1089,16 @@
           "n": 30
         },
         "1": {
-          "median": 3015,
+          "median": 3030,
           "p25": 2700,
-          "p75": 3395,
-          "n": 102
+          "p75": 3390,
+          "n": 103
         },
         "2": {
-          "median": 3787,
+          "median": 3778,
           "p25": 3500,
-          "p75": 4150,
-          "n": 86
+          "p75": 4000,
+          "n": 87
         },
         "3": {
           "median": 4725,
@@ -1065,14 +1115,14 @@
       },
       "roommate": {
         "studio": 2900,
-        "perPerson": 1894,
-        "savings": 1006,
+        "perPerson": 1889,
+        "savings": 1011,
         "pctSaved": 35
       },
       "trend": {
-        "b1_median": 3015,
-        "wow": -80,
-        "mom": -85
+        "b1_median": 3030,
+        "wow": 0,
+        "mom": -70
       },
       "history": [
         {
@@ -1088,7 +1138,7 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3015
+          "median": 3030
         }
       ],
       "histWeekly": [
@@ -1126,6 +1176,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3015
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3030
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1136,7 +1191,7 @@
         "known": 109,
         "no_fee": 57,
         "pct_no_fee": 52.3,
-        "buildings": 181
+        "buildings": 182
       }
     },
     {
@@ -1162,7 +1217,7 @@
       "roommate": null,
       "trend": {
         "b1_median": 2675,
-        "wow": -38,
+        "wow": 0,
         "mom": -75
       },
       "history": [
@@ -1217,6 +1272,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2675
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2675
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1238,32 +1298,32 @@
         "1": {
           "median": 2503,
           "p25": 2300,
-          "p75": 3000,
+          "p75": 2996,
           "n": 44
         },
         "2": {
-          "median": 2850,
+          "median": 2895,
           "p25": 2600,
-          "p75": 3310,
-          "n": 111
+          "p75": 3320,
+          "n": 109
         },
         "3": {
           "median": 3350,
           "p25": 3000,
           "p75": 3600,
-          "n": 139
+          "n": 138
         },
         "4+": {
-          "median": 3800,
+          "median": 3750,
           "p25": 3600,
           "p75": 4200,
-          "n": 81
+          "n": 83
         }
       },
       "roommate": null,
       "trend": {
         "b1_median": 2503,
-        "wow": -2,
+        "wow": -62,
         "mom": -2
       },
       "history": [
@@ -1318,6 +1378,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2503
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2503
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1325,10 +1390,10 @@
         "area": "Dorchester",
         "slug": "dorchester",
         "city": "Boston",
-        "known": 77,
-        "no_fee": 58,
-        "pct_no_fee": 75.3,
-        "buildings": 279
+        "known": 78,
+        "no_fee": 60,
+        "pct_no_fee": 76.9,
+        "buildings": 278
       }
     },
     {
@@ -1344,15 +1409,15 @@
         },
         "2": {
           "median": 2900,
-          "p25": 2663,
-          "p75": 3088,
-          "n": 130
+          "p25": 2675,
+          "p75": 3075,
+          "n": 131
         },
         "3": {
           "median": 3200,
-          "p25": 2850,
+          "p25": 2900,
           "p75": 3400,
-          "n": 26
+          "n": 27
         },
         "4+": {
           "median": 4000,
@@ -1419,6 +1484,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2400
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2400
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1429,7 +1499,7 @@
         "known": 123,
         "no_fee": 55,
         "pct_no_fee": 44.7,
-        "buildings": 177
+        "buildings": 179
       }
     },
     {
@@ -1440,13 +1510,13 @@
           "median": 2400,
           "p25": 2250,
           "p75": 2500,
-          "n": 205
+          "n": 206
         },
         "1": {
           "median": 2800,
-          "p25": 2500,
+          "p25": 2508,
           "p75": 3100,
-          "n": 290
+          "n": 295
         },
         "2": {
           "median": 3725,
@@ -1525,6 +1595,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2800
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2800
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1532,10 +1607,10 @@
         "area": "Fenway",
         "slug": "fenway",
         "city": "Boston",
-        "known": 591,
-        "no_fee": 429,
-        "pct_no_fee": 72.6,
-        "buildings": 234
+        "known": 594,
+        "no_fee": 432,
+        "pct_no_fee": 72.7,
+        "buildings": 236
       }
     },
     {
@@ -1571,6 +1646,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2700
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2700
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -1582,22 +1662,22 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 2448,
+          "median": 2400,
           "p25": 2200,
           "p75": 2650,
-          "n": 28
+          "n": 29
         },
         "2": {
           "median": 3150,
           "p25": 2900,
-          "p75": 3450,
+          "p75": 3500,
           "n": 47
         },
         "3": {
           "median": 3600,
           "p25": 3350,
-          "p75": 3909,
-          "n": 52
+          "p75": 3923,
+          "n": 51
         },
         "4+": {
           "median": 5000,
@@ -1608,9 +1688,9 @@
       },
       "roommate": null,
       "trend": {
-        "b1_median": 2448,
-        "wow": -50,
-        "mom": -52
+        "b1_median": 2400,
+        "wow": -95,
+        "mom": -100
       },
       "history": [
         {
@@ -1626,7 +1706,7 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2448
+          "median": 2400
         }
       ],
       "histWeekly": [
@@ -1664,6 +1744,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2448
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2400
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1671,9 +1756,9 @@
         "area": "Jamaica Plain",
         "slug": "jamaica-plain",
         "city": "Boston",
-        "known": 88,
-        "no_fee": 69,
-        "pct_no_fee": 78.4,
+        "known": 87,
+        "no_fee": 68,
+        "pct_no_fee": 78.2,
         "buildings": 136
       }
     },
@@ -1683,15 +1768,15 @@
       "beds": {
         "0": {
           "median": 2395,
-          "p25": 2145,
+          "p25": 2195,
           "p75": 2450,
-          "n": 27
+          "n": 29
         },
         "1": {
           "median": 3000,
           "p25": 2795,
           "p75": 3150,
-          "n": 29
+          "n": 31
         },
         "2": null,
         "3": null,
@@ -1700,7 +1785,7 @@
       "roommate": null,
       "trend": {
         "b1_median": 3000,
-        "wow": -100,
+        "wow": 0,
         "mom": -75
       },
       "history": [
@@ -1755,6 +1840,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3000
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3000
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1762,10 +1852,10 @@
         "area": "Longwood",
         "slug": "longwood",
         "city": "Brookline",
-        "known": 69,
-        "no_fee": 60,
-        "pct_no_fee": 87,
-        "buildings": 26
+        "known": 73,
+        "no_fee": 64,
+        "pct_no_fee": 87.7,
+        "buildings": 28
       }
     },
     {
@@ -1775,8 +1865,8 @@
         "0": {
           "median": 2200,
           "p25": 1950,
-          "p75": 2300,
-          "n": 28
+          "p75": 2275,
+          "n": 27
         },
         "1": {
           "median": 2400,
@@ -1793,8 +1883,8 @@
         "3": {
           "median": 4400,
           "p25": 3900,
-          "p75": 4858,
-          "n": 57
+          "p75": 4927,
+          "n": 58
         },
         "4+": {
           "median": 6298,
@@ -1811,7 +1901,7 @@
       },
       "trend": {
         "b1_median": 2400,
-        "wow": -100,
+        "wow": -50,
         "mom": -98
       },
       "history": [
@@ -1866,6 +1956,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2400
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2400
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1912,8 +2007,8 @@
       "roommate": null,
       "trend": {
         "b1_median": 2713,
-        "wow": -137,
-        "mom": -110
+        "wow": -12,
+        "mom": -137
       },
       "history": [
         {
@@ -1966,6 +2061,11 @@
         {
           "wk": "2026-06-09",
           "label": "Jun 9–15",
+          "median": 2713
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
           "median": 2713
         }
       ],
@@ -1998,17 +2098,17 @@
           "n": 84
         },
         "3": {
-          "median": 4763,
+          "median": 4650,
           "p25": 3900,
           "p75": 5000,
-          "n": 22
+          "n": 23
         },
         "4+": null
       },
       "roommate": null,
       "trend": {
         "b1_median": 3100,
-        "wow": 100,
+        "wow": -100,
         "mom": 0
       },
       "history": [
@@ -2063,6 +2163,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3100
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3100
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -2070,10 +2175,10 @@
         "area": "North End",
         "slug": "north-end",
         "city": "Boston",
-        "known": 76,
-        "no_fee": 57,
-        "pct_no_fee": 75,
-        "buildings": 61
+        "known": 77,
+        "no_fee": 58,
+        "pct_no_fee": 75.3,
+        "buildings": 62
       }
     },
     {
@@ -2084,16 +2189,16 @@
         "1": null,
         "2": null,
         "3": {
-          "median": 3538,
+          "median": 3500,
           "p25": 3200,
           "p75": 3600,
-          "n": 64
+          "n": 65
         },
         "4+": {
           "median": 4600,
           "p25": 4100,
-          "p75": 5350,
-          "n": 42
+          "p75": 5300,
+          "n": 43
         }
       },
       "roommate": null,
@@ -2116,7 +2221,7 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3538
+          "median": 3500
         }
       ],
       "histWeekly": [
@@ -2154,6 +2259,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3538
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3500
         }
       ],
       "historyBedLabel": "3-bedroom",
@@ -2161,10 +2271,10 @@
         "area": "Oak Square",
         "slug": "oak-square",
         "city": "Boston",
-        "known": 127,
-        "no_fee": 115,
-        "pct_no_fee": 90.6,
-        "buildings": 89
+        "known": 129,
+        "no_fee": 117,
+        "pct_no_fee": 90.7,
+        "buildings": 91
       }
     },
     {
@@ -2180,9 +2290,9 @@
         },
         "2": {
           "median": 3008,
-          "p25": 2675,
-          "p75": 3219,
-          "n": 34
+          "p25": 2700,
+          "p75": 3250,
+          "n": 35
         },
         "3": null,
         "4+": null
@@ -2190,7 +2300,7 @@
       "roommate": null,
       "trend": {
         "b1_median": 2800,
-        "wow": null,
+        "wow": 0,
         "mom": null
       },
       "history": [
@@ -2229,6 +2339,11 @@
         {
           "wk": "2026-06-09",
           "label": "Jun 9–15",
+          "median": 2800
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
           "median": 2800
         }
       ],
@@ -2241,35 +2356,35 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 2650,
-          "p25": 2300,
-          "p75": 3000,
-          "n": 25
+          "median": 2625,
+          "p25": 2325,
+          "p75": 2988,
+          "n": 22
         },
         "2": {
           "median": 3800,
           "p25": 2900,
-          "p75": 4200,
-          "n": 97
+          "p75": 4100,
+          "n": 93
         },
         "3": {
           "median": 3995,
-          "p25": 3500,
-          "p75": 5100,
-          "n": 109
+          "p25": 3475,
+          "p75": 5150,
+          "n": 107
         },
         "4+": {
-          "median": 5200,
-          "p25": 4395,
+          "median": 5175,
+          "p25": 4296,
           "p75": 6600,
-          "n": 73
+          "n": 72
         }
       },
       "roommate": null,
       "trend": {
-        "b1_median": 2650,
-        "wow": 50,
-        "mom": 50
+        "b1_median": 2625,
+        "wow": -25,
+        "mom": 25
       },
       "history": [
         {
@@ -2285,7 +2400,7 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2650
+          "median": 2625
         }
       ],
       "histWeekly": [
@@ -2323,6 +2438,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2650
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2625
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -2333,7 +2453,7 @@
         "known": 195,
         "no_fee": 144,
         "pct_no_fee": 73.8,
-        "buildings": 177
+        "buildings": 168
       }
     },
     {
@@ -2344,31 +2464,31 @@
           "median": 2335,
           "p25": 2175,
           "p75": 2550,
-          "n": 59
+          "n": 58
         },
         "1": {
           "median": 2700,
           "p25": 2500,
           "p75": 3000,
-          "n": 117
+          "n": 118
         },
         "2": {
           "median": 3300,
-          "p25": 2996,
+          "p25": 2950,
           "p75": 3700,
-          "n": 190
+          "n": 189
         },
         "3": {
-          "median": 4075,
+          "median": 4050,
           "p25": 3600,
           "p75": 4400,
-          "n": 170
+          "n": 169
         },
         "4+": {
-          "median": 4985,
-          "p25": 4700,
+          "median": 4975,
+          "p25": 4600,
           "p75": 5500,
-          "n": 126
+          "n": 127
         }
       },
       "roommate": {
@@ -2379,7 +2499,7 @@
       },
       "trend": {
         "b1_median": 2700,
-        "wow": null,
+        "wow": 0,
         "mom": null
       },
       "history": [
@@ -2394,6 +2514,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 2700
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 2700
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -2401,10 +2526,10 @@
         "area": "Somerville",
         "slug": "somerville",
         "city": "Somerville",
-        "known": 341,
-        "no_fee": 261,
-        "pct_no_fee": 76.5,
-        "buildings": 421
+        "known": 344,
+        "no_fee": 264,
+        "pct_no_fee": 76.7,
+        "buildings": 420
       }
     },
     {
@@ -2412,28 +2537,28 @@
       "slug": "south-boston",
       "beds": {
         "0": {
-          "median": 2400,
-          "p25": 2150,
-          "p75": 2800,
-          "n": 21
+          "median": 2425,
+          "p25": 2163,
+          "p75": 2756,
+          "n": 22
         },
         "1": {
-          "median": 3000,
+          "median": 3050,
           "p25": 2600,
-          "p75": 3288,
+          "p75": 3300,
           "n": 66
         },
         "2": {
-          "median": 3750,
+          "median": 3700,
           "p25": 3400,
-          "p75": 4238,
-          "n": 162
+          "p75": 4225,
+          "n": 159
         },
         "3": {
           "median": 5000,
           "p25": 4300,
           "p75": 5700,
-          "n": 74
+          "n": 75
         },
         "4+": {
           "median": 6000,
@@ -2443,15 +2568,15 @@
         }
       },
       "roommate": {
-        "studio": 2400,
-        "perPerson": 1875,
-        "savings": 525,
-        "pctSaved": 22
+        "studio": 2425,
+        "perPerson": 1850,
+        "savings": 575,
+        "pctSaved": 24
       },
       "trend": {
-        "b1_median": 3000,
-        "wow": 0,
-        "mom": 0
+        "b1_median": 3050,
+        "wow": 50,
+        "mom": 50
       },
       "history": [
         {
@@ -2467,7 +2592,7 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3000
+          "median": 3050
         }
       ],
       "histWeekly": [
@@ -2505,6 +2630,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3000
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3050
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -2515,7 +2645,7 @@
         "known": 122,
         "no_fee": 100,
         "pct_no_fee": 82,
-        "buildings": 237
+        "buildings": 236
       }
     },
     {
@@ -2525,26 +2655,26 @@
         "0": {
           "median": 2400,
           "p25": 2300,
-          "p75": 2750,
-          "n": 33
+          "p75": 2788,
+          "n": 34
         },
         "1": {
-          "median": 3425,
+          "median": 3348,
           "p25": 2850,
-          "p75": 4000,
-          "n": 78
+          "p75": 3938,
+          "n": 82
         },
         "2": {
           "median": 4200,
-          "p25": 3750,
+          "p25": 3650,
           "p75": 4800,
-          "n": 81
+          "n": 85
         },
         "3": {
           "median": 5100,
           "p25": 4600,
-          "p75": 5800,
-          "n": 29
+          "p75": 5675,
+          "n": 31
         },
         "4+": null
       },
@@ -2555,9 +2685,9 @@
         "pctSaved": 13
       },
       "trend": {
-        "b1_median": 3425,
-        "wow": 125,
-        "mom": 25
+        "b1_median": 3348,
+        "wow": 48,
+        "mom": 3
       },
       "history": [
         {
@@ -2573,7 +2703,7 @@
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3425
+          "median": 3348
         }
       ],
       "histWeekly": [
@@ -2611,6 +2741,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 3425
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3348
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -2621,7 +2756,7 @@
         "known": 90,
         "no_fee": 66,
         "pct_no_fee": 73.3,
-        "buildings": 155
+        "buildings": 165
       }
     },
     {
@@ -2697,6 +2832,11 @@
           "wk": "2026-06-09",
           "label": "Jun 9–15",
           "median": 5625
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 5625
         }
       ],
       "historyBedLabel": "4+ bedroom",
@@ -2734,6 +2874,11 @@
         {
           "wk": "2026-06-09",
           "label": "Jun 9–15",
+          "median": 2850
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
           "median": 2850
         }
       ],
