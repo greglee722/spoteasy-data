@@ -1,100 +1,99 @@
 week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
-2026-06-16,metro,Greater Boston,0,2300,1122,2100,2598
-2026-06-16,metro,Greater Boston,1,2750,2635,2400,3186
-2026-06-16,metro,Greater Boston,2,3300,3083,2900,3900
-2026-06-16,metro,Greater Boston,3,3900,2004,3450,4654
-2026-06-16,metro,Greater Boston,4+,5200,1669,4400,6250
-2026-06-16,neighborhood,Allston,0,2050,130,1995,2299
+2026-06-16,metro,Greater Boston,0,2300,1123,2100,2595
+2026-06-16,metro,Greater Boston,1,2750,2631,2400,3195
+2026-06-16,metro,Greater Boston,2,3300,3070,2900,3900
+2026-06-16,metro,Greater Boston,3,3913,2002,3450,4650
+2026-06-16,metro,Greater Boston,4+,5200,1660,4400,6250
+2026-06-16,neighborhood,Allston,0,2050,132,1995,2296
 2026-06-16,neighborhood,Allston,1,2475,247,2325,2950
-2026-06-16,neighborhood,Allston,2,3200,258,2831,4024
-2026-06-16,neighborhood,Allston,3,3700,188,3300,4096
+2026-06-16,neighborhood,Allston,2,3200,257,2825,4032
+2026-06-16,neighborhood,Allston,3,3700,187,3300,4050
 2026-06-16,neighborhood,Allston,4+,5200,212,4588,6025
 2026-06-16,neighborhood,Aspinwall Hill,2,3125,26,3056,3195
-2026-06-16,neighborhood,Back Bay,0,2575,118,2300,2850
-2026-06-16,neighborhood,Back Bay,1,3250,143,3000,3600
-2026-06-16,neighborhood,Back Bay,2,4500,55,3875,5048
+2026-06-16,neighborhood,Back Bay,0,2600,117,2300,2850
+2026-06-16,neighborhood,Back Bay,1,3250,146,3000,3600
+2026-06-16,neighborhood,Back Bay,2,4525,56,3888,5150
 2026-06-16,neighborhood,Beacon Hill,0,2400,65,2150,2650
-2026-06-16,neighborhood,Beacon Hill,1,3000,93,2700,3300
-2026-06-16,neighborhood,Beacon Hill,2,3575,71,3350,4000
+2026-06-16,neighborhood,Beacon Hill,1,3000,90,2700,3300
+2026-06-16,neighborhood,Beacon Hill,2,3575,70,3350,3996
 2026-06-16,neighborhood,Boston Downtown,0,2500,30,2400,2600
 2026-06-16,neighborhood,Boston Downtown,1,3100,41,3000,3650
 2026-06-16,neighborhood,Brighton,0,2095,182,1995,2238
-2026-06-16,neighborhood,Brighton,1,2400,472,2250,2600
-2026-06-16,neighborhood,Brighton,2,2950,471,2700,3295
-2026-06-16,neighborhood,Brighton,3,3668,376,3400,4100
-2026-06-16,neighborhood,Brighton,4+,4800,406,4300,5888
+2026-06-16,neighborhood,Brighton,1,2400,469,2250,2600
+2026-06-16,neighborhood,Brighton,2,2950,462,2700,3250
+2026-06-16,neighborhood,Brighton,3,3675,375,3400,4100
+2026-06-16,neighborhood,Brighton,4+,4800,407,4298,5825
 2026-06-16,neighborhood,Brookline,1,2500,30,2200,2771
-2026-06-16,neighborhood,Brookline,2,3360,54,3156,3475
+2026-06-16,neighborhood,Brookline,2,3345,53,3150,3475
 2026-06-16,neighborhood,Brookline,3,4650,29,4000,4800
 2026-06-16,neighborhood,Brookline,4+,5998,26,5425,6500
 2026-06-16,neighborhood,Cambridge,0,2450,84,2200,2600
-2026-06-16,neighborhood,Cambridge,1,3000,294,2796,3296
-2026-06-16,neighborhood,Cambridge,2,3700,329,3300,4250
-2026-06-16,neighborhood,Cambridge,3,4448,178,4019,4899
+2026-06-16,neighborhood,Cambridge,1,3000,295,2780,3292
+2026-06-16,neighborhood,Cambridge,2,3700,329,3270,4250
+2026-06-16,neighborhood,Cambridge,3,4400,182,4000,4900
 2026-06-16,neighborhood,Cambridge,4+,5200,89,4750,6250
-2026-06-16,neighborhood,Chestnut Hill,1,3140,46,2800,3303
+2026-06-16,neighborhood,Chestnut Hill,1,3150,44,2800,3309
 2026-06-16,neighborhood,Chestnut Hill,2,3710,48,2994,4425
 2026-06-16,neighborhood,Chestnut Hill,4+,6500,22,6350,7800
 2026-06-16,neighborhood,Chinatown,2,4933,28,4686,5198
 2026-06-16,neighborhood,Coolidge Corner,0,2900,30,2324,3015
-2026-06-16,neighborhood,Coolidge Corner,1,3030,103,2700,3390
-2026-06-16,neighborhood,Coolidge Corner,2,3778,87,3500,4000
-2026-06-16,neighborhood,Coolidge Corner,3,4725,44,4500,5125
-2026-06-16,neighborhood,Coolidge Corner,4+,6000,39,5000,6500
+2026-06-16,neighborhood,Coolidge Corner,1,3000,103,2700,3390
+2026-06-16,neighborhood,Coolidge Corner,2,3795,85,3500,4000
+2026-06-16,neighborhood,Coolidge Corner,3,4775,46,4500,5200
+2026-06-16,neighborhood,Coolidge Corner,4+,5950,38,5000,6500
 2026-06-16,neighborhood,Corey Hill,1,2675,23,2250,3193
-2026-06-16,neighborhood,Corey Hill,2,3195,22,3158,3245
+2026-06-16,neighborhood,Corey Hill,2,3195,20,3145,3245
 2026-06-16,neighborhood,Dorchester,1,2503,44,2300,2996
-2026-06-16,neighborhood,Dorchester,2,2895,109,2600,3320
-2026-06-16,neighborhood,Dorchester,3,3350,138,3000,3600
+2026-06-16,neighborhood,Dorchester,2,2923,110,2600,3315
+2026-06-16,neighborhood,Dorchester,3,3350,139,3000,3600
 2026-06-16,neighborhood,Dorchester,4+,3750,83,3600,4200
-2026-06-16,neighborhood,East Boston,1,2400,57,2100,2800
-2026-06-16,neighborhood,East Boston,2,2900,131,2675,3075
-2026-06-16,neighborhood,East Boston,3,3200,27,2900,3400
+2026-06-16,neighborhood,East Boston,1,2388,56,2100,2800
+2026-06-16,neighborhood,East Boston,2,2925,130,2700,3138
+2026-06-16,neighborhood,East Boston,3,3200,28,2950,3450
 2026-06-16,neighborhood,East Boston,4+,4000,29,3700,4400
-2026-06-16,neighborhood,Fenway,0,2400,206,2250,2500
-2026-06-16,neighborhood,Fenway,1,2800,295,2508,3100
+2026-06-16,neighborhood,Fenway,0,2400,207,2250,2500
+2026-06-16,neighborhood,Fenway,1,2800,294,2504,3100
 2026-06-16,neighborhood,Fenway,2,3725,204,3338,4100
 2026-06-16,neighborhood,Fenway,3,5025,80,4750,5600
-2026-06-16,neighborhood,Hyde Park,2,2700,21,2500,2800
-2026-06-16,neighborhood,Jamaica Plain,1,2400,29,2200,2650
+2026-06-16,neighborhood,Hyde Park,2,2700,22,2500,2875
+2026-06-16,neighborhood,Jamaica Plain,1,2400,28,2188,2650
 2026-06-16,neighborhood,Jamaica Plain,2,3150,47,2900,3500
-2026-06-16,neighborhood,Jamaica Plain,3,3600,51,3350,3923
-2026-06-16,neighborhood,Jamaica Plain,4+,5000,44,4150,5519
+2026-06-16,neighborhood,Jamaica Plain,3,3600,52,3344,3909
+2026-06-16,neighborhood,Jamaica Plain,4+,5000,43,4325,5538
 2026-06-16,neighborhood,Longwood,0,2395,29,2195,2450
 2026-06-16,neighborhood,Longwood,1,3000,31,2795,3150
 2026-06-16,neighborhood,Mission Hill,0,2200,27,1950,2275
 2026-06-16,neighborhood,Mission Hill,1,2400,47,2348,2875
 2026-06-16,neighborhood,Mission Hill,2,3000,61,2800,3400
 2026-06-16,neighborhood,Mission Hill,3,4400,58,3900,4927
-2026-06-16,neighborhood,Mission Hill,4+,6298,132,5388,7056
+2026-06-16,neighborhood,Mission Hill,4+,6300,131,5400,7163
 2026-06-16,neighborhood,North Brookline,1,2713,32,2500,2924
 2026-06-16,neighborhood,North Brookline,2,3250,40,2988,3800
 2026-06-16,neighborhood,North Brookline,3,4950,31,4588,5126
 2026-06-16,neighborhood,North Brookline,4+,6350,48,5688,6600
 2026-06-16,neighborhood,North End,1,3100,43,2630,3800
-2026-06-16,neighborhood,North End,2,3850,84,3438,5000
+2026-06-16,neighborhood,North End,2,3900,83,3425,5000
 2026-06-16,neighborhood,North End,3,4650,23,3900,5000
-2026-06-16,neighborhood,Oak Square,3,3500,65,3200,3600
+2026-06-16,neighborhood,Oak Square,3,3538,64,3200,3600
 2026-06-16,neighborhood,Oak Square,4+,4600,43,4100,5300
 2026-06-16,neighborhood,Roslindale,1,2800,20,2505,2825
 2026-06-16,neighborhood,Roslindale,2,3008,35,2700,3250
 2026-06-16,neighborhood,Roxbury,1,2625,22,2325,2988
-2026-06-16,neighborhood,Roxbury,2,3800,93,2900,4100
-2026-06-16,neighborhood,Roxbury,3,3995,107,3475,5150
-2026-06-16,neighborhood,Roxbury,4+,5175,72,4296,6600
+2026-06-16,neighborhood,Roxbury,2,3800,92,2894,4125
+2026-06-16,neighborhood,Roxbury,3,3995,107,3438,5150
+2026-06-16,neighborhood,Roxbury,4+,5150,71,4198,6600
 2026-06-16,neighborhood,Somerville,0,2335,58,2175,2550
-2026-06-16,neighborhood,Somerville,1,2700,118,2500,3000
-2026-06-16,neighborhood,Somerville,2,3300,189,2950,3700
-2026-06-16,neighborhood,Somerville,3,4050,169,3600,4400
+2026-06-16,neighborhood,Somerville,1,2700,121,2500,3000
+2026-06-16,neighborhood,Somerville,2,3300,188,2999,3700
+2026-06-16,neighborhood,Somerville,3,4075,166,3600,4400
 2026-06-16,neighborhood,Somerville,4+,4975,127,4600,5500
 2026-06-16,neighborhood,South Boston,0,2425,22,2163,2756
-2026-06-16,neighborhood,South Boston,1,3050,66,2600,3300
-2026-06-16,neighborhood,South Boston,2,3700,159,3400,4225
-2026-06-16,neighborhood,South Boston,3,5000,75,4300,5700
-2026-06-16,neighborhood,South Boston,4+,6000,31,4875,6375
-2026-06-16,neighborhood,South End,0,2400,34,2300,2788
-2026-06-16,neighborhood,South End,1,3348,82,2850,3938
-2026-06-16,neighborhood,South End,2,4200,85,3650,4800
+2026-06-16,neighborhood,South Boston,1,3000,66,2600,3288
+2026-06-16,neighborhood,South Boston,2,3750,159,3400,4250
+2026-06-16,neighborhood,South Boston,3,4975,74,4300,5588
+2026-06-16,neighborhood,South Boston,4+,6100,30,4900,6388
+2026-06-16,neighborhood,South End,0,2400,33,2300,2800
+2026-06-16,neighborhood,South End,1,3350,81,2850,3950
+2026-06-16,neighborhood,South End,2,4200,86,3675,4950
 2026-06-16,neighborhood,South End,3,5100,31,4600,5675
-2026-06-16,neighborhood,South Medford,4+,5625,22,4995,6000
-2026-06-16,neighborhood,West Roxbury,2,2850,21,2650,3800
+2026-06-16,neighborhood,South Medford,4+,5400,21,4995,6000
