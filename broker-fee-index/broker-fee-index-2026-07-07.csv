@@ -1,0 +1,8 @@
+week_ending,scope,neighborhood,known_listings,no_fee_listings,pct_no_fee
+2026-07-07,metro,Greater Boston,1040,971,93.4
+2026-07-07,neighborhood,Somerville,51,50,98.0
+2026-07-07,neighborhood,Allston,87,84,96.6
+2026-07-07,neighborhood,Brighton,241,229,95.0
+2026-07-07,neighborhood,Fenway,150,141,94.0
+2026-07-07,neighborhood,Back Bay,54,50,92.6
+2026-07-07,neighborhood,Cambridge,59,51,86.4

@@ -2,85 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.spoteasy.com/data</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/broker-fee-index/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/allston/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/back-bay/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spoteasy.com/data/rent-index/beacon-hill/</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/brighton/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/cambridge/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/coolidge-corner/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/dorchester/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/east-boston/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/fenway/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/somerville/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/rent-index/south-boston/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.spoteasy.com/data/rent-index/south-end/</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.spoteasy.com/data/sept-1-countdown/</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
