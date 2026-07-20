@@ -31,12 +31,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.spoteasy.com/data/rent-index/beacon-hill/</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.spoteasy.com/data/rent-index/brighton/</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>weekly</changefreq>
