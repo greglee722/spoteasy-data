@@ -1,6 +1,6 @@
 {
-  "generated_week_ending": "2026-07-07",
-  "week_label": "July 7 - July 13, 2026",
+  "generated_week_ending": "2026-07-14",
+  "week_label": "July 14 - July 20, 2026",
   "methodology": {
     "cities": "Greater Boston (10 cities)",
     "n_threshold": 20,
@@ -13,46 +13,46 @@
     "headline": [
       {
         "beds": "0",
-        "median": 2300,
+        "median": 2298,
         "p25": 2095,
         "p75": 2600,
         "n": 374
       },
       {
         "beds": "1",
-        "median": 2833,
-        "p25": 2475,
+        "median": 2829,
+        "p25": 2465,
         "p75": 3250,
-        "n": 961
+        "n": 960
       },
       {
         "beds": "2",
         "median": 3400,
         "p25": 2900,
         "p75": 4000,
-        "n": 1267
+        "n": 1270
       },
       {
         "beds": "3",
         "median": 3850,
-        "p25": 3400,
+        "p25": 3396,
         "p75": 4700,
-        "n": 870
+        "n": 878
       },
       {
         "beds": "4+",
-        "median": 4895,
+        "median": 4898,
         "p25": 4100,
         "p75": 5800,
-        "n": 517
+        "n": 522
       }
     ],
     "building_type": [
       {
         "building_type": "Apartment",
         "beds": {
-          "0": 2225,
-          "1": 2710,
+          "0": 2210,
+          "1": 2700,
           "2": 3200,
           "3": 3650,
           "4+": 4600
@@ -75,16 +75,16 @@
           "1": 3150,
           "2": 3800,
           "3": 4200,
-          "4+": 4775
+          "4+": 4800
         }
       },
       {
         "building_type": "Brownstone",
         "beds": {
-          "0": 2350,
+          "0": 2373,
           "1": 2900,
           "2": 3750,
-          "3": 4448,
+          "3": 4500,
           "4+": null
         }
       },
@@ -95,7 +95,7 @@
           "1": null,
           "2": null,
           "3": 4800,
-          "4+": 6125
+          "4+": 6000
         }
       },
       {
@@ -104,8 +104,8 @@
           "0": 2380,
           "1": 2750,
           "2": 3400,
-          "3": 4450,
-          "4+": 5450
+          "3": 4400,
+          "4+": 5400
         }
       }
     ]
@@ -116,10 +116,10 @@
       "slug": "allston",
       "beds": {
         "0": {
-          "median": 2030,
-          "p25": 1984,
-          "p75": 2109,
-          "n": 28
+          "median": 2025,
+          "p25": 1965,
+          "p75": 2100,
+          "n": 29
         },
         "1": {
           "median": 2580,
@@ -128,10 +128,10 @@
           "n": 67
         },
         "2": {
-          "median": 3150,
-          "p25": 2831,
+          "median": 3100,
+          "p25": 2819,
           "p75": 4000,
-          "n": 90
+          "n": 88
         },
         "3": {
           "median": 3598,
@@ -141,21 +141,21 @@
         },
         "4+": {
           "median": 5200,
-          "p25": 4475,
-          "p75": 5513,
-          "n": 36
+          "p25": 4500,
+          "p75": 5400,
+          "n": 37
         }
       },
       "roommate": {
-        "studio": 2030,
-        "perPerson": 1575,
-        "savings": 455,
-        "pctSaved": 22
+        "studio": 2025,
+        "perPerson": 1550,
+        "savings": 475,
+        "pctSaved": 23
       },
       "trend": {
         "b1_median": 2580,
-        "wow": -45,
-        "mom": 130
+        "wow": 2,
+        "mom": 105
       },
       "history": [
         {
@@ -234,6 +234,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2580
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2580
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -244,7 +249,7 @@
         "known": 88,
         "no_fee": 84,
         "pct_no_fee": 95.5,
-        "buildings": 144
+        "buildings": 145
       }
     },
     {
@@ -254,11 +259,11 @@
         "0": {
           "median": 2650,
           "p25": 2400,
-          "p75": 2825,
-          "n": 45
+          "p75": 2813,
+          "n": 43
         },
         "1": {
-          "median": 3288,
+          "median": 3300,
           "p25": 3000,
           "p75": 3838,
           "n": 66
@@ -266,8 +271,8 @@
         "2": {
           "median": 4500,
           "p25": 3995,
-          "p75": 5550,
-          "n": 26
+          "p75": 5925,
+          "n": 27
         },
         "3": null,
         "4+": null
@@ -279,9 +284,9 @@
         "pctSaved": 15
       },
       "trend": {
-        "b1_median": 3288,
-        "wow": -12,
-        "mom": 38
+        "b1_median": 3300,
+        "wow": 12,
+        "mom": 50
       },
       "history": [
         {
@@ -302,7 +307,7 @@
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3288
+          "median": 3300
         }
       ],
       "histWeekly": [
@@ -360,6 +365,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 3288
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 3300
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -370,7 +380,7 @@
         "known": 58,
         "no_fee": 54,
         "pct_no_fee": 93.1,
-        "buildings": 108
+        "buildings": 107
       }
     },
     {
@@ -378,16 +388,16 @@
       "slug": "beacon-hill",
       "beds": {
         "0": {
-          "median": 2350,
-          "p25": 2300,
-          "p75": 2650,
-          "n": 23
+          "median": 2423,
+          "p25": 2281,
+          "p75": 2638,
+          "n": 22
         },
         "1": {
-          "median": 3050,
-          "p25": 2763,
+          "median": 3000,
+          "p25": 2775,
           "p75": 3300,
-          "n": 42
+          "n": 43
         },
         "2": null,
         "3": null,
@@ -395,9 +405,9 @@
       },
       "roommate": null,
       "trend": {
-        "b1_median": 3050,
-        "wow": -150,
-        "mom": 100
+        "b1_median": 3000,
+        "wow": -100,
+        "mom": 0
       },
       "history": [
         {
@@ -418,7 +428,7 @@
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3050
+          "median": 3000
         }
       ],
       "histWeekly": [
@@ -476,6 +486,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 3050
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 3000
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -487,10 +502,10 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 3500,
-          "p25": 3081,
-          "p75": 4075,
-          "n": 22
+          "median": 3350,
+          "p25": 3075,
+          "p75": 4000,
+          "n": 21
         },
         "2": null,
         "3": null,
@@ -498,9 +513,9 @@
       },
       "roommate": null,
       "trend": {
-        "b1_median": 3500,
-        "wow": null,
-        "mom": 412
+        "b1_median": 3350,
+        "wow": 0,
+        "mom": 250
       },
       "history": [
         {
@@ -521,7 +536,7 @@
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3500
+          "median": 3350
         }
       ],
       "histWeekly": [
@@ -574,6 +589,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 3500
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 3350
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -587,7 +607,7 @@
           "median": 2075,
           "p25": 1995,
           "p75": 2195,
-          "n": 56
+          "n": 57
         },
         "1": {
           "median": 2400,
@@ -599,7 +619,7 @@
           "median": 2900,
           "p25": 2800,
           "p75": 3200,
-          "n": 141
+          "n": 142
         },
         "3": {
           "median": 3850,
@@ -608,10 +628,10 @@
           "n": 100
         },
         "4+": {
-          "median": 4975,
-          "p25": 4306,
+          "median": 5000,
+          "p25": 4400,
           "p75": 5400,
-          "n": 70
+          "n": 69
         }
       },
       "roommate": {
@@ -702,6 +722,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2400
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2400
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -709,9 +734,9 @@
         "area": "Brighton",
         "slug": "brighton",
         "city": "Boston",
-        "known": 257,
-        "no_fee": 245,
-        "pct_no_fee": 95.3,
+        "known": 259,
+        "no_fee": 247,
+        "pct_no_fee": 95.4,
         "buildings": 323
       }
     },
@@ -721,35 +746,35 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 3025,
+          "median": 3050,
           "p25": 2750,
           "p75": 3400,
-          "n": 94
+          "n": 93
         },
         "2": {
           "median": 3750,
-          "p25": 3438,
+          "p25": 3425,
           "p75": 4500,
-          "n": 100
+          "n": 99
         },
         "3": {
           "median": 4500,
-          "p25": 3990,
+          "p25": 3945,
           "p75": 5300,
-          "n": 81
+          "n": 83
         },
         "4+": {
           "median": 5350,
-          "p25": 4758,
+          "p25": 4784,
           "p75": 7387,
           "n": 24
         }
       },
       "roommate": null,
       "trend": {
-        "b1_median": 3025,
-        "wow": 52,
-        "mom": 25
+        "b1_median": 3050,
+        "wow": 100,
+        "mom": 50
       },
       "history": [
         {
@@ -760,7 +785,7 @@
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3025
+          "median": 3050
         }
       ],
       "histWeekly": [
@@ -788,6 +813,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 3025
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 3050
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -795,11 +825,114 @@
         "area": "Cambridge",
         "slug": "cambridge",
         "city": "Cambridge",
-        "known": 59,
-        "no_fee": 52,
-        "pct_no_fee": 88.1,
-        "buildings": 265
+        "known": 61,
+        "no_fee": 54,
+        "pct_no_fee": 88.5,
+        "buildings": 266
       }
+    },
+    {
+      "neighborhood": "Chestnut Hill",
+      "slug": "chestnut-hill",
+      "beds": {
+        "0": null,
+        "1": {
+          "median": 3353,
+          "p25": 3245,
+          "p75": 3530,
+          "n": 20
+        },
+        "2": {
+          "median": 4713,
+          "p25": 4139,
+          "p75": 4993,
+          "n": 20
+        },
+        "3": null,
+        "4+": null
+      },
+      "roommate": null,
+      "trend": {
+        "b1_median": 3353,
+        "wow": null,
+        "mom": 213
+      },
+      "history": [
+        {
+          "ym": "2026-04",
+          "label": "Apr 2026",
+          "median": 3053
+        },
+        {
+          "ym": "2026-05",
+          "label": "May 2026",
+          "median": 2995
+        },
+        {
+          "ym": "2026-06",
+          "label": "Jun 2026",
+          "median": 3170
+        },
+        {
+          "ym": "2026-07",
+          "label": "Jul 2026",
+          "median": 3353
+        }
+      ],
+      "histWeekly": [
+        {
+          "wk": "2026-04-27",
+          "label": "Apr 27 – May 3",
+          "median": 3053
+        },
+        {
+          "wk": "2026-05-04",
+          "label": "May 4–10",
+          "median": 3053
+        },
+        {
+          "wk": "2026-05-12",
+          "label": "May 12–18",
+          "median": 2995
+        },
+        {
+          "wk": "2026-05-19",
+          "label": "May 19–25",
+          "median": 2995
+        },
+        {
+          "wk": "2026-05-26",
+          "label": "May 26 – Jun 1",
+          "median": 2995
+        },
+        {
+          "wk": "2026-06-02",
+          "label": "Jun 2–8",
+          "median": 3110
+        },
+        {
+          "wk": "2026-06-09",
+          "label": "Jun 9–15",
+          "median": 3150
+        },
+        {
+          "wk": "2026-06-16",
+          "label": "Jun 16–22",
+          "median": 3140
+        },
+        {
+          "wk": "2026-06-23",
+          "label": "Jun 23–29",
+          "median": 3170
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 3353
+        }
+      ],
+      "historyBedLabel": "1-bedroom",
+      "noFee": null
     },
     {
       "neighborhood": "Chinatown",
@@ -859,6 +992,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 5035
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 5035
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -881,10 +1019,10 @@
           "n": 65
         },
         "2": {
-          "median": 3650,
+          "median": 3648,
           "p25": 3300,
-          "p75": 3900,
-          "n": 53
+          "p75": 3913,
+          "n": 52
         },
         "3": {
           "median": 4825,
@@ -896,13 +1034,13 @@
       },
       "roommate": {
         "studio": 2363,
-        "perPerson": 1825,
-        "savings": 538,
+        "perPerson": 1824,
+        "savings": 539,
         "pctSaved": 23
       },
       "trend": {
         "b1_median": 2800,
-        "wow": -50,
+        "wow": 0,
         "mom": -230
       },
       "history": [
@@ -982,6 +1120,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2800
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2800
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1001,8 +1144,8 @@
         "2": {
           "median": 3000,
           "p25": 2600,
-          "p75": 3375,
-          "n": 77
+          "p75": 3386,
+          "n": 78
         },
         "3": {
           "median": 3350,
@@ -1013,15 +1156,15 @@
         "4+": {
           "median": 3800,
           "p25": 3600,
-          "p75": 4225,
-          "n": 50
+          "p75": 4250,
+          "n": 51
         }
       },
       "roommate": null,
       "trend": {
         "b1_median": 2650,
-        "wow": 25,
-        "mom": 85
+        "wow": 0,
+        "mom": 147
       },
       "history": [
         {
@@ -1100,6 +1243,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2650
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2650
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1123,17 +1271,17 @@
           "n": 41
         },
         "3": {
-          "median": 3300,
+          "median": 3275,
           "p25": 3000,
           "p75": 3500,
-          "n": 21
+          "n": 20
         },
         "4+": null
       },
       "roommate": null,
       "trend": {
         "b1_median": 2550,
-        "wow": -100,
+        "wow": -50,
         "mom": 150
       },
       "history": [
@@ -1213,6 +1361,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2550
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2550
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1235,10 +1388,10 @@
           "n": 110
         },
         "2": {
-          "median": 3800,
-          "p25": 3299,
+          "median": 3850,
+          "p25": 3325,
           "p75": 4000,
-          "n": 53
+          "n": 55
         },
         "3": {
           "median": 4873,
@@ -1250,13 +1403,13 @@
       },
       "roommate": {
         "studio": 2295,
-        "perPerson": 1900,
-        "savings": 395,
-        "pctSaved": 17
+        "perPerson": 1925,
+        "savings": 370,
+        "pctSaved": 16
       },
       "trend": {
         "b1_median": 2850,
-        "wow": -50,
+        "wow": 0,
         "mom": 50
       },
       "history": [
@@ -1336,6 +1489,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2850
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2850
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1346,7 +1504,7 @@
         "known": 166,
         "no_fee": 157,
         "pct_no_fee": 94.6,
-        "buildings": 103
+        "buildings": 105
       }
     },
     {
@@ -1363,11 +1521,16 @@
         },
         "3": {
           "median": 3600,
-          "p25": 3384,
-          "p75": 4206,
-          "n": 36
+          "p25": 3373,
+          "p75": 4050,
+          "n": 35
         },
-        "4+": null
+        "4+": {
+          "median": 4800,
+          "p25": 4400,
+          "p75": 5300,
+          "n": 21
+        }
       },
       "roommate": null,
       "trend": {
@@ -1451,6 +1614,11 @@
         {
           "wk": "2026-07-07",
           "label": "Jul 7–13",
+          "median": 3200
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
           "median": 3200
         }
       ],
@@ -1555,6 +1723,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 5450
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 5450
         }
       ],
       "historyBedLabel": "4+ bedroom",
@@ -1566,14 +1739,14 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 3100,
+          "median": 3000,
           "p25": 2795,
-          "p75": 4125,
+          "p75": 4000,
           "n": 29
         },
         "2": {
           "median": 4550,
-          "p25": 3638,
+          "p25": 3613,
           "p75": 5679,
           "n": 48
         },
@@ -1582,8 +1755,8 @@
       },
       "roommate": null,
       "trend": {
-        "b1_median": 3100,
-        "wow": -600,
+        "b1_median": 3000,
+        "wow": -300,
         "mom": -100
       },
       "history": [
@@ -1605,7 +1778,7 @@
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3100
+          "median": 3000
         }
       ],
       "histWeekly": [
@@ -1663,6 +1836,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 3100
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 3000
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1675,10 +1853,10 @@
         "0": null,
         "1": null,
         "2": {
-          "median": 2825,
+          "median": 2800,
           "p25": 2600,
-          "p75": 3163,
-          "n": 22
+          "p75": 3200,
+          "n": 21
         },
         "3": null,
         "4+": null
@@ -1708,7 +1886,7 @@
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2825
+          "median": 2800
         }
       ],
       "histWeekly": [
@@ -1761,6 +1939,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2825
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2800
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -1779,10 +1962,10 @@
           "n": 28
         },
         "3": {
-          "median": 3725,
+          "median": 3698,
           "p25": 3300,
-          "p75": 4175,
-          "n": 54
+          "p75": 4125,
+          "n": 56
         },
         "4+": null
       },
@@ -1869,6 +2052,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2925
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2925
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -1886,22 +2074,22 @@
           "n": 53
         },
         "2": {
-          "median": 3400,
+          "median": 3300,
           "p25": 3000,
-          "p75": 3700,
+          "p75": 3695,
           "n": 85
         },
         "3": {
           "median": 3800,
           "p25": 3600,
-          "p75": 4188,
-          "n": 78
+          "p75": 4150,
+          "n": 81
         },
         "4+": {
-          "median": 4800,
+          "median": 4798,
           "p25": 4400,
-          "p75": 5500,
-          "n": 49
+          "p75": 5475,
+          "n": 50
         }
       },
       "roommate": null,
@@ -1947,6 +2135,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2650
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2650
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1957,7 +2150,7 @@
         "known": 54,
         "no_fee": 53,
         "pct_no_fee": 98.1,
-        "buildings": 232
+        "buildings": 235
       }
     },
     {
@@ -1966,10 +2159,10 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 2900,
+          "median": 2875,
           "p25": 2600,
-          "p75": 3375,
-          "n": 43
+          "p75": 3363,
+          "n": 44
         },
         "2": {
           "median": 3700,
@@ -1987,9 +2180,9 @@
       },
       "roommate": null,
       "trend": {
-        "b1_median": 2900,
-        "wow": 190,
-        "mom": -100
+        "b1_median": 2875,
+        "wow": -50,
+        "mom": -175
       },
       "history": [
         {
@@ -2010,7 +2203,7 @@
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2900
+          "median": 2875
         }
       ],
       "histWeekly": [
@@ -2068,6 +2261,11 @@
           "wk": "2026-07-07",
           "label": "Jul 7–13",
           "median": 2900
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
+          "median": 2875
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -2086,28 +2284,28 @@
         "1": {
           "median": 3340,
           "p25": 2850,
-          "p75": 3700,
-          "n": 43
+          "p75": 3800,
+          "n": 41
         },
         "2": {
-          "median": 3950,
+          "median": 4100,
           "p25": 3800,
           "p75": 5000,
-          "n": 45
+          "n": 46
         },
         "3": null,
         "4+": null
       },
       "roommate": {
         "studio": 2400,
-        "perPerson": 1975,
-        "savings": 425,
-        "pctSaved": 18
+        "perPerson": 2050,
+        "savings": 350,
+        "pctSaved": 15
       },
       "trend": {
         "b1_median": 3340,
-        "wow": -35,
-        "mom": 40
+        "wow": 20,
+        "mom": -8
       },
       "history": [
         {
@@ -2185,6 +2383,11 @@
         {
           "wk": "2026-07-07",
           "label": "Jul 7–13",
+          "median": 3340
+        },
+        {
+          "wk": "2026-07-14",
+          "label": "Jul 14–20",
           "median": 3340
         }
       ],
