@@ -4,17 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Boston Rental Market Data · Spot Easy</title>
-  <meta name="description" content="Weekly median rent by neighborhood, bedroom count, and building type — Greater Boston rental data from Spot Easy's verified listings database, updated every Tuesday." />
+  <meta name="description" content="Monthly median rent by neighborhood, bedroom count, and building type — Greater Boston rental data from Spot Easy's verified listings database, updated monthly." />
   <link rel="canonical" href="https://www.spoteasy.com/data" />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Boston Rental Market Data · Spot Easy" />
-  <meta property="og:description" content="Real numbers from verified, licensed real estate agents. Median rents, neighborhood trends, and market signals for Greater Boston — updated every Tuesday." />
+  <meta property="og:description" content="Real numbers from verified, licensed real estate agents. Median rents, neighborhood trends, and market signals for Greater Boston — updated monthly." />
   <meta property="og:url" content="https://www.spoteasy.com/data" />
   <meta property="og:image" content="https://www.spoteasy.com/data/og-data-desk.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Boston Rental Market Data · Spot Easy" />
-  <meta name="twitter:description" content="Real numbers from verified agents. Median rents by neighborhood, updated every Tuesday." />
+  <meta name="twitter:description" content="Real numbers from verified agents. Median rents by neighborhood, updated monthly." />
   <meta name="twitter:image" content="https://www.spoteasy.com/data/og-data-desk.png" />
 
   <script type="application/ld+json">
@@ -24,7 +24,7 @@
       {
         "@type": "Dataset",
         "name": "Boston Rental Market Data — Spot Easy",
-        "description": "Weekly median asking rent by neighborhood and bedroom count for Greater Boston, sourced from active listings posted by verified, licensed real estate agents on Spot Easy.",
+        "description": "Monthly median asking rent by neighborhood and bedroom count for Greater Boston, sourced from active listings posted by verified, licensed real estate agents on Spot Easy.",
         "url": "https://www.spoteasy.com/data",
         "creator": { "@type": "Organization", "name": "Spot Easy", "url": "https://www.spoteasy.com" },
         "temporalCoverage": "2026/..",
@@ -680,53 +680,53 @@
 </head>
 <body>
 
-<!-- ══════════ DATA LAYER — update every Tuesday ══════════ -->
+<!-- ══════════ DATA LAYER — update monthly ══════════ -->
 <script>
 const PAGE_DATA = {
-  "as_of_date": "Data from July 21 - July 27, 2026",
-  "sample_count": 1056,
+  "as_of_date": "June 2026",
+  "sample_count": 5322,
   "latest_report_url": "/data/rent-index/",
   "tiles": [
     {
       "label": "Studio",
-      "value": 2295,
-      "delta": 3,
-      "dir": "down"
-    },
-    {
-      "label": "1 BR",
-      "value": 2800,
-      "delta": 29,
-      "dir": "down"
-    },
-    {
-      "label": "2 BR",
-      "value": 3400,
+      "value": 2300,
       "delta": 0,
       "dir": "up"
     },
     {
-      "label": "3 BR",
-      "value": 3800,
+      "label": "1 BR",
+      "value": 2750,
       "delta": 50,
-      "dir": "down"
+      "dir": "up"
+    },
+    {
+      "label": "2 BR",
+      "value": 3390,
+      "delta": 36,
+      "dir": "up"
+    },
+    {
+      "label": "3 BR",
+      "value": 4000,
+      "delta": 0,
+      "dir": "up"
     }
   ],
   "teasers": {
     "rent_index": {
-      "stat": "$3,400",
+      "stat": "$3,390",
       "label": "2BR median · Greater Boston",
-      "delta": "updated weekly"
+      "delta": "+$36 vs. last month"
     },
     "sept1": {
-      "stat": "42",
+      "stat": "35",
       "label": "days until Sept 1",
-      "delta": "680 units already listed"
+      "delta": "3,853 units already listed"
     },
     "broker_fee": {
-      "stat": "93.7%",
+      "stat": "76.5%",
       "label": "of stated-fee listings have no broker fee · Greater Boston",
-      "delta": "updated weekly"
+      "delta": "updated monthly"
     }
   }
 };
@@ -735,9 +735,9 @@ const PAGE_DATA = {
 <!-- ══════════ HERO ══════════ -->
 <section class="hero">
   <div class="hero-inner">
-    <div class="hero-eyebrow">Boston Data Desk · Updated Every Tuesday</div>
+    <div class="hero-eyebrow">Boston Data Desk · Updated Monthly</div>
     <h1>Boston Rental<br><em>Market Data</em></h1>
-    <p class="hero-sub">Real rent numbers from verified, licensed real estate agents — not estimates, not national averages. Published every Tuesday, free for anyone to use.</p>
+    <p class="hero-sub">Real rent numbers from verified, licensed real estate agents — not estimates, not national averages. Published monthly, free for anyone to use.</p>
 
     <div class="stat-strip-header">Median asking rent — Greater Boston</div>
     <div class="stat-strip" id="stat-strip">
@@ -752,7 +752,7 @@ const PAGE_DATA = {
 
   <!-- Intro -->
   <div class="intro-band fade-up">
-    <p>Boston rent doesn't make sense until you see the actual numbers. Every Tuesday we publish asking prices from <strong>licensed agents'</strong> active listings — Boston, Cambridge, Somerville, Brookline, and the surrounding cities. Not national estimates.</p>
+    <p>Boston rent doesn't make sense until you see the actual numbers. Each month we publish asking prices from <strong>licensed agents'</strong> active listings — Boston, Cambridge, Somerville, Brookline, and the surrounding cities. Not national estimates.</p>
   </div>
 
   <!-- Featured -->
@@ -763,10 +763,10 @@ const PAGE_DATA = {
     </div>
     <a href="rent-index/" id="featured-link" class="featured-card">
       <div>
-        <div class="feat-live-badge">Live · Every Tuesday</div>
+        <div class="feat-live-badge">Live · Monthly</div>
         <div class="feat-title">Boston Rent Index</div>
-        <p class="feat-desc">Allston, Jamaica Plain, South End — the price gap between them is bigger than most people expect. Every Tuesday we publish a neighborhood-by-neighborhood breakdown with sample sizes, so you can see exactly how much data is behind each number.</p>
-        <div class="feat-meta" id="feat-meta">Published every Tuesday morning</div>
+        <p class="feat-desc">Allston, Jamaica Plain, South End — the price gap between them is bigger than most people expect. Each month we publish a neighborhood-by-neighborhood breakdown with sample sizes, so you can see exactly how much data is behind each number.</p>
+        <div class="feat-meta" id="feat-meta">Published on the 1st of each month</div>
       </div>
       <div>
         <button class="btn-primary">View Latest Report →</button>
@@ -779,7 +779,7 @@ const PAGE_DATA = {
     <div class="section-head">
       <span class="section-num">02</span>
       <span class="section-title">All Reports</span>
-      <span class="section-live-badge">Live · Updated Weekly</span>
+      <span class="section-live-badge">Live · Updated Monthly</span>
     </div>
     <ul class="reports-list">
 
@@ -807,7 +807,7 @@ const PAGE_DATA = {
         <span class="report-row-num">03</span>
         <div>
           <div class="report-row-name">Boston Broker-Fee Index</div>
-          <div class="report-row-desc">What share of Boston listings charge no broker fee — and which neighborhoods lead? Updated weekly from verified active listings by Spot Easy.</div>
+          <div class="report-row-desc">What share of Boston listings charge no broker fee — and which neighborhoods lead? Updated monthly from verified active listings by Spot Easy.</div>
           <div class="report-teaser" id="teaser-broker_fee"></div>
         </div>
         <button class="report-row-btn">View Report &#8594;</button>
@@ -879,7 +879,7 @@ const PAGE_DATA = {
           <li>Week-over-week: same neighborhood × bedroom cell from the prior Tuesday's snapshot.</li>
           <li>Year-over-year: same cell from 52 weeks prior.</li>
         </ul>
-        <p style="margin-top:14px; color:var(--muted);">Updated every Tuesday morning. Questions? <a href="mailto:joel@spoteasy.com" style="color:var(--sky)">joel@spoteasy.com</a></p>
+        <p style="margin-top:14px; color:var(--muted);">Updated on the 1st of each month. Questions? <a href="mailto:joel@spoteasy.com" style="color:var(--sky)">joel@spoteasy.com</a></p>
       </div>
     </details>
   </section>

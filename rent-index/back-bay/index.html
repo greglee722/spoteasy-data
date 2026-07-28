@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Average Rent in Back Bay (2026) — Spot Easy</title>
-  <meta name="description" content="Median asking rent for studios, 1, 2, 3, and 4-bedroom apartments in Back Bay, Boston — updated weekly from verified active listings by Spot Easy.">
+  <meta name="description" content="Median asking rent for studios, 1, 2, 3, and 4-bedroom apartments in Back Bay, Boston — updated monthly from verified active listings by Spot Easy.">
   <link rel="canonical" href="https://www.spoteasy.com/data/rent-index/back-bay/">
   <meta property="og:title" content="Average Rent in Back Bay (2026)">
-  <meta property="og:description" content="Median asking rent by bedroom in Back Bay, Boston. Updated weekly by Spot Easy.">
+  <meta property="og:description" content="Median asking rent by bedroom in Back Bay, Boston. Updated monthly by Spot Easy.">
   <meta property="og:image" content="https://www.spoteasy.com/data/og-data-desk.png">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -16,9 +16,9 @@
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "Average Rent in Back Bay, Boston (2026)",
-  "description": "Median asking rent for active rental listings in Back Bay, broken down by bedroom count, with 25th–75th percentile ranges and sample sizes. Updated weekly by Spot Easy.",
+  "description": "Median asking rent for active rental listings in Back Bay, broken down by bedroom count, with 25th–75th percentile ranges and sample sizes. Updated monthly by Spot Easy.",
   "url": "https://www.spoteasy.com/data/rent-index/back-bay/",
-  "dateModified": "2026-07-21",
+  "dateModified": "2026-06-01",
   "creator": {
     "@type": "Organization",
     "name": "Spot Easy",
@@ -38,7 +38,7 @@
     {
       "@type": "DataDownload",
       "encodingFormat": "text/csv",
-      "contentUrl": "https://www.spoteasy.com/data/rent-index/rent-index-2026-07-21.csv"
+      "contentUrl": "https://www.spoteasy.com/data/rent-index/rent-index-2026-06.csv"
     }
   ]
 }
@@ -79,7 +79,7 @@
       "name": "How much is rent in Back Bay?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "As of July 21 - July 27, 2026, the median asking rent in Back Bay is $3,288 for a one-bedroom and $4,450 for a two-bedroom. For other sizes: studios around $2,625."
+        "text": "As of June 2026, the median asking rent in Back Bay is $3,150 for a one-bedroom and $4,425 for a two-bedroom. For other sizes: studios around $2,500, three-bedrooms $5,500."
       }
     },
     {
@@ -87,7 +87,7 @@
       "name": "How much is a 1-bedroom in Back Bay?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The median is $3,288, with most 1-bedroom listings falling between $3,000 and $3,813."
+        "text": "The median is $3,150, with most 1-bedroom listings falling between $2,855 and $3,500."
       }
     },
     {
@@ -95,7 +95,7 @@
       "name": "Is it cheaper to rent a studio or split a 2-bedroom in Back Bay?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Splitting a two-bedroom costs about $2,225 per person — roughly $400 a month less than renting a studio solo ($2,625)."
+        "text": "Splitting a two-bedroom costs about $2,213 per person — roughly $287 a month less than renting a studio solo ($2,500)."
       }
     },
     {
@@ -103,7 +103,7 @@
       "name": "How does Back Bay compare to the Boston average?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A 1-bedroom in Back Bay costs $488 more than the Greater Boston median of $2,800."
+        "text": "A 1-bedroom in Back Bay costs $400 more than the Greater Boston median of $2,750."
       }
     },
     {
@@ -231,24 +231,10 @@
     .dir-fee { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .01em; }
     .dir-list a:hover .dir-fee { color: var(--muted); }
 
-    /* Rent-over-time Week/Month toggle (CSS-only; hardened vs. Ant Design globals) */
+    /* Rent-over-time section (the v1.3.0 Week/Month toggle and its radio/pane
+       rules were dropped in v2.0.0 along with the weekly series). */
     .hist { margin: 48px 0 0; }
-    /* Clip-hide the radios (NOT display:none) so they stay keyboard-focusable + survive Ant resets */
-    .hist .hv-week, .hist .hv-month { position: absolute !important; width: 1px; height: 1px; clip-path: inset(50%); opacity: 0; pointer-events: none; }
-    .hist-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin: 0 0 16px; padding-bottom: 12px; border-bottom: 2px solid var(--navy); }
-    .hist-head h2 { margin: 0 !important; padding: 0 !important; border-bottom: none !important; }
-    .hist-toggle { display: inline-flex !important; border: 1.5px solid var(--rule); border-radius: 8px; overflow: hidden; }
-    .hist-toggle label { display: inline-block !important; padding: 6px 16px; font-size: 13px; font-weight: 700; color: var(--muted) !important; cursor: pointer; background: var(--bg); transition: background .15s, color .15s; }
-    .hist-toggle label + label { border-left: 1.5px solid var(--rule); }
-    .hist .hv-week:checked ~ .hist-head label[for="hv-week"],
-    .hist .hv-month:checked ~ .hist-head label[for="hv-month"] { background: var(--navy); color: #fff !important; }
-    .hist .hv-week:focus-visible ~ .hist-head label[for="hv-week"],
-    .hist .hv-month:focus-visible ~ .hist-head label[for="hv-month"] { outline: 2px solid var(--sky); outline-offset: 2px; }
     .hist-p { font-size: 14px; color: var(--muted); margin: 0 0 4px; }
-    /* Weekly is the default-visible pane; monthly is revealed on toggle */
-    .pane-month, .hist-p-month { display: none; }
-    .hist .hv-month:checked ~ .pane-month, .hist .hv-month:checked ~ .hist-p-month { display: block; }
-    .hist .hv-month:checked ~ .pane-week, .hist .hv-month:checked ~ .hist-p-week { display: none; }
 
     /* ─── Responsive ─── */
     @media (max-width: 768px) {
@@ -273,13 +259,13 @@
         </nav>
         <div class="kicker">Boston Rent Index</div>
         <h1>Average Rent in Back Bay (2026)</h1>
-        <p class="lede">The median asking rent for a 1-bedroom in Back Bay is <strong>$3,288</strong> as of July 21 - July 27, 2026, based on verified active listings across Spot Easy — $488 more than the Greater Boston median of $2,800.</p>
-        <p class="updated">↻ <b>Updated weekly</b> · data as of July 21 - July 27, 2026</p>
+        <p class="lede">The median asking rent for a 1-bedroom in Back Bay is <strong>$3,150</strong> as of June 2026, based on verified active listings across Spot Easy — $400 more than the Greater Boston median of $2,750.</p>
+        <p class="updated">↻ <b>Updated monthly</b> · data as of June 2026</p>
       </div>
     </header>
     <div class="nh-body">
-      <p>Beyond the 1-bedroom figure above, Back Bay's other apartment sizes: studios run $2,625 ($330 more than the Greater Boston median), 2-bedrooms run $4,450 ($1,050 more than the Greater Boston median) — as of July 21 - July 27, 2026.</p>
-      <div class="trend"><strong>$3,288</strong> — 1-bedroom median · −$12 vs. last week · +$38 vs. a month ago.</div>
+      <p>Beyond the 1-bedroom figure above, Back Bay's other apartment sizes: studios run $2,500 ($200 more than the Greater Boston median), 2-bedrooms run $4,425 ($1,035 more than the Greater Boston median), 3-bedrooms run $5,500 ($1,500 more than the Greater Boston median) — as of June 2026.</p>
+      <div class="trend"><strong>$3,150</strong> — 1-bedroom median · +$50 vs. last month · +$150 vs. a year ago.</div>
       <h2>Median asking rent by bedroom</h2>
       <div class="table-wrap">
         <table>
@@ -287,78 +273,63 @@
             <tr><th>Apartment size</th><th class="num">Median rent</th><th class="num">Typical range</th></tr>
           </thead>
           <tbody>
-            <tr><td>Studio</td><td class="num">$2,625</td><td class="num dim">$2,400 – $2,844</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$3,288</td><td class="num dim">$3,000 – $3,813</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$4,450</td><td class="num dim">$3,995 – $5,238</td></tr>
+            <tr><td>Studio</td><td class="num">$2,500</td><td class="num dim">$2,195 – $2,813</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$3,150</td><td class="num dim">$2,855 – $3,500</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$4,425</td><td class="num dim">$3,713 – $4,984</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$5,500</td><td class="num dim">$5,288 – $6,050</td></tr>
           </tbody>
         </table>
       </div>
       <p class="note">Typical range = where the middle 50% of listings fall — a quarter rent for less, a quarter for more.</p>
       
-    <section class="hist">
-      <input type="radio" name="histview" id="hv-week" class="hv-week" checked>
-      <input type="radio" name="histview" id="hv-month" class="hv-month">
-      <div class="hist-head">
-        <h2>Back Bay rent over time</h2>
-        <div class="hist-toggle"><label for="hv-week">Weekly</label><label for="hv-month">Monthly</label></div>
-      </div>
-      <p class="hist-p hist-p-week">How the 1-bedroom median has moved week over week — refreshed every Tuesday.</p>
-      <p class="hist-p hist-p-month">How the 1-bedroom median has moved month over month.</p>
-      <div class="table-wrap pane-week">
-      <table>
-        <thead><tr><th>Week of</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
-        <tbody>
-          <tr><td>Apr 27 – May 3</td><td class="num">$3,300</td><td class="num"><span class="chg-flat">—</span></td></tr>
-          <tr><td>May 4–10</td><td class="num">$3,300</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>May 12–18</td><td class="num">$3,250</td><td class="num"><span class="chg-down">↓ −$50</span></td></tr>
-          <tr><td>May 19–25</td><td class="num">$3,200</td><td class="num"><span class="chg-down">↓ −$50</span></td></tr>
-          <tr><td>May 26 – Jun 1</td><td class="num">$3,200</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Jun 2–8</td><td class="num">$3,200</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Jun 9–15</td><td class="num">$3,250</td><td class="num"><span class="chg-up">↑ +$50</span></td></tr>
-          <tr><td>Jun 16–22</td><td class="num">$3,250</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Jun 23–29</td><td class="num">$3,250</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Jun 30 – Jul 6</td><td class="num">$3,300</td><td class="num"><span class="chg-up">↑ +$50</span></td></tr>
-          <tr><td>Jul 7–13</td><td class="num">$3,288</td><td class="num"><span class="chg-down">↓ −$12</span></td></tr>
-          <tr><td>Jul 14–20</td><td class="num">$3,300</td><td class="num"><span class="chg-up">↑ +$12</span></td></tr>
-          <tr><td>Jul 21–27</td><td class="num">$3,288</td><td class="num"><span class="chg-down">↓ −$12</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-      <div class="table-wrap pane-month">
+    <h2>Back Bay rent over time</h2>
+    <p>How the 1-bedroom median has moved month over month.</p>
+    <div class="table-wrap">
       <table>
         <thead><tr><th>Month</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
         <tbody>
-          <tr><td>Apr 2026</td><td class="num">$3,300</td><td class="num"><span class="chg-flat">—</span></td></tr>
-          <tr><td>May 2026</td><td class="num">$3,200</td><td class="num"><span class="chg-down">↓ −$100</span></td></tr>
-          <tr><td>Jun 2026</td><td class="num">$3,300</td><td class="num"><span class="chg-up">↑ +$100</span></td></tr>
-          <tr><td>Jul 2026</td><td class="num">$3,288</td><td class="num"><span class="chg-down">↓ −$12</span></td></tr>
+          <tr><td>Jun 2025</td><td class="num">$3,000</td><td class="num"><span class="chg-flat">—</span></td></tr>
+          <tr><td>Jul 2025</td><td class="num">$3,000</td><td class="num"><span class="chg-flat">even</span></td></tr>
+          <tr><td>Aug 2025</td><td class="num">$3,000</td><td class="num"><span class="chg-flat">even</span></td></tr>
+          <tr><td>Sep 2025</td><td class="num">$3,000</td><td class="num"><span class="chg-flat">even</span></td></tr>
+          <tr><td>Oct 2025</td><td class="num">$2,995</td><td class="num"><span class="chg-down">↓ −$5</span></td></tr>
+          <tr><td>Nov 2025</td><td class="num">$2,935</td><td class="num"><span class="chg-down">↓ −$60</span></td></tr>
+          <tr><td>Dec 2025</td><td class="num">$2,950</td><td class="num"><span class="chg-up">↑ +$15</span></td></tr>
+          <tr><td>Jan 2026</td><td class="num">$2,950</td><td class="num"><span class="chg-flat">even</span></td></tr>
+          <tr><td>Feb 2026</td><td class="num">$3,025</td><td class="num"><span class="chg-up">↑ +$75</span></td></tr>
+          <tr><td>Mar 2026</td><td class="num">$3,100</td><td class="num"><span class="chg-up">↑ +$75</span></td></tr>
+          <tr><td>Apr 2026</td><td class="num">$3,100</td><td class="num"><span class="chg-flat">even</span></td></tr>
+          <tr><td>May 2026</td><td class="num">$3,100</td><td class="num"><span class="chg-flat">even</span></td></tr>
+          <tr><td>Jun 2026</td><td class="num">$3,150</td><td class="num"><span class="chg-up">↑ +$50</span></td></tr>
+          <tr><td>Jul 2026</td><td class="num">$3,288</td><td class="num"><span class="chg-up">↑ +$138</span></td></tr>
+          <tr><td>Jun 2026</td><td class="num">$3,150</td><td class="num"><span class="chg-down">↓ −$138</span></td></tr>
         </tbody>
       </table>
     </div>
-    </section>
       
     <h2>How Back Bay rent compares to Greater Boston</h2>
-    <p>A 1-bedroom in Back Bay runs $488 more than the Greater Boston median of $2,800 — about 17% above the metro average. Among the 12 Greater Boston areas we publish, that ranks Back Bay 1st most expensive for 1-bedrooms.</p>
+    <p>A 1-bedroom in Back Bay runs $400 more than the Greater Boston median of $2,750 — about 15% above the metro average. Among the 17 Greater Boston areas we publish, that ranks Back Bay 2nd most expensive for 1-bedrooms.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Apartment size</th><th class="num">Back Bay</th><th class="num">Greater Boston</th><th class="num">Difference</th></tr></thead>
         <tbody>
-          <tr><td>Studio</td><td class="num">$2,625</td><td class="num dim">$2,295</td><td class="num">+$330</td></tr>
-          <tr><td>1 Bedroom</td><td class="num">$3,288</td><td class="num dim">$2,800</td><td class="num">+$488</td></tr>
-          <tr><td>2 Bedroom</td><td class="num">$4,450</td><td class="num dim">$3,400</td><td class="num">+$1,050</td></tr>
+          <tr><td>Studio</td><td class="num">$2,500</td><td class="num dim">$2,300</td><td class="num">+$200</td></tr>
+          <tr><td>1 Bedroom</td><td class="num">$3,150</td><td class="num dim">$2,750</td><td class="num">+$400</td></tr>
+          <tr><td>2 Bedroom</td><td class="num">$4,425</td><td class="num dim">$3,390</td><td class="num">+$1,035</td></tr>
+          <tr><td>3 Bedroom</td><td class="num">$5,500</td><td class="num dim">$4,000</td><td class="num">+$1,500</td></tr>
         </tbody>
       </table>
     </div>
-    <p>Half of 1-bedroom listings in Back Bay fall between <strong>$3,000</strong> and <strong>$3,813</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
+    <p>Half of 1-bedroom listings in Back Bay fall between <strong>$2,855</strong> and <strong>$3,500</strong> — budget-end units start near the lower figure, while larger or renovated units push toward the upper end and beyond.</p>
       
     <div class="module">
       <h2>Studio vs. roommate in Back Bay</h2>
-      <p>Renting a studio solo runs about <strong>$2,625</strong>. Splitting a 2-bedroom two ways works out to <strong>$2,225</strong> per person — roughly <strong>$400/month cheaper</strong> than going solo (15% savings).</p>
+      <p>Renting a studio solo runs about <strong>$2,500</strong>. Splitting a 2-bedroom two ways works out to <strong>$2,213</strong> per person — roughly <strong>$287/month cheaper</strong> than going solo (11% savings).</p>
     </div>
       
     <div class="module">
       <h2>No broker fee in Back Bay</h2>
-      <p><strong>93.2%</strong> of Back Bay listings with a stated fee have no broker fee. That puts Back Bay roughly in line with the Greater Boston average of <strong>93.7%</strong>.</p>
+      <p><strong>73.7%</strong> of Back Bay listings with a stated fee have no broker fee. That's below the Greater Boston average of <strong>76.5%</strong> — broker fees remain more common here than in most Greater Boston neighborhoods.</p>
       <a class="cta" href="https://www.spoteasy.com/back-bay-apartments/no-broker-fee">Browse no-fee listings in Back Bay</a>
     </div>
       
@@ -369,26 +340,26 @@
         <a class="cta" href="https://www.spoteasy.com/back-bay-apartments">See live Back Bay listings</a>
         <a class="cta outline" href="/data/rent-index">All Boston neighborhoods</a>
       </div>
-      <p>A 1-bedroom in Back Bay runs $338 more than neighboring Beacon Hill and $38 more than neighboring South End.</p>
+      <p>A 1-bedroom in Back Bay runs $250 more than neighboring Beacon Hill and $50 more than neighboring South End.</p>
       
-    <p class="nearby"><strong>Nearby neighborhoods:</strong> <a href="/data/rent-index/beacon-hill/">Beacon Hill</a> · <a href="/data/rent-index/south-end/">South End</a> · <a href="/data/rent-index/fenway/">Fenway</a></p>
+    <p class="nearby"><strong>Nearby neighborhoods:</strong> <a href="/data/rent-index/beacon-hill/">Beacon Hill</a> · <a href="/data/rent-index/south-end/">South End</a> · <a href="/data/rent-index/fenway/">Fenway</a> · <a href="/data/rent-index/north-end/">North End</a></p>
       
       
     <h2>Back Bay rent — frequently asked questions</h2>
     <h3>How much is rent in Back Bay?</h3>
-    <p>As of July 21 - July 27, 2026, the median asking rent in Back Bay is $3,288 for a one-bedroom and $4,450 for a two-bedroom. For other sizes: studios around $2,625.</p>
+    <p>As of June 2026, the median asking rent in Back Bay is $3,150 for a one-bedroom and $4,425 for a two-bedroom. For other sizes: studios around $2,500, three-bedrooms $5,500.</p>
     <h3>How much is a 1-bedroom in Back Bay?</h3>
-    <p>The median is $3,288, with most 1-bedroom listings falling between $3,000 and $3,813.</p>
+    <p>The median is $3,150, with most 1-bedroom listings falling between $2,855 and $3,500.</p>
     <h3>Is it cheaper to rent a studio or split a 2-bedroom in Back Bay?</h3>
-    <p>Splitting a two-bedroom costs about $2,225 per person — roughly $400 a month less than renting a studio solo ($2,625).</p>
+    <p>Splitting a two-bedroom costs about $2,213 per person — roughly $287 a month less than renting a studio solo ($2,500).</p>
     <h3>How does Back Bay compare to the Boston average?</h3>
-    <p>A 1-bedroom in Back Bay costs $488 more than the Greater Boston median of $2,800.</p>
+    <p>A 1-bedroom in Back Bay costs $400 more than the Greater Boston median of $2,750.</p>
     <h3>When do Back Bay apartments become available?</h3>
     <p>Most Greater Boston leases start September 1. Inventory peaks from late spring through summer and tightens in August; for a fall move-in, the best selection is usually six to eight weeks out.</p>
       <details class="method">
         <summary>How we calculate this</summary>
         <p>Each week we snapshot every active listing on Spot Easy across Greater Boston, exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, dedupe by address + unit, and normalize bedroom counts into Studio / 1 / 2 / 3 / 4+. We require at least 20 active listings in a cell before publishing its median; thinner cells are suppressed. Figures are median <em>asking</em> rents, not signed-lease prices.</p>
-        <p class="n-line">Sample sizes this week (N): Studio 46 · 1BR 64 · 2BR 24.</p>
+        <p class="n-line">Sample sizes this week (N): Studio 207 · 1BR 269 · 2BR 102 · 3BR 24.</p>
         <p class="n-line">Press or custom data pulls: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
       </details>
     </div>
