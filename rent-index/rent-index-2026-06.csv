@@ -1,7 +1,7 @@
 week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-01,metro,Greater Boston,0,2300,1957,2050,2515
 2026-06-01,metro,Greater Boston,1,2750,4829,2400,3150
-2026-06-01,metro,Greater Boston,2,3390,5047,2900,3928
+2026-06-01,metro,Greater Boston,2,3393,5046,2900,3929
 2026-06-01,metro,Greater Boston,3,4000,2590,3500,4700
 2026-06-01,metro,Greater Boston,4+,5000,1906,4400,6200
 2026-06-01,neighborhood,Allston,0,2045,197,1950,2200
@@ -50,7 +50,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-01,neighborhood,Dorchester,3,3300,147,3000,3600
 2026-06-01,neighborhood,Dorchester,4+,3800,86,3600,4238
 2026-06-01,neighborhood,East Boston,1,2400,64,2100,2913
-2026-06-01,neighborhood,East Boston,2,2900,152,2650,3163
+2026-06-01,neighborhood,East Boston,2,2900,151,2650,3150
 2026-06-01,neighborhood,East Boston,3,3200,33,2800,3700
 2026-06-01,neighborhood,East Boston,4+,3925,24,3694,4288
 2026-06-01,neighborhood,Fenway,0,2400,471,2200,2538
@@ -91,7 +91,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-01,neighborhood,Somerville,3,4050,201,3500,4400
 2026-06-01,neighborhood,Somerville,4+,4950,149,4500,5500
 2026-06-01,neighborhood,South Boston,0,2450,23,2150,2850
-2026-06-01,neighborhood,South Boston,1,2975,88,2700,3306
+2026-06-01,neighborhood,South Boston,1,2975,88,2700,3300
 2026-06-01,neighborhood,South Boston,2,3900,217,3400,4400
 2026-06-01,neighborhood,South Boston,3,4800,92,4288,5125
 2026-06-01,neighborhood,South Boston,4+,5500,41,4950,6350
