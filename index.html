@@ -29,8 +29,25 @@
         "creator": { "@type": "Organization", "name": "Spot Easy", "url": "https://www.spoteasy.com" },
         "temporalCoverage": "2026/..",
         "spatialCoverage": { "@type": "Place", "name": "Greater Boston, Massachusetts" },
-        "variableMeasured": ["Median asking rent","25th percentile rent","75th percentile rent","Week-over-week rent change","Year-over-year rent change","New listings on market","Listings off market"],
-        "license": "https://creativecommons.org/licenses/by/4.0/"
+        "variableMeasured": ["Median asking rent","25th percentile rent","75th percentile rent","Month-over-month rent change","Year-over-year rent change","New listings on market","Listings off market"],
+        "dateModified": "2026-06-01",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "includedInDataCatalog": { "@id": "https://www.spoteasy.com/data#catalog" }
+      },
+      {
+        "@type": "DataCatalog",
+        "@id": "https://www.spoteasy.com/data#catalog",
+        "name": "Spot Easy Boston Data Desk",
+        "description": "Free, monthly rental-market datasets for Greater Boston, published by Spot Easy from active listings posted by verified, licensed real estate agents.",
+        "url": "https://www.spoteasy.com/data",
+        "publisher": { "@type": "Organization", "name": "Spot Easy", "url": "https://www.spoteasy.com" },
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "isAccessibleForFree": true,
+        "dataset": [
+          { "@type": "Dataset", "name": "Boston Rent Index", "url": "https://www.spoteasy.com/data/rent-index" },
+          { "@type": "Dataset", "name": "Boston Broker-Fee Index", "url": "https://www.spoteasy.com/data/broker-fee-index" },
+          { "@type": "Dataset", "name": "Sept 1 Countdown", "url": "https://www.spoteasy.com/data/sept-1-countdown" }
+        ]
       },
       {
         "@type": "Organization",
@@ -736,12 +753,31 @@ const PAGE_DATA = {
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-eyebrow">Boston Data Desk · Updated Monthly</div>
-    <h1>Boston Rental<br><em>Market Data</em></h1>
+    <h1>Boston Rental <br><em>Market Data</em></h1>
     <p class="hero-sub">Real rent numbers from verified, licensed real estate agents — not estimates, not national averages. Published monthly, free for anyone to use.</p>
 
     <div class="stat-strip-header">Median asking rent — Greater Boston</div>
     <div class="stat-strip" id="stat-strip">
-      <!-- rendered by JS -->
+      <div class="stat-cell">
+        <div class="stat-label">Studio</div>
+        <div class="stat-value" data-target="2300">$2,300</div>
+        <div class="stat-delta up">no change</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">1 BR</div>
+        <div class="stat-value" data-target="2750">$2,750</div>
+        <div class="stat-delta up">↑ $50 vs. last month</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">2 BR</div>
+        <div class="stat-value" data-target="3390">$3,390</div>
+        <div class="stat-delta up">↑ $36 vs. last month</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">3 BR</div>
+        <div class="stat-value" data-target="4000">$4,000</div>
+        <div class="stat-delta up">no change</div>
+      </div>
     </div>
     <div class="hero-meta" id="hero-meta"></div>
   </div>
@@ -759,7 +795,7 @@ const PAGE_DATA = {
   <section class="section fade-up">
     <div class="section-head">
       <span class="section-num">01</span>
-      <span class="section-title">Featured Report</span>
+      <h2 class="section-title">This Month&#39;s Rent Report</h2>
     </div>
     <a href="rent-index/" id="featured-link" class="featured-card">
       <div>
@@ -778,7 +814,7 @@ const PAGE_DATA = {
   <section class="section fade-up">
     <div class="section-head">
       <span class="section-num">02</span>
-      <span class="section-title">All Reports</span>
+      <h2 class="section-title">Boston Rent &amp; Housing Reports</h2>
       <span class="section-live-badge">Live · Updated Monthly</span>
     </div>
     <ul class="reports-list">
@@ -788,7 +824,7 @@ const PAGE_DATA = {
         <div>
           <div class="report-row-name">Boston Rent Index</div>
           <div class="report-row-desc">What does a 1-bedroom go for in Allston this week? A studio in Fenway? Median asking rents for every major Boston neighborhood, plus building-type and triple-decker breakdowns.</div>
-          <div class="report-teaser" id="teaser-rent_index"></div>
+          <div class="report-teaser" id="teaser-rent_index"><span class="teaser-stat">$3,390</span> <span class="teaser-label">2BR median · Greater Boston</span> <span class="teaser-delta">+$36 vs. last month</span></div>
         </div>
         <button class="report-row-btn">View Report →</button>
       </li>
@@ -798,7 +834,7 @@ const PAGE_DATA = {
         <div>
           <div class="report-row-name">Sept 1 Countdown</div>
           <div class="report-row-desc">Most Boston leases start September 1. Nowhere else in the country works this way. We track how many Sept 1 units are listed right now and what they're asking.</div>
-          <div class="report-teaser" id="teaser-sept1"></div>
+          <div class="report-teaser" id="teaser-sept1"><span class="teaser-stat">34</span> <span class="teaser-label">days until Sept 1</span> <span class="teaser-delta">3,853 units already listed</span></div>
         </div>
         <button class="report-row-btn">View Report →</button>
       </li>
@@ -808,7 +844,7 @@ const PAGE_DATA = {
         <div>
           <div class="report-row-name">Boston Broker-Fee Index</div>
           <div class="report-row-desc">What share of Boston listings charge no broker fee — and which neighborhoods lead? Updated monthly from verified active listings by Spot Easy.</div>
-          <div class="report-teaser" id="teaser-broker_fee"></div>
+          <div class="report-teaser" id="teaser-broker_fee"><span class="teaser-stat">76.5%</span> <span class="teaser-label">of stated-fee listings have no broker fee · Greater Boston</span> <span class="teaser-delta">updated monthly</span></div>
         </div>
         <button class="report-row-btn">View Report &#8594;</button>
       </li>
@@ -820,13 +856,13 @@ const PAGE_DATA = {
   <section class="data-desk fade-up">
     <div class="section-head">
       <span class="section-num">03</span>
-      <span class="section-title">Data Desk</span>
+      <h2 class="section-title">Data Desk</h2>
     </div>
     <div class="desk-grid">
       <div class="desk-col">
         <div class="desk-col-label">For Journalists &amp; Researchers</div>
         <div class="desk-headline">Need data for a story?</div>
-        <p class="desk-body">We publish weekly rental market data sourced directly from our production database — active listings from verified, licensed agents across Greater Boston. All methodology is public.</p>
+        <p class="desk-body">We publish monthly rental market data sourced directly from our production database — active listings from verified, licensed agents across Greater Boston. All methodology is public.</p>
         <p class="desk-body">Covering Boston rent trends? Ask us — we can often pull specific data for your story.</p>
         <a href="mailto:joel@spoteasy.com" class="desk-contact">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>
@@ -862,6 +898,7 @@ const PAGE_DATA = {
 
   <!-- Methodology -->
   <section class="methodology fade-up">
+    <h2 class="section-title">How Spot Easy Collects This Data</h2>
     <details>
       <summary>
         <span>How we collect this data</span>
@@ -894,7 +931,13 @@ const PAGE_DATA = {
   const d = PAGE_DATA;
 
   /* ── Stat strip ── */
+  /* Clear ONCE before the loop. The cells below are now also baked into the served
+     HTML by updateHub() so crawlers and LLMs see the numbers without running JS;
+     this loop then re-renders identical markup for the count-up animation. Without
+     this reset the `+=` inside the loop would APPEND to the baked cells and render
+     8 cells in a 4-column grid. */
   const strip = document.getElementById('stat-strip');
+  strip.innerHTML = '';
   d.tiles.forEach(t => {
     const dir = t.dir || 'flat';
     const arrow = dir === 'up' ? '↑' : dir === 'down' ? '↓' : '';
@@ -934,11 +977,11 @@ const PAGE_DATA = {
   const metaEl = document.getElementById('hero-meta');
   metaEl.innerHTML = d.as_of_date && d.sample_count
     ? `Data as of ${d.as_of_date}  ·  ${d.sample_count.toLocaleString()} <abbr title="Deduplicated listings across 10 Greater Boston cities used in this index. The public search covers a wider geography and counts each listing version separately." style="text-decoration:underline dotted;cursor:help;border-bottom:none">active listings</abbr>`
-    : 'First report publishing Tuesday, May 16, 2026';
+    : 'Published monthly by Spot Easy';
 
   /* ── Featured card ── */
   const featMeta = document.getElementById('feat-meta');
-  if (d.as_of_date) featMeta.textContent = `Latest: week ending ${d.as_of_date}`;
+  if (d.as_of_date) featMeta.textContent = `Latest: ${d.as_of_date}`;
   if (d.latest_report_url) document.getElementById('featured-link').href = d.latest_report_url;
 
   /* ── Teasers ── */
