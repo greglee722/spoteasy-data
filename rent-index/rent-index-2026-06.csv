@@ -1,8 +1,8 @@
 week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-01,metro,Greater Boston,0,2300,1957,2050,2515
 2026-06-01,metro,Greater Boston,1,2750,4829,2400,3150
-2026-06-01,metro,Greater Boston,2,3393,5046,2900,3929
-2026-06-01,metro,Greater Boston,3,4000,2590,3500,4700
+2026-06-01,metro,Greater Boston,2,3390,5046,2900,3929
+2026-06-01,metro,Greater Boston,3,4000,2589,3500,4700
 2026-06-01,metro,Greater Boston,4+,5000,1906,4400,6200
 2026-06-01,neighborhood,Allston,0,2045,197,1950,2200
 2026-06-01,neighborhood,Allston,1,2395,376,2250,2600
