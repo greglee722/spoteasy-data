@@ -911,10 +911,10 @@ const PAGE_DATA = {
         <p><strong>Deduplication:</strong> One listing per unique address + unit + bedroom count, keeping the most recently updated record.</p>
         <p><strong>Bedroom buckets:</strong> Studio / 1 BR / 2 BR / 3 BR / 4+ BR.</p>
         <p><strong>Minimum sample size:</strong> Cells with fewer than 20 listings are suppressed and shown as —.</p>
-        <p><strong>Metrics:</strong> Median asking rent, 25th and 75th percentile, week-over-week and year-over-year change.</p>
+        <p><strong>Metrics:</strong> Median asking rent, 25th and 75th percentile, month-over-month and year-over-year change.</p>
         <ul>
-          <li>Week-over-week: same neighborhood × bedroom cell from the prior Tuesday's snapshot.</li>
-          <li>Year-over-year: same cell from 52 weeks prior.</li>
+          <li>Month-over-month: same neighborhood × bedroom cell from the previous month's snapshot.</li>
+          <li>Year-over-year: same cell from 12 months prior.</li>
         </ul>
         <p style="margin-top:14px; color:var(--muted);">Updated on the 1st of each month. Questions? <a href="mailto:joel@spoteasy.com" style="color:var(--sky)">joel@spoteasy.com</a></p>
       </div>
@@ -941,9 +941,14 @@ const PAGE_DATA = {
   d.tiles.forEach(t => {
     const dir = t.dir || 'flat';
     const arrow = dir === 'up' ? '↑' : dir === 'down' ? '↓' : '';
-    const deltaText = t.delta != null
-      ? `${arrow}$${Math.abs(t.delta)} WoW`
-      : '— WoW';
+    /* Must stay byte-identical to the baked version in updateHub() — this loop
+       REPLACES the server-rendered cells on load, so any drift means a crawler
+       and a human read different labels off the same numbers. It said "WoW"
+       until 2026-07-31, long after the report went monthly, while the baked
+       cells already said "vs. last month". The delta is month-over-month:
+       updateHub() computes it against monthStartBefore(weekEnding, 1) and
+       passes an already-absolute value, so no Math.abs here. */
+    const deltaText = t.delta ? `${arrow} $${t.delta} vs. last month` : 'no change';
     strip.innerHTML += `
       <div class="stat-cell">
         <div class="stat-label">${t.label}</div>
