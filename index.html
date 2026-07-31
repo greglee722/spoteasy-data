@@ -907,8 +907,8 @@ const PAGE_DATA = {
       <div class="method-body">
         <p><strong>Source:</strong> All data is pulled from Spot Easy's live listings database — active rental listings posted by verified, licensed real estate agents. MLS (MlsPin) listings are included.</p>
         <p><strong>Geography:</strong> Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden.</p>
-        <p><strong>Active listings only:</strong> <code>is_on_market = true</code>, not a draft, not admin-removed, rent between $500 and $20,000.</p>
-        <p><strong>Deduplication:</strong> One listing per unique address + unit + bedroom count, keeping the most recently updated record.</p>
+        <p><strong>Listings counted:</strong> Every listing that was on the market at any point during the reported month, measured from its on-market and off-market timestamps — not a single-day snapshot. Drafts, admin-removed listings, and asking rents below $500 or above $20,000 are excluded. A listing that left the market without a recorded off-market date is excluded rather than estimated, so the count runs conservative.</p>
+        <p><strong>Deduplication:</strong> One listing per unique address + unit + bedroom count, keeping the most recently created record.</p>
         <p><strong>Bedroom buckets:</strong> Studio / 1 BR / 2 BR / 3 BR / 4+ BR.</p>
         <p><strong>Minimum sample size:</strong> Cells with fewer than 20 listings are suppressed and shown as —.</p>
         <p><strong>Metrics:</strong> Median asking rent, 25th and 75th percentile, month-over-month and year-over-year change.</p>
