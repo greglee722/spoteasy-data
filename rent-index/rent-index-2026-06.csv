@@ -1,13 +1,13 @@
 week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-01,metro,Greater Boston,0,2300,1957,2050,2515
-2026-06-01,metro,Greater Boston,1,2750,4829,2400,3150
-2026-06-01,metro,Greater Boston,2,3390,5046,2900,3929
-2026-06-01,metro,Greater Boston,3,4000,2589,3500,4700
+2026-06-01,metro,Greater Boston,1,2750,4831,2400,3150
+2026-06-01,metro,Greater Boston,2,3390,5045,2900,3926
+2026-06-01,metro,Greater Boston,3,4000,2588,3495,4700
 2026-06-01,metro,Greater Boston,4+,5000,1906,4400,6200
 2026-06-01,neighborhood,Allston,0,2045,197,1950,2200
 2026-06-01,neighborhood,Allston,1,2395,376,2250,2600
 2026-06-01,neighborhood,Allston,2,3060,359,2798,3852
-2026-06-01,neighborhood,Allston,3,3688,224,3300,4050
+2026-06-01,neighborhood,Allston,3,3663,224,3300,4050
 2026-06-01,neighborhood,Allston,4+,5200,234,4550,6000
 2026-06-01,neighborhood,Back Bay,0,2500,207,2195,2813
 2026-06-01,neighborhood,Back Bay,1,3150,269,2855,3500
@@ -20,7 +20,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-01,neighborhood,Boston Downtown,0,2500,35,2400,2600
 2026-06-01,neighborhood,Boston Downtown,1,3100,41,3000,3690
 2026-06-01,neighborhood,Brighton,0,2050,275,1950,2200
-2026-06-01,neighborhood,Brighton,1,2395,743,2200,2600
+2026-06-01,neighborhood,Brighton,1,2395,744,2200,2600
 2026-06-01,neighborhood,Brighton,2,2948,670,2700,3200
 2026-06-01,neighborhood,Brighton,3,3600,432,3375,4100
 2026-06-01,neighborhood,Brighton,4+,4800,430,4200,5800
@@ -31,7 +31,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-01,neighborhood,Brookline,4+,5900,227,4973,6525
 2026-06-01,neighborhood,Brookline Village,2,3500,22,3100,4200
 2026-06-01,neighborhood,Cambridge,0,2400,154,2150,2600
-2026-06-01,neighborhood,Cambridge,1,2900,608,2600,3200
+2026-06-01,neighborhood,Cambridge,1,2900,609,2600,3200
 2026-06-01,neighborhood,Cambridge,2,3700,640,3250,4162
 2026-06-01,neighborhood,Cambridge,3,4300,278,3800,4869
 2026-06-01,neighborhood,Cambridge,4+,5100,131,4600,6199
@@ -43,11 +43,11 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-01,neighborhood,Coolidge Corner,0,2350,78,2058,2831
 2026-06-01,neighborhood,Coolidge Corner,1,3000,328,2700,3297
 2026-06-01,neighborhood,Coolidge Corner,2,3650,300,3350,3961
-2026-06-01,neighborhood,Coolidge Corner,3,4500,99,4400,5000
+2026-06-01,neighborhood,Coolidge Corner,3,4500,99,4350,5000
 2026-06-01,neighborhood,Coolidge Corner,4+,5423,60,5000,6425
 2026-06-01,neighborhood,Dorchester,1,2503,42,2335,2909
 2026-06-01,neighborhood,Dorchester,2,2900,117,2600,3325
-2026-06-01,neighborhood,Dorchester,3,3300,147,3000,3600
+2026-06-01,neighborhood,Dorchester,3,3300,146,3000,3600
 2026-06-01,neighborhood,Dorchester,4+,3800,86,3600,4238
 2026-06-01,neighborhood,East Boston,1,2400,64,2100,2913
 2026-06-01,neighborhood,East Boston,2,2900,151,2650,3150
@@ -70,7 +70,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-06-01,neighborhood,Mission Hill,1,2575,70,2400,2950
 2026-06-01,neighborhood,Mission Hill,2,3000,109,2750,3195
 2026-06-01,neighborhood,Mission Hill,3,4425,77,3900,4858
-2026-06-01,neighborhood,Mission Hill,4+,6400,143,5550,7388
+2026-06-01,neighborhood,Mission Hill,4+,6400,143,5550,7150
 2026-06-01,neighborhood,North End,1,3200,67,2748,3583
 2026-06-01,neighborhood,North End,2,3750,101,3400,4645
 2026-06-01,neighborhood,North End,3,4400,23,3948,4945
