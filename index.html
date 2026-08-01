@@ -30,7 +30,7 @@
         "temporalCoverage": "2026/..",
         "spatialCoverage": { "@type": "Place", "name": "Greater Boston, Massachusetts" },
         "variableMeasured": ["Median asking rent","25th percentile rent","75th percentile rent","Month-over-month rent change","Year-over-year rent change","New listings on market","Listings off market"],
-        "dateModified": "2026-06-01",
+        "dateModified": "2026-07-01",
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "includedInDataCatalog": { "@id": "https://www.spoteasy.com/data#catalog" }
       },
@@ -700,48 +700,48 @@
 <!-- ══════════ DATA LAYER — update monthly ══════════ -->
 <script>
 const PAGE_DATA = {
-  "as_of_date": "June 2026",
-  "sample_count": 5322,
+  "as_of_date": "July 2026",
+  "sample_count": 5265,
   "latest_report_url": "/data/rent-index/",
   "tiles": [
     {
       "label": "Studio",
-      "value": 2300,
-      "delta": 0,
-      "dir": "up"
+      "value": 2295,
+      "delta": 5,
+      "dir": "down"
     },
     {
       "label": "1 BR",
       "value": 2750,
-      "delta": 50,
+      "delta": 0,
       "dir": "up"
     },
     {
       "label": "2 BR",
-      "value": 3390,
-      "delta": 36,
+      "value": 3393,
+      "delta": 3,
       "dir": "up"
     },
     {
       "label": "3 BR",
-      "value": 4000,
-      "delta": 0,
-      "dir": "up"
+      "value": 3900,
+      "delta": 100,
+      "dir": "down"
     }
   ],
   "teasers": {
     "rent_index": {
-      "stat": "$3,390",
+      "stat": "$3,393",
       "label": "2BR median · Greater Boston",
-      "delta": "+$36 vs. last month"
+      "delta": "+$3 vs. last month"
     },
     "sept1": {
-      "stat": "32",
+      "stat": "31",
       "label": "days until Sept 1",
-      "delta": "3,854 units already listed"
+      "delta": "3,466 units already listed"
     },
     "broker_fee": {
-      "stat": "76.5%",
+      "stat": "79.4%",
       "label": "of stated-fee listings have no broker fee · Greater Boston",
       "delta": "updated monthly"
     }
@@ -760,23 +760,23 @@ const PAGE_DATA = {
     <div class="stat-strip" id="stat-strip">
       <div class="stat-cell">
         <div class="stat-label">Studio</div>
-        <div class="stat-value" data-target="2300">$2,300</div>
-        <div class="stat-delta up">no change</div>
+        <div class="stat-value" data-target="2295">$2,295</div>
+        <div class="stat-delta down">↓ $5 vs. last month</div>
       </div>
       <div class="stat-cell">
         <div class="stat-label">1 BR</div>
         <div class="stat-value" data-target="2750">$2,750</div>
-        <div class="stat-delta up">↑ $50 vs. last month</div>
+        <div class="stat-delta up">no change</div>
       </div>
       <div class="stat-cell">
         <div class="stat-label">2 BR</div>
-        <div class="stat-value" data-target="3390">$3,390</div>
-        <div class="stat-delta up">↑ $36 vs. last month</div>
+        <div class="stat-value" data-target="3393">$3,393</div>
+        <div class="stat-delta up">↑ $3 vs. last month</div>
       </div>
       <div class="stat-cell">
         <div class="stat-label">3 BR</div>
-        <div class="stat-value" data-target="4000">$4,000</div>
-        <div class="stat-delta up">no change</div>
+        <div class="stat-value" data-target="3900">$3,900</div>
+        <div class="stat-delta down">↓ $100 vs. last month</div>
       </div>
     </div>
     <div class="hero-meta" id="hero-meta"></div>
@@ -824,7 +824,7 @@ const PAGE_DATA = {
         <div>
           <div class="report-row-name">Boston Rent Index</div>
           <div class="report-row-desc">What does a 1-bedroom go for in Allston this week? A studio in Fenway? Median asking rents for every major Boston neighborhood, plus building-type and triple-decker breakdowns.</div>
-          <div class="report-teaser" id="teaser-rent_index"><span class="teaser-stat">$3,390</span> <span class="teaser-label">2BR median · Greater Boston</span> <span class="teaser-delta">+$36 vs. last month</span></div>
+          <div class="report-teaser" id="teaser-rent_index"><span class="teaser-stat">$3,393</span> <span class="teaser-label">2BR median · Greater Boston</span> <span class="teaser-delta">+$3 vs. last month</span></div>
         </div>
         <button class="report-row-btn">View Report →</button>
       </li>
@@ -834,7 +834,7 @@ const PAGE_DATA = {
         <div>
           <div class="report-row-name">Sept 1 Countdown</div>
           <div class="report-row-desc">Most Boston leases start September 1. Nowhere else in the country works this way. We track how many Sept 1 units are listed right now and what they're asking.</div>
-          <div class="report-teaser" id="teaser-sept1"><span class="teaser-stat">32</span> <span class="teaser-label">days until Sept 1</span> <span class="teaser-delta">3,854 units already listed</span></div>
+          <div class="report-teaser" id="teaser-sept1"><span class="teaser-stat">31</span> <span class="teaser-label">days until Sept 1</span> <span class="teaser-delta">3,466 units already listed</span></div>
         </div>
         <button class="report-row-btn">View Report →</button>
       </li>
@@ -844,7 +844,7 @@ const PAGE_DATA = {
         <div>
           <div class="report-row-name">Boston Broker-Fee Index</div>
           <div class="report-row-desc">What share of Boston listings charge no broker fee — and which neighborhoods lead? Updated monthly from verified active listings by Spot Easy.</div>
-          <div class="report-teaser" id="teaser-broker_fee"><span class="teaser-stat">76.5%</span> <span class="teaser-label">of stated-fee listings have no broker fee · Greater Boston</span> <span class="teaser-delta">updated monthly</span></div>
+          <div class="report-teaser" id="teaser-broker_fee"><span class="teaser-stat">79.4%</span> <span class="teaser-label">of stated-fee listings have no broker fee · Greater Boston</span> <span class="teaser-delta">updated monthly</span></div>
         </div>
         <button class="report-row-btn">View Report &#8594;</button>
       </li>

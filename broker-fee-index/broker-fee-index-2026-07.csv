@@ -1,0 +1,26 @@
+week_ending,scope,neighborhood,known_listings,no_fee_listings,pct_no_fee
+2026-07-01,metro,Greater Boston,6494,5155,79.4
+2026-07-01,neighborhood,Oak Square,111,101,91.0
+2026-07-01,neighborhood,Boston Downtown,61,55,90.2
+2026-07-01,neighborhood,Brighton,1409,1250,88.7
+2026-07-01,neighborhood,Allston,675,591,87.6
+2026-07-01,neighborhood,Jamaica Plain,101,88,87.1
+2026-07-01,neighborhood,Aspinwall Hill,58,49,84.5
+2026-07-01,neighborhood,North Brookline,161,134,83.2
+2026-07-01,neighborhood,South Boston,123,102,82.9
+2026-07-01,neighborhood,Longwood,70,57,81.4
+2026-07-01,neighborhood,Dorchester,86,70,81.4
+2026-07-01,neighborhood,Fenway,723,578,79.9
+2026-07-01,neighborhood,Beacon Hill,209,164,78.5
+2026-07-01,neighborhood,Roxbury,185,142,76.8
+2026-07-01,neighborhood,Cambridge,515,395,76.7
+2026-07-01,neighborhood,Somerville,304,229,75.3
+2026-07-01,neighborhood,Back Bay,273,200,73.3
+2026-07-01,neighborhood,North End,90,65,72.2
+2026-07-01,neighborhood,Chestnut Hill,63,45,71.4
+2026-07-01,neighborhood,South End,113,79,69.9
+2026-07-01,neighborhood,Corey Hill,69,48,69.6
+2026-07-01,neighborhood,Brookline,146,97,66.4
+2026-07-01,neighborhood,Mission Hill,247,160,64.8
+2026-07-01,neighborhood,Coolidge Corner,99,53,53.5
+2026-07-01,neighborhood,East Boston,130,64,49.2
