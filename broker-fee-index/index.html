@@ -258,7 +258,7 @@
       </div>
 
       <h2>No-fee share by neighborhood</h2>
-      <p style="font-size:13px;color:var(--muted);margin:0 0 12px">Among listings with a stated fee. Sorted by no-fee share. We publish a neighborhood only when at least 50 listings state a fee across at least 8 buildings, so no single building drives the rate. The "share that stated a fee" column shows what portion of each neighborhood's listings the rate is based on — <span class="cov-low" style="font-weight:600">highlighted</span> where that's under 25%.</p>
+      <p style="font-size:13px;color:var(--muted);margin:0 0 12px">Among listings with a stated fee. Sorted by no-fee share. We publish a neighborhood only when at least 50 listings state a fee across at least 8 buildings, so no single building drives the rate. The "share that stated a fee" column shows what portion of each neighborhood's listings the rate is based on — <span class="cov-low" style="font-weight:600">highlighted</span> where that's under 25%. Cambridge, Somerville and Brookline are reported at city level; Brookline's sub-neighborhoods are listed separately as well, so those rows overlap the Brookline row rather than adding to it.</p>
       <div class="table-wrap">
         <table>
           <thead>
@@ -317,7 +317,7 @@
           <tr>
             <td><a href="https://www.spoteasy.com/north-brookline-apartments/no-broker-fee">North Brookline</a></td>
             <td class="dim">Brookline</td>
-            <td class="num">83.2%</td>
+            <td class="num">83.4%</td>
             <td class="num cov-cell">99%</td>
             <td class="num">—</td>
           </tr>
@@ -329,18 +329,18 @@
             <td class="num">$3,000</td>
           </tr>
           <tr>
-            <td><a href="https://www.spoteasy.com/longwood-apartments/no-broker-fee">Longwood</a></td>
-            <td class="dim">Brookline</td>
-            <td class="num">81.4%</td>
-            <td class="num cov-cell">75%</td>
-            <td class="num">—</td>
-          </tr>
-          <tr>
             <td><a href="https://www.spoteasy.com/dorchester-apartments/no-broker-fee">Dorchester</a></td>
             <td class="dim">Boston</td>
             <td class="num">81.4%</td>
             <td class="num cov-cell cov-low">19%</td>
             <td class="num">$2,500</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/longwood-apartments/no-broker-fee">Longwood</a></td>
+            <td class="dim">Brookline</td>
+            <td class="num">80.3%</td>
+            <td class="num cov-cell">76%</td>
+            <td class="num">—</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/fenway-apartments/no-broker-fee">Fenway</a></td>
@@ -380,15 +380,22 @@
           <tr>
             <td><a href="https://www.spoteasy.com/back-bay-apartments/no-broker-fee">Back Bay</a></td>
             <td class="dim">Boston</td>
-            <td class="num">73.3%</td>
+            <td class="num">72.8%</td>
             <td class="num cov-cell">46%</td>
             <td class="num">$3,150</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.spoteasy.com/brookline-apartments/no-broker-fee">Brookline</a></td>
+            <td class="dim">—</td>
+            <td class="num">72.5%</td>
+            <td class="num cov-cell">35%</td>
+            <td class="num">$2,995</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/north-end-apartments/no-broker-fee">North End</a></td>
             <td class="dim">Boston</td>
             <td class="num">72.2%</td>
-            <td class="num cov-cell">40%</td>
+            <td class="num cov-cell">39%</td>
             <td class="num">$3,013</td>
           </tr>
           <tr>
@@ -401,7 +408,7 @@
           <tr>
             <td><a href="https://www.spoteasy.com/south-end-apartments/no-broker-fee">South End</a></td>
             <td class="dim">Boston</td>
-            <td class="num">69.9%</td>
+            <td class="num">70.4%</td>
             <td class="num cov-cell cov-low">23%</td>
             <td class="num">$3,025</td>
           </tr>
@@ -413,16 +420,9 @@
             <td class="num">—</td>
           </tr>
           <tr>
-            <td><a href="https://www.spoteasy.com/brookline-apartments/no-broker-fee">Brookline</a></td>
-            <td class="dim">—</td>
-            <td class="num">66.4%</td>
-            <td class="num cov-cell">87%</td>
-            <td class="num">$2,995</td>
-          </tr>
-          <tr>
             <td><a href="https://www.spoteasy.com/mission-hill-apartments/no-broker-fee">Mission Hill</a></td>
             <td class="dim">Boston</td>
-            <td class="num">64.8%</td>
+            <td class="num">65.1%</td>
             <td class="num cov-cell">57%</td>
             <td class="num">$2,575</td>
           </tr>
@@ -430,7 +430,7 @@
             <td><a href="https://www.spoteasy.com/coolidge-corner-apartments/no-broker-fee">Coolidge Corner</a></td>
             <td class="dim">Brookline</td>
             <td class="num">53.5%</td>
-            <td class="num cov-cell cov-low">11%</td>
+            <td class="num cov-cell cov-low">10%</td>
             <td class="num">$3,000</td>
           </tr>
           <tr>
@@ -452,7 +452,7 @@
 
       <details class="method">
         <summary>Methodology</summary>
-        <p>Each listing's broker-fee field is set by the listing agent. This month about six in ten active listings leave it blank or marked "unknown" — most of them sourced from third-party listing feeds, which rarely carry a fee value at all. We exclude those entirely — we don't assume they do or don't charge a fee — so the Index reflects only the <strong>40%</strong> of listings that state a fee structure. Disclosure coverage varies by neighborhood, so we publish it on every row. The correlation between a neighborhood's coverage and its no-fee rate is currently weak (r = +0.27) — neighborhoods where more listings disclose a fee tend to show slightly higher no-fee rates — so the neighborhood-to-neighborhood comparison holds, but rows with low coverage deserve more caution. The headline share should be read as <em>"of listings that disclose a fee,"</em> not <em>"of all apartments."</em> As with any self-reported marketplace data, we can't verify every agent entered the field correctly — treat these figures as directional, not exact.</p>
+        <p>Each listing's broker-fee field is set by the listing agent. This month about six in ten active listings leave it blank or marked "unknown" — most of them sourced from third-party listing feeds, which rarely carry a fee value at all. We exclude those entirely — we don't assume they do or don't charge a fee — so the Index reflects only the <strong>40%</strong> of listings that state a fee structure. Disclosure coverage varies by neighborhood, so we publish it on every row. The correlation between a neighborhood's coverage and its no-fee rate is currently moderate (r = +0.35) — neighborhoods where more listings disclose a fee tend to show slightly higher no-fee rates — so the neighborhood-to-neighborhood comparison holds, but rows with low coverage deserve more caution. The headline share should be read as <em>"of listings that disclose a fee,"</em> not <em>"of all apartments."</em> As with any self-reported marketplace data, we can't verify every agent entered the field correctly — treat these figures as directional, not exact.</p>
         <p style="margin-top:10px">Since August 1, 2025, Massachusetts law prohibits landlords from requiring tenants to pay the landlord's broker fee — a renter pays a fee only if they separately hire their own agent. These figures reflect fee structures as advertised on listings, not a judgment about any individual listing's compliance.</p>
         <p style="margin-top:10px">We also exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, and publish a neighborhood only when at least 50 listings state a fee across at least 8 distinct buildings — so a single building's inventory can't drive a neighborhood's rate. Greater Boston = Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, Malden. Updated monthly.</p>
         <p class="n-line">Press or custom data: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>

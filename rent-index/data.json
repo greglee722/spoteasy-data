@@ -369,11 +369,11 @@
         "area": "Back Bay",
         "slug": "back-bay",
         "city": "Boston",
-        "total": 589,
-        "known": 273,
-        "no_fee": 200,
-        "pct_no_fee": 73.3,
-        "buildings": 279
+        "total": 594,
+        "known": 276,
+        "no_fee": 201,
+        "pct_no_fee": 72.8,
+        "buildings": 281
       }
     },
     {
@@ -709,11 +709,11 @@
         "area": "Brighton",
         "slug": "brighton",
         "city": "Boston",
-        "total": 2354,
+        "total": 2355,
         "known": 1409,
         "no_fee": 1250,
         "pct_no_fee": 88.7,
-        "buildings": 1015
+        "buildings": 1016
       }
     },
     {
@@ -839,11 +839,11 @@
         "area": "Brookline",
         "slug": "brookline",
         "city": "Brookline",
-        "total": 167,
-        "known": 146,
-        "no_fee": 97,
-        "pct_no_fee": 66.4,
-        "buildings": 94
+        "total": 2149,
+        "known": 748,
+        "no_fee": 542,
+        "pct_no_fee": 72.5,
+        "buildings": 850
       }
     },
     {
@@ -1216,7 +1216,7 @@
         "area": "Chestnut Hill",
         "slug": "chestnut-hill",
         "city": "Brookline",
-        "total": 292,
+        "total": 293,
         "known": 63,
         "no_fee": 45,
         "pct_no_fee": 71.4,
@@ -1447,11 +1447,11 @@
         "area": "Coolidge Corner",
         "slug": "coolidge-corner",
         "city": "Brookline",
-        "total": 939,
+        "total": 945,
         "known": 99,
         "no_fee": 53,
         "pct_no_fee": 53.5,
-        "buildings": 362
+        "buildings": 363
       }
     },
     {
@@ -1998,7 +1998,7 @@
         "area": "Jamaica Plain",
         "slug": "jamaica-plain",
         "city": "Boston",
-        "total": 355,
+        "total": 363,
         "known": 101,
         "no_fee": 88,
         "pct_no_fee": 87.1,
@@ -2128,10 +2128,10 @@
         "area": "Mission Hill",
         "slug": "mission-hill",
         "city": "Boston",
-        "total": 434,
-        "known": 247,
-        "no_fee": 160,
-        "pct_no_fee": 64.8,
+        "total": 436,
+        "known": 249,
+        "no_fee": 162,
+        "pct_no_fee": 65.1,
         "buildings": 214
       }
     },
@@ -2243,11 +2243,11 @@
         "area": "North End",
         "slug": "north-end",
         "city": "Boston",
-        "total": 227,
+        "total": 228,
         "known": 90,
         "no_fee": 65,
         "pct_no_fee": 72.2,
-        "buildings": 94
+        "buildings": 95
       }
     },
     {
@@ -2514,11 +2514,11 @@
         "area": "Roxbury",
         "slug": "roxbury",
         "city": "Boston",
-        "total": 335,
+        "total": 336,
         "known": 185,
         "no_fee": 142,
         "pct_no_fee": 76.8,
-        "buildings": 219
+        "buildings": 220
       }
     },
     {
@@ -2995,11 +2995,11 @@
         "area": "South End",
         "slug": "south-end",
         "city": "Boston",
-        "total": 490,
-        "known": 113,
-        "no_fee": 79,
-        "pct_no_fee": 69.9,
-        "buildings": 282
+        "total": 495,
+        "known": 115,
+        "no_fee": 81,
+        "pct_no_fee": 70.4,
+        "buildings": 284
       }
     },
     {

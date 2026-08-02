@@ -2,25 +2,25 @@ week_ending,scope,neighborhood,total_listings,listings_stating_fee,no_fee_listin
 2026-07-01,metro,Greater Boston,16365,6494,5155,79.4,39.7
 2026-07-01,neighborhood,Oak Square,116,111,101,91.0,95.7
 2026-07-01,neighborhood,Boston Downtown,119,61,55,90.2,51.3
-2026-07-01,neighborhood,Brighton,2354,1409,1250,88.7,59.9
+2026-07-01,neighborhood,Brighton,2355,1409,1250,88.7,59.8
 2026-07-01,neighborhood,Allston,1211,675,591,87.6,55.7
-2026-07-01,neighborhood,Jamaica Plain,355,101,88,87.1,28.5
+2026-07-01,neighborhood,Jamaica Plain,363,101,88,87.1,27.8
 2026-07-01,neighborhood,Aspinwall Hill,59,58,49,84.5,98.3
-2026-07-01,neighborhood,North Brookline,162,161,134,83.2,99.4
+2026-07-01,neighborhood,North Brookline,165,163,136,83.4,98.8
 2026-07-01,neighborhood,South Boston,483,123,102,82.9,25.5
-2026-07-01,neighborhood,Longwood,93,70,57,81.4,75.3
 2026-07-01,neighborhood,Dorchester,454,86,70,81.4,18.9
+2026-07-01,neighborhood,Longwood,94,71,57,80.3,75.5
 2026-07-01,neighborhood,Fenway,1633,723,578,79.9,44.3
 2026-07-01,neighborhood,Beacon Hill,447,209,164,78.5,46.8
-2026-07-01,neighborhood,Roxbury,335,185,142,76.8,55.2
+2026-07-01,neighborhood,Roxbury,336,185,142,76.8,55.1
 2026-07-01,neighborhood,Cambridge,1906,515,395,76.7,27.0
 2026-07-01,neighborhood,Somerville,1019,304,229,75.3,29.8
-2026-07-01,neighborhood,Back Bay,589,273,200,73.3,46.3
-2026-07-01,neighborhood,North End,227,90,65,72.2,39.6
-2026-07-01,neighborhood,Chestnut Hill,292,63,45,71.4,21.6
-2026-07-01,neighborhood,South End,490,113,79,69.9,23.1
+2026-07-01,neighborhood,Back Bay,594,276,201,72.8,46.5
+2026-07-01,neighborhood,Brookline,2149,748,542,72.5,34.8
+2026-07-01,neighborhood,North End,228,90,65,72.2,39.5
+2026-07-01,neighborhood,Chestnut Hill,293,63,45,71.4,21.5
+2026-07-01,neighborhood,South End,495,115,81,70.4,23.2
 2026-07-01,neighborhood,Corey Hill,70,69,48,69.6,98.6
-2026-07-01,neighborhood,Brookline,167,146,97,66.4,87.4
-2026-07-01,neighborhood,Mission Hill,434,247,160,64.8,56.9
-2026-07-01,neighborhood,Coolidge Corner,939,99,53,53.5,10.5
+2026-07-01,neighborhood,Mission Hill,436,249,162,65.1,57.1
+2026-07-01,neighborhood,Coolidge Corner,945,99,53,53.5,10.5
 2026-07-01,neighborhood,East Boston,307,130,64,49.2,42.3
