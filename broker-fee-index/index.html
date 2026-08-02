@@ -217,15 +217,10 @@
     .bfi-quote  { background: var(--navy); color: #fff; border-radius: 10px; padding: 24px 28px; margin: 32px 0; }
     .bfi-quote p    { color: rgba(255,255,255,.85); font-size: 16px; line-height: 1.65; font-style: italic; margin-bottom: 12px; }
     .bfi-quote cite { font-size: 13px; font-weight: 700; color: var(--sky); font-style: normal; }
-    .bfi-bar-cell   { width: 180px; }
     .cov-cell   { font-size: 13px; color: var(--muted); white-space: nowrap; }
-    .cov-pct    { display: block; font-size: 11px; opacity: .75; }
     .cov-low    { color: #b45309; }
     .bfi-dl     { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
     .bfi-dl a   { font-weight: 600; }
-    .bfi-bar { display: inline-block; font-size: 13px; font-weight: 700; color: var(--navy);
-      padding: 4px 8px 4px 0; min-width: 120px;
-      background: linear-gradient(to right, rgba(0,172,238,.18) calc(var(--pct) * 1%), transparent calc(var(--pct) * 1%)); }
   </style>
 </head>
 <body>
@@ -263,7 +258,7 @@
       </div>
 
       <h2>No-fee share by neighborhood</h2>
-      <p style="font-size:13px;color:var(--muted);margin:0 0 12px">Among listings with a stated fee. Sorted by no-fee share. We publish a neighborhood only when at least 50 listings state a fee across at least 8 buildings, so no single building drives the rate. The "stated a fee" column shows how much of each neighborhood's inventory the rate is based on — <span class="cov-low" style="font-weight:600">highlighted</span> where that's under 25%.</p>
+      <p style="font-size:13px;color:var(--muted);margin:0 0 12px">Among listings with a stated fee. Sorted by no-fee share. We publish a neighborhood only when at least 50 listings state a fee across at least 8 buildings, so no single building drives the rate. The "share that stated a fee" column shows what portion of each neighborhood's listings the rate is based on — <span class="cov-low" style="font-weight:600">highlighted</span> where that's under 25%.</p>
       <div class="table-wrap">
         <table>
           <thead>
@@ -271,7 +266,7 @@
               <th>Neighborhood</th>
               <th>City</th>
               <th class="num">Share of stated-fee listings with no broker fee</th>
-              <th class="num">Listings that stated a fee</th>
+              <th class="num">Share that stated a fee</th>
               <th class="num">Median 1BR rent</th>
             </tr>
           </thead>
@@ -280,217 +275,169 @@
           <tr>
             <td><a href="https://www.spoteasy.com/oak-square-apartments/no-broker-fee">Oak Square</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:91.0">91.0%</span>
-            </td>
-            <td class="num cov-cell">111 of 116<span class="cov-pct">96%</span></td>
+            <td class="num">91.0%</td>
+            <td class="num cov-cell">96%</td>
             <td class="num">—</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/boston-downtown-apartments/no-broker-fee">Boston Downtown</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:90.2">90.2%</span>
-            </td>
-            <td class="num cov-cell">61 of 119<span class="cov-pct">51%</span></td>
+            <td class="num">90.2%</td>
+            <td class="num cov-cell">51%</td>
             <td class="num">$3,263</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/brighton-apartments/no-broker-fee">Brighton</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:88.7">88.7%</span>
-            </td>
-            <td class="num cov-cell">1,409 of 2,354<span class="cov-pct">60%</span></td>
+            <td class="num">88.7%</td>
+            <td class="num cov-cell">60%</td>
             <td class="num">$2,400</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/allston-apartments/no-broker-fee">Allston</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:87.6">87.6%</span>
-            </td>
-            <td class="num cov-cell">675 of 1,211<span class="cov-pct">56%</span></td>
+            <td class="num">87.6%</td>
+            <td class="num cov-cell">56%</td>
             <td class="num">$2,385</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/jamaica-plain-apartments/no-broker-fee">Jamaica Plain</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:87.1">87.1%</span>
-            </td>
-            <td class="num cov-cell">101 of 355<span class="cov-pct">28%</span></td>
+            <td class="num">87.1%</td>
+            <td class="num cov-cell">28%</td>
             <td class="num">$2,500</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/aspinwall-hill-apartments/no-broker-fee">Aspinwall Hill</a></td>
             <td class="dim">Brookline</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:84.5">84.5%</span>
-            </td>
-            <td class="num cov-cell">58 of 59<span class="cov-pct">98%</span></td>
+            <td class="num">84.5%</td>
+            <td class="num cov-cell">98%</td>
             <td class="num">—</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/north-brookline-apartments/no-broker-fee">North Brookline</a></td>
             <td class="dim">Brookline</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:83.2">83.2%</span>
-            </td>
-            <td class="num cov-cell">161 of 162<span class="cov-pct">99%</span></td>
+            <td class="num">83.2%</td>
+            <td class="num cov-cell">99%</td>
             <td class="num">—</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/south-boston-apartments/no-broker-fee">South Boston</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:82.9">82.9%</span>
-            </td>
-            <td class="num cov-cell">123 of 483<span class="cov-pct">25%</span></td>
+            <td class="num">82.9%</td>
+            <td class="num cov-cell">25%</td>
             <td class="num">$3,000</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/longwood-apartments/no-broker-fee">Longwood</a></td>
             <td class="dim">Brookline</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:81.4">81.4%</span>
-            </td>
-            <td class="num cov-cell">70 of 93<span class="cov-pct">75%</span></td>
+            <td class="num">81.4%</td>
+            <td class="num cov-cell">75%</td>
             <td class="num">—</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/dorchester-apartments/no-broker-fee">Dorchester</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:81.4">81.4%</span>
-            </td>
-            <td class="num cov-cell cov-low">86 of 454<span class="cov-pct">19%</span></td>
+            <td class="num">81.4%</td>
+            <td class="num cov-cell cov-low">19%</td>
             <td class="num">$2,500</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/fenway-apartments/no-broker-fee">Fenway</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:79.9">79.9%</span>
-            </td>
-            <td class="num cov-cell">723 of 1,633<span class="cov-pct">44%</span></td>
+            <td class="num">79.9%</td>
+            <td class="num cov-cell">44%</td>
             <td class="num">$2,800</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/beacon-hill-apartments/no-broker-fee">Beacon Hill</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:78.5">78.5%</span>
-            </td>
-            <td class="num cov-cell">209 of 447<span class="cov-pct">47%</span></td>
+            <td class="num">78.5%</td>
+            <td class="num cov-cell">47%</td>
             <td class="num">$2,870</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/roxbury-apartments/no-broker-fee">Roxbury</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:76.8">76.8%</span>
-            </td>
-            <td class="num cov-cell">185 of 335<span class="cov-pct">55%</span></td>
+            <td class="num">76.8%</td>
+            <td class="num cov-cell">55%</td>
             <td class="num">$2,550</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/cambridge-apartments/no-broker-fee">Cambridge</a></td>
             <td class="dim">—</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:76.7">76.7%</span>
-            </td>
-            <td class="num cov-cell">515 of 1,906<span class="cov-pct">27%</span></td>
+            <td class="num">76.7%</td>
+            <td class="num cov-cell">27%</td>
             <td class="num">$2,900</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/somerville-apartments/no-broker-fee">Somerville</a></td>
             <td class="dim">—</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:75.3">75.3%</span>
-            </td>
-            <td class="num cov-cell">304 of 1,019<span class="cov-pct">30%</span></td>
+            <td class="num">75.3%</td>
+            <td class="num cov-cell">30%</td>
             <td class="num">$2,600</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/back-bay-apartments/no-broker-fee">Back Bay</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:73.3">73.3%</span>
-            </td>
-            <td class="num cov-cell">273 of 589<span class="cov-pct">46%</span></td>
+            <td class="num">73.3%</td>
+            <td class="num cov-cell">46%</td>
             <td class="num">$3,150</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/north-end-apartments/no-broker-fee">North End</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:72.2">72.2%</span>
-            </td>
-            <td class="num cov-cell">90 of 227<span class="cov-pct">40%</span></td>
+            <td class="num">72.2%</td>
+            <td class="num cov-cell">40%</td>
             <td class="num">$3,013</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/chestnut-hill-apartments/no-broker-fee">Chestnut Hill</a></td>
             <td class="dim">Brookline</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:71.4">71.4%</span>
-            </td>
-            <td class="num cov-cell cov-low">63 of 292<span class="cov-pct">22%</span></td>
+            <td class="num">71.4%</td>
+            <td class="num cov-cell cov-low">22%</td>
             <td class="num">—</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/south-end-apartments/no-broker-fee">South End</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:69.9">69.9%</span>
-            </td>
-            <td class="num cov-cell cov-low">113 of 490<span class="cov-pct">23%</span></td>
+            <td class="num">69.9%</td>
+            <td class="num cov-cell cov-low">23%</td>
             <td class="num">$3,025</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/corey-hill-apartments/no-broker-fee">Corey Hill</a></td>
             <td class="dim">Brookline</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:69.6">69.6%</span>
-            </td>
-            <td class="num cov-cell">69 of 70<span class="cov-pct">99%</span></td>
+            <td class="num">69.6%</td>
+            <td class="num cov-cell">99%</td>
             <td class="num">—</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/brookline-apartments/no-broker-fee">Brookline</a></td>
             <td class="dim">—</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:66.4">66.4%</span>
-            </td>
-            <td class="num cov-cell">146 of 167<span class="cov-pct">87%</span></td>
+            <td class="num">66.4%</td>
+            <td class="num cov-cell">87%</td>
             <td class="num">$2,995</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/mission-hill-apartments/no-broker-fee">Mission Hill</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:64.8">64.8%</span>
-            </td>
-            <td class="num cov-cell">247 of 434<span class="cov-pct">57%</span></td>
+            <td class="num">64.8%</td>
+            <td class="num cov-cell">57%</td>
             <td class="num">$2,575</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/coolidge-corner-apartments/no-broker-fee">Coolidge Corner</a></td>
             <td class="dim">Brookline</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:53.5">53.5%</span>
-            </td>
-            <td class="num cov-cell cov-low">99 of 939<span class="cov-pct">11%</span></td>
+            <td class="num">53.5%</td>
+            <td class="num cov-cell cov-low">11%</td>
             <td class="num">$3,000</td>
           </tr>
           <tr>
             <td><a href="https://www.spoteasy.com/east-boston-apartments/no-broker-fee">East Boston</a></td>
             <td class="dim">Boston</td>
-            <td class="num bfi-bar-cell">
-              <span class="bfi-bar" style="--pct:49.2">49.2%</span>
-            </td>
-            <td class="num cov-cell">130 of 307<span class="cov-pct">42%</span></td>
+            <td class="num">49.2%</td>
+            <td class="num cov-cell">42%</td>
             <td class="num">$2,525</td>
           </tr>
           </tbody>
