@@ -16,7 +16,7 @@
   "@context": "https://schema.org",
   "@type": "Dataset",
   "name": "Boston Broker-Fee Index — No-Fee Rate by Neighborhood (2026)",
-  "description": "Share of Spot Easy listings with a stated fee structure that carry no broker fee, by Greater Boston neighborhood. Excludes ~40% of listings that do not specify a fee. Self-reported by listing agents; directional.",
+  "description": "Share of Spot Easy listings with a stated fee structure that carry no broker fee, by Greater Boston neighborhood. Based on 6,494 of 16,365 active listings (40%); the remainder do not specify a fee and are excluded, never imputed. Self-reported by listing agents; directional.",
   "url": "https://www.spoteasy.com/data/broker-fee-index/",
   "dateModified": "2026-07-01",
   "creator": {
@@ -218,6 +218,11 @@
     .bfi-quote p    { color: rgba(255,255,255,.85); font-size: 16px; line-height: 1.65; font-style: italic; margin-bottom: 12px; }
     .bfi-quote cite { font-size: 13px; font-weight: 700; color: var(--sky); font-style: normal; }
     .bfi-bar-cell   { width: 180px; }
+    .cov-cell   { font-size: 13px; color: var(--muted); white-space: nowrap; }
+    .cov-pct    { display: block; font-size: 11px; opacity: .75; }
+    .cov-low    { color: #b45309; }
+    .bfi-dl     { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
+    .bfi-dl a   { font-weight: 600; }
     .bfi-bar { display: inline-block; font-size: 13px; font-weight: 700; color: var(--navy);
       padding: 4px 8px 4px 0; min-width: 120px;
       background: linear-gradient(to right, rgba(0,172,238,.18) calc(var(--pct) * 1%), transparent calc(var(--pct) * 1%)); }
@@ -243,7 +248,7 @@
       <p>As of <strong>August 1, 2025</strong>, Massachusetts law bars landlords from passing their broker's fee to tenants — making no-fee-to-the-renter increasingly the norm. This index tracks how that shift is showing up in listings advertised across Greater Boston.</p>
       <p>When a fee is charged, it's typically about one month's rent — the metro median one-bedroom is <strong>$2,750</strong>.</p>
 
-      <p class="bfi-coverage">About 4 in 10 listings don't specify a fee. We leave those out rather than guess — every figure here is based only on listings that state one. This report covers <strong>6,494</strong> of <strong>16,369</strong> active Spot Easy listings.</p>
+      <p class="bfi-coverage">Right now about six in ten listings don't specify a fee. We leave those out rather than guess — every figure here is based only on listings that state one. This report covers <strong>6,494</strong> of <strong>16,365</strong> active Spot Easy listings (<strong>40%</strong>). Coverage varies a lot by neighborhood, so we show it on every row below.</p>
 
       <h2>What the data shows</h2>
       <ul>
@@ -258,14 +263,15 @@
       </div>
 
       <h2>No-fee share by neighborhood</h2>
-      <p style="font-size:13px;color:var(--muted);margin:0 0 12px">Among listings with a stated fee. Sorted by no-fee share. We publish a neighborhood only when at least 50 listings state a fee across at least 8 buildings, so no single building drives the rate.</p>
+      <p style="font-size:13px;color:var(--muted);margin:0 0 12px">Among listings with a stated fee. Sorted by no-fee share. We publish a neighborhood only when at least 50 listings state a fee across at least 8 buildings, so no single building drives the rate. The "stated a fee" column shows how much of each neighborhood's inventory the rate is based on — <span class="cov-low" style="font-weight:600">highlighted</span> where that's under 25%.</p>
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
               <th>Neighborhood</th>
               <th>City</th>
-              <th class="num">Share with no broker fee</th>
+              <th class="num">Share of stated-fee listings with no broker fee</th>
+              <th class="num">Listings that stated a fee</th>
               <th class="num">Median 1BR rent</th>
             </tr>
           </thead>
@@ -277,6 +283,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:91.0">91.0%</span>
             </td>
+            <td class="num cov-cell">111 of 116<span class="cov-pct">96%</span></td>
             <td class="num">—</td>
           </tr>
           <tr>
@@ -285,6 +292,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:90.2">90.2%</span>
             </td>
+            <td class="num cov-cell">61 of 119<span class="cov-pct">51%</span></td>
             <td class="num">$3,263</td>
           </tr>
           <tr>
@@ -293,6 +301,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:88.7">88.7%</span>
             </td>
+            <td class="num cov-cell">1,409 of 2,354<span class="cov-pct">60%</span></td>
             <td class="num">$2,400</td>
           </tr>
           <tr>
@@ -301,6 +310,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:87.6">87.6%</span>
             </td>
+            <td class="num cov-cell">675 of 1,211<span class="cov-pct">56%</span></td>
             <td class="num">$2,385</td>
           </tr>
           <tr>
@@ -309,6 +319,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:87.1">87.1%</span>
             </td>
+            <td class="num cov-cell">101 of 355<span class="cov-pct">28%</span></td>
             <td class="num">$2,500</td>
           </tr>
           <tr>
@@ -317,6 +328,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:84.5">84.5%</span>
             </td>
+            <td class="num cov-cell">58 of 59<span class="cov-pct">98%</span></td>
             <td class="num">—</td>
           </tr>
           <tr>
@@ -325,6 +337,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:83.2">83.2%</span>
             </td>
+            <td class="num cov-cell">161 of 162<span class="cov-pct">99%</span></td>
             <td class="num">—</td>
           </tr>
           <tr>
@@ -333,6 +346,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:82.9">82.9%</span>
             </td>
+            <td class="num cov-cell">123 of 483<span class="cov-pct">25%</span></td>
             <td class="num">$3,000</td>
           </tr>
           <tr>
@@ -341,6 +355,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:81.4">81.4%</span>
             </td>
+            <td class="num cov-cell">70 of 93<span class="cov-pct">75%</span></td>
             <td class="num">—</td>
           </tr>
           <tr>
@@ -349,6 +364,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:81.4">81.4%</span>
             </td>
+            <td class="num cov-cell cov-low">86 of 454<span class="cov-pct">19%</span></td>
             <td class="num">$2,500</td>
           </tr>
           <tr>
@@ -357,6 +373,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:79.9">79.9%</span>
             </td>
+            <td class="num cov-cell">723 of 1,633<span class="cov-pct">44%</span></td>
             <td class="num">$2,800</td>
           </tr>
           <tr>
@@ -365,6 +382,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:78.5">78.5%</span>
             </td>
+            <td class="num cov-cell">209 of 447<span class="cov-pct">47%</span></td>
             <td class="num">$2,870</td>
           </tr>
           <tr>
@@ -373,6 +391,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:76.8">76.8%</span>
             </td>
+            <td class="num cov-cell">185 of 335<span class="cov-pct">55%</span></td>
             <td class="num">$2,550</td>
           </tr>
           <tr>
@@ -381,6 +400,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:76.7">76.7%</span>
             </td>
+            <td class="num cov-cell">515 of 1,906<span class="cov-pct">27%</span></td>
             <td class="num">$2,900</td>
           </tr>
           <tr>
@@ -389,6 +409,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:75.3">75.3%</span>
             </td>
+            <td class="num cov-cell">304 of 1,019<span class="cov-pct">30%</span></td>
             <td class="num">$2,600</td>
           </tr>
           <tr>
@@ -397,6 +418,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:73.3">73.3%</span>
             </td>
+            <td class="num cov-cell">273 of 589<span class="cov-pct">46%</span></td>
             <td class="num">$3,150</td>
           </tr>
           <tr>
@@ -405,6 +427,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:72.2">72.2%</span>
             </td>
+            <td class="num cov-cell">90 of 227<span class="cov-pct">40%</span></td>
             <td class="num">$3,013</td>
           </tr>
           <tr>
@@ -413,6 +436,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:71.4">71.4%</span>
             </td>
+            <td class="num cov-cell cov-low">63 of 292<span class="cov-pct">22%</span></td>
             <td class="num">—</td>
           </tr>
           <tr>
@@ -421,6 +445,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:69.9">69.9%</span>
             </td>
+            <td class="num cov-cell cov-low">113 of 490<span class="cov-pct">23%</span></td>
             <td class="num">$3,025</td>
           </tr>
           <tr>
@@ -429,6 +454,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:69.6">69.6%</span>
             </td>
+            <td class="num cov-cell">69 of 70<span class="cov-pct">99%</span></td>
             <td class="num">—</td>
           </tr>
           <tr>
@@ -437,6 +463,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:66.4">66.4%</span>
             </td>
+            <td class="num cov-cell">146 of 167<span class="cov-pct">87%</span></td>
             <td class="num">$2,995</td>
           </tr>
           <tr>
@@ -445,6 +472,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:64.8">64.8%</span>
             </td>
+            <td class="num cov-cell">247 of 434<span class="cov-pct">57%</span></td>
             <td class="num">$2,575</td>
           </tr>
           <tr>
@@ -453,6 +481,7 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:53.5">53.5%</span>
             </td>
+            <td class="num cov-cell cov-low">99 of 939<span class="cov-pct">11%</span></td>
             <td class="num">$3,000</td>
           </tr>
           <tr>
@@ -461,11 +490,13 @@
             <td class="num bfi-bar-cell">
               <span class="bfi-bar" style="--pct:49.2">49.2%</span>
             </td>
+            <td class="num cov-cell">130 of 307<span class="cov-pct">42%</span></td>
             <td class="num">$2,525</td>
           </tr>
           </tbody>
         </table>
       </div>
+      <p class="bfi-dl"><a href="https://www.spoteasy.com/data/broker-fee-index/broker-fee-index-2026-07.csv" download>⤓ Download this data (CSV)</a> — free to republish with attribution.</p>
 
       <div class="cta-row">
         <a class="cta" href="https://www.spoteasy.com/boston-apartments/no-broker-fee">Browse no-fee listings in Boston</a>
@@ -474,7 +505,7 @@
 
       <details class="method">
         <summary>Methodology</summary>
-        <p>Each listing's broker-fee field is set by the listing agent. Roughly 40% of active listings leave it blank or marked "unknown." We exclude those entirely — we don't assume they do or don't charge a fee — so the Index reflects only the ~60% of listings that state a fee structure. Because the missing data varies by neighborhood but shows no strong correlation with the no-fee rate (r ≈ −0.2), it doesn't distort the neighborhood-to-neighborhood comparison; it only means the headline share should be read as <em>"of listings that disclose a fee,"</em> not <em>"of all apartments."</em> As with any self-reported marketplace data, we can't verify every agent entered the field correctly — treat these figures as directional, not exact.</p>
+        <p>Each listing's broker-fee field is set by the listing agent. This month about six in ten active listings leave it blank or marked "unknown" — most of them sourced from third-party listing feeds, which rarely carry a fee value at all. We exclude those entirely — we don't assume they do or don't charge a fee — so the Index reflects only the <strong>40%</strong> of listings that state a fee structure. Disclosure coverage varies by neighborhood, so we publish it on every row. The correlation between a neighborhood's coverage and its no-fee rate is currently weak (r = +0.27) — neighborhoods where more listings disclose a fee tend to show slightly higher no-fee rates — so the neighborhood-to-neighborhood comparison holds, but rows with low coverage deserve more caution. The headline share should be read as <em>"of listings that disclose a fee,"</em> not <em>"of all apartments."</em> As with any self-reported marketplace data, we can't verify every agent entered the field correctly — treat these figures as directional, not exact.</p>
         <p style="margin-top:10px">Since August 1, 2025, Massachusetts law prohibits landlords from requiring tenants to pay the landlord's broker fee — a renter pays a fee only if they separately hire their own agent. These figures reflect fee structures as advertised on listings, not a judgment about any individual listing's compliance.</p>
         <p style="margin-top:10px">We also exclude drafts, admin-removed listings, and asking rents below $500 or above $20,000, and publish a neighborhood only when at least 50 listings state a fee across at least 8 distinct buildings — so a single building's inventory can't drive a neighborhood's rate. Greater Boston = Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, Malden. Updated monthly.</p>
         <p class="n-line">Press or custom data: <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>

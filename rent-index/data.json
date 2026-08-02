@@ -27,17 +27,17 @@
       },
       {
         "beds": "2",
-        "median": 3393,
+        "median": 3395,
         "p25": 2900,
         "p75": 3900,
-        "n": 5080
+        "n": 5077
       },
       {
         "beds": "3",
         "median": 3900,
-        "p25": 3390,
+        "p25": 3380,
         "p75": 4600,
-        "n": 2720
+        "n": 2719
       },
       {
         "beds": "4+",
@@ -93,7 +93,7 @@
         "beds": {
           "0": null,
           "1": null,
-          "2": 3550,
+          "2": 3500,
           "3": 4600,
           "4+": 6200
         }
@@ -244,6 +244,7 @@
         "area": "Allston",
         "slug": "allston",
         "city": "Boston",
+        "total": 1211,
         "known": 675,
         "no_fee": 591,
         "pct_no_fee": 87.6,
@@ -368,6 +369,7 @@
         "area": "Back Bay",
         "slug": "back-bay",
         "city": "Boston",
+        "total": 589,
         "known": 273,
         "no_fee": 200,
         "pct_no_fee": 73.3,
@@ -492,6 +494,7 @@
         "area": "Beacon Hill",
         "slug": "beacon-hill",
         "city": "Boston",
+        "total": 447,
         "known": 209,
         "no_fee": 164,
         "pct_no_fee": 78.5,
@@ -576,6 +579,7 @@
         "area": "Boston Downtown",
         "slug": "boston-downtown",
         "city": "Boston",
+        "total": 119,
         "known": 61,
         "no_fee": 55,
         "pct_no_fee": 90.2,
@@ -705,6 +709,7 @@
         "area": "Brighton",
         "slug": "brighton",
         "city": "Boston",
+        "total": 2354,
         "known": 1409,
         "no_fee": 1250,
         "pct_no_fee": 88.7,
@@ -736,8 +741,8 @@
         "3": {
           "median": 4500,
           "p25": 4050,
-          "p75": 5039,
-          "n": 328
+          "p75": 5035,
+          "n": 327
         },
         "4+": {
           "median": 5900,
@@ -834,6 +839,7 @@
         "area": "Brookline",
         "slug": "brookline",
         "city": "Brookline",
+        "total": 167,
         "known": 146,
         "no_fee": 97,
         "pct_no_fee": 66.4,
@@ -1039,6 +1045,7 @@
         "area": "Cambridge",
         "slug": "cambridge",
         "city": "Cambridge",
+        "total": 1906,
         "known": 515,
         "no_fee": 395,
         "pct_no_fee": 76.7,
@@ -1209,6 +1216,7 @@
         "area": "Chestnut Hill",
         "slug": "chestnut-hill",
         "city": "Brookline",
+        "total": 292,
         "known": 63,
         "no_fee": 45,
         "pct_no_fee": 71.4,
@@ -1340,9 +1348,9 @@
         },
         "3": {
           "median": 4500,
-          "p25": 4228,
+          "p25": 4220,
           "p75": 5035,
-          "n": 114
+          "n": 113
         },
         "4+": {
           "median": 5423,
@@ -1439,10 +1447,11 @@
         "area": "Coolidge Corner",
         "slug": "coolidge-corner",
         "city": "Brookline",
+        "total": 939,
         "known": 99,
         "no_fee": 53,
         "pct_no_fee": 53.5,
-        "buildings": 363
+        "buildings": 362
       }
     },
     {
@@ -1558,6 +1567,7 @@
         "area": "Dorchester",
         "slug": "dorchester",
         "city": "Boston",
+        "total": 454,
         "known": 86,
         "no_fee": 70,
         "pct_no_fee": 81.4,
@@ -1677,6 +1687,7 @@
         "area": "East Boston",
         "slug": "east-boston",
         "city": "Boston",
+        "total": 307,
         "known": 130,
         "no_fee": 64,
         "pct_no_fee": 49.2,
@@ -1806,6 +1817,7 @@
         "area": "Fenway",
         "slug": "fenway",
         "city": "Boston",
+        "total": 1633,
         "known": 723,
         "no_fee": 578,
         "pct_no_fee": 79.9,
@@ -1887,7 +1899,7 @@
         },
         "3": {
           "median": 3600,
-          "p25": 3313,
+          "p25": 3300,
           "p75": 3994,
           "n": 70
         },
@@ -1986,6 +1998,7 @@
         "area": "Jamaica Plain",
         "slug": "jamaica-plain",
         "city": "Boston",
+        "total": 355,
         "known": 101,
         "no_fee": 88,
         "pct_no_fee": 87.1,
@@ -2115,6 +2128,7 @@
         "area": "Mission Hill",
         "slug": "mission-hill",
         "city": "Boston",
+        "total": 434,
         "known": 247,
         "no_fee": 160,
         "pct_no_fee": 64.8,
@@ -2229,6 +2243,7 @@
         "area": "North End",
         "slug": "north-end",
         "city": "Boston",
+        "total": 227,
         "known": 90,
         "no_fee": 65,
         "pct_no_fee": 72.2,
@@ -2298,6 +2313,7 @@
         "area": "Oak Square",
         "slug": "oak-square",
         "city": "Boston",
+        "total": 116,
         "known": 111,
         "no_fee": 101,
         "pct_no_fee": 91,
@@ -2417,16 +2433,16 @@
           "n": 28
         },
         "2": {
-          "median": 3400,
-          "p25": 2799,
+          "median": 3500,
+          "p25": 2800,
           "p75": 4000,
-          "n": 96
+          "n": 94
         },
         "3": {
           "median": 3900,
           "p25": 3300,
           "p75": 4999,
-          "n": 127
+          "n": 126
         },
         "4+": {
           "median": 4800,
@@ -2498,10 +2514,11 @@
         "area": "Roxbury",
         "slug": "roxbury",
         "city": "Boston",
+        "total": 335,
         "known": 185,
         "no_fee": 142,
         "pct_no_fee": 76.8,
-        "buildings": 221
+        "buildings": 219
       }
     },
     {
@@ -2723,6 +2740,7 @@
         "area": "Somerville",
         "slug": "somerville",
         "city": "Somerville",
+        "total": 1019,
         "known": 304,
         "no_fee": 229,
         "pct_no_fee": 75.3,
@@ -2852,6 +2870,7 @@
         "area": "South Boston",
         "slug": "south-boston",
         "city": "Boston",
+        "total": 483,
         "known": 123,
         "no_fee": 102,
         "pct_no_fee": 82.9,
@@ -2976,6 +2995,7 @@
         "area": "South End",
         "slug": "south-end",
         "city": "Boston",
+        "total": 490,
         "known": 113,
         "no_fee": 79,
         "pct_no_fee": 69.9,

@@ -1,8 +1,8 @@
 week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-07-01,metro,Greater Boston,0,2295,1934,2025,2500
 2026-07-01,metro,Greater Boston,1,2750,4757,2400,3150
-2026-07-01,metro,Greater Boston,2,3393,5080,2900,3900
-2026-07-01,metro,Greater Boston,3,3900,2720,3390,4600
+2026-07-01,metro,Greater Boston,2,3395,5077,2900,3900
+2026-07-01,metro,Greater Boston,3,3900,2719,3380,4600
 2026-07-01,metro,Greater Boston,4+,5000,1878,4200,6000
 2026-07-01,neighborhood,Allston,0,2025,161,1925,2135
 2026-07-01,neighborhood,Allston,1,2385,307,2200,2600
@@ -28,7 +28,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-07-01,neighborhood,Brookline,0,2313,182,2100,2550
 2026-07-01,neighborhood,Brookline,1,2995,714,2675,3250
 2026-07-01,neighborhood,Brookline,2,3600,711,3245,3995
-2026-07-01,neighborhood,Brookline,3,4500,328,4050,5039
+2026-07-01,neighborhood,Brookline,3,4500,327,4050,5035
 2026-07-01,neighborhood,Brookline,4+,5900,215,4925,6600
 2026-07-01,neighborhood,Brookline Village,2,3500,21,3100,4200
 2026-07-01,neighborhood,Cambridge,0,2400,155,2123,2600
@@ -44,7 +44,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-07-01,neighborhood,Coolidge Corner,0,2335,95,2095,2812
 2026-07-01,neighborhood,Coolidge Corner,1,3000,358,2700,3295
 2026-07-01,neighborhood,Coolidge Corner,2,3650,317,3350,3950
-2026-07-01,neighborhood,Coolidge Corner,3,4500,114,4228,5035
+2026-07-01,neighborhood,Coolidge Corner,3,4500,113,4220,5035
 2026-07-01,neighborhood,Coolidge Corner,4+,5423,62,5000,6400
 2026-07-01,neighborhood,Dorchester,1,2500,56,2323,2995
 2026-07-01,neighborhood,Dorchester,2,2875,132,2600,3263
@@ -63,7 +63,7 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-07-01,neighborhood,Jamaica Plain,0,1950,26,1863,2315
 2026-07-01,neighborhood,Jamaica Plain,1,2500,113,2300,2700
 2026-07-01,neighborhood,Jamaica Plain,2,3200,96,2869,3500
-2026-07-01,neighborhood,Jamaica Plain,3,3600,70,3313,3994
+2026-07-01,neighborhood,Jamaica Plain,3,3600,70,3300,3994
 2026-07-01,neighborhood,Jamaica Plain,4+,4800,57,4000,5500
 2026-07-01,neighborhood,Mission Hill,0,2100,33,1900,2200
 2026-07-01,neighborhood,Mission Hill,1,2575,72,2399,2969
@@ -79,8 +79,8 @@ week_ending,scope,scope_value,beds,median_rent,sample_size,p25,p75
 2026-07-01,neighborhood,Roslindale,2,2850,43,2575,3200
 2026-07-01,neighborhood,Roslindale,3,3300,20,3000,3813
 2026-07-01,neighborhood,Roxbury,1,2550,28,2175,3013
-2026-07-01,neighborhood,Roxbury,2,3400,96,2799,4000
-2026-07-01,neighborhood,Roxbury,3,3900,127,3300,4999
+2026-07-01,neighborhood,Roxbury,2,3500,94,2800,4000
+2026-07-01,neighborhood,Roxbury,3,3900,126,3300,4999
 2026-07-01,neighborhood,Roxbury,4+,4800,79,3998,5800
 2026-07-01,neighborhood,Seaport District,1,3373,22,3206,3609
 2026-07-01,neighborhood,Somerville,0,2300,59,2100,2485
