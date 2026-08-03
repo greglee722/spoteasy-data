@@ -29,13 +29,13 @@
         "beds": "2",
         "median": 3395,
         "p25": 2900,
-        "p75": 3921,
-        "n": 5013
+        "p75": 3925,
+        "n": 5011
       },
       {
         "beds": "3",
         "median": 3900,
-        "p25": 3380,
+        "p25": 3375,
         "p75": 4650,
         "n": 2677
       },
@@ -52,7 +52,7 @@
         "building_type": "Apartment",
         "beds": {
           "0": 2225,
-          "1": 2675,
+          "1": 2670,
           "2": 3200,
           "3": 3775,
           "4+": 4795
@@ -138,7 +138,7 @@
           "n": 306
         },
         "2": {
-          "median": 3050,
+          "median": 3040,
           "p25": 2780,
           "p75": 3800,
           "n": 325
@@ -158,8 +158,8 @@
       },
       "roommate": {
         "studio": 2025,
-        "perPerson": 1525,
-        "savings": 500,
+        "perPerson": 1520,
+        "savings": 505,
         "pctSaved": 25
       },
       "trend": {
@@ -249,7 +249,8 @@
         "no_fee": 591,
         "pct_no_fee": 87.6,
         "buildings": 487
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Back Bay",
@@ -374,7 +375,8 @@
         "no_fee": 200,
         "pct_no_fee": 72.7,
         "buildings": 281
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Beacon Hill",
@@ -499,7 +501,74 @@
         "no_fee": 164,
         "pct_no_fee": 78.5,
         "buildings": 161
-      }
+      },
+      "isSuperset": false
+    },
+    {
+      "neighborhood": "Boston",
+      "slug": "boston",
+      "beds": {
+        "0": {
+          "median": 2270,
+          "p25": 2025,
+          "p75": 2500,
+          "n": 1499
+        },
+        "1": {
+          "median": 2700,
+          "p25": 2395,
+          "p75": 3100,
+          "n": 3019
+        },
+        "2": {
+          "median": 3300,
+          "p25": 2825,
+          "p75": 3950,
+          "n": 3003
+        },
+        "3": {
+          "median": 3798,
+          "p25": 3300,
+          "p75": 4600,
+          "n": 1604
+        },
+        "4+": {
+          "median": 4995,
+          "p25": 4100,
+          "p75": 6000,
+          "n": 1181
+        }
+      },
+      "roommate": {
+        "studio": 2270,
+        "perPerson": 1650,
+        "savings": 620,
+        "pctSaved": 27
+      },
+      "trend": {
+        "b1_median": 2700,
+        "wow": null,
+        "mom": null
+      },
+      "history": [
+        {
+          "ym": "2026-07",
+          "label": "Jul 2026",
+          "median": 2700
+        }
+      ],
+      "historyBedLabel": "1-bedroom",
+      "noFee": {
+        "area": "Boston",
+        "slug": "boston",
+        "city": "Boston",
+        "total": 10306,
+        "known": 4668,
+        "no_fee": 3797,
+        "pct_no_fee": 81.3,
+        "buildings": 4613
+      },
+      "isSuperset": true
     },
     {
       "neighborhood": "Boston Downtown",
@@ -584,7 +653,8 @@
         "no_fee": 55,
         "pct_no_fee": 90.2,
         "buildings": 61
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Brighton",
@@ -606,7 +676,7 @@
           "median": 2900,
           "p25": 2700,
           "p75": 3200,
-          "n": 603
+          "n": 602
         },
         "3": {
           "median": 3600,
@@ -709,12 +779,13 @@
         "area": "Brighton",
         "slug": "brighton",
         "city": "Boston",
-        "total": 2348,
-        "known": 1409,
-        "no_fee": 1250,
+        "total": 2347,
+        "known": 1408,
+        "no_fee": 1249,
         "pct_no_fee": 88.7,
         "buildings": 1014
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Brookline",
@@ -844,7 +915,8 @@
         "no_fee": 542,
         "pct_no_fee": 72.5,
         "buildings": 850
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Brookline Village",
@@ -920,7 +992,8 @@
         }
       ],
       "historyBedLabel": "2-bedroom",
-      "noFee": null
+      "noFee": null,
+      "isSuperset": false
     },
     {
       "neighborhood": "Cambridge",
@@ -1050,7 +1123,8 @@
         "no_fee": 395,
         "pct_no_fee": 76.7,
         "buildings": 887
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Charlestown",
@@ -1141,7 +1215,8 @@
         }
       ],
       "historyBedLabel": "1-bedroom",
-      "noFee": null
+      "noFee": null,
+      "isSuperset": false
     },
     {
       "neighborhood": "Chestnut Hill",
@@ -1221,7 +1296,8 @@
         "no_fee": 45,
         "pct_no_fee": 71.4,
         "buildings": 125
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Chinatown",
@@ -1322,7 +1398,8 @@
         }
       ],
       "historyBedLabel": "1-bedroom",
-      "noFee": null
+      "noFee": null,
+      "isSuperset": false
     },
     {
       "neighborhood": "Coolidge Corner",
@@ -1452,7 +1529,8 @@
         "no_fee": 53,
         "pct_no_fee": 53.5,
         "buildings": 363
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Dorchester",
@@ -1572,7 +1650,8 @@
         "no_fee": 70,
         "pct_no_fee": 81.4,
         "buildings": 339
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "East Boston",
@@ -1600,7 +1679,7 @@
         "4+": {
           "median": 3798,
           "p25": 3400,
-          "p75": 4056,
+          "p75": 4038,
           "n": 30
         }
       },
@@ -1692,7 +1771,8 @@
         "no_fee": 64,
         "pct_no_fee": 49.2,
         "buildings": 234
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Fenway",
@@ -1822,7 +1902,8 @@
         "no_fee": 579,
         "pct_no_fee": 80.1,
         "buildings": 289
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Hyde Park",
@@ -1873,7 +1954,8 @@
         }
       ],
       "historyBedLabel": "2-bedroom",
-      "noFee": null
+      "noFee": null,
+      "isSuperset": false
     },
     {
       "neighborhood": "Jamaica Plain",
@@ -2003,7 +2085,8 @@
         "no_fee": 88,
         "pct_no_fee": 87.1,
         "buildings": 202
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Mission Hill",
@@ -2133,7 +2216,8 @@
         "no_fee": 162,
         "pct_no_fee": 65.1,
         "buildings": 214
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "North End",
@@ -2248,7 +2332,8 @@
         "no_fee": 65,
         "pct_no_fee": 72.2,
         "buildings": 95
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Oak Square",
@@ -2318,7 +2403,8 @@
         "no_fee": 101,
         "pct_no_fee": 91,
         "buildings": 86
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Roslindale",
@@ -2419,7 +2505,8 @@
         }
       ],
       "historyBedLabel": "2-bedroom",
-      "noFee": null
+      "noFee": null,
+      "isSuperset": false
     },
     {
       "neighborhood": "Roxbury",
@@ -2519,7 +2606,8 @@
         "no_fee": 142,
         "pct_no_fee": 76.8,
         "buildings": 220
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "Seaport District",
@@ -2615,7 +2703,8 @@
         }
       ],
       "historyBedLabel": "1-bedroom",
-      "noFee": null
+      "noFee": null,
+      "isSuperset": false
     },
     {
       "neighborhood": "Somerville",
@@ -2745,7 +2834,8 @@
         "no_fee": 229,
         "pct_no_fee": 75.3,
         "buildings": 626
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "South Boston",
@@ -2875,7 +2965,8 @@
         "no_fee": 102,
         "pct_no_fee": 82.9,
         "buildings": 341
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "South End",
@@ -3000,7 +3091,8 @@
         "no_fee": 81,
         "pct_no_fee": 70.4,
         "buildings": 284
-      }
+      },
+      "isSuperset": false
     },
     {
       "neighborhood": "West Roxbury",
@@ -3096,7 +3188,8 @@
         }
       ],
       "historyBedLabel": "2-bedroom",
-      "noFee": null
+      "noFee": null,
+      "isSuperset": false
     }
   ]
 }

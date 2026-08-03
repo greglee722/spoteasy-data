@@ -1,9 +1,9 @@
 week_ending,scope,neighborhood,total_listings,listings_stating_fee,no_fee_listings,pct_no_fee_of_stating,pct_stating_fee
-2026-07-01,metro,Greater Boston,16154,6493,5155,79.4,40.2
+2026-07-01,metro,Greater Boston,16152,6492,5154,79.4,40.2
 2026-07-01,neighborhood,Oak Square,116,111,101,91.0,95.7
 2026-07-01,neighborhood,Boston Downtown,119,61,55,90.2,51.3
 2026-07-01,neighborhood,Riverside,113,53,47,88.7,46.9
-2026-07-01,neighborhood,Brighton,2348,1409,1250,88.7,60.0
+2026-07-01,neighborhood,Brighton,2347,1408,1249,88.7,60.0
 2026-07-01,neighborhood,Allston,1205,675,591,87.6,56.0
 2026-07-01,neighborhood,Jamaica Plain,363,101,88,87.1,27.8
 2026-07-01,neighborhood,Spring Hill,153,70,60,85.7,45.8
@@ -11,6 +11,7 @@ week_ending,scope,neighborhood,total_listings,listings_stating_fee,no_fee_listin
 2026-07-01,neighborhood,North Brookline,165,163,136,83.4,98.8
 2026-07-01,neighborhood,South Boston,483,123,102,82.9,25.5
 2026-07-01,neighborhood,Dorchester,453,86,70,81.4,19.0
+2026-07-01,neighborhood,Boston,10306,4668,3797,81.3,45.3
 2026-07-01,neighborhood,Longwood,94,71,57,80.3,75.5
 2026-07-01,neighborhood,Fenway,1632,723,579,80.1,44.3
 2026-07-01,neighborhood,Neighborhood Nine,118,62,49,79.0,52.5
