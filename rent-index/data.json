@@ -250,7 +250,7 @@
         "pct_no_fee": 87.6,
         "buildings": 487
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Back Bay",
@@ -376,7 +376,7 @@
         "pct_no_fee": 72.7,
         "buildings": 281
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Beacon Hill",
@@ -502,7 +502,7 @@
         "pct_no_fee": 78.5,
         "buildings": 161
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Boston",
@@ -568,7 +568,7 @@
         "pct_no_fee": 81.3,
         "buildings": 4613
       },
-      "isSuperset": true
+      "isCityScope": true
     },
     {
       "neighborhood": "Boston Downtown",
@@ -654,7 +654,7 @@
         "pct_no_fee": 90.2,
         "buildings": 61
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Brighton",
@@ -785,7 +785,7 @@
         "pct_no_fee": 88.7,
         "buildings": 1014
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Brookline",
@@ -916,7 +916,7 @@
         "pct_no_fee": 72.5,
         "buildings": 850
       },
-      "isSuperset": false
+      "isCityScope": true
     },
     {
       "neighborhood": "Brookline Village",
@@ -993,7 +993,7 @@
       ],
       "historyBedLabel": "2-bedroom",
       "noFee": null,
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Cambridge",
@@ -1124,7 +1124,7 @@
         "pct_no_fee": 76.7,
         "buildings": 887
       },
-      "isSuperset": false
+      "isCityScope": true
     },
     {
       "neighborhood": "Charlestown",
@@ -1216,7 +1216,7 @@
       ],
       "historyBedLabel": "1-bedroom",
       "noFee": null,
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Chestnut Hill",
@@ -1297,7 +1297,7 @@
         "pct_no_fee": 71.4,
         "buildings": 125
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Chinatown",
@@ -1399,7 +1399,7 @@
       ],
       "historyBedLabel": "1-bedroom",
       "noFee": null,
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Coolidge Corner",
@@ -1530,7 +1530,7 @@
         "pct_no_fee": 53.5,
         "buildings": 363
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Dorchester",
@@ -1651,7 +1651,7 @@
         "pct_no_fee": 81.4,
         "buildings": 339
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "East Boston",
@@ -1772,7 +1772,7 @@
         "pct_no_fee": 49.2,
         "buildings": 234
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Fenway",
@@ -1903,7 +1903,7 @@
         "pct_no_fee": 80.1,
         "buildings": 289
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Hyde Park",
@@ -1955,7 +1955,7 @@
       ],
       "historyBedLabel": "2-bedroom",
       "noFee": null,
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Jamaica Plain",
@@ -2086,7 +2086,7 @@
         "pct_no_fee": 87.1,
         "buildings": 202
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Mission Hill",
@@ -2217,7 +2217,7 @@
         "pct_no_fee": 65.1,
         "buildings": 214
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "North End",
@@ -2333,7 +2333,7 @@
         "pct_no_fee": 72.2,
         "buildings": 95
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Oak Square",
@@ -2404,7 +2404,7 @@
         "pct_no_fee": 91,
         "buildings": 86
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Roslindale",
@@ -2506,7 +2506,7 @@
       ],
       "historyBedLabel": "2-bedroom",
       "noFee": null,
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Roxbury",
@@ -2607,7 +2607,7 @@
         "pct_no_fee": 76.8,
         "buildings": 220
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Seaport District",
@@ -2704,7 +2704,7 @@
       ],
       "historyBedLabel": "1-bedroom",
       "noFee": null,
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "Somerville",
@@ -2835,7 +2835,7 @@
         "pct_no_fee": 75.3,
         "buildings": 626
       },
-      "isSuperset": false
+      "isCityScope": true
     },
     {
       "neighborhood": "South Boston",
@@ -2966,7 +2966,7 @@
         "pct_no_fee": 82.9,
         "buildings": 341
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "South End",
@@ -3092,7 +3092,7 @@
         "pct_no_fee": 70.4,
         "buildings": 284
       },
-      "isSuperset": false
+      "isCityScope": false
     },
     {
       "neighborhood": "West Roxbury",
@@ -3189,7 +3189,7 @@
       ],
       "historyBedLabel": "2-bedroom",
       "noFee": null,
-      "isSuperset": false
+      "isCityScope": false
     }
   ]
 }
