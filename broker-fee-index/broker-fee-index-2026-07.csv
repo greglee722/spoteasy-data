@@ -1,32 +1,32 @@
-week_ending,scope,neighborhood,total_listings,listings_stating_fee,no_fee_listings,pct_no_fee_of_stating,pct_stating_fee
-2026-07-01,metro,Greater Boston,16152,6492,5154,79.4,40.2
-2026-07-01,neighborhood,Oak Square,116,111,101,91.0,95.7
-2026-07-01,neighborhood,Boston Downtown,119,61,55,90.2,51.3
-2026-07-01,neighborhood,Riverside,113,53,47,88.7,46.9
-2026-07-01,neighborhood,Brighton,2347,1408,1249,88.7,60.0
-2026-07-01,neighborhood,Allston,1205,675,591,87.6,56.0
-2026-07-01,neighborhood,Jamaica Plain,363,101,88,87.1,27.8
-2026-07-01,neighborhood,Spring Hill,153,70,60,85.7,45.8
-2026-07-01,neighborhood,Aspinwall Hill,59,58,49,84.5,98.3
-2026-07-01,neighborhood,North Brookline,165,163,136,83.4,98.8
-2026-07-01,neighborhood,South Boston,483,123,102,82.9,25.5
-2026-07-01,neighborhood,Dorchester,453,86,70,81.4,19.0
-2026-07-01,neighborhood,Boston,10306,4668,3797,81.3,45.3
-2026-07-01,neighborhood,Longwood,94,71,57,80.3,75.5
-2026-07-01,neighborhood,Fenway,1632,723,579,80.1,44.3
-2026-07-01,neighborhood,Neighborhood Nine,118,62,49,79.0,52.5
-2026-07-01,neighborhood,Beacon Hill,447,209,164,78.5,46.8
-2026-07-01,neighborhood,Mid Cambridge,199,71,55,77.5,35.7
-2026-07-01,neighborhood,Roxbury,336,185,142,76.8,55.1
-2026-07-01,neighborhood,Cambridge,1830,515,395,76.7,28.1
-2026-07-01,neighborhood,Somerville,933,304,229,75.3,32.6
-2026-07-01,neighborhood,Back Bay,593,275,200,72.7,46.4
-2026-07-01,neighborhood,Brookline,2149,748,542,72.5,34.8
-2026-07-01,neighborhood,North End,228,90,65,72.2,39.5
-2026-07-01,neighborhood,Chestnut Hill,293,63,45,71.4,21.5
-2026-07-01,neighborhood,South End,495,115,81,70.4,23.2
-2026-07-01,neighborhood,Corey Hill,70,69,48,69.6,98.6
-2026-07-01,neighborhood,Mission Hill,436,249,162,65.1,57.1
-2026-07-01,neighborhood,East Cambridge,278,54,34,63.0,19.4
-2026-07-01,neighborhood,Coolidge Corner,945,99,53,53.5,10.5
-2026-07-01,neighborhood,East Boston,307,130,64,49.2,42.3
+week_ending,scope,neighborhood,pct_no_fee_of_stating,pct_stating_fee
+2026-07-01,metro,Greater Boston,79.4,40.2
+2026-07-01,neighborhood,Oak Square,91.0,95.7
+2026-07-01,neighborhood,Boston Downtown,90.2,51.3
+2026-07-01,neighborhood,Riverside,88.7,46.9
+2026-07-01,neighborhood,Brighton,88.7,60.0
+2026-07-01,neighborhood,Allston,87.6,56.0
+2026-07-01,neighborhood,Jamaica Plain,87.1,27.8
+2026-07-01,neighborhood,Spring Hill,85.7,45.8
+2026-07-01,neighborhood,Aspinwall Hill,84.5,98.3
+2026-07-01,neighborhood,North Brookline,83.4,98.8
+2026-07-01,neighborhood,South Boston,82.9,25.5
+2026-07-01,neighborhood,Dorchester,81.4,19.0
+2026-07-01,neighborhood,Boston,81.3,45.3
+2026-07-01,neighborhood,Longwood,80.3,75.5
+2026-07-01,neighborhood,Fenway,80.1,44.3
+2026-07-01,neighborhood,Neighborhood Nine,79.0,52.5
+2026-07-01,neighborhood,Beacon Hill,78.5,46.8
+2026-07-01,neighborhood,Mid Cambridge,77.5,35.7
+2026-07-01,neighborhood,Roxbury,76.8,55.1
+2026-07-01,neighborhood,Cambridge,76.7,28.1
+2026-07-01,neighborhood,Somerville,75.3,32.6
+2026-07-01,neighborhood,Back Bay,72.7,46.4
+2026-07-01,neighborhood,Brookline,72.5,34.8
+2026-07-01,neighborhood,North End,72.2,39.5
+2026-07-01,neighborhood,Chestnut Hill,71.4,21.5
+2026-07-01,neighborhood,South End,70.4,23.2
+2026-07-01,neighborhood,Corey Hill,69.6,98.6
+2026-07-01,neighborhood,Mission Hill,65.1,57.1
+2026-07-01,neighborhood,East Cambridge,63.0,19.4
+2026-07-01,neighborhood,Coolidge Corner,53.5,10.5
+2026-07-01,neighborhood,East Boston,49.2,42.3
