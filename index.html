@@ -576,6 +576,29 @@
     }
     .desk-contact:hover { background: #0d3060; color: var(--white); }
 
+
+    /* v4.4.0 renter blocks */
+    .tk-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 4px; }
+    .tk { background: var(--white); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; }
+    .tk-h { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+    .tk-v { font-size: 28px; font-weight: 800; color: var(--navy); margin: 6px 0 4px; letter-spacing: -.02em; }
+    .tk-s { font-size: 13px; line-height: 1.5; color: var(--muted); }
+    .tk-s a { color: var(--sky); font-weight: 600; }
+    .tk-city { font-size: 10px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 1px 4px; margin-left: 5px; }
+    .cmp-wrap { overflow-x: auto; background: var(--white); border: 1px solid var(--line); border-radius: 10px; }
+    table.cmp { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 620px; }
+    table.cmp th, table.cmp td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--line); }
+    table.cmp td, table.cmp th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    table.cmp thead th { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); cursor: pointer; user-select: none; white-space: nowrap; }
+    table.cmp thead th:hover { color: var(--navy); }
+    table.cmp thead th[aria-sort]::after { content: ' ▾'; }
+    table.cmp thead th[aria-sort="ascending"]::after { content: ' ▴'; }
+    table.cmp tbody th { font-weight: 600; }
+    table.cmp tbody th a { color: var(--navy); }
+    table.cmp tbody th a:hover { color: var(--sky); }
+    table.cmp tbody tr:hover { background: rgba(0,0,0,.02); }
+    table.cmp tbody tr:last-child th, table.cmp tbody tr:last-child td { border-bottom: none; }
+    @media (max-width: 720px) { .tk-grid { grid-template-columns: 1fr; } }
     .press-items { list-style: none; }
 
     .press-item {
@@ -697,16 +720,54 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Where does Spot Easy's rent data come from?",
-      "acceptedAnswer": { "@type": "Answer", "text": "From Spot Easy's own live listings database - active rental listings posted or verified by licensed real estate agents across Greater Boston, including listings sourced through their brokerages. These are asking rents on real listings, not survey responses, estimates or modeled figures." } },
-    { "@type": "Question", "name": "Is this average or median rent?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Both. Average (mean) asking rent leads every page, because it is the figure most people mean when they ask what rent costs. Median is published alongside it in the JSON feed and the CSV, and the month-by-month history table is median. Average runs higher than median in Greater Boston, because expensive listings pull the top of the market." } },
-    { "@type": "Question", "name": "What does \u0022as of September 2026\u0022 mean?",
-      "acceptedAnswer": { "@type": "Answer", "text": "It means the figures were published in September 2026 and cover listings that were on the market during August 2026. Spot Easy publishes on the 1st of each month for the month that just ended, and every page names both dates." } },
-    { "@type": "Question", "name": "Can I republish these numbers?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes, including commercially. The data is licensed CC BY 4.0 - credit Spot Easy and link back to the page you took it from. Journalists who need a cut Spot Easy does not publish can email Joel Mundele, CEO, at joel@spoteasy.com." } },
-    { "@type": "Question", "name": "Why is my neighborhood missing from the Boston Rent Index?",
-      "acceptedAnswer": { "@type": "Answer", "text": "A neighborhood and bedroom size is published only when at least 20 active listings support it that month. Below that, a median moves on one or two listings and is not worth publishing, so Spot Easy suppresses the cell rather than print a number it would not rely on itself." } }
+    {
+      "@type": "Question",
+      "name": "Which Boston neighborhoods are cheapest to rent in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Of the areas Spot Easy publishes, Dorchester, Roxbury and Allston consistently sit at the low end for a 1-bedroom, and Back Bay, Beacon Hill and the South End at the high end. The comparison table on spoteasy.com/data is sortable, so every area can be ranked by a specific bedroom size - the cheapest studio market is not always the cheapest 2-bedroom market."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is rent in Boston going up or down?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The year-over-year figure on spoteasy.com/data compares this month against the same month last year for a Greater Boston 1-bedroom. For a single neighborhood, each Boston Rent Index page carries a 13-month history table showing whether that area is moving with the market or against it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much rent can I afford in Boston?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A common rule is to keep rent near 30% of gross income - about $2,000 a month on an $80,000 salary, or $2,500 on $100,000. Boston landlords also commonly ask for first month, last month and a security deposit up front, so budget for the move-in cost as well as the monthly rent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it cheaper to get a roommate in Boston?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost always. Splitting a 2-bedroom two ways costs meaningfully less per person than renting a studio alone across Greater Boston, and every Spot Easy neighborhood page runs the same comparison for that specific area."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my neighborhood missing from the Boston Rent Index?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Spot Easy publishes a neighborhood and bedroom size only when at least 20 active listings support it that month. Below that, one or two unusual listings can swing the number by several hundred dollars, so a dash is shown instead of a figure that would not be reliable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does Spot Easy's rent data come from, and can I republish it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "From Spot Easy's own live listings database - active rental listings posted or verified by licensed real estate agents across Greater Boston, including listings sourced through their brokerages. These are asking rents on real listings, not survey responses, estimates or modeled figures. The data is free to republish under CC BY 4.0 with attribution."
+      }
+    }
   ]
 }
   </script>
@@ -799,10 +860,64 @@ const PAGE_DATA = {
     <p>Boston rent doesn't make sense until you see the actual numbers. Each month we publish asking prices from <strong>licensed agents'</strong> active listings — Boston, Cambridge, Somerville, Brookline, and the surrounding cities. Not national estimates.</p>
   </div>
 
-  <!-- Featured -->
+
+  <!-- Quick takeaways -->
   <section class="section fade-up">
     <div class="section-head">
       <span class="section-num">01</span>
+      <h2 class="section-title">The short version</h2>
+    </div>
+    <div class="tk-grid">
+      <!-- TAKEAWAYS:START -->
+      <div class="tk"><div class="tk-h">Cheapest 1-bedroom</div><div class="tk-v">$2,463</div><div class="tk-s"><a href="/data/rent-index/brighton/">Brighton</a> · priciest is <a href="/data/rent-index/boston-downtown/">Boston Downtown</a> at $3,610</div></div>
+      <div class="tk"><div class="tk-h">Year over year</div><div class="tk-v">↑ 5.7%</div><div class="tk-s">1-bedroom rent is up $148 (5.7%) since August 2025, at a median of $2,748</div></div>
+      <div class="tk"><div class="tk-h">Studio or split a 2-bedroom</div><div class="tk-v">$595/mo</div><div class="tk-s">A studio averages $2,361. Half a 2-bedroom is $1,766 each — that much cheaper with a roommate.</div></div>
+      <!-- TAKEAWAYS:END -->
+    </div>
+  </section>
+
+  <!-- Full comparison table -->
+  <section class="section fade-up">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Average rent in every area we cover</h2>
+    </div>
+    <p class="note" style="margin:-6px 0 14px;font-size:13px;color:var(--muted)">Average asking rent by bedroom size, published September 2026 from August 2026 listings. Tap a column to sort. A dash means fewer than 20 active listings that month, so we do not publish a figure. Cambridge, Somerville and Brookline are reported citywide.</p>
+    <div class="cmp-wrap">
+      <!-- TABLE:START -->
+      <table class="cmp" id="cmp">
+        <thead><tr><th scope="col" data-sort="text">Area</th><th scope="col" class="num" data-sort="num">Studio</th><th scope="col" class="num" data-sort="num">1 BR</th><th scope="col" class="num" data-sort="num">2 BR</th><th scope="col" class="num" data-sort="num">3 BR</th><th scope="col" class="num" data-sort="num">4+ BR</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="/data/rent-index/allston/">Allston</a></th><td data-v="2108">$2,108</td><td data-v="2637">$2,637</td><td data-v="3372">$3,372</td><td data-v="3568">$3,568</td><td data-v="4871">$4,871</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/back-bay/">Back Bay</a></th><td data-v="2790">$2,790</td><td data-v="3574">$3,574</td><td data-v="5196">$5,196</td><td data-v="">—</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/beacon-hill/">Beacon Hill</a></th><td data-v="2488">$2,488</td><td data-v="3069">$3,069</td><td data-v="3988">$3,988</td><td data-v="">—</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/boston/">Boston</a> <span class="tk-city">city</span></th><td data-v="2373">$2,373</td><td data-v="2928">$2,928</td><td data-v="3632">$3,632</td><td data-v="4069">$4,069</td><td data-v="4705">$4,705</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/boston-downtown/">Boston Downtown</a></th><td data-v="">—</td><td data-v="3610">$3,610</td><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/brighton/">Brighton</a></th><td data-v="2110">$2,110</td><td data-v="2463">$2,463</td><td data-v="2986">$2,986</td><td data-v="3761">$3,761</td><td data-v="4745">$4,745</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/brookline/">Brookline</a> <span class="tk-city">city</span></th><td data-v="2421">$2,421</td><td data-v="2890">$2,890</td><td data-v="3855">$3,855</td><td data-v="4969">$4,969</td><td data-v="6130">$6,130</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/cambridge/">Cambridge</a> <span class="tk-city">city</span></th><td data-v="2366">$2,366</td><td data-v="2975">$2,975</td><td data-v="3825">$3,825</td><td data-v="4615">$4,615</td><td data-v="6579">$6,579</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/coolidge-corner/">Coolidge Corner</a></th><td data-v="2533">$2,533</td><td data-v="2802">$2,802</td><td data-v="3740">$3,740</td><td data-v="4700">$4,700</td><td data-v="6502">$6,502</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/dorchester/">Dorchester</a></th><td data-v="">—</td><td data-v="2544">$2,544</td><td data-v="3014">$3,014</td><td data-v="3340">$3,340</td><td data-v="3937">$3,937</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/east-boston/">East Boston</a></th><td data-v="">—</td><td data-v="2670">$2,670</td><td data-v="3192">$3,192</td><td data-v="3274">$3,274</td><td data-v="3638">$3,638</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/fenway/">Fenway</a></th><td data-v="2303">$2,303</td><td data-v="2856">$2,856</td><td data-v="3862">$3,862</td><td data-v="4811">$4,811</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/jamaica-plain/">Jamaica Plain</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="3265">$3,265</td><td data-v="3470">$3,470</td><td data-v="4515">$4,515</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/mission-hill/">Mission Hill</a></th><td data-v="">—</td><td data-v="2952">$2,952</td><td data-v="2910">$2,910</td><td data-v="3682">$3,682</td><td data-v="5030">$5,030</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/north-end/">North End</a></th><td data-v="">—</td><td data-v="3411">$3,411</td><td data-v="4500">$4,500</td><td data-v="">—</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/oak-square/">Oak Square</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="3028">$3,028</td><td data-v="3495">$3,495</td><td data-v="4660">$4,660</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/roxbury/">Roxbury</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="3022">$3,022</td><td data-v="3607">$3,607</td><td data-v="4229">$4,229</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/somerville/">Somerville</a> <span class="tk-city">city</span></th><td data-v="">—</td><td data-v="2570">$2,570</td><td data-v="3253">$3,253</td><td data-v="3801">$3,801</td><td data-v="4909">$4,909</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/south-boston/">South Boston</a></th><td data-v="">—</td><td data-v="3106">$3,106</td><td data-v="4155">$4,155</td><td data-v="4984">$4,984</td><td data-v="5900">$5,900</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/south-end/">South End</a></th><td data-v="2374">$2,374</td><td data-v="3318">$3,318</td><td data-v="4559">$4,559</td><td data-v="5808">$5,808</td><td data-v="">—</td></tr>
+        </tbody>
+      </table>
+      <!-- TABLE:END -->
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section class="section fade-up">
+    <div class="section-head">
+      <span class="section-num">03</span>
       <h2 class="section-title">This Month&#39;s Rent Report</h2>
     </div>
     <a href="rent-index/" id="featured-link" class="featured-card">
@@ -822,31 +937,34 @@ const PAGE_DATA = {
   <!-- FAQ -->
   <section class="section fade-up">
     <div class="section-head">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Questions about this data</h2>
+      <span class="section-num">04</span>
+      <h2 class="section-title">Common questions from renters</h2>
     </div>
     <div class="method-body" style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px 24px">
-      <h3>Where does Spot Easy's rent data come from?</h3>
-      <p>From Spot Easy's own live listings database — active rental listings posted or verified by licensed real estate agents across Greater Boston, including listings sourced through their brokerages. These are asking rents on real listings, not survey responses, estimates or modeled figures.</p>
+      <h3>Which Boston neighborhoods are cheapest to rent in?</h3>
+      <p>Of the areas we publish, Dorchester, Roxbury and Allston consistently sit at the low end for a 1-bedroom, and Back Bay, Beacon Hill and the South End at the high end. The table above is sortable, so you can rank every area by the bedroom size you actually need — the cheapest studio market is not always the cheapest 2-bedroom market.</p>
 
-      <h3>Is this average or median rent?</h3>
-      <p>Both. Average (mean) asking rent leads every page, because it is the figure most people mean when they ask what rent costs. Median is published alongside it in the JSON feed and the CSV, and the month-by-month history table is median. Average runs higher than median in Greater Boston, because expensive listings pull the top of the market.</p>
+      <h3>Is rent in Boston going up or down?</h3>
+      <p>Look at the year-over-year figure at the top of this page: it compares this month against the same month last year for a Greater Boston 1-bedroom. For a single neighborhood, each <a href="rent-index/">Rent Index</a> page carries a 13-month history table so you can see whether a specific area is moving with the market or against it.</p>
 
-      <h3>What does "as of September 2026" mean?</h3>
-      <p>It means the figures were published in September 2026 and cover listings that were on the market during August 2026. We publish on the 1st of each month for the month that just ended, and every page names both dates.</p>
+      <h3>How much rent can I afford?</h3>
+      <p>A common rule is to keep rent near 30% of gross income — about $2,000 a month on a $80,000 salary, or $2,500 on $100,000. Compare that against the table above to see which areas and bedroom sizes are realistic before you start touring. Boston landlords also commonly ask for first month, last month and a security deposit up front, so budget for the move-in cost as well as the monthly rent.</p>
 
-      <h3>Can I republish these numbers?</h3>
-      <p>Yes, including commercially. The data is licensed CC BY 4.0 — credit Spot Easy and link back to the page you took it from. Journalists who need a cut we do not publish can email Joel Mundele, CEO, at <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
+      <h3>Is it cheaper to get a roommate?</h3>
+      <p>Almost always, and the gap is bigger than people expect. Splitting a 2-bedroom two ways costs meaningfully less per person than renting a studio alone across Greater Boston — the exact figure is in the takeaways above, and every neighborhood page runs the same comparison for that area.</p>
 
       <h3>Why is my neighborhood missing?</h3>
-      <p>A neighborhood and bedroom size is published only when at least 20 active listings support it that month. Below that, a median moves on one or two listings and is not worth publishing, so we suppress the cell rather than print a number we would not rely on ourselves.</p>
-    </div>
+      <p>We publish a neighborhood and bedroom size only when at least 20 active listings support it that month. Below that, one or two unusual listings can swing the number several hundred dollars, so we show a dash instead of a figure we would not rely on ourselves.</p>
+
+      <h3>Where does this data come from, and can I republish it?</h3>
+      <p>From Spot Easy's own live listings database — active rental listings posted or verified by licensed real estate agents across Greater Boston, including listings sourced through their brokerages. These are asking rents on real listings, not survey responses, estimates or modeled figures. Everything here is free to republish under CC BY 4.0; see <a href="#downloads">Download the data</a> below.</p>
+</div>
   </section>
 
   <!-- Data Desk -->
   <section class="data-desk fade-up">
     <div class="section-head">
-      <span class="section-num">03</span>
+      <span class="section-num">05</span>
       <h2 class="section-title">Data Desk</h2>
     </div>
     <div class="desk-grid">
@@ -890,8 +1008,8 @@ const PAGE_DATA = {
   <!-- Downloads & license -->
   <section class="section fade-up">
     <div class="section-head">
-      <span class="section-num">04</span>
-      <h2 class="section-title">Download the data</h2>
+      <span class="section-num">06</span>
+      <h2 class="section-title" id="downloads">Download the data</h2>
     </div>
     <div class="method-body" style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px 24px">
       <p>Every figure we publish is downloadable. The CSV covers Greater Boston and every published neighborhood, by bedroom count. The JSON feed is what our own pages read.</p>
@@ -1002,6 +1120,38 @@ const PAGE_DATA = {
   if (d.latest_report_url) document.getElementById('featured-link').href = d.latest_report_url;
 
   /* ── Teasers ── */
+
+  // Comparison table sorting. The table is fully readable without JS; this only
+  // reorders rows. Numeric columns sort on data-v so "—" (no published figure)
+  // always sinks to the bottom rather than sorting as zero.
+  const cmp = document.getElementById('cmp');
+  if (cmp) {
+    const tb = cmp.tBodies[0];
+    cmp.querySelectorAll('thead th').forEach((th, i) => {
+      th.addEventListener('click', () => {
+        const numeric = th.dataset.sort === 'num';
+        const asc = th.getAttribute('aria-sort') !== 'ascending';
+        cmp.querySelectorAll('thead th').forEach(o => o.removeAttribute('aria-sort'));
+        th.setAttribute('aria-sort', asc ? 'ascending' : 'descending');
+        const rows = [...tb.rows];
+        rows.sort((a, b) => {
+          const ca = a.cells[i], cb = b.cells[i];
+          if (numeric) {
+            const va = ca.dataset.v === '' ? null : Number(ca.dataset.v);
+            const vb = cb.dataset.v === '' ? null : Number(cb.dataset.v);
+            if (va === null && vb === null) return 0;
+            if (va === null) return 1;        // blanks last, both directions
+            if (vb === null) return -1;
+            return asc ? va - vb : vb - va;
+          }
+          const ta = ca.textContent.trim(), tbx = cb.textContent.trim();
+          return asc ? ta.localeCompare(tbx) : tbx.localeCompare(ta);
+        });
+        rows.forEach(r => tb.appendChild(r));
+      });
+    });
+  }
+
   const citeEl = document.getElementById('cite-as');
   if (citeEl && d.cite_label && d.cite_url) citeEl.textContent = `${d.cite_label}. ${d.cite_url}`;
 
