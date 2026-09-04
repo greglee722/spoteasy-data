@@ -4,9 +4,8 @@
   "methodology": {
     "cities": "Greater Boston (10 cities)",
     "n_threshold": 20,
-    "rent_filter": "$500–$20,000",
+    "rent_filter": "$500\u2013$20,000",
     "dedupe_key": "composite_address_key + unit_num + beds_norm",
-    "mlspin": "included",
     "publishes_listing_counts": false
   },
   "metro": {
@@ -236,13 +235,7 @@
           "p75": 5400
         }
       },
-      "noFee": {
-        "area": "Allston",
-        "slug": "allston",
-        "city": "Boston",
-        "pct_no_fee": 98.7,
-        "pct_stating_fee": 88.4
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Back Bay",
@@ -359,13 +352,7 @@
         "3": null,
         "4+": null
       },
-      "noFee": {
-        "area": "Back Bay",
-        "slug": "back-bay",
-        "city": "Boston",
-        "pct_no_fee": 95.3,
-        "pct_stating_fee": 89.7
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Beacon Hill",
@@ -482,13 +469,7 @@
         "3": null,
         "4+": null
       },
-      "noFee": {
-        "area": "Beacon Hill",
-        "slug": "beacon-hill",
-        "city": "Boston",
-        "pct_no_fee": 96.8,
-        "pct_stating_fee": 90.5
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Boston",
@@ -545,13 +526,7 @@
           "p75": 5261
         }
       },
-      "noFee": {
-        "area": "Boston",
-        "slug": "boston",
-        "city": "Boston",
-        "pct_no_fee": 97.6,
-        "pct_stating_fee": 90.4
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Boston Downtown",
@@ -618,13 +593,7 @@
         "3": null,
         "4+": null
       },
-      "noFee": {
-        "area": "Boston Downtown",
-        "slug": "boston-downtown",
-        "city": "Boston",
-        "pct_no_fee": 98.5,
-        "pct_stating_fee": 88.2
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Brighton",
@@ -751,13 +720,7 @@
           "p75": 5225
         }
       },
-      "noFee": {
-        "area": "Brighton",
-        "slug": "brighton",
-        "city": "Boston",
-        "pct_no_fee": 96.7,
-        "pct_stating_fee": 90.6
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Brookline",
@@ -884,13 +847,7 @@
           "p75": 6675
         }
       },
-      "noFee": {
-        "area": "Brookline",
-        "slug": "brookline",
-        "city": "Brookline",
-        "pct_no_fee": 97.3,
-        "pct_stating_fee": 85.3
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Cambridge",
@@ -1017,13 +974,7 @@
           "p75": 7675
         }
       },
-      "noFee": {
-        "area": "Cambridge",
-        "slug": "cambridge",
-        "city": "Cambridge",
-        "pct_no_fee": 97.5,
-        "pct_stating_fee": 90.8
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Charlestown",
@@ -1299,13 +1250,7 @@
           "p75": 7000
         }
       },
-      "noFee": {
-        "area": "Coolidge Corner",
-        "slug": "coolidge-corner",
-        "city": "Brookline",
-        "pct_no_fee": 95.8,
-        "pct_stating_fee": 80.4
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Dorchester",
@@ -1422,13 +1367,7 @@
           "p75": 4100
         }
       },
-      "noFee": {
-        "area": "Dorchester",
-        "slug": "dorchester",
-        "city": "Boston",
-        "pct_no_fee": 99.1,
-        "pct_stating_fee": 88.7
-      }
+      "noFee": null
     },
     {
       "neighborhood": "East Boston",
@@ -1545,13 +1484,7 @@
           "p75": 3813
         }
       },
-      "noFee": {
-        "area": "East Boston",
-        "slug": "east-boston",
-        "city": "Boston",
-        "pct_no_fee": 100,
-        "pct_stating_fee": 86.8
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Fenway",
@@ -1673,13 +1606,7 @@
         },
         "4+": null
       },
-      "noFee": {
-        "area": "Fenway",
-        "slug": "fenway",
-        "city": "Boston",
-        "pct_no_fee": 97.2,
-        "pct_stating_fee": 90.3
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Jamaica Plain",
@@ -1791,13 +1718,7 @@
           "p75": 5000
         }
       },
-      "noFee": {
-        "area": "Jamaica Plain",
-        "slug": "jamaica-plain",
-        "city": "Boston",
-        "pct_no_fee": 95.9,
-        "pct_stating_fee": 86.6
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Mission Hill",
@@ -1914,13 +1835,7 @@
           "p75": 5688
         }
       },
-      "noFee": {
-        "area": "Mission Hill",
-        "slug": "mission-hill",
-        "city": "Boston",
-        "pct_no_fee": 96.1,
-        "pct_stating_fee": 96.3
-      }
+      "noFee": null
     },
     {
       "neighborhood": "North End",
@@ -2027,13 +1942,7 @@
         "3": null,
         "4+": null
       },
-      "noFee": {
-        "area": "North End",
-        "slug": "north-end",
-        "city": "Boston",
-        "pct_no_fee": 96.2,
-        "pct_stating_fee": 97.2
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Roslindale",
@@ -2140,13 +2049,7 @@
         },
         "4+": null
       },
-      "noFee": {
-        "area": "Roslindale",
-        "slug": "roslindale",
-        "city": "Boston",
-        "pct_no_fee": 98.1,
-        "pct_stating_fee": 90
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Roxbury",
@@ -2258,13 +2161,7 @@
           "p75": 4624
         }
       },
-      "noFee": {
-        "area": "Roxbury",
-        "slug": "roxbury",
-        "city": "Boston",
-        "pct_no_fee": 99.4,
-        "pct_stating_fee": 94.1
-      }
+      "noFee": null
     },
     {
       "neighborhood": "Somerville",
@@ -2381,13 +2278,7 @@
           "p75": 5450
         }
       },
-      "noFee": {
-        "area": "Somerville",
-        "slug": "somerville",
-        "city": "Somerville",
-        "pct_no_fee": 98.2,
-        "pct_stating_fee": 91.8
-      }
+      "noFee": null
     },
     {
       "neighborhood": "South Boston",
@@ -2504,13 +2395,7 @@
           "p75": 6313
         }
       },
-      "noFee": {
-        "area": "South Boston",
-        "slug": "south-boston",
-        "city": "Boston",
-        "pct_no_fee": 97.9,
-        "pct_stating_fee": 87.4
-      }
+      "noFee": null
     },
     {
       "neighborhood": "South End",
@@ -2632,13 +2517,7 @@
         },
         "4+": null
       },
-      "noFee": {
-        "area": "South End",
-        "slug": "south-end",
-        "city": "Boston",
-        "pct_no_fee": 96.3,
-        "pct_stating_fee": 90.4
-      }
+      "noFee": null
     },
     {
       "neighborhood": "West Roxbury",

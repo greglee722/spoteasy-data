@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boston Rental Market Data · Spot Easy</title>
-  <meta name="description" content="Monthly median rent by neighborhood, bedroom count, and building type — Greater Boston rental data from Spot Easy's verified listings database, updated monthly." />
+  <title>Greater Boston Rental Market Data | Spot Easy</title>
+  <meta name="description" content="Free rental market data for Greater Boston: average and median asking rent by neighborhood and bedroom across ten cities. Updated monthly, CC BY 4.0." />
   <link rel="canonical" href="https://www.spoteasy.com/data" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Boston Rental Market Data · Spot Easy" />
-  <meta property="og:description" content="Real numbers from verified, licensed real estate agents. Median rents, neighborhood trends, and market signals for Greater Boston — updated monthly." />
+  <meta property="og:title" content="Greater Boston Rental Market Data | Spot Easy" />
+  <meta property="og:description" content="Average and median asking rent across Greater Boston, from verified agents' active listings. Free to download and republish with attribution." />
   <meta property="og:url" content="https://www.spoteasy.com/data" />
   <meta property="og:image" content="https://www.spoteasy.com/data/og-data-desk.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Boston Rental Market Data · Spot Easy" />
-  <meta name="twitter:description" content="Real numbers from verified agents. Median rents by neighborhood, updated monthly." />
+  <meta name="twitter:description" content="Average and median Boston rent by neighborhood, updated monthly. Free CSV and JSON, CC BY 4.0." />
   <meta name="twitter:image" content="https://www.spoteasy.com/data/og-data-desk.png" />
 
   <script type="application/ld+json">
@@ -24,13 +24,13 @@
       {
         "@type": "Dataset",
         "name": "Boston Rental Market Data — Spot Easy",
-        "description": "Monthly median asking rent by neighborhood and bedroom count for Greater Boston, sourced from active listings posted by verified, licensed real estate agents on Spot Easy.",
+        "description": "Monthly average (mean) and median asking rent by neighborhood and bedroom count for Greater Boston, sourced from active listings posted by verified, licensed real estate agents on Spot Easy.",
         "url": "https://www.spoteasy.com/data",
         "creator": { "@type": "Organization", "name": "Spot Easy", "url": "https://www.spoteasy.com" },
         "temporalCoverage": "2026/..",
         "spatialCoverage": { "@type": "Place", "name": "Greater Boston, Massachusetts" },
-        "variableMeasured": ["Median asking rent","25th percentile rent","75th percentile rent","Month-over-month rent change","Year-over-year rent change","New listings on market","Listings off market"],
-        "dateModified": "2026-08-01",
+        "variableMeasured": ["Average asking rent","Median asking rent","25th percentile rent","75th percentile rent","Month-over-month rent change","Year-over-year rent change"],
+        "dateModified": "2026-09-01",
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "includedInDataCatalog": { "@id": "https://www.spoteasy.com/data#catalog" }
       },
@@ -38,15 +38,13 @@
         "@type": "DataCatalog",
         "@id": "https://www.spoteasy.com/data#catalog",
         "name": "Spot Easy Boston Data Desk",
-        "description": "Free, monthly rental-market datasets for Greater Boston, published by Spot Easy from active listings posted by verified, licensed real estate agents.",
+        "description": "Free, monthly rental-market datasets for Greater Boston, published by Spot Easy from active listings posted by verified, licensed real estate agents. CSV and JSON downloads, CC BY 4.0.",
         "url": "https://www.spoteasy.com/data",
         "publisher": { "@type": "Organization", "name": "Spot Easy", "url": "https://www.spoteasy.com" },
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "isAccessibleForFree": true,
         "dataset": [
-          { "@type": "Dataset", "name": "Boston Rent Index", "url": "https://www.spoteasy.com/data/rent-index" },
-          { "@type": "Dataset", "name": "Boston Broker-Fee Index", "url": "https://www.spoteasy.com/data/broker-fee-index" },
-          { "@type": "Dataset", "name": "Sept 1 Countdown", "url": "https://www.spoteasy.com/data/sept-1-countdown" }
+          { "@type": "Dataset", "name": "Boston Rent Index", "url": "https://www.spoteasy.com/data/rent-index" }
         ]
       },
       {
@@ -694,56 +692,66 @@
       .desk-divider { height: 1px; width: auto; }
     }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Where does Spot Easy's rent data come from?",
+      "acceptedAnswer": { "@type": "Answer", "text": "From Spot Easy's own live listings database - active rental listings posted or verified by licensed real estate agents across Greater Boston, including listings sourced through their brokerages. These are asking rents on real listings, not survey responses, estimates or modeled figures." } },
+    { "@type": "Question", "name": "Is this average or median rent?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both. Average (mean) asking rent leads every page, because it is the figure most people mean when they ask what rent costs. Median is published alongside it in the JSON feed and the CSV, and the month-by-month history table is median. Average runs higher than median in Greater Boston, because expensive listings pull the top of the market." } },
+    { "@type": "Question", "name": "What does \u0022as of September 2026\u0022 mean?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It means the figures were published in September 2026 and cover listings that were on the market during August 2026. Spot Easy publishes on the 1st of each month for the month that just ended, and every page names both dates." } },
+    { "@type": "Question", "name": "Can I republish these numbers?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, including commercially. The data is licensed CC BY 4.0 - credit Spot Easy and link back to the page you took it from. Journalists who need a cut Spot Easy does not publish can email Joel Mundele, CEO, at joel@spoteasy.com." } },
+    { "@type": "Question", "name": "Why is my neighborhood missing from the Boston Rent Index?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A neighborhood and bedroom size is published only when at least 20 active listings support it that month. Below that, a median moves on one or two listings and is not worth publishing, so Spot Easy suppresses the cell rather than print a number it would not rely on itself." } }
+  ]
+}
+  </script>
 </head>
 <body>
 
 <!-- ══════════ DATA LAYER — update monthly ══════════ -->
 <script>
 const PAGE_DATA = {
-  "as_of_date": "August 2026",
-  "sample_count": 1568,
+  "as_of_date": "September 2026",
+  "data_month": "August 2026",
   "latest_report_url": "/data/rent-index/",
+  "cite_url": "https://www.spoteasy.com/data/rent-index/2026-08",
+  "cite_label": "Spot Easy Boston Rent Index, August 2026 listings, published September 2026",
   "tiles": [
     {
       "label": "Studio",
-      "value": 2250,
-      "delta": 45,
-      "dir": "down"
+      "value": 2361,
+      "delta": 0,
+      "dir": "flat"
     },
     {
       "label": "1 BR",
-      "value": 2748,
-      "delta": 2,
-      "dir": "down"
+      "value": 2863,
+      "delta": 0,
+      "dir": "flat"
     },
     {
       "label": "2 BR",
-      "value": 3250,
-      "delta": 143,
-      "dir": "down"
+      "value": 3533,
+      "delta": 0,
+      "dir": "flat"
     },
     {
       "label": "3 BR",
-      "value": 3650,
-      "delta": 250,
-      "dir": "down"
+      "value": 4085,
+      "delta": 0,
+      "dir": "flat"
     }
   ],
   "teasers": {
     "rent_index": {
-      "stat": "$3,250",
-      "label": "2BR median · Greater Boston",
-      "delta": "-$143 vs. last month"
-    },
-    "sept1": {
-      "stat": "0",
-      "label": "days until Sept 1",
-      "delta": "3,379 units already listed"
-    },
-    "broker_fee": {
-      "stat": "97.8%",
-      "label": "of stated-fee listings have no broker fee · Greater Boston",
-      "delta": "updated monthly"
+      "stat": "$3,533",
+      "label": "2BR average \u00b7 Greater Boston",
+      "delta": "20 neighborhood pages"
     }
   }
 };
@@ -753,30 +761,30 @@ const PAGE_DATA = {
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-eyebrow">Boston Data Desk · Updated Monthly</div>
-    <h1>Boston Rental <br><em>Market Data</em></h1>
-    <p class="hero-sub">Real rent numbers from verified, licensed real estate agents — not estimates, not national averages. Published monthly, free for anyone to use.</p>
+    <h1>Greater Boston <br><em>Rental Market Data</em></h1>
+    <p class="hero-sub">As of September 2026, the average asking rent for a 1-bedroom across Greater Boston is <strong>$2,863</strong>, based on August 2026 listings from verified, licensed agents. We cover ten cities — Boston, Cambridge, Somerville, Brookline, Medford, Newton, Everett, Quincy, Watertown and Malden — plus every Boston neighborhood with enough listings to report. Free to download and republish. <a href="rent-index/">See every neighborhood in the Boston Rent Index →</a></p>
 
-    <div class="stat-strip-header">Median asking rent — Greater Boston</div>
+    <div class="stat-strip-header">Average asking rent — Greater Boston · published September 2026, based on August 2026 listings</div>
     <div class="stat-strip" id="stat-strip">
       <div class="stat-cell">
         <div class="stat-label">Studio</div>
-        <div class="stat-value" data-target="2250">$2,250</div>
-        <div class="stat-delta down">↓ $45 vs. last month</div>
+        <div class="stat-value" data-target="2361">$2,361</div>
+        <div class="stat-delta flat">updated monthly</div>
       </div>
       <div class="stat-cell">
         <div class="stat-label">1 BR</div>
-        <div class="stat-value" data-target="2748">$2,748</div>
-        <div class="stat-delta down">↓ $2 vs. last month</div>
+        <div class="stat-value" data-target="2863">$2,863</div>
+        <div class="stat-delta flat">updated monthly</div>
       </div>
       <div class="stat-cell">
         <div class="stat-label">2 BR</div>
-        <div class="stat-value" data-target="3250">$3,250</div>
-        <div class="stat-delta down">↓ $143 vs. last month</div>
+        <div class="stat-value" data-target="3533">$3,533</div>
+        <div class="stat-delta flat">updated monthly</div>
       </div>
       <div class="stat-cell">
         <div class="stat-label">3 BR</div>
-        <div class="stat-value" data-target="3650">$3,650</div>
-        <div class="stat-delta down">↓ $250 vs. last month</div>
+        <div class="stat-value" data-target="4085">$4,085</div>
+        <div class="stat-delta flat">updated monthly</div>
       </div>
     </div>
     <div class="hero-meta" id="hero-meta"></div>
@@ -801,7 +809,8 @@ const PAGE_DATA = {
       <div>
         <div class="feat-live-badge">Live · Monthly</div>
         <div class="feat-title">Boston Rent Index</div>
-        <p class="feat-desc">Allston, Jamaica Plain, South End — the price gap between them is bigger than most people expect. Each month we publish a neighborhood-by-neighborhood breakdown with sample sizes, so you can see exactly how much data is behind each number.</p>
+        <p class="feat-desc">Allston, Jamaica Plain, South End — the price gap between them is bigger than most people expect. Each month we publish average and median asking rent for every Greater Boston neighborhood with enough active listings to report, broken down by bedroom count.</p>
+        <div class="report-teaser" id="teaser-rent_index"><span class="teaser-stat">$3,533</span> <span class="teaser-label">2BR average · Greater Boston</span> <span class="teaser-delta">20 neighborhood pages</span></div>
         <div class="feat-meta" id="feat-meta">Published on the 1st of each month</div>
       </div>
       <div>
@@ -810,46 +819,28 @@ const PAGE_DATA = {
     </a>
   </section>
 
-  <!-- All Reports -->
+  <!-- FAQ -->
   <section class="section fade-up">
     <div class="section-head">
       <span class="section-num">02</span>
-      <h2 class="section-title">Boston Rent &amp; Housing Reports</h2>
-      <span class="section-live-badge">Live · Updated Monthly</span>
+      <h2 class="section-title">Questions about this data</h2>
     </div>
-    <ul class="reports-list">
+    <div class="method-body" style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px 24px">
+      <h3>Where does Spot Easy's rent data come from?</h3>
+      <p>From Spot Easy's own live listings database — active rental listings posted or verified by licensed real estate agents across Greater Boston, including listings sourced through their brokerages. These are asking rents on real listings, not survey responses, estimates or modeled figures.</p>
 
-      <li class="report-row is-live" onclick="location.href='rent-index/'" data-teaser="rent_index">
-        <span class="report-row-num">01</span>
-        <div>
-          <div class="report-row-name">Boston Rent Index</div>
-          <div class="report-row-desc">What does a 1-bedroom go for in Allston this week? A studio in Fenway? Median asking rents for every major Boston neighborhood, plus building-type and triple-decker breakdowns.</div>
-          <div class="report-teaser" id="teaser-rent_index"><span class="teaser-stat">$3,250</span> <span class="teaser-label">2BR median · Greater Boston</span> <span class="teaser-delta">-$143 vs. last month</span></div>
-        </div>
-        <button class="report-row-btn">View Report →</button>
-      </li>
+      <h3>Is this average or median rent?</h3>
+      <p>Both. Average (mean) asking rent leads every page, because it is the figure most people mean when they ask what rent costs. Median is published alongside it in the JSON feed and the CSV, and the month-by-month history table is median. Average runs higher than median in Greater Boston, because expensive listings pull the top of the market.</p>
 
-      <li class="report-row is-live" onclick="location.href='sept-1-countdown/'" data-teaser="sept1">
-        <span class="report-row-num">02</span>
-        <div>
-          <div class="report-row-name">Sept 1 Countdown</div>
-          <div class="report-row-desc">Most Boston leases start September 1. Nowhere else in the country works this way. We track how many Sept 1 units are listed right now and what they're asking.</div>
-          <div class="report-teaser" id="teaser-sept1"><span class="teaser-stat">0</span> <span class="teaser-label">days until Sept 1</span> <span class="teaser-delta">3,379 units already listed</span></div>
-        </div>
-        <button class="report-row-btn">View Report →</button>
-      </li>
+      <h3>What does "as of September 2026" mean?</h3>
+      <p>It means the figures were published in September 2026 and cover listings that were on the market during August 2026. We publish on the 1st of each month for the month that just ended, and every page names both dates.</p>
 
-      <li class="report-row is-live" onclick="location.href='broker-fee-index/'" data-teaser="broker_fee">
-        <span class="report-row-num">03</span>
-        <div>
-          <div class="report-row-name">Boston Broker-Fee Index</div>
-          <div class="report-row-desc">What share of Boston listings charge no broker fee — and which neighborhoods lead? Updated monthly from verified active listings by Spot Easy.</div>
-          <div class="report-teaser" id="teaser-broker_fee"><span class="teaser-stat">97.8%</span> <span class="teaser-label">of stated-fee listings have no broker fee · Greater Boston</span> <span class="teaser-delta">updated monthly</span></div>
-        </div>
-        <button class="report-row-btn">View Report &#8594;</button>
-      </li>
+      <h3>Can I republish these numbers?</h3>
+      <p>Yes, including commercially. The data is licensed CC BY 4.0 — credit Spot Easy and link back to the page you took it from. Journalists who need a cut we do not publish can email Joel Mundele, CEO, at <a href="mailto:joel@spoteasy.com">joel@spoteasy.com</a>.</p>
 
-    </ul>
+      <h3>Why is my neighborhood missing?</h3>
+      <p>A neighborhood and bedroom size is published only when at least 20 active listings support it that month. Below that, a median moves on one or two listings and is not worth publishing, so we suppress the cell rather than print a number we would not rely on ourselves.</p>
+    </div>
   </section>
 
   <!-- Data Desk -->
@@ -896,6 +887,25 @@ const PAGE_DATA = {
     </div>
   </section>
 
+  <!-- Downloads & license -->
+  <section class="section fade-up">
+    <div class="section-head">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Download the data</h2>
+    </div>
+    <div class="method-body" style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px 24px">
+      <p>Every figure we publish is downloadable. The CSV covers Greater Boston and every published neighborhood, by bedroom count. The JSON feed is what our own pages read.</p>
+      <ul>
+        <li><a href="rent-index/rent-index-2026-08.csv">Rent Index, August 2026 (CSV)</a></li>
+        <li><a href="https://data.spoteasy.com/rent-index/data.json">Rent Index, current month (JSON feed)</a></li>
+        <li>Frozen monthly snapshots: <a href="rent-index/2026-08/">August 2026</a> &middot; <a href="rent-index/2026-07/">July 2026</a> &middot; <a href="rent-index/2026-06/">June 2026</a></li>
+      </ul>
+      <p><strong>License:</strong> free to republish, including commercially, under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Please credit Spot Easy and link back.</p>
+      <p><strong>Cite as:</strong> <span id="cite-as">Spot Easy Boston Rent Index, August 2026 listings, published September 2026. https://www.spoteasy.com/data/rent-index/2026-08</span></p>
+      <p>Cite the dated snapshot rather than the live Rent Index — a snapshot is frozen, so the number you quote stays the number a reader finds. For the current month, see the <a href="rent-index/">Boston Rent Index</a>.</p>
+    </div>
+  </section>
+
   <!-- Methodology -->
   <section class="methodology fade-up">
     <h2 class="section-title">How Spot Easy Collects This Data</h2>
@@ -905,13 +915,13 @@ const PAGE_DATA = {
         <span class="summary-toggle">+</span>
       </summary>
       <div class="method-body">
-        <p><strong>Source:</strong> All data is pulled from Spot Easy's live listings database — active rental listings posted by verified, licensed real estate agents. MLS (MlsPin) listings are included.</p>
+        <p><strong>Source:</strong> All data is pulled from Spot Easy's live listings database — active rental listings posted or verified by licensed real estate agents, including listings sourced through their brokerages.</p>
         <p><strong>Geography:</strong> Greater Boston — Boston, Brookline, Cambridge, Somerville, Medford, Newton, Everett, Quincy, Watertown, and Malden.</p>
         <p><strong>Listings counted:</strong> Every listing that was on the market at any point during the reported month, measured from its on-market and off-market timestamps — not a single-day snapshot. Drafts, admin-removed listings, and asking rents below $500 or above $20,000 are excluded. A listing that left the market without a recorded off-market date is excluded rather than estimated, so the count runs conservative.</p>
         <p><strong>Deduplication:</strong> One listing per unique address + unit + bedroom count, keeping the most recently created record.</p>
         <p><strong>Bedroom buckets:</strong> Studio / 1 BR / 2 BR / 3 BR / 4+ BR.</p>
         <p><strong>Minimum sample size:</strong> Cells with fewer than 20 listings are suppressed and shown as —.</p>
-        <p><strong>Metrics:</strong> Median asking rent, 25th and 75th percentile, month-over-month and year-over-year change.</p>
+        <p><strong>Metrics:</strong> Average (mean) and median asking rent, 25th and 75th percentile, month-over-month and year-over-year change. Average leads on the published pages; median is carried in the CSV and JSON feed.</p>
         <ul>
           <li>Month-over-month: same neighborhood × bedroom cell from the previous month's snapshot.</li>
           <li>Year-over-year: same cell from 12 months prior.</li>
@@ -980,16 +990,21 @@ const PAGE_DATA = {
 
   /* ── Attribution ── */
   const metaEl = document.getElementById('hero-meta');
-  metaEl.innerHTML = d.as_of_date && d.sample_count
-    ? `Data as of ${d.as_of_date}  ·  ${d.sample_count.toLocaleString()} <abbr title="Deduplicated listings across 10 Greater Boston cities used in this index. The public search covers a wider geography and counts each listing version separately." style="text-decoration:underline dotted;cursor:help;border-bottom:none">active listings</abbr>`
+  // v4.3.0: sample_count is gone from PAGE_DATA (it published a listing count).
+  // Guard on as_of_date alone, or this line silently falls back to the generic text.
+  metaEl.innerHTML = d.as_of_date
+    ? `Published ${d.as_of_date}` + (d.data_month ? `  ·  based on ${d.data_month} listings` : '')
     : 'Published monthly by Spot Easy';
 
   /* ── Featured card ── */
   const featMeta = document.getElementById('feat-meta');
-  if (d.as_of_date) featMeta.textContent = `Latest: ${d.as_of_date}`;
+  if (d.as_of_date) featMeta.textContent = `Published ${d.as_of_date}`;
   if (d.latest_report_url) document.getElementById('featured-link').href = d.latest_report_url;
 
   /* ── Teasers ── */
+  const citeEl = document.getElementById('cite-as');
+  if (citeEl && d.cite_label && d.cite_url) citeEl.textContent = `${d.cite_label}. ${d.cite_url}`;
+
   if (d.teasers) {
     Object.entries(d.teasers).forEach(([key, t]) => {
       const el = document.getElementById('teaser-' + key);

@@ -314,8 +314,6 @@
     .dir-list li { margin: 0; }
     .dir-list a { display: block; padding: 12px 16px; border: 1.5px solid var(--rule); border-radius: 8px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--bg); transition: border-color .15s, background .15s, color .15s; }
     .dir-list a:hover { border-color: var(--sky); background: var(--soft); color: var(--sky); text-decoration: none; }
-    .dir-fee { display: block; margin-top: 3px; font-size: 11px; font-weight: 400; color: var(--muted); letter-spacing: .01em; }
-    .dir-list a:hover .dir-fee { color: var(--muted); }
 
     /* Rent-over-time section (the v1.3.0 Week/Month toggle and its radio/pane
        rules were dropped in v2.0.0 along with the weekly series). */
@@ -412,11 +410,10 @@
 
       <h2>Average rent by neighborhood</h2>
       <p>Median asking rent for every Greater Boston neighborhood with enough active listings to publish.</p>
-      <p class="note">"% no fee" = the share of that neighborhood's listings <em>with a stated fee</em> that carry no broker fee — the higher the number, the more apartments you can rent without paying a broker's commission. Listings that don't disclose a fee are excluded.</p>
-      <div class="dir-group"><h3>Allston, Brighton &amp; Brookline</h3><ul class="dir-list"><li><a href="/data/rent-index/allston/">Allston<span class="dir-fee">85% no fee</span></a></li><li><a href="/data/rent-index/brighton/">Brighton<span class="dir-fee">86% no fee</span></a></li><li><a href="/data/rent-index/oak-square/">Oak Square<span class="dir-fee">88% no fee</span></a></li><li><a href="/data/rent-index/brookline/">Brookline<span class="dir-fee">64% no fee</span></a></li><li><a href="/data/rent-index/coolidge-corner/">Coolidge Corner<span class="dir-fee">53% no fee</span></a></li></ul></div>
-      <div class="dir-group"><h3>Downtown &amp; Central Boston</h3><ul class="dir-list"><li><a href="/data/rent-index/back-bay/">Back Bay<span class="dir-fee">74% no fee</span></a></li><li><a href="/data/rent-index/beacon-hill/">Beacon Hill<span class="dir-fee">76% no fee</span></a></li><li><a href="/data/rent-index/north-end/">North End<span class="dir-fee">68% no fee</span></a></li><li><a href="/data/rent-index/south-end/">South End<span class="dir-fee">69% no fee</span></a></li><li><a href="/data/rent-index/fenway/">Fenway<span class="dir-fee">72% no fee</span></a></li><li><a href="/data/rent-index/mission-hill/">Mission Hill<span class="dir-fee">60% no fee</span></a></li></ul></div>
-      <div class="dir-group"><h3>South, East &amp; Dorchester</h3><ul class="dir-list"><li><a href="/data/rent-index/south-boston/">South Boston<span class="dir-fee">81% no fee</span></a></li><li><a href="/data/rent-index/east-boston/">East Boston<span class="dir-fee">45% no fee</span></a></li><li><a href="/data/rent-index/dorchester/">Dorchester<span class="dir-fee">78% no fee</span></a></li><li><a href="/data/rent-index/roxbury/">Roxbury<span class="dir-fee">74% no fee</span></a></li><li><a href="/data/rent-index/jamaica-plain/">Jamaica Plain<span class="dir-fee">79% no fee</span></a></li></ul></div>
-      <div class="dir-group"><h3>Somerville &amp; Cambridge</h3><ul class="dir-list"><li><a href="/data/rent-index/cambridge/">Cambridge<span class="dir-fee">74% no fee</span></a></li><li><a href="/data/rent-index/somerville/">Somerville<span class="dir-fee">79% no fee</span></a></li></ul></div>
+      <div class="dir-group"><h3>Allston, Brighton &amp; Brookline</h3><ul class="dir-list"><li><a href="/data/rent-index/allston/">Allston</a></li><li><a href="/data/rent-index/brighton/">Brighton</a></li><li><a href="/data/rent-index/oak-square/">Oak Square</a></li><li><a href="/data/rent-index/brookline/">Brookline</a></li><li><a href="/data/rent-index/coolidge-corner/">Coolidge Corner</a></li></ul></div>
+      <div class="dir-group"><h3>Downtown &amp; Central Boston</h3><ul class="dir-list"><li><a href="/data/rent-index/back-bay/">Back Bay</a></li><li><a href="/data/rent-index/beacon-hill/">Beacon Hill</a></li><li><a href="/data/rent-index/north-end/">North End</a></li><li><a href="/data/rent-index/south-end/">South End</a></li><li><a href="/data/rent-index/fenway/">Fenway</a></li><li><a href="/data/rent-index/mission-hill/">Mission Hill</a></li></ul></div>
+      <div class="dir-group"><h3>South, East &amp; Dorchester</h3><ul class="dir-list"><li><a href="/data/rent-index/south-boston/">South Boston</a></li><li><a href="/data/rent-index/east-boston/">East Boston</a></li><li><a href="/data/rent-index/dorchester/">Dorchester</a></li><li><a href="/data/rent-index/roxbury/">Roxbury</a></li><li><a href="/data/rent-index/jamaica-plain/">Jamaica Plain</a></li></ul></div>
+      <div class="dir-group"><h3>Somerville &amp; Cambridge</h3><ul class="dir-list"><li><a href="/data/rent-index/cambridge/">Cambridge</a></li><li><a href="/data/rent-index/somerville/">Somerville</a></li></ul></div>
       
 
       <details class="method">
