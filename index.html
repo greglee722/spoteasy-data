@@ -777,42 +777,312 @@
 <!-- ══════════ DATA LAYER — update monthly ══════════ -->
 <script>
 const PAGE_DATA = {
-  "as_of_date": "September 2026",
-  "data_month": "August 2026",
+  "as_of_date": "October 2026",
+  "data_month": "September 2026",
   "latest_report_url": "/data/rent-index/",
-  "cite_url": "https://www.spoteasy.com/data/rent-index/2026-08",
-  "cite_label": "Spot Easy Boston Rent Index, August 2026 listings, published September 2026",
+  "cite_url": "https://www.spoteasy.com/data/rent-index/2026-09",
+  "cite_label": "Spot Easy Boston Rent Index, September 2026 listings, published October 2026",
+  "takeaways": {
+    "range": {
+      "cheapest": {
+        "name": "Brighton",
+        "slug": "brighton",
+        "value": 2392
+      },
+      "priciest": {
+        "name": "Back Bay",
+        "slug": "back-bay",
+        "value": 3427
+      },
+      "count": 14
+    },
+    "yoy": {
+      "from": "Sep 2025",
+      "to": "Sep 2026",
+      "diff": 0,
+      "pct": 0,
+      "dir": "flat",
+      "value": 2600
+    },
+    "roommate": {
+      "studio": 2306,
+      "perPerson": 1717,
+      "savings": 589
+    }
+  },
+  "table": [
+    {
+      "area": "Allston",
+      "slug": "allston",
+      "city": false,
+      "beds": {
+        "0": 2095,
+        "1": 2580,
+        "2": 3205,
+        "3": 3456,
+        "4+": 4713
+      }
+    },
+    {
+      "area": "Back Bay",
+      "slug": "back-bay",
+      "city": false,
+      "beds": {
+        "0": 2623,
+        "1": 3427,
+        "2": 5471,
+        "3": null,
+        "4+": null
+      }
+    },
+    {
+      "area": "Beacon Hill",
+      "slug": "beacon-hill",
+      "city": false,
+      "beds": {
+        "0": 2508,
+        "1": 3117,
+        "2": 3957,
+        "3": null,
+        "4+": null
+      }
+    },
+    {
+      "area": "Boston",
+      "slug": "boston",
+      "city": true,
+      "beds": {
+        "0": 2326,
+        "1": 2839,
+        "2": 3573,
+        "3": 3947,
+        "4+": 4633
+      }
+    },
+    {
+      "area": "Boston Downtown",
+      "slug": "boston-downtown",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    {
+      "area": "Brighton",
+      "slug": "brighton",
+      "city": false,
+      "beds": {
+        "0": 2072,
+        "1": 2392,
+        "2": 2998,
+        "3": 3623,
+        "4+": 4997
+      }
+    },
+    {
+      "area": "Brookline",
+      "slug": "brookline",
+      "city": true,
+      "beds": {
+        "0": 2325,
+        "1": 2881,
+        "2": 3671,
+        "3": 5021,
+        "4+": 5816
+      }
+    },
+    {
+      "area": "Cambridge",
+      "slug": "cambridge",
+      "city": true,
+      "beds": {
+        "0": 2296,
+        "1": 2938,
+        "2": 3606,
+        "3": 4589,
+        "4+": 6660
+      }
+    },
+    {
+      "area": "Coolidge Corner",
+      "slug": "coolidge-corner",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": 2782,
+        "2": 3601,
+        "3": 4846,
+        "4+": 5918
+      }
+    },
+    {
+      "area": "Dorchester",
+      "slug": "dorchester",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": 2461,
+        "2": 2951,
+        "3": 3275,
+        "4+": 3885
+      }
+    },
+    {
+      "area": "East Boston",
+      "slug": "east-boston",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": 2653,
+        "2": 3174,
+        "3": 3310,
+        "4+": null
+      }
+    },
+    {
+      "area": "Fenway",
+      "slug": "fenway",
+      "city": false,
+      "beds": {
+        "0": 2325,
+        "1": 2812,
+        "2": 3662,
+        "3": 4274,
+        "4+": null
+      }
+    },
+    {
+      "area": "Jamaica Plain",
+      "slug": "jamaica-plain",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": null,
+        "2": 3159,
+        "3": 3510,
+        "4+": 4495
+      }
+    },
+    {
+      "area": "Mission Hill",
+      "slug": "mission-hill",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": 2914,
+        "2": 2824,
+        "3": null,
+        "4+": 4835
+      }
+    },
+    {
+      "area": "North End",
+      "slug": "north-end",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    {
+      "area": "Oak Square",
+      "slug": "oak-square",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": null,
+        "2": null,
+        "3": null,
+        "4+": null
+      }
+    },
+    {
+      "area": "Roxbury",
+      "slug": "roxbury",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": null,
+        "2": 2916,
+        "3": 3401,
+        "4+": 4060
+      }
+    },
+    {
+      "area": "Somerville",
+      "slug": "somerville",
+      "city": true,
+      "beds": {
+        "0": null,
+        "1": 2510,
+        "2": 3193,
+        "3": 3706,
+        "4+": 5115
+      }
+    },
+    {
+      "area": "South Boston",
+      "slug": "south-boston",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": 3233,
+        "2": 4066,
+        "3": 5148,
+        "4+": 5914
+      }
+    },
+    {
+      "area": "South End",
+      "slug": "south-end",
+      "city": false,
+      "beds": {
+        "0": null,
+        "1": 3295,
+        "2": 4628,
+        "3": 5374,
+        "4+": null
+      }
+    }
+  ],
   "tiles": [
     {
       "label": "Studio",
-      "value": 2361,
-      "delta": 0,
-      "dir": "flat"
+      "value": 2306,
+      "delta": 55,
+      "dir": "down"
     },
     {
       "label": "1 BR",
-      "value": 2863,
-      "delta": 0,
-      "dir": "flat"
+      "value": 2782,
+      "delta": 81,
+      "dir": "down"
     },
     {
       "label": "2 BR",
-      "value": 3533,
-      "delta": 0,
-      "dir": "flat"
+      "value": 3434,
+      "delta": 99,
+      "dir": "down"
     },
     {
       "label": "3 BR",
-      "value": 4085,
-      "delta": 0,
-      "dir": "flat"
+      "value": 3983,
+      "delta": 102,
+      "dir": "down"
     }
   ],
   "teasers": {
     "rent_index": {
-      "stat": "$3,533",
-      "label": "2BR average \u00b7 Greater Boston",
-      "delta": "20 neighborhood pages"
+      "stat": "$3,434",
+      "label": "2BR average · Greater Boston",
+      "delta": "-$99 vs. last month"
     }
   }
 };
@@ -829,23 +1099,23 @@ const PAGE_DATA = {
     <div class="stat-strip" id="stat-strip">
       <div class="stat-cell">
         <div class="stat-label">Studio</div>
-        <div class="stat-value" data-target="2361">$2,361</div>
-        <div class="stat-delta flat">updated monthly</div>
+        <div class="stat-value" data-target="2306">$2,306</div>
+        <div class="stat-delta down">↓ $55 vs. last month</div>
       </div>
       <div class="stat-cell">
         <div class="stat-label">1 BR</div>
-        <div class="stat-value" data-target="2863">$2,863</div>
-        <div class="stat-delta flat">updated monthly</div>
+        <div class="stat-value" data-target="2782">$2,782</div>
+        <div class="stat-delta down">↓ $81 vs. last month</div>
       </div>
       <div class="stat-cell">
         <div class="stat-label">2 BR</div>
-        <div class="stat-value" data-target="3533">$3,533</div>
-        <div class="stat-delta flat">updated monthly</div>
+        <div class="stat-value" data-target="3434">$3,434</div>
+        <div class="stat-delta down">↓ $99 vs. last month</div>
       </div>
       <div class="stat-cell">
         <div class="stat-label">3 BR</div>
-        <div class="stat-value" data-target="4085">$4,085</div>
-        <div class="stat-delta flat">updated monthly</div>
+        <div class="stat-value" data-target="3983">$3,983</div>
+        <div class="stat-delta down">↓ $102 vs. last month</div>
       </div>
     </div>
     <div class="hero-meta" id="hero-meta"></div>
@@ -869,9 +1139,9 @@ const PAGE_DATA = {
     </div>
     <div class="tk-grid">
       <!-- TAKEAWAYS:START -->
-      <div class="tk"><div class="tk-h">Cheapest 1-bedroom</div><div class="tk-v">$2,463</div><div class="tk-s"><a href="/data/rent-index/brighton/">Brighton</a> · priciest is <a href="/data/rent-index/boston-downtown/">Boston Downtown</a> at $3,610</div></div>
-      <div class="tk"><div class="tk-h">Year over year</div><div class="tk-v">↑ 5.7%</div><div class="tk-s">1-bedroom rent is up $148 (5.7%) since August 2025, at a median of $2,748</div></div>
-      <div class="tk"><div class="tk-h">Roommate savings</div><div class="tk-v">$594/mo</div><div class="tk-s">A studio averages $2,361. Half a 2-bedroom is $1,767 per person, so splitting one saves $594 a month.</div></div>
+      <div class="tk"><div class="tk-h">Cheapest 1-bedroom</div><div class="tk-v">$2,392</div><div class="tk-s"><a href="/data/rent-index/brighton/">Brighton</a> · priciest is <a href="/data/rent-index/back-bay/">Back Bay</a> at $3,427</div></div>
+      <div class="tk"><div class="tk-h">Year over year</div><div class="tk-v">Flat</div><div class="tk-s">1-bedroom rent is unchanged since Sep 2025, at a median of $2,600</div></div>
+      <div class="tk"><div class="tk-h">Roommate savings</div><div class="tk-v">$589/mo</div><div class="tk-s">A studio averages $2,306. Half a 2-bedroom is $1,717 per person, so splitting one saves $589 a month.</div></div>
       <!-- TAKEAWAYS:END -->
     </div>
   </section>
@@ -888,26 +1158,26 @@ const PAGE_DATA = {
       <table class="cmp" id="cmp">
         <thead><tr><th scope="col" data-sort="text">Area</th><th scope="col" class="num" data-sort="num">Studio</th><th scope="col" class="num" data-sort="num">1 BR</th><th scope="col" class="num" data-sort="num">2 BR</th><th scope="col" class="num" data-sort="num">3 BR</th><th scope="col" class="num" data-sort="num">4+ BR</th></tr></thead>
         <tbody>
-          <tr><th scope="row"><a href="/data/rent-index/allston/">Allston</a></th><td data-v="2108">$2,108</td><td data-v="2637">$2,637</td><td data-v="3372">$3,372</td><td data-v="3568">$3,568</td><td data-v="4871">$4,871</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/back-bay/">Back Bay</a></th><td data-v="2790">$2,790</td><td data-v="3574">$3,574</td><td data-v="5196">$5,196</td><td data-v="">—</td><td data-v="">—</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/beacon-hill/">Beacon Hill</a></th><td data-v="2488">$2,488</td><td data-v="3069">$3,069</td><td data-v="3988">$3,988</td><td data-v="">—</td><td data-v="">—</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/boston/">Boston</a> <span class="tk-city">city</span></th><td data-v="2373">$2,373</td><td data-v="2928">$2,928</td><td data-v="3632">$3,632</td><td data-v="4069">$4,069</td><td data-v="4705">$4,705</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/boston-downtown/">Boston Downtown</a></th><td data-v="">—</td><td data-v="3610">$3,610</td><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/brighton/">Brighton</a></th><td data-v="2110">$2,110</td><td data-v="2463">$2,463</td><td data-v="2986">$2,986</td><td data-v="3761">$3,761</td><td data-v="4745">$4,745</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/brookline/">Brookline</a> <span class="tk-city">city</span></th><td data-v="2421">$2,421</td><td data-v="2890">$2,890</td><td data-v="3855">$3,855</td><td data-v="4969">$4,969</td><td data-v="6130">$6,130</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/cambridge/">Cambridge</a> <span class="tk-city">city</span></th><td data-v="2366">$2,366</td><td data-v="2975">$2,975</td><td data-v="3825">$3,825</td><td data-v="4615">$4,615</td><td data-v="6579">$6,579</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/coolidge-corner/">Coolidge Corner</a></th><td data-v="2533">$2,533</td><td data-v="2802">$2,802</td><td data-v="3740">$3,740</td><td data-v="4700">$4,700</td><td data-v="6502">$6,502</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/dorchester/">Dorchester</a></th><td data-v="">—</td><td data-v="2544">$2,544</td><td data-v="3014">$3,014</td><td data-v="3340">$3,340</td><td data-v="3937">$3,937</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/east-boston/">East Boston</a></th><td data-v="">—</td><td data-v="2670">$2,670</td><td data-v="3192">$3,192</td><td data-v="3274">$3,274</td><td data-v="3638">$3,638</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/fenway/">Fenway</a></th><td data-v="2303">$2,303</td><td data-v="2856">$2,856</td><td data-v="3862">$3,862</td><td data-v="4811">$4,811</td><td data-v="">—</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/jamaica-plain/">Jamaica Plain</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="3265">$3,265</td><td data-v="3470">$3,470</td><td data-v="4515">$4,515</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/mission-hill/">Mission Hill</a></th><td data-v="">—</td><td data-v="2952">$2,952</td><td data-v="2910">$2,910</td><td data-v="3682">$3,682</td><td data-v="5030">$5,030</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/north-end/">North End</a></th><td data-v="">—</td><td data-v="3411">$3,411</td><td data-v="4500">$4,500</td><td data-v="">—</td><td data-v="">—</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/oak-square/">Oak Square</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="3028">$3,028</td><td data-v="3495">$3,495</td><td data-v="4660">$4,660</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/roxbury/">Roxbury</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="3022">$3,022</td><td data-v="3607">$3,607</td><td data-v="4229">$4,229</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/somerville/">Somerville</a> <span class="tk-city">city</span></th><td data-v="">—</td><td data-v="2570">$2,570</td><td data-v="3253">$3,253</td><td data-v="3801">$3,801</td><td data-v="4909">$4,909</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/south-boston/">South Boston</a></th><td data-v="">—</td><td data-v="3106">$3,106</td><td data-v="4155">$4,155</td><td data-v="4984">$4,984</td><td data-v="5900">$5,900</td></tr>
-          <tr><th scope="row"><a href="/data/rent-index/south-end/">South End</a></th><td data-v="2374">$2,374</td><td data-v="3318">$3,318</td><td data-v="4559">$4,559</td><td data-v="5808">$5,808</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/allston/">Allston</a></th><td data-v="2095">$2,095</td><td data-v="2580">$2,580</td><td data-v="3205">$3,205</td><td data-v="3456">$3,456</td><td data-v="4713">$4,713</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/back-bay/">Back Bay</a></th><td data-v="2623">$2,623</td><td data-v="3427">$3,427</td><td data-v="5471">$5,471</td><td data-v="">—</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/beacon-hill/">Beacon Hill</a></th><td data-v="2508">$2,508</td><td data-v="3117">$3,117</td><td data-v="3957">$3,957</td><td data-v="">—</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/boston/">Boston</a> <span class="tk-city">city</span></th><td data-v="2326">$2,326</td><td data-v="2839">$2,839</td><td data-v="3573">$3,573</td><td data-v="3947">$3,947</td><td data-v="4633">$4,633</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/boston-downtown/">Boston Downtown</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/brighton/">Brighton</a></th><td data-v="2072">$2,072</td><td data-v="2392">$2,392</td><td data-v="2998">$2,998</td><td data-v="3623">$3,623</td><td data-v="4997">$4,997</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/brookline/">Brookline</a> <span class="tk-city">city</span></th><td data-v="2325">$2,325</td><td data-v="2881">$2,881</td><td data-v="3671">$3,671</td><td data-v="5021">$5,021</td><td data-v="5816">$5,816</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/cambridge/">Cambridge</a> <span class="tk-city">city</span></th><td data-v="2296">$2,296</td><td data-v="2938">$2,938</td><td data-v="3606">$3,606</td><td data-v="4589">$4,589</td><td data-v="6660">$6,660</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/coolidge-corner/">Coolidge Corner</a></th><td data-v="">—</td><td data-v="2782">$2,782</td><td data-v="3601">$3,601</td><td data-v="4846">$4,846</td><td data-v="5918">$5,918</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/dorchester/">Dorchester</a></th><td data-v="">—</td><td data-v="2461">$2,461</td><td data-v="2951">$2,951</td><td data-v="3275">$3,275</td><td data-v="3885">$3,885</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/east-boston/">East Boston</a></th><td data-v="">—</td><td data-v="2653">$2,653</td><td data-v="3174">$3,174</td><td data-v="3310">$3,310</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/fenway/">Fenway</a></th><td data-v="2325">$2,325</td><td data-v="2812">$2,812</td><td data-v="3662">$3,662</td><td data-v="4274">$4,274</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/jamaica-plain/">Jamaica Plain</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="3159">$3,159</td><td data-v="3510">$3,510</td><td data-v="4495">$4,495</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/mission-hill/">Mission Hill</a></th><td data-v="">—</td><td data-v="2914">$2,914</td><td data-v="2824">$2,824</td><td data-v="">—</td><td data-v="4835">$4,835</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/north-end/">North End</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/oak-square/">Oak Square</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td><td data-v="">—</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/roxbury/">Roxbury</a></th><td data-v="">—</td><td data-v="">—</td><td data-v="2916">$2,916</td><td data-v="3401">$3,401</td><td data-v="4060">$4,060</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/somerville/">Somerville</a> <span class="tk-city">city</span></th><td data-v="">—</td><td data-v="2510">$2,510</td><td data-v="3193">$3,193</td><td data-v="3706">$3,706</td><td data-v="5115">$5,115</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/south-boston/">South Boston</a></th><td data-v="">—</td><td data-v="3233">$3,233</td><td data-v="4066">$4,066</td><td data-v="5148">$5,148</td><td data-v="5914">$5,914</td></tr>
+          <tr><th scope="row"><a href="/data/rent-index/south-end/">South End</a></th><td data-v="">—</td><td data-v="3295">$3,295</td><td data-v="4628">$4,628</td><td data-v="5374">$5,374</td><td data-v="">—</td></tr>
         </tbody>
       </table>
       <!-- TABLE:END -->
@@ -925,7 +1195,7 @@ const PAGE_DATA = {
         <div class="feat-live-badge">Live · Monthly</div>
         <div class="feat-title">Boston Rent Index</div>
         <p class="feat-desc">Allston, Jamaica Plain, South End — the price gap between them is bigger than most people expect. Each month we publish average and median asking rent for every Greater Boston neighborhood with enough active listings to report, broken down by bedroom count.</p>
-        <div class="report-teaser" id="teaser-rent_index"><span class="teaser-stat">$3,533</span> <span class="teaser-label">2BR average · Greater Boston</span> <span class="teaser-delta">20 neighborhood pages</span></div>
+        <div class="report-teaser" id="teaser-rent_index"><span class="teaser-stat">$3,434</span> <span class="teaser-label">2BR average · Greater Boston</span> <span class="teaser-delta">-$99 vs. last month</span></div>
         <div class="feat-meta" id="feat-meta">Published on the 1st of each month</div>
       </div>
       <div>
