@@ -1093,9 +1093,13 @@ const PAGE_DATA = {
   <div class="hero-inner">
     <div class="hero-eyebrow">Boston Data Desk · Updated Monthly</div>
     <h1>Greater Boston <br><em>Rental Market Data</em></h1>
-    <p class="hero-sub">As of September 2026, the average asking rent for a 1-bedroom across Greater Boston is <strong>$2,863</strong>, based on August 2026 listings from verified, licensed agents. We cover ten cities — Boston, Cambridge, Somerville, Brookline, Medford, Newton, Everett, Quincy, Watertown and Malden — plus every Boston neighborhood with enough listings to report. Free to download and republish. <a href="rent-index/">See every neighborhood in the Boston Rent Index →</a></p>
+    <p class="hero-sub"><!-- HEROLEAD:START -->
+      As of October 2026, the average asking rent for a 1-bedroom across Greater Boston is <strong>$2,782</strong>, based on September 2026 listings
+      <!-- HEROLEAD:END --> from verified, licensed agents. We cover ten cities — Boston, Cambridge, Somerville, Brookline, Medford, Newton, Everett, Quincy, Watertown and Malden — plus every Boston neighborhood with enough listings to report. Free to download and republish. <a href="rent-index/">See every neighborhood in the Boston Rent Index →</a></p>
 
-    <div class="stat-strip-header">Average asking rent — Greater Boston · published September 2026, based on August 2026 listings</div>
+    <!-- STRIPHEAD:START -->
+      <div class="stat-strip-header">Average asking rent — Greater Boston · published October 2026, based on September 2026 listings</div>
+      <!-- STRIPHEAD:END -->
     <div class="stat-strip" id="stat-strip">
       <div class="stat-cell">
         <div class="stat-label">Studio</div>
@@ -1152,7 +1156,9 @@ const PAGE_DATA = {
       <span class="section-num">02</span>
       <h2 class="section-title">Average rent in every area we cover</h2>
     </div>
-    <p class="note" style="margin:-6px 0 14px;font-size:13px;color:var(--muted)">Average asking rent by bedroom size, published September 2026 from August 2026 listings. Tap a column to sort. A dash means fewer than 20 active listings that month, so we do not publish a figure. Cambridge, Somerville and Brookline are reported citywide.</p>
+    <p class="note" style="margin:-6px 0 14px;font-size:13px;color:var(--muted)"><!-- TABLENOTE:START -->
+      Average asking rent by bedroom size, published October 2026 from September 2026 listings.
+      <!-- TABLENOTE:END --> Tap a column to sort. A dash means fewer than 20 active listings that month, so we do not publish a figure. Cambridge, Somerville and Brookline are reported citywide.</p>
     <div class="cmp-wrap">
       <!-- TABLE:START -->
       <table class="cmp" id="cmp">
@@ -1284,12 +1290,18 @@ const PAGE_DATA = {
     <div class="method-body" style="background:var(--white);border:1px solid var(--line);border-radius:10px;padding:22px 24px">
       <p>Every figure we publish is downloadable. The CSV covers Greater Boston and every published neighborhood, by bedroom count. The JSON feed is what our own pages read.</p>
       <ul>
-        <li><a href="rent-index/rent-index-2026-08.csv">Rent Index, August 2026 (CSV)</a></li>
+        <!-- CSVLINK:START -->
+      <li><a href="rent-index/rent-index-2026-09.csv">Rent Index, September 2026 (CSV)</a></li>
+      <!-- CSVLINK:END -->
         <li><a href="https://data.spoteasy.com/rent-index/data.json">Rent Index, current month (JSON feed)</a></li>
-        <li>Frozen monthly snapshots: <a href="rent-index/2026-08/">August 2026</a> &middot; <a href="rent-index/2026-07/">July 2026</a> &middot; <a href="rent-index/2026-06/">June 2026</a></li>
+        <!-- SNAPSHOTS:START -->
+      <li>Frozen monthly snapshots: <a href="rent-index/2026-09/">September 2026</a> &middot; <a href="rent-index/2026-08/">August 2026</a> &middot; <a href="rent-index/2026-07/">July 2026</a> &middot; <a href="rent-index/2026-06/">June 2026</a></li>
+      <!-- SNAPSHOTS:END -->
       </ul>
       <p><strong>License:</strong> free to republish, including commercially, under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Please credit Spot Easy and link back.</p>
-      <p><strong>Cite as:</strong> <span id="cite-as">Spot Easy Boston Rent Index, August 2026 listings, published September 2026. https://www.spoteasy.com/data/rent-index/2026-08</span></p>
+      <p><strong>Cite as:</strong> <span id="cite-as"><!-- CITEAS:START -->
+      Spot Easy Boston Rent Index, September 2026 listings, published October 2026. https://www.spoteasy.com/data/rent-index/2026-09
+      <!-- CITEAS:END --></span></p>
       <p>Cite the dated snapshot rather than the live Rent Index — a snapshot is frozen, so the number you quote stays the number a reader finds. For the current month, see the <a href="rent-index/">Boston Rent Index</a>.</p>
     </div>
   </section>
