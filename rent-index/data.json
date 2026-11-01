@@ -1,6 +1,6 @@
 {
-  "generated_week_ending": "2026-09-01",
-  "week_label": "September 2026",
+  "generated_week_ending": "2026-10-01",
+  "week_label": "October 2026",
   "methodology": {
     "cities": "Greater Boston (10 cities)",
     "n_threshold": 20,
@@ -13,58 +13,58 @@
       {
         "beds": "0",
         "median": 2200,
-        "mean": 2306,
-        "p25": 2000,
-        "p75": 2500
+        "mean": 2286,
+        "p25": 1995,
+        "p75": 2450
       },
       {
         "beds": "1",
-        "median": 2600,
-        "mean": 2782,
-        "p25": 2300,
-        "p75": 3150
+        "median": 2550,
+        "mean": 2724,
+        "p25": 2295,
+        "p75": 3000
       },
       {
         "beds": "2",
-        "median": 3165,
-        "mean": 3434,
+        "median": 3050,
+        "mean": 3373,
         "p25": 2700,
-        "p75": 3800
+        "p75": 3695
       },
       {
         "beds": "3",
-        "median": 3600,
-        "mean": 3983,
-        "p25": 3100,
-        "p75": 4306
+        "median": 3500,
+        "mean": 3940,
+        "p25": 3050,
+        "p75": 4300
       },
       {
         "beds": "4+",
-        "median": 4625,
-        "mean": 5141,
-        "p25": 3895,
-        "p75": 5813
+        "median": 4800,
+        "mean": 5230,
+        "p25": 3898,
+        "p75": 6000
       }
     ],
     "building_type": [
       {
         "building_type": "Apartment",
         "beds": {
-          "0": 2200,
-          "1": 2550,
-          "2": 3000,
+          "0": 2195,
+          "1": 2500,
+          "2": 2995,
           "3": 3400,
-          "4+": 4400
+          "4+": 4600
         }
       },
       {
         "building_type": "Multi-Family",
         "beds": {
           "0": null,
-          "1": 2313,
-          "2": 3000,
-          "3": 3573,
-          "4+": 5000
+          "1": 2260,
+          "2": 2800,
+          "3": 3595,
+          "4+": 4900
         }
       },
       {
@@ -72,18 +72,18 @@
         "beds": {
           "0": 2500,
           "1": 2900,
-          "2": 3600,
-          "3": 4000,
-          "4+": 4200
+          "2": 3500,
+          "3": 3900,
+          "4+": 4875
         }
       },
       {
         "building_type": "Brownstone",
         "beds": {
-          "0": 2295,
-          "1": 2798,
-          "2": 3500,
-          "3": 4150,
+          "0": 2198,
+          "1": 2750,
+          "2": 3198,
+          "3": 3750,
           "4+": null
         }
       },
@@ -93,18 +93,18 @@
           "0": null,
           "1": null,
           "2": null,
-          "3": 4100,
-          "4+": 5800
+          "3": 3950,
+          "4+": 5700
         }
       },
       {
         "building_type": "Unspecified",
         "beds": {
           "0": null,
-          "1": 2475,
+          "1": null,
           "2": 3000,
           "3": 3600,
-          "4+": 5200
+          "4+": 4775
         }
       }
     ]
@@ -114,130 +114,152 @@
       "neighborhood": "Allston",
       "slug": "allston",
       "roommate": {
-        "studio": 2095,
-        "perPerson": 1603,
-        "savings": 492,
-        "pctSaved": 23
+        "studio": 2038,
+        "perPerson": 1510,
+        "savings": 528,
+        "pctSaved": 26
       },
       "trend": {
-        "b1_median": 2495,
-        "wow": -5,
-        "mom": 100
+        "b1_median": 2385,
+        "wow": -110,
+        "mom": 35
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2300
+          "median": 2300,
+          "mean": 2391
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2395
+          "median": 2395,
+          "mean": 2533
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2395
+          "median": 2395,
+          "mean": 2527
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2395
+          "median": 2395,
+          "mean": 2461
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2350
+          "median": 2350,
+          "mean": 2455
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2373
+          "median": 2373,
+          "mean": 2460
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2350
+          "median": 2350,
+          "mean": 2471
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2350
+          "median": 2350,
+          "mean": 2467
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2350
+          "median": 2350,
+          "mean": 2465
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2350
+          "median": 2350,
+          "mean": 2462
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2350
+          "median": 2350,
+          "mean": 2461
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2395
+          "median": 2395,
+          "mean": 2491
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2395
+          "median": 2395,
+          "mean": 2516
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2385
+          "median": 2385,
+          "mean": 2451
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2500
+          "median": 2500,
+          "mean": 2637
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2495
+          "median": 2495,
+          "mean": 2580
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2385,
+          "mean": 2407
         }
       ],
       "historyBedLabel": "1-bedroom",
       "isCityScope": false,
       "beds": {
         "0": {
-          "median": 1998,
-          "mean": 2095,
+          "median": 1995,
+          "mean": 2038,
           "p25": 1950,
-          "p75": 2100
+          "p75": 2196
         },
         "1": {
-          "median": 2495,
-          "mean": 2580,
-          "p25": 2250,
-          "p75": 2842
+          "median": 2385,
+          "mean": 2407,
+          "p25": 2213,
+          "p75": 2500
         },
         "2": {
-          "median": 2960,
-          "mean": 3205,
-          "p25": 2750,
-          "p75": 3600
+          "median": 2830,
+          "mean": 3019,
+          "p25": 2770,
+          "p75": 3100
         },
         "3": {
-          "median": 3300,
-          "mean": 3456,
-          "p25": 2908,
-          "p75": 3713
+          "median": 3400,
+          "mean": 3535,
+          "p25": 2911,
+          "p75": 4018
         },
         "4+": {
-          "median": 5000,
-          "mean": 4713,
-          "p25": 4000,
-          "p75": 5400
+          "median": 4999,
+          "mean": 4823,
+          "p25": 4200,
+          "p75": 5600
         }
       },
       "noFee": null
@@ -246,118 +268,140 @@
       "neighborhood": "Back Bay",
       "slug": "back-bay",
       "roommate": {
-        "studio": 2623,
-        "perPerson": 2736,
-        "savings": -113,
-        "pctSaved": -4
+        "studio": 2806,
+        "perPerson": 2702,
+        "savings": 104,
+        "pctSaved": 4
       },
       "trend": {
         "b1_median": 3250,
-        "wow": -50,
-        "mom": 250
+        "wow": 0,
+        "mom": 255
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 3000
+          "median": 3000,
+          "mean": 3203
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 3000
+          "median": 3000,
+          "mean": 3323
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 3000
+          "median": 3000,
+          "mean": 3275
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 3000
+          "median": 3000,
+          "mean": 3141
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2995
+          "median": 2995,
+          "mean": 3104
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2935
+          "median": 2935,
+          "mean": 3124
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2950
+          "median": 2950,
+          "mean": 3183
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2950
+          "median": 2950,
+          "mean": 3211
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 3025
+          "median": 3025,
+          "mean": 3261
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 3100
+          "median": 3100,
+          "mean": 3288
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 3100
+          "median": 3100,
+          "mean": 3220
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 3100
+          "median": 3100,
+          "mean": 3196
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3150
+          "median": 3150,
+          "mean": 3249
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3150
+          "median": 3150,
+          "mean": null
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 3300
+          "median": 3300,
+          "mean": 3574
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 3250
+          "median": 3250,
+          "mean": 3427
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 3250,
+          "mean": 3404
         }
       ],
       "historyBedLabel": "1-bedroom",
       "isCityScope": false,
       "beds": {
         "0": {
-          "median": 2450,
-          "mean": 2623,
-          "p25": 2200,
-          "p75": 2650
+          "median": 2400,
+          "mean": 2806,
+          "p25": 2238,
+          "p75": 2695
         },
         "1": {
           "median": 3250,
-          "mean": 3427,
+          "mean": 3404,
           "p25": 3000,
           "p75": 3650
         },
         "2": {
-          "median": 4700,
-          "mean": 5471,
-          "p25": 3971,
-          "p75": 6200
+          "median": 4188,
+          "mean": 5403,
+          "p25": 3900,
+          "p75": 6350
         },
         "3": null,
         "4+": null
@@ -368,118 +412,140 @@
       "neighborhood": "Beacon Hill",
       "slug": "beacon-hill",
       "roommate": {
-        "studio": 2508,
-        "perPerson": 1979,
-        "savings": 529,
-        "pctSaved": 21
+        "studio": 2364,
+        "perPerson": 1913,
+        "savings": 451,
+        "pctSaved": 19
       },
       "trend": {
-        "b1_median": 3100,
-        "wow": 150,
-        "mom": 450
+        "b1_median": 2925,
+        "wow": -175,
+        "mom": 225
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2700
+          "median": 2700,
+          "mean": 2804
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2700
+          "median": 2700,
+          "mean": 2813
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2650
+          "median": 2650,
+          "mean": 2809
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2650
+          "median": 2650,
+          "mean": 2761
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2700
+          "median": 2700,
+          "mean": 2818
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2850
+          "median": 2850,
+          "mean": 2899
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2850
+          "median": 2850,
+          "mean": 2953
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2838
+          "median": 2838,
+          "mean": 2965
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2825
+          "median": 2825,
+          "mean": 2909
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2838
+          "median": 2838,
+          "mean": 2897
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2850
+          "median": 2850,
+          "mean": 2908
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2850
+          "median": 2850,
+          "mean": 2913
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 2939
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2870
+          "median": 2870,
+          "mean": 2897
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2950
+          "median": 2950,
+          "mean": 3069
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 3100
+          "median": 3100,
+          "mean": 3117
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2925,
+          "mean": 2962
         }
       ],
       "historyBedLabel": "1-bedroom",
       "isCityScope": false,
       "beds": {
         "0": {
-          "median": 2473,
-          "mean": 2508,
-          "p25": 2338,
-          "p75": 2613
+          "median": 2388,
+          "mean": 2364,
+          "p25": 2300,
+          "p75": 2500
         },
         "1": {
-          "median": 3100,
-          "mean": 3117,
-          "p25": 2563,
-          "p75": 3398
+          "median": 2925,
+          "mean": 2962,
+          "p25": 2550,
+          "p75": 3288
         },
         "2": {
-          "median": 3930,
-          "mean": 3957,
-          "p25": 3613,
-          "p75": 4438
+          "median": 4000,
+          "mean": 3825,
+          "p25": 3023,
+          "p75": 4300
         },
         "3": null,
         "4+": null
@@ -490,60 +556,68 @@
       "neighborhood": "Boston",
       "slug": "boston",
       "roommate": {
-        "studio": 2326,
-        "perPerson": 1787,
-        "savings": 539,
-        "pctSaved": 23
+        "studio": 2300,
+        "perPerson": 1744,
+        "savings": 556,
+        "pctSaved": 24
       },
       "trend": {
-        "b1_median": 2650,
-        "wow": -145,
+        "b1_median": 2550,
+        "wow": -100,
         "mom": null
       },
       "history": [
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2795
+          "median": 2795,
+          "mean": 2928
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2650
+          "median": 2650,
+          "mean": 2839
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2550,
+          "mean": 2784
         }
       ],
       "historyBedLabel": "1-bedroom",
       "isCityScope": true,
       "beds": {
         "0": {
-          "median": 2238,
-          "mean": 2326,
-          "p25": 2025,
-          "p75": 2499
+          "median": 2200,
+          "mean": 2300,
+          "p25": 1995,
+          "p75": 2450
         },
         "1": {
-          "median": 2650,
-          "mean": 2839,
-          "p25": 2350,
-          "p75": 3200
+          "median": 2550,
+          "mean": 2784,
+          "p25": 2300,
+          "p75": 3100
         },
         "2": {
-          "median": 3200,
-          "mean": 3573,
-          "p25": 2750,
-          "p75": 4000
+          "median": 3050,
+          "mean": 3487,
+          "p25": 2711,
+          "p75": 3800
         },
         "3": {
-          "median": 3495,
-          "mean": 3947,
+          "median": 3475,
+          "mean": 3915,
           "p25": 3000,
-          "p75": 4200
+          "p75": 4125
         },
         "4+": {
-          "median": 4400,
-          "mean": 4633,
-          "p25": 3738,
-          "p75": 5261
+          "median": 4500,
+          "mean": 4785,
+          "p25": 3698,
+          "p75": 5725
         }
       },
       "noFee": null
@@ -553,55 +627,70 @@
       "slug": "boston-downtown",
       "roommate": null,
       "trend": {
-        "b1_median": 3225,
-        "wow": -150,
+        "b1_median": 3200,
+        "wow": -25,
         "mom": null
       },
       "history": [
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 3075
+          "median": 3075,
+          "mean": 2939
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 3088
+          "median": 3088,
+          "mean": 2940
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 3075
+          "median": 3075,
+          "mean": 2962
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 3075
+          "median": 3075,
+          "mean": 3018
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 3075
+          "median": 3075,
+          "mean": 3166
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3100
+          "median": 3100,
+          "mean": 3288
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3263
+          "median": 3263,
+          "mean": 3454
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 3375
+          "median": 3375,
+          "mean": 3610
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 3225
+          "median": 3225,
+          "mean": 3453
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 3200,
+          "mean": 3350
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -609,10 +698,10 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 3225,
-          "mean": 3453,
+          "median": 3200,
+          "mean": 3350,
           "p25": 2975,
-          "p75": 3995
+          "p75": 3525
         },
         "2": null,
         "3": null,
@@ -624,130 +713,152 @@
       "neighborhood": "Brighton",
       "slug": "brighton",
       "roommate": {
-        "studio": 2072,
-        "perPerson": 1499,
-        "savings": 573,
-        "pctSaved": 28
+        "studio": 2061,
+        "perPerson": 1473,
+        "savings": 588,
+        "pctSaved": 29
       },
       "trend": {
         "b1_median": 2325,
-        "wow": -75,
+        "wow": 0,
         "mom": 25
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2325
+          "median": 2325,
+          "mean": 2370
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2325
+          "median": 2325,
+          "mean": 2374
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2320
+          "median": 2320,
+          "mean": 2381
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2300
+          "median": 2300,
+          "mean": 2380
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2300
+          "median": 2300,
+          "mean": 2365
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2300
+          "median": 2300,
+          "mean": 2390
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2300
+          "median": 2300,
+          "mean": 2394
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2300
+          "median": 2300,
+          "mean": 2393
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2300
+          "median": 2300,
+          "mean": 2414
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2350
+          "median": 2350,
+          "mean": 2446
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2375
+          "median": 2375,
+          "mean": 2455
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2395
+          "median": 2395,
+          "mean": 2453
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2395
+          "median": 2395,
+          "mean": 2452
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2400
+          "median": 2400,
+          "mean": 2460
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2400
+          "median": 2400,
+          "mean": 2463
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2325
+          "median": 2325,
+          "mean": 2392
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2325,
+          "mean": 2403
         }
       ],
       "historyBedLabel": "1-bedroom",
       "isCityScope": false,
       "beds": {
         "0": {
-          "median": 2013,
-          "mean": 2072,
-          "p25": 1975,
-          "p75": 2138
+          "median": 2000,
+          "mean": 2061,
+          "p25": 1950,
+          "p75": 2100
         },
         "1": {
           "median": 2325,
-          "mean": 2392,
+          "mean": 2403,
           "p25": 2200,
           "p75": 2500
         },
         "2": {
-          "median": 2850,
-          "mean": 2998,
-          "p25": 2650,
-          "p75": 3195
+          "median": 2830,
+          "mean": 2945,
+          "p25": 2663,
+          "p75": 3025
         },
         "3": {
-          "median": 3500,
-          "mean": 3623,
+          "median": 3450,
+          "mean": 3568,
           "p25": 3000,
-          "p75": 3981
+          "p75": 3950
         },
         "4+": {
           "median": 4800,
-          "mean": 4997,
-          "p25": 4000,
-          "p75": 5775
+          "mean": 4938,
+          "p25": 3950,
+          "p75": 5800
         }
       },
       "noFee": null
@@ -756,130 +867,152 @@
       "neighborhood": "Brookline",
       "slug": "brookline",
       "roommate": {
-        "studio": 2325,
-        "perPerson": 1836,
-        "savings": 489,
-        "pctSaved": 21
+        "studio": 2282,
+        "perPerson": 1869,
+        "savings": 413,
+        "pctSaved": 18
       },
       "trend": {
-        "b1_median": 2800,
-        "wow": 0,
-        "mom": -100
+        "b1_median": 2825,
+        "wow": 25,
+        "mom": -75
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2900
+          "median": 2900,
+          "mean": 2922
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2875
+          "median": 2875,
+          "mean": 2901
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2874
+          "median": 2874,
+          "mean": 2898
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2900
+          "median": 2900,
+          "mean": 2910
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2900
+          "median": 2900,
+          "mean": 2927
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2995
+          "median": 2995,
+          "mean": 2960
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2970
+          "median": 2970,
+          "mean": 2951
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2995
+          "median": 2995,
+          "mean": 2958
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2995
+          "median": 2995,
+          "mean": 2951
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2955
+          "median": 2955,
+          "mean": 2947
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2971
+          "median": 2971,
+          "mean": 2955
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2990
+          "median": 2990,
+          "mean": 2975
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2995
+          "median": 2995,
+          "mean": 2977
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2995
+          "median": 2995,
+          "mean": null
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2890
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2881
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2825,
+          "mean": 2962
         }
       ],
       "historyBedLabel": "1-bedroom",
       "isCityScope": true,
       "beds": {
         "0": {
-          "median": 2198,
-          "mean": 2325,
-          "p25": 2000,
-          "p75": 2563
+          "median": 2195,
+          "mean": 2282,
+          "p25": 1975,
+          "p75": 2550
         },
         "1": {
-          "median": 2800,
-          "mean": 2881,
-          "p25": 2500,
-          "p75": 3200
+          "median": 2825,
+          "mean": 2962,
+          "p25": 2566,
+          "p75": 3255
         },
         "2": {
           "median": 3400,
-          "mean": 3671,
+          "mean": 3738,
           "p25": 3100,
-          "p75": 4000
+          "p75": 4050
         },
         "3": {
-          "median": 4700,
-          "mean": 5021,
-          "p25": 4200,
-          "p75": 5388
+          "median": 4750,
+          "mean": 5001,
+          "p25": 4000,
+          "p75": 5500
         },
         "4+": {
           "median": 5500,
-          "mean": 5816,
+          "mean": 5726,
           "p25": 4800,
-          "p75": 6500
+          "p75": 6200
         }
       },
       "noFee": null
@@ -888,183 +1021,153 @@
       "neighborhood": "Cambridge",
       "slug": "cambridge",
       "roommate": {
-        "studio": 2296,
-        "perPerson": 1803,
-        "savings": 493,
-        "pctSaved": 21
+        "studio": 2257,
+        "perPerson": 1749,
+        "savings": 508,
+        "pctSaved": 23
       },
       "trend": {
-        "b1_median": 2817,
-        "wow": -83,
-        "mom": 17
+        "b1_median": 2800,
+        "wow": -17,
+        "mom": 20
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2750
+          "median": 2750,
+          "mean": 2848
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2750
+          "median": 2750,
+          "mean": 2849
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2800
+          "median": 2800,
+          "mean": 2848
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2800
+          "median": 2800,
+          "mean": 2836
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2780
+          "median": 2780,
+          "mean": null
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2800
+          "median": 2800,
+          "mean": 2823
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2800
+          "median": 2800,
+          "mean": 2820
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2821
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2849
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 2894
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 2908
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2945
+          "median": 2945,
+          "mean": 2937
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 2921
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": null
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 2975
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2817
+          "median": 2817,
+          "mean": 2938
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2800,
+          "mean": 2848
         }
       ],
       "historyBedLabel": "1-bedroom",
       "isCityScope": true,
       "beds": {
         "0": {
-          "median": 2200,
-          "mean": 2296,
-          "p25": 2100,
-          "p75": 2450
+          "median": 2150,
+          "mean": 2257,
+          "p25": 2050,
+          "p75": 2350
         },
         "1": {
-          "median": 2817,
-          "mean": 2938,
+          "median": 2800,
+          "mean": 2848,
           "p25": 2500,
-          "p75": 3288
+          "p75": 3113
         },
         "2": {
-          "median": 3575,
-          "mean": 3606,
-          "p25": 3000,
-          "p75": 4075
+          "median": 3300,
+          "mean": 3498,
+          "p25": 2988,
+          "p75": 3925
         },
         "3": {
-          "median": 4350,
-          "mean": 4589,
-          "p25": 3600,
-          "p75": 5300
+          "median": 4000,
+          "mean": 4503,
+          "p25": 3425,
+          "p75": 5150
         },
         "4+": {
-          "median": 5400,
-          "mean": 6660,
-          "p25": 4671,
-          "p75": 7463
+          "median": 5800,
+          "mean": 6942,
+          "p25": 4500,
+          "p75": 8700
         }
-      },
-      "noFee": null
-    },
-    {
-      "neighborhood": "Charlestown",
-      "slug": "charlestown",
-      "roommate": null,
-      "trend": {
-        "b1_median": null,
-        "wow": null,
-        "mom": null
-      },
-      "history": [
-        {
-          "ym": "2025-07",
-          "label": "Jul 2025",
-          "median": 3900
-        },
-        {
-          "ym": "2026-06",
-          "label": "Jun 2026",
-          "median": 3900
-        },
-        {
-          "ym": "2026-07",
-          "label": "Jul 2026",
-          "median": 3900
-        },
-        {
-          "ym": "2026-08",
-          "label": "Aug 2026",
-          "median": 3850
-        },
-        {
-          "ym": "2026-09",
-          "label": "Sep 2026",
-          "median": 3800
-        }
-      ],
-      "historyBedLabel": "2-bedroom",
-      "isCityScope": false,
-      "beds": {
-        "0": null,
-        "1": null,
-        "2": {
-          "median": 3800,
-          "mean": 4295,
-          "p25": 3500,
-          "p75": 4838
-        },
-        "3": null,
-        "4+": null
       },
       "noFee": null
     },
@@ -1081,82 +1184,104 @@
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 4600
+          "median": 4600,
+          "mean": 4528
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 4705
+          "median": 4705,
+          "mean": 4662
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 4645
+          "median": 4645,
+          "mean": 4625
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 4475
+          "median": 4475,
+          "mean": 4378
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 4475
+          "median": 4475,
+          "mean": 4326
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 4690
+          "median": 4690,
+          "mean": 4498
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 4720
+          "median": 4720,
+          "mean": 4545
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 4705
+          "median": 4705,
+          "mean": 4502
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 4645
+          "median": 4645,
+          "mean": 4342
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 4515
+          "median": 4515,
+          "mean": 4257
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 4515
+          "median": 4515,
+          "mean": 4257
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 4475
+          "median": 4475,
+          "mean": 4253
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 4888
+          "median": 4888,
+          "mean": 4519
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 4928
+          "median": 4928,
+          "mean": 4648
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 4970
+          "median": 4970,
+          "mean": 4942
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 5003
+          "median": 5003,
+          "mean": 4947
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 4930,
+          "mean": 4664
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -1165,10 +1290,10 @@
         "0": null,
         "1": null,
         "2": {
-          "median": 5003,
-          "mean": 4947,
-          "p25": 4881,
-          "p75": 5273
+          "median": 4930,
+          "mean": 4664,
+          "p25": 4078,
+          "p75": 5135
         },
         "3": null,
         "4+": null
@@ -1180,90 +1305,112 @@
       "slug": "coolidge-corner",
       "roommate": null,
       "trend": {
-        "b1_median": 2700,
-        "wow": -50,
-        "mom": -295
+        "b1_median": 2850,
+        "wow": 150,
+        "mom": -135
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2971
+          "median": 2971,
+          "mean": 2984
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2913
+          "median": 2913,
+          "mean": 2954
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2938
+          "median": 2938,
+          "mean": 2952
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2995
+          "median": 2995,
+          "mean": 2984
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2985
+          "median": 2985,
+          "mean": 2979
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 3045
+          "median": 3045,
+          "mean": 3041
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 3023
+          "median": 3023,
+          "mean": 3035
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": 3029
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 3005
+          "median": 3005,
+          "mean": 3027
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 3005
+          "median": 3005,
+          "mean": 3029
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 3028
+          "median": 3028,
+          "mean": 3043
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 3005
+          "median": 3005,
+          "mean": 3060
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": 3024
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": 3007
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2750
+          "median": 2750,
+          "mean": 2802
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2700
+          "median": 2700,
+          "mean": 2782
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2850,
+          "mean": 2959
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1271,29 +1418,24 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 2700,
-          "mean": 2782,
-          "p25": 2361,
-          "p75": 3200
+          "median": 2850,
+          "mean": 2959,
+          "p25": 2428,
+          "p75": 3475
         },
         "2": {
-          "median": 3450,
-          "mean": 3601,
-          "p25": 3200,
+          "median": 3400,
+          "mean": 3578,
+          "p25": 3150,
           "p75": 3925
         },
         "3": {
-          "median": 4825,
-          "mean": 4846,
-          "p25": 4200,
-          "p75": 5363
+          "median": 4650,
+          "mean": 4778,
+          "p25": 3988,
+          "p75": 5313
         },
-        "4+": {
-          "median": 5550,
-          "mean": 5918,
-          "p25": 4975,
-          "p75": 6500
-        }
+        "4+": null
       },
       "noFee": null
     },
@@ -1302,90 +1444,112 @@
       "slug": "dorchester",
       "roommate": null,
       "trend": {
-        "b1_median": 2448,
-        "wow": -52,
-        "mom": 118
+        "b1_median": 2350,
+        "wow": -98,
+        "mom": 37
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2313
+          "median": 2313,
+          "mean": 2283
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2375
+          "median": 2375,
+          "mean": 2386
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2400
+          "median": 2400,
+          "mean": 2312
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2330
+          "median": 2330,
+          "mean": 2282
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2313
+          "median": 2313,
+          "mean": 2253
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2400
+          "median": 2400,
+          "mean": 2287
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2400
+          "median": 2400,
+          "mean": 2373
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2448
+          "median": 2448,
+          "mean": 2479
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2375
+          "median": 2375,
+          "mean": 2397
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2375
+          "median": 2375,
+          "mean": 2385
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2400
+          "median": 2400,
+          "mean": 2433
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2450
+          "median": 2450,
+          "mean": 2489
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2503
+          "median": 2503,
+          "mean": 2598
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2500
+          "median": 2500,
+          "mean": null
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2500
+          "median": 2500,
+          "mean": 2544
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2448
+          "median": 2448,
+          "mean": 2461
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2350,
+          "mean": 2370
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1393,27 +1557,27 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 2448,
-          "mean": 2461,
-          "p25": 2150,
-          "p75": 2665
+          "median": 2350,
+          "mean": 2370,
+          "p25": 2125,
+          "p75": 2450
         },
         "2": {
-          "median": 2827,
-          "mean": 2951,
-          "p25": 2550,
-          "p75": 3250
+          "median": 2800,
+          "mean": 2859,
+          "p25": 2500,
+          "p75": 3200
         },
         "3": {
-          "median": 3200,
-          "mean": 3275,
-          "p25": 2975,
+          "median": 3185,
+          "mean": 3269,
+          "p25": 2838,
           "p75": 3500
         },
         "4+": {
-          "median": 3800,
-          "mean": 3885,
-          "p25": 3550,
+          "median": 3700,
+          "mean": 3709,
+          "p25": 3400,
           "p75": 4000
         }
       },
@@ -1424,90 +1588,112 @@
       "slug": "east-boston",
       "roommate": null,
       "trend": {
-        "b1_median": 2650,
-        "wow": 50,
-        "mom": 250
+        "b1_median": 2400,
+        "wow": -250,
+        "mom": 50
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2375
+          "median": 2375,
+          "mean": 2322
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2400
+          "median": 2400,
+          "mean": 2420
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2400
+          "median": 2400,
+          "mean": 2413
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2400
+          "median": 2400,
+          "mean": 2384
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2350
+          "median": 2350,
+          "mean": 2388
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2400
+          "median": 2400,
+          "mean": 2494
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2375
+          "median": 2375,
+          "mean": 2448
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2338
+          "median": 2338,
+          "mean": 2427
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2300
+          "median": 2300,
+          "mean": 2388
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2375
+          "median": 2375,
+          "mean": 2478
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2400
+          "median": 2400,
+          "mean": 2491
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2400
+          "median": 2400,
+          "mean": 2543
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2400
+          "median": 2400,
+          "mean": 2558
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2525
+          "median": 2525,
+          "mean": 2585
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2600
+          "median": 2600,
+          "mean": 2670
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2650
+          "median": 2650,
+          "mean": 2653
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2400,
+          "mean": 2478
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1515,22 +1701,22 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 2650,
-          "mean": 2653,
-          "p25": 2281,
-          "p75": 3000
+          "median": 2400,
+          "mean": 2478,
+          "p25": 2025,
+          "p75": 2800
         },
         "2": {
-          "median": 3250,
-          "mean": 3174,
-          "p25": 2700,
-          "p75": 3500
+          "median": 2825,
+          "mean": 2999,
+          "p25": 2538,
+          "p75": 3424
         },
         "3": {
           "median": 3300,
-          "mean": 3310,
+          "mean": 3321,
           "p25": 2800,
-          "p75": 3700
+          "p75": 3800
         },
         "4+": null
       },
@@ -1540,96 +1726,118 @@
       "neighborhood": "Fenway",
       "slug": "fenway",
       "roommate": {
-        "studio": 2325,
-        "perPerson": 1831,
-        "savings": 494,
-        "pctSaved": 21
+        "studio": 2323,
+        "perPerson": 1769,
+        "savings": 554,
+        "pctSaved": 24
       },
       "trend": {
-        "b1_median": 2700,
-        "wow": -95,
-        "mom": -50
+        "b1_median": 2713,
+        "wow": 13,
+        "mom": -20
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2800
+          "median": 2800,
+          "mean": 2819
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2795
+          "median": 2795,
+          "mean": 2810
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2750
+          "median": 2750,
+          "mean": 2795
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2750
+          "median": 2750,
+          "mean": 2780
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2733
+          "median": 2733,
+          "mean": 2772
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2748
+          "median": 2748,
+          "mean": 2762
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2750
+          "median": 2750,
+          "mean": 2771
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2750
+          "median": 2750,
+          "mean": 2787
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2800
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2818
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2817
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2817
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2844
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2834
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2795
+          "median": 2795,
+          "mean": 2856
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2700
+          "median": 2700,
+          "mean": 2812
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2713,
+          "mean": 2818
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1637,28 +1845,23 @@
       "beds": {
         "0": {
           "median": 2295,
-          "mean": 2325,
+          "mean": 2323,
           "p25": 2195,
-          "p75": 2450
+          "p75": 2463
         },
         "1": {
-          "median": 2700,
-          "mean": 2812,
-          "p25": 2530,
-          "p75": 2925
+          "median": 2713,
+          "mean": 2818,
+          "p25": 2545,
+          "p75": 2906
         },
         "2": {
-          "median": 3600,
-          "mean": 3662,
-          "p25": 3300,
-          "p75": 3975
+          "median": 3500,
+          "mean": 3537,
+          "p25": 3163,
+          "p75": 3900
         },
-        "3": {
-          "median": 4500,
-          "mean": 4274,
-          "p25": 3300,
-          "p75": 4750
-        },
+        "3": null,
         "4+": null
       },
       "noFee": null
@@ -1676,82 +1879,104 @@
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 3200
+          "median": 3200,
+          "mean": 3201
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 3200
+          "median": 3200,
+          "mean": 3229
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 3200
+          "median": 3200,
+          "mean": 3174
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 3200
+          "median": 3200,
+          "mean": 3127
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 3200
+          "median": 3200,
+          "mean": 3127
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 3200
+          "median": 3200,
+          "mean": 3091
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2925
+          "median": 2925,
+          "mean": 3049
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 3028
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 3035
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 3100
+          "median": 3100,
+          "mean": 3107
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 3200
+          "median": 3200,
+          "mean": 3165
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 3200
+          "median": 3200,
+          "mean": 3174
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3200
+          "median": 3200,
+          "mean": 3163
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3200
+          "median": 3200,
+          "mean": 3180
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 3200
+          "median": 3200,
+          "mean": 3265
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 3098
+          "median": 3098,
+          "mean": 3159
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 3000,
+          "mean": 3095
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -1760,22 +1985,22 @@
         "0": null,
         "1": null,
         "2": {
-          "median": 3098,
-          "mean": 3159,
-          "p25": 2809,
-          "p75": 3399
+          "median": 3000,
+          "mean": 3095,
+          "p25": 2675,
+          "p75": 3398
         },
         "3": {
-          "median": 3400,
-          "mean": 3510,
+          "median": 3295,
+          "mean": 3377,
           "p25": 3000,
-          "p75": 3800
+          "p75": 3600
         },
         "4+": {
-          "median": 4300,
-          "mean": 4495,
-          "p25": 3950,
-          "p75": 5000
+          "median": 4248,
+          "mean": 4182,
+          "p25": 3936,
+          "p75": 4996
         }
       },
       "noFee": null
@@ -1785,90 +2010,112 @@
       "slug": "mission-hill",
       "roommate": null,
       "trend": {
-        "b1_median": 3075,
-        "wow": 0,
-        "mom": 525
+        "b1_median": 2898,
+        "wow": -177,
+        "mom": 398
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2495
+          "median": 2495,
+          "mean": 2624
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2498
+          "median": 2498,
+          "mean": 2593
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2500
+          "median": 2500,
+          "mean": 2651
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2550
+          "median": 2550,
+          "mean": 2664
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2500
+          "median": 2500,
+          "mean": 2595
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2400
+          "median": 2400,
+          "mean": 2567
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2500
+          "median": 2500,
+          "mean": 2583
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2500
+          "median": 2500,
+          "mean": 2582
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2400
+          "median": 2400,
+          "mean": 2544
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2400
+          "median": 2400,
+          "mean": 2527
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2500
+          "median": 2500,
+          "mean": 2612
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2500
+          "median": 2500,
+          "mean": 2629
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2575
+          "median": 2575,
+          "mean": 2655
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2575
+          "median": 2575,
+          "mean": 2651
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 3075
+          "median": 3075,
+          "mean": 2952
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 3075
+          "median": 3075,
+          "mean": 2914
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2898,
+          "mean": 2817
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1876,23 +2123,23 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 3075,
-          "mean": 2914,
+          "median": 2898,
+          "mean": 2817,
           "p25": 2400,
-          "p75": 3275
+          "p75": 3231
         },
         "2": {
-          "median": 2898,
-          "mean": 2824,
-          "p25": 2663,
-          "p75": 3000
+          "median": 2995,
+          "mean": 2979,
+          "p25": 2700,
+          "p75": 3070
         },
         "3": null,
         "4+": {
-          "median": 4800,
-          "mean": 4835,
-          "p25": 4075,
-          "p75": 5575
+          "median": 6000,
+          "mean": 6105,
+          "p25": 4995,
+          "p75": 6813
         }
       },
       "noFee": null
@@ -1902,90 +2149,112 @@
       "slug": "north-end",
       "roommate": null,
       "trend": {
-        "b1_median": 2900,
-        "wow": 50,
-        "mom": -65
+        "b1_median": 2850,
+        "wow": -50,
+        "mom": -115
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 3000
+          "median": 3000,
+          "mean": 3121
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 3015
+          "median": 3015,
+          "mean": 3160
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 3013
+          "median": 3013,
+          "mean": 3191
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2965
+          "median": 2965,
+          "mean": 3122
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2965
+          "median": 2965,
+          "mean": 3061
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 3200
+          "median": 3200,
+          "mean": 3181
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 3190
+          "median": 3190,
+          "mean": 3143
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 3180
+          "median": 3180,
+          "mean": 3078
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 3015
+          "median": 3015,
+          "mean": 3040
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": 3006
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 3048
+          "median": 3048,
+          "mean": 3104
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 3050
+          "median": 3050,
+          "mean": 3125
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3200
+          "median": 3200,
+          "mean": 3257
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3013
+          "median": 3013,
+          "mean": 3238
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2850
+          "median": 2850,
+          "mean": 3411
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 3436
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2850,
+          "mean": 3610
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -1993,16 +2262,16 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 2900,
-          "mean": 3436,
-          "p25": 2600,
-          "p75": 3750
+          "median": 2850,
+          "mean": 3610,
+          "p25": 2550,
+          "p75": 5010
         },
         "2": {
-          "median": 4100,
-          "mean": 4627,
-          "p25": 3350,
-          "p75": 5704
+          "median": 3800,
+          "mean": 4603,
+          "p25": 3100,
+          "p75": 5590
         },
         "3": null,
         "4+": null
@@ -2022,82 +2291,104 @@
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2700
+          "median": 2700,
+          "mean": 2764
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2875
+          "median": 2875,
+          "mean": 2907
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2800
+          "median": 2800,
+          "mean": 2881
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2775
+          "median": 2775,
+          "mean": 2863
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2725
+          "median": 2725,
+          "mean": 2822
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2675
+          "median": 2675,
+          "mean": 2757
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2675
+          "median": 2675,
+          "mean": 2771
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2775
+          "median": 2775,
+          "mean": 2817
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2856
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 2906
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2850
+          "median": 2850,
+          "mean": 2925
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": 2954
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2950
+          "median": 2950,
+          "mean": 2916
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2850
+          "median": 2850,
+          "mean": 2879
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2850
+          "median": 2850,
+          "mean": 2893
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2950
+          "median": 2950,
+          "mean": 2920
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2900,
+          "mean": 2925
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -2106,9 +2397,9 @@
         "0": null,
         "1": null,
         "2": {
-          "median": 2950,
-          "mean": 2920,
-          "p25": 2638,
+          "median": 2900,
+          "mean": 2925,
+          "p25": 2675,
           "p75": 3150
         },
         "3": null,
@@ -2129,82 +2420,104 @@
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2795
+          "median": 2795,
+          "mean": 2952
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2800
+          "median": 2800,
+          "mean": 3211
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2875
+          "median": 2875,
+          "mean": 3387
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2800
+          "median": 2800,
+          "mean": null
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2838
+          "median": 2838,
+          "mean": null
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 3500
+          "median": 3500,
+          "mean": 3728
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 3250
+          "median": 3250,
+          "mean": 3593
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": 3440
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 3300
+          "median": 3300,
+          "mean": 3471
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 3800
+          "median": 3800,
+          "mean": 3647
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 3800
+          "median": 3800,
+          "mean": 3671
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 3800
+          "median": 3800,
+          "mean": 3704
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3795
+          "median": 3795,
+          "mean": 3638
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3400
+          "median": 3400,
+          "mean": null
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2800
+          "median": 2800,
+          "mean": 3022
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2750
+          "median": 2750,
+          "mean": 2916
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2775,
+          "mean": 2931
         }
       ],
       "historyBedLabel": "2-bedroom",
@@ -2213,22 +2526,22 @@
         "0": null,
         "1": null,
         "2": {
-          "median": 2750,
-          "mean": 2916,
-          "p25": 2500,
-          "p75": 3350
+          "median": 2775,
+          "mean": 2931,
+          "p25": 2561,
+          "p75": 3313
         },
         "3": {
-          "median": 3300,
-          "mean": 3401,
-          "p25": 3000,
-          "p75": 3624
+          "median": 3200,
+          "mean": 3274,
+          "p25": 2975,
+          "p75": 3600
         },
         "4+": {
           "median": 4000,
-          "mean": 4060,
-          "p25": 3399,
-          "p75": 4425
+          "mean": 4252,
+          "p25": 3380,
+          "p75": 4800
         }
       },
       "noFee": null
@@ -2238,90 +2551,112 @@
       "slug": "somerville",
       "roommate": null,
       "trend": {
-        "b1_median": 2500,
-        "wow": -50,
-        "mom": 0
+        "b1_median": 2400,
+        "wow": -100,
+        "mom": -100
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2500
+          "median": 2500,
+          "mean": 2516
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2500
+          "median": 2500,
+          "mean": 2501
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 2500
+          "median": 2500,
+          "mean": 2531
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 2500
+          "median": 2500,
+          "mean": 2530
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2500
+          "median": 2500,
+          "mean": 2558
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2550
+          "median": 2550,
+          "mean": 2562
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2525
+          "median": 2525,
+          "mean": 2543
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2550
+          "median": 2550,
+          "mean": 2564
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2600
+          "median": 2600,
+          "mean": 2594
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2600
+          "median": 2600,
+          "mean": 2618
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 2600
+          "median": 2600,
+          "mean": 2637
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 2650
+          "median": 2650,
+          "mean": 2645
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2695
+          "median": 2695,
+          "mean": 2643
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 2600
+          "median": 2600,
+          "mean": null
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2550
+          "median": 2550,
+          "mean": 2570
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2500
+          "median": 2500,
+          "mean": 2510
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2400,
+          "mean": 2439
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -2329,26 +2664,26 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 2500,
-          "mean": 2510,
+          "median": 2400,
+          "mean": 2439,
           "p25": 2200,
-          "p75": 2693
+          "p75": 2650
         },
         "2": {
-          "median": 3100,
-          "mean": 3193,
-          "p25": 2800,
-          "p75": 3500
+          "median": 3000,
+          "mean": 3156,
+          "p25": 2700,
+          "p75": 3413
         },
         "3": {
-          "median": 3600,
-          "mean": 3706,
-          "p25": 3300,
-          "p75": 3973
+          "median": 3500,
+          "mean": 3696,
+          "p25": 3200,
+          "p75": 4000
         },
         "4+": {
           "median": 4500,
-          "mean": 5115,
+          "mean": 5044,
           "p25": 4000,
           "p75": 6000
         }
@@ -2360,90 +2695,112 @@
       "slug": "south-boston",
       "roommate": null,
       "trend": {
-        "b1_median": 2950,
-        "wow": 50,
-        "mom": -50
+        "b1_median": 2975,
+        "wow": 25,
+        "mom": 12
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 2875
+          "median": 2875,
+          "mean": 2924
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 2925
+          "median": 2925,
+          "mean": 3063
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 3000
+          "median": 3000,
+          "mean": 3051
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 3000
+          "median": 3000,
+          "mean": 3011
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 2963
+          "median": 2963,
+          "mean": 2989
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 3125
+          "median": 3125,
+          "mean": 3131
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 3150
+          "median": 3150,
+          "mean": 3103
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 3150
+          "median": 3150,
+          "mean": 3112
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 3125
+          "median": 3125,
+          "mean": 3102
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 3150
+          "median": 3150,
+          "mean": 3197
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": 3092
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 3050
+          "median": 3050,
+          "mean": 3170
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 2975
+          "median": 2975,
+          "mean": 3048
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": 3094
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 3106
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 2950
+          "median": 2950,
+          "mean": 3233
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 2975,
+          "mean": 3252
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -2451,29 +2808,24 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 2950,
-          "mean": 3233,
-          "p25": 2600,
-          "p75": 3538
+          "median": 2975,
+          "mean": 3252,
+          "p25": 2606,
+          "p75": 3484
         },
         "2": {
-          "median": 3900,
-          "mean": 4066,
-          "p25": 3484,
-          "p75": 4425
+          "median": 3888,
+          "mean": 4196,
+          "p25": 3400,
+          "p75": 4663
         },
         "3": {
-          "median": 4500,
-          "mean": 5148,
-          "p25": 4088,
-          "p75": 5996
+          "median": 4700,
+          "mean": 5031,
+          "p25": 4000,
+          "p75": 5600
         },
-        "4+": {
-          "median": 6200,
-          "mean": 5914,
-          "p25": 5200,
-          "p75": 6500
-        }
+        "4+": null
       },
       "noFee": null
     },
@@ -2482,90 +2834,112 @@
       "slug": "south-end",
       "roommate": null,
       "trend": {
-        "b1_median": 3200,
-        "wow": 0,
+        "b1_median": 3250,
+        "wow": 50,
         "mom": 200
       },
       "history": [
         {
           "ym": "2025-06",
           "label": "Jun 2025",
-          "median": 3150
+          "median": 3150,
+          "mean": 3138
         },
         {
           "ym": "2025-07",
           "label": "Jul 2025",
-          "median": 3175
+          "median": 3175,
+          "mean": 3177
         },
         {
           "ym": "2025-08",
           "label": "Aug 2025",
-          "median": 3100
+          "median": 3100,
+          "mean": 3148
         },
         {
           "ym": "2025-09",
           "label": "Sep 2025",
-          "median": 3000
+          "median": 3000,
+          "mean": 3077
         },
         {
           "ym": "2025-10",
           "label": "Oct 2025",
-          "median": 3050
+          "median": 3050,
+          "mean": null
         },
         {
           "ym": "2025-11",
           "label": "Nov 2025",
-          "median": 2875
+          "median": 2875,
+          "mean": 2985
         },
         {
           "ym": "2025-12",
           "label": "Dec 2025",
-          "median": 2900
+          "median": 2900,
+          "mean": 3008
         },
         {
           "ym": "2026-01",
           "label": "Jan 2026",
-          "median": 2900
+          "median": 2900,
+          "mean": 3013
         },
         {
           "ym": "2026-02",
           "label": "Feb 2026",
-          "median": 2950
+          "median": 2950,
+          "mean": 3073
         },
         {
           "ym": "2026-03",
           "label": "Mar 2026",
-          "median": 2995
+          "median": 2995,
+          "mean": 3136
         },
         {
           "ym": "2026-04",
           "label": "Apr 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": 3136
         },
         {
           "ym": "2026-05",
           "label": "May 2026",
-          "median": 3000
+          "median": 3000,
+          "mean": null
         },
         {
           "ym": "2026-06",
           "label": "Jun 2026",
-          "median": 3100
+          "median": 3100,
+          "mean": null
         },
         {
           "ym": "2026-07",
           "label": "Jul 2026",
-          "median": 3025
+          "median": 3025,
+          "mean": 3148
         },
         {
           "ym": "2026-08",
           "label": "Aug 2026",
-          "median": 3200
+          "median": 3200,
+          "mean": 3318
         },
         {
           "ym": "2026-09",
           "label": "Sep 2026",
-          "median": 3200
+          "median": 3200,
+          "mean": 3295
+        },
+        {
+          "ym": "2026-10",
+          "label": "Oct 2026",
+          "median": 3250,
+          "mean": 3375
         }
       ],
       "historyBedLabel": "1-bedroom",
@@ -2573,23 +2947,18 @@
       "beds": {
         "0": null,
         "1": {
-          "median": 3200,
-          "mean": 3295,
-          "p25": 2850,
-          "p75": 3613
+          "median": 3250,
+          "mean": 3375,
+          "p25": 2800,
+          "p75": 3981
         },
         "2": {
-          "median": 4250,
-          "mean": 4628,
-          "p25": 3700,
-          "p75": 5400
+          "median": 4287,
+          "mean": 4869,
+          "p25": 3775,
+          "p75": 5150
         },
-        "3": {
-          "median": 4998,
-          "mean": 5374,
-          "p25": 4500,
-          "p75": 6336
-        },
+        "3": null,
         "4+": null
       },
       "noFee": null

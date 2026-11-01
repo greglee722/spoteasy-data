@@ -1,0 +1,73 @@
+week_ending,scope,scope_value,beds,median_rent,p25,p75,mean_rent
+2026-10-01,metro,Greater Boston,0,2200,1995,2450,2286
+2026-10-01,metro,Greater Boston,1,2550,2295,3000,2724
+2026-10-01,metro,Greater Boston,2,3050,2700,3695,3373
+2026-10-01,metro,Greater Boston,3,3500,3050,4300,3940
+2026-10-01,metro,Greater Boston,4+,4800,3898,6000,5230
+2026-10-01,neighborhood,Allston,0,1995,1950,2196,2038
+2026-10-01,neighborhood,Allston,1,2385,2213,2500,2407
+2026-10-01,neighborhood,Allston,2,2830,2770,3100,3019
+2026-10-01,neighborhood,Allston,3,3400,2911,4018,3535
+2026-10-01,neighborhood,Allston,4+,4999,4200,5600,4823
+2026-10-01,neighborhood,Back Bay,0,2400,2238,2695,2806
+2026-10-01,neighborhood,Back Bay,1,3250,3000,3650,3404
+2026-10-01,neighborhood,Back Bay,2,4188,3900,6350,5403
+2026-10-01,neighborhood,Beacon Hill,0,2388,2300,2500,2364
+2026-10-01,neighborhood,Beacon Hill,1,2925,2550,3288,2962
+2026-10-01,neighborhood,Beacon Hill,2,4000,3023,4300,3825
+2026-10-01,neighborhood,Boston,0,2200,1995,2450,2300
+2026-10-01,neighborhood,Boston,1,2550,2300,3100,2784
+2026-10-01,neighborhood,Boston,2,3050,2711,3800,3487
+2026-10-01,neighborhood,Boston,3,3475,3000,4125,3915
+2026-10-01,neighborhood,Boston,4+,4500,3698,5725,4785
+2026-10-01,neighborhood,Boston Downtown,1,3200,2975,3525,3350
+2026-10-01,neighborhood,Brighton,0,2000,1950,2100,2061
+2026-10-01,neighborhood,Brighton,1,2325,2200,2500,2403
+2026-10-01,neighborhood,Brighton,2,2830,2663,3025,2945
+2026-10-01,neighborhood,Brighton,3,3450,3000,3950,3568
+2026-10-01,neighborhood,Brighton,4+,4800,3950,5800,4938
+2026-10-01,neighborhood,Brookline,0,2195,1975,2550,2282
+2026-10-01,neighborhood,Brookline,1,2825,2566,3255,2962
+2026-10-01,neighborhood,Brookline,2,3400,3100,4050,3738
+2026-10-01,neighborhood,Brookline,3,4750,4000,5500,5001
+2026-10-01,neighborhood,Brookline,4+,5500,4800,6200,5726
+2026-10-01,neighborhood,Cambridge,0,2150,2050,2350,2257
+2026-10-01,neighborhood,Cambridge,1,2800,2500,3113,2848
+2026-10-01,neighborhood,Cambridge,2,3300,2988,3925,3498
+2026-10-01,neighborhood,Cambridge,3,4000,3425,5150,4503
+2026-10-01,neighborhood,Cambridge,4+,5800,4500,8700,6942
+2026-10-01,neighborhood,Chinatown,2,4930,4078,5135,4664
+2026-10-01,neighborhood,Coolidge Corner,1,2850,2428,3475,2959
+2026-10-01,neighborhood,Coolidge Corner,2,3400,3150,3925,3578
+2026-10-01,neighborhood,Coolidge Corner,3,4650,3988,5313,4778
+2026-10-01,neighborhood,Dorchester,1,2350,2125,2450,2370
+2026-10-01,neighborhood,Dorchester,2,2800,2500,3200,2859
+2026-10-01,neighborhood,Dorchester,3,3185,2838,3500,3269
+2026-10-01,neighborhood,Dorchester,4+,3700,3400,4000,3709
+2026-10-01,neighborhood,East Boston,1,2400,2025,2800,2478
+2026-10-01,neighborhood,East Boston,2,2825,2538,3424,2999
+2026-10-01,neighborhood,East Boston,3,3300,2800,3800,3321
+2026-10-01,neighborhood,Fenway,0,2295,2195,2463,2323
+2026-10-01,neighborhood,Fenway,1,2713,2545,2906,2818
+2026-10-01,neighborhood,Fenway,2,3500,3163,3900,3537
+2026-10-01,neighborhood,Jamaica Plain,2,3000,2675,3398,3095
+2026-10-01,neighborhood,Jamaica Plain,3,3295,3000,3600,3377
+2026-10-01,neighborhood,Jamaica Plain,4+,4248,3936,4996,4182
+2026-10-01,neighborhood,Mission Hill,1,2898,2400,3231,2817
+2026-10-01,neighborhood,Mission Hill,2,2995,2700,3070,2979
+2026-10-01,neighborhood,Mission Hill,4+,6000,4995,6813,6105
+2026-10-01,neighborhood,North End,1,2850,2550,5010,3610
+2026-10-01,neighborhood,North End,2,3800,3100,5590,4603
+2026-10-01,neighborhood,Roslindale,2,2900,2675,3150,2925
+2026-10-01,neighborhood,Roxbury,2,2775,2561,3313,2931
+2026-10-01,neighborhood,Roxbury,3,3200,2975,3600,3274
+2026-10-01,neighborhood,Roxbury,4+,4000,3380,4800,4252
+2026-10-01,neighborhood,Somerville,1,2400,2200,2650,2439
+2026-10-01,neighborhood,Somerville,2,3000,2700,3413,3156
+2026-10-01,neighborhood,Somerville,3,3500,3200,4000,3696
+2026-10-01,neighborhood,Somerville,4+,4500,4000,6000,5044
+2026-10-01,neighborhood,South Boston,1,2975,2606,3484,3252
+2026-10-01,neighborhood,South Boston,2,3888,3400,4663,4196
+2026-10-01,neighborhood,South Boston,3,4700,4000,5600,5031
+2026-10-01,neighborhood,South End,1,3250,2800,3981,3375
+2026-10-01,neighborhood,South End,2,4287,3775,5150,4869
