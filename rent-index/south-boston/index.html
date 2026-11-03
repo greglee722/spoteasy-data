@@ -180,6 +180,7 @@
 
     /* Trend callout */
     .trend { background: var(--soft); border-left: 3px solid var(--sky); padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 0 0 36px; font-size: 17px; color: var(--navy); font-weight: 600; }
+    .hist-note { margin: 8px 24px 0; font-size: 14px; color: var(--muted); }
 
     /* ─── Tables ─── */
     .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; margin: 16px 24px 8px; display: block; max-width: calc(100% - 48px); box-shadow: 0 1px 3px rgba(0,0,0,.05); }
@@ -282,31 +283,32 @@
       </div>
       
     <h2>Is rent going up or down in South Boston?</h2>
-    <div class="trend">South Boston 1-bedroom rent is <strong>up $100 (3.5%)</strong> since June 2025, when Spot Easy's median was $2,875. Month over month it is up $25 from September 2026.</div>
+    <div class="trend">The average 1-bedroom rent in South Boston is <strong>$3,252</strong> in October 2026, <strong>up $19 (0.6%)</strong> from September 2026. The median is $2,975, up $25 from $2,950.</div>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>Month</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
+        <thead><tr><th>Month</th><th class="num">Average rent</th><th class="num">Change</th><th class="num">Median rent</th></tr></thead>
         <tbody>
-          <tr><td>Jun 2025</td><td class="num">$2,875</td><td class="num"><span class="chg-flat">—</span></td></tr>
-          <tr><td>Jul 2025</td><td class="num">$2,925</td><td class="num"><span class="chg-up">↑ +$50</span></td></tr>
-          <tr><td>Aug 2025</td><td class="num">$3,000</td><td class="num"><span class="chg-up">↑ +$75</span></td></tr>
-          <tr><td>Sep 2025</td><td class="num">$3,000</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Oct 2025</td><td class="num">$2,963</td><td class="num"><span class="chg-down">↓ −$37</span></td></tr>
-          <tr><td>Nov 2025</td><td class="num">$3,125</td><td class="num"><span class="chg-up">↑ +$162</span></td></tr>
-          <tr><td>Dec 2025</td><td class="num">$3,150</td><td class="num"><span class="chg-up">↑ +$25</span></td></tr>
-          <tr><td>Jan 2026</td><td class="num">$3,150</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Feb 2026</td><td class="num">$3,125</td><td class="num"><span class="chg-down">↓ −$25</span></td></tr>
-          <tr><td>Mar 2026</td><td class="num">$3,150</td><td class="num"><span class="chg-up">↑ +$25</span></td></tr>
-          <tr><td>Apr 2026</td><td class="num">$3,000</td><td class="num"><span class="chg-down">↓ −$150</span></td></tr>
-          <tr><td>May 2026</td><td class="num">$3,050</td><td class="num"><span class="chg-up">↑ +$50</span></td></tr>
-          <tr><td>Jun 2026</td><td class="num">$2,975</td><td class="num"><span class="chg-down">↓ −$75</span></td></tr>
-          <tr><td>Jul 2026</td><td class="num">$3,000</td><td class="num"><span class="chg-up">↑ +$25</span></td></tr>
-          <tr><td>Aug 2026</td><td class="num">$2,900</td><td class="num"><span class="chg-down">↓ −$100</span></td></tr>
-          <tr><td>Sep 2026</td><td class="num">$2,950</td><td class="num"><span class="chg-up">↑ +$50</span></td></tr>
-          <tr><td>Oct 2026</td><td class="num">$2,975</td><td class="num"><span class="chg-up">↑ +$25</span></td></tr>
+          <tr><td>Jun 2025</td><td class="num">$2,924</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$2,875</td></tr>
+          <tr><td>Jul 2025</td><td class="num">$3,063</td><td class="num"><span class="chg-up">↑ +$139</span></td><td class="num">$2,925</td></tr>
+          <tr><td>Aug 2025</td><td class="num">$3,051</td><td class="num"><span class="chg-down">↓ −$12</span></td><td class="num">$3,000</td></tr>
+          <tr><td>Sep 2025</td><td class="num">$3,011</td><td class="num"><span class="chg-down">↓ −$40</span></td><td class="num">$3,000</td></tr>
+          <tr><td>Oct 2025</td><td class="num">$2,989</td><td class="num"><span class="chg-down">↓ −$22</span></td><td class="num">$2,963</td></tr>
+          <tr><td>Nov 2025</td><td class="num">$3,131</td><td class="num"><span class="chg-up">↑ +$142</span></td><td class="num">$3,125</td></tr>
+          <tr><td>Dec 2025</td><td class="num">$3,103</td><td class="num"><span class="chg-down">↓ −$28</span></td><td class="num">$3,150</td></tr>
+          <tr><td>Jan 2026</td><td class="num">$3,112</td><td class="num"><span class="chg-up">↑ +$9</span></td><td class="num">$3,150</td></tr>
+          <tr><td>Feb 2026</td><td class="num">$3,102</td><td class="num"><span class="chg-down">↓ −$10</span></td><td class="num">$3,125</td></tr>
+          <tr><td>Mar 2026</td><td class="num">$3,197</td><td class="num"><span class="chg-up">↑ +$95</span></td><td class="num">$3,150</td></tr>
+          <tr><td>Apr 2026</td><td class="num">$3,092</td><td class="num"><span class="chg-down">↓ −$105</span></td><td class="num">$3,000</td></tr>
+          <tr><td>May 2026</td><td class="num">$3,170</td><td class="num"><span class="chg-up">↑ +$78</span></td><td class="num">$3,050</td></tr>
+          <tr><td>Jun 2026</td><td class="num">$3,048</td><td class="num"><span class="chg-down">↓ −$122</span></td><td class="num">$2,975</td></tr>
+          <tr><td>Jul 2026</td><td class="num">$3,094</td><td class="num"><span class="chg-up">↑ +$46</span></td><td class="num">$3,000</td></tr>
+          <tr><td>Aug 2026</td><td class="num">$3,106</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$2,900</td></tr>
+          <tr><td>Sep 2026</td><td class="num">$3,233</td><td class="num"><span class="chg-up">↑ +$127</span></td><td class="num">$2,950</td></tr>
+          <tr><td>Oct 2026</td><td class="num">$3,252</td><td class="num"><span class="chg-up">↑ +$19</span></td><td class="num">$2,975</td></tr>
         </tbody>
       </table>
     </div>
+    <p class="hist-note">Our listing mix changed in July 2026, so months before August 2026 are not directly comparable with later months.</p>
       
     <h2>How South Boston rent compares to Greater Boston</h2>
     <p>A 1-bedroom in South Boston runs $528 more than the Greater Boston average of $2,724 — about 19% above it. Among the 13 Greater Boston areas we publish, that ranks South Boston 2nd most expensive for 1-bedrooms.</p>

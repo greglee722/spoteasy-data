@@ -180,6 +180,7 @@
 
     /* Trend callout */
     .trend { background: var(--soft); border-left: 3px solid var(--sky); padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 0 0 36px; font-size: 17px; color: var(--navy); font-weight: 600; }
+    .hist-note { margin: 8px 24px 0; font-size: 14px; color: var(--muted); }
 
     /* ─── Tables ─── */
     .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; margin: 16px 24px 8px; display: block; max-width: calc(100% - 48px); box-shadow: 0 1px 3px rgba(0,0,0,.05); }
@@ -282,31 +283,32 @@
       </div>
       
     <h2>Is rent going up or down in Roxbury?</h2>
-    <div class="trend">Roxbury 2-bedroom rent is <strong>down $20 (0.7%)</strong> since June 2025, when Spot Easy's median was $2,795. Month over month it is up $25 from September 2026.</div>
+    <div class="trend">The average 2-bedroom rent in Roxbury is <strong>$2,931</strong> in October 2026, <strong>up $15 (0.5%)</strong> from September 2026. The median is $2,775, up $25 from $2,750.</div>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>Month</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
+        <thead><tr><th>Month</th><th class="num">Average rent</th><th class="num">Change</th><th class="num">Median rent</th></tr></thead>
         <tbody>
-          <tr><td>Jun 2025</td><td class="num">$2,795</td><td class="num"><span class="chg-flat">—</span></td></tr>
-          <tr><td>Jul 2025</td><td class="num">$2,800</td><td class="num"><span class="chg-up">↑ +$5</span></td></tr>
-          <tr><td>Aug 2025</td><td class="num">$2,875</td><td class="num"><span class="chg-up">↑ +$75</span></td></tr>
-          <tr><td>Sep 2025</td><td class="num">$2,800</td><td class="num"><span class="chg-down">↓ −$75</span></td></tr>
-          <tr><td>Oct 2025</td><td class="num">$2,838</td><td class="num"><span class="chg-up">↑ +$38</span></td></tr>
-          <tr><td>Nov 2025</td><td class="num">$3,500</td><td class="num"><span class="chg-up">↑ +$662</span></td></tr>
-          <tr><td>Dec 2025</td><td class="num">$3,250</td><td class="num"><span class="chg-down">↓ −$250</span></td></tr>
-          <tr><td>Jan 2026</td><td class="num">$3,000</td><td class="num"><span class="chg-down">↓ −$250</span></td></tr>
-          <tr><td>Feb 2026</td><td class="num">$3,300</td><td class="num"><span class="chg-up">↑ +$300</span></td></tr>
-          <tr><td>Mar 2026</td><td class="num">$3,800</td><td class="num"><span class="chg-up">↑ +$500</span></td></tr>
-          <tr><td>Apr 2026</td><td class="num">$3,800</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>May 2026</td><td class="num">$3,800</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Jun 2026</td><td class="num">$3,795</td><td class="num"><span class="chg-down">↓ −$5</span></td></tr>
-          <tr><td>Jul 2026</td><td class="num">$3,400</td><td class="num"><span class="chg-down">↓ −$395</span></td></tr>
-          <tr><td>Aug 2026</td><td class="num">$2,800</td><td class="num"><span class="chg-down">↓ −$600</span></td></tr>
-          <tr><td>Sep 2026</td><td class="num">$2,750</td><td class="num"><span class="chg-down">↓ −$50</span></td></tr>
-          <tr><td>Oct 2026</td><td class="num">$2,775</td><td class="num"><span class="chg-up">↑ +$25</span></td></tr>
+          <tr><td>Jun 2025</td><td class="num">$2,952</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$2,795</td></tr>
+          <tr><td>Jul 2025</td><td class="num">$3,211</td><td class="num"><span class="chg-up">↑ +$259</span></td><td class="num">$2,800</td></tr>
+          <tr><td>Aug 2025</td><td class="num">$3,387</td><td class="num"><span class="chg-up">↑ +$176</span></td><td class="num">$2,875</td></tr>
+          <tr><td>Sep 2025</td><td class="num">—</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$2,800</td></tr>
+          <tr><td>Oct 2025</td><td class="num">—</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$2,838</td></tr>
+          <tr><td>Nov 2025</td><td class="num">$3,728</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$3,500</td></tr>
+          <tr><td>Dec 2025</td><td class="num">$3,593</td><td class="num"><span class="chg-down">↓ −$135</span></td><td class="num">$3,250</td></tr>
+          <tr><td>Jan 2026</td><td class="num">$3,440</td><td class="num"><span class="chg-down">↓ −$153</span></td><td class="num">$3,000</td></tr>
+          <tr><td>Feb 2026</td><td class="num">$3,471</td><td class="num"><span class="chg-up">↑ +$31</span></td><td class="num">$3,300</td></tr>
+          <tr><td>Mar 2026</td><td class="num">$3,647</td><td class="num"><span class="chg-up">↑ +$176</span></td><td class="num">$3,800</td></tr>
+          <tr><td>Apr 2026</td><td class="num">$3,671</td><td class="num"><span class="chg-up">↑ +$24</span></td><td class="num">$3,800</td></tr>
+          <tr><td>May 2026</td><td class="num">$3,704</td><td class="num"><span class="chg-up">↑ +$33</span></td><td class="num">$3,800</td></tr>
+          <tr><td>Jun 2026</td><td class="num">$3,638</td><td class="num"><span class="chg-down">↓ −$66</span></td><td class="num">$3,795</td></tr>
+          <tr><td>Jul 2026</td><td class="num">—</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$3,400</td></tr>
+          <tr><td>Aug 2026</td><td class="num">$3,022</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$2,800</td></tr>
+          <tr><td>Sep 2026</td><td class="num">$2,916</td><td class="num"><span class="chg-down">↓ −$106</span></td><td class="num">$2,750</td></tr>
+          <tr><td>Oct 2026</td><td class="num">$2,931</td><td class="num"><span class="chg-up">↑ +$15</span></td><td class="num">$2,775</td></tr>
         </tbody>
       </table>
     </div>
+    <p class="hist-note">Our listing mix changed in July 2026, so months before August 2026 are not directly comparable with later months.</p>
       
     <h2>How Roxbury rent compares to Greater Boston</h2>
     <p>A 2-bedroom in Roxbury runs $442 less than the Greater Boston average of $3,373 — about 13% below it. Among the 15 Greater Boston areas we publish, that ranks Roxbury 14th most expensive for 2-bedrooms.</p>

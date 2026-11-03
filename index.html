@@ -29,7 +29,7 @@
         "creator": { "@type": "Organization", "name": "Spot Easy", "url": "https://www.spoteasy.com" },
         "temporalCoverage": "2026/..",
         "spatialCoverage": { "@type": "Place", "name": "Greater Boston, Massachusetts" },
-        "variableMeasured": ["Average asking rent","Median asking rent","25th percentile rent","75th percentile rent","Month-over-month rent change","Year-over-year rent change"],
+        "variableMeasured": ["Average asking rent","Median asking rent","25th percentile rent","75th percentile rent","Month-over-month rent change"],
         "dateModified": "2026-10-01",
         "license": "https://creativecommons.org/licenses/by/4.0/",
         "includedInDataCatalog": { "@id": "https://www.spoteasy.com/data#catalog" }
@@ -733,7 +733,7 @@
       "name": "Is rent in Boston going up or down?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The year-over-year figure on spoteasy.com/data compares this month against the same month last year for a Greater Boston 1-bedroom. For a single neighborhood, each Boston Rent Index page carries a 13-month history table showing whether that area is moving with the market or against it."
+        "text": "The month-over-month figure on spoteasy.com/data compares the average Greater Boston 1-bedroom rent with the previous month, with the median beside it. For a single neighborhood, each Boston Rent Index page carries a 13-month history table, average first and median beside it, showing whether that area is moving with the market or against it."
       }
     },
     {
@@ -796,13 +796,16 @@ const PAGE_DATA = {
       },
       "count": 13
     },
-    "yoy": {
-      "from": "Oct 2025",
+    "mom": {
+      "from": "Sep 2026",
       "to": "Oct 2026",
-      "diff": -45,
-      "pct": 1.7,
+      "diff": -58,
+      "pct": 2.1,
       "dir": "down",
-      "value": 2550
+      "value": 2724,
+      "median": 2550,
+      "medianDiff": -50,
+      "stat": "average"
     },
     "roommate": {
       "studio": 2286,
@@ -1144,7 +1147,7 @@ const PAGE_DATA = {
     <div class="tk-grid">
       <!-- TAKEAWAYS:START -->
       <div class="tk"><div class="tk-h">Cheapest 1-bedroom</div><div class="tk-v">$2,370</div><div class="tk-s"><a href="/data/rent-index/dorchester">Dorchester</a> · priciest is <a href="/data/rent-index/back-bay">Back Bay</a> at $3,404</div></div>
-      <div class="tk"><div class="tk-h">Year over year</div><div class="tk-v">↓ 1.7%</div><div class="tk-s">1-bedroom rent is down $45 (1.7%) since Oct 2025, at a median of $2,550</div></div>
+      <div class="tk"><div class="tk-h">Month over month</div><div class="tk-v">↓ 2.1%</div><div class="tk-s">The average 1-bedroom is $2,724, down $58 from September 2026. The median is $2,550, down $50.</div></div>
       <div class="tk"><div class="tk-h">Roommate savings</div><div class="tk-v">$599/mo</div><div class="tk-s">A studio averages $2,286. Half a 2-bedroom is $1,687 per person, so splitting one saves $599 a month.</div></div>
       <!-- TAKEAWAYS:END -->
     </div>
@@ -1221,7 +1224,7 @@ const PAGE_DATA = {
       <p>Of the areas we publish, Dorchester, Roxbury and Allston consistently sit at the low end for a 1-bedroom, and Back Bay, Beacon Hill and the South End at the high end. The table above is sortable, so you can rank every area by the bedroom size you actually need — the cheapest studio market is not always the cheapest 2-bedroom market.</p>
 
       <h3>Is rent in Boston going up or down?</h3>
-      <p>Look at the year-over-year figure at the top of this page: it compares this month against the same month last year for a Greater Boston 1-bedroom. For a single neighborhood, each <a href="/data/rent-index">Rent Index</a> page carries a 13-month history table so you can see whether a specific area is moving with the market or against it.</p>
+      <p>Look at the month-over-month figure at the top of this page: it compares the average Greater Boston 1-bedroom rent with last month, with the median beside it. For a single neighborhood, each <a href="/data/rent-index">Rent Index</a> page carries a 13-month history table so you can see whether a specific area is moving with the market or against it.</p>
 
       <h3>How much rent can I afford?</h3>
       <p>A common rule is to keep rent near 30% of gross income — about $2,000 a month on a $80,000 salary, or $2,500 on $100,000. Compare that against the table above to see which areas and bedroom sizes are realistic before you start touring. Boston landlords also commonly ask for first month, last month and a security deposit up front, so budget for the move-in cost as well as the monthly rent.</p>
@@ -1321,10 +1324,10 @@ const PAGE_DATA = {
         <p><strong>Deduplication:</strong> One listing per unique address + unit + bedroom count, keeping the most recently created record.</p>
         <p><strong>Bedroom buckets:</strong> Studio / 1 BR / 2 BR / 3 BR / 4+ BR.</p>
         <p><strong>Minimum sample size:</strong> Cells with fewer than 20 listings are suppressed and shown as —.</p>
-        <p><strong>Metrics:</strong> Average (mean) and median asking rent, 25th and 75th percentile, month-over-month and year-over-year change. Average leads on the published pages; median is carried in the CSV and JSON feed.</p>
+        <p><strong>Metrics:</strong> Average (mean) and median asking rent, 25th and 75th percentile, month-over-month change. Average leads on the published pages, with the median beside it; both are in the CSV and JSON feed. We do not publish a year-over-year change yet, because our listing mix changed in July 2026.</p>
         <ul>
           <li>Month-over-month: same neighborhood × bedroom cell from the previous month's snapshot.</li>
-          <li>Year-over-year: same cell from 12 months prior.</li>
+          <li>Year-over-year: not published until a full year is measured on the current listing mix (August 2027).</li>
         </ul>
         <p style="margin-top:14px; color:var(--muted);">Updated on the 1st of each month. Questions? <a href="mailto:joel@spoteasy.com" style="color:var(--sky)">joel@spoteasy.com</a></p>
       </div>

@@ -180,6 +180,7 @@
 
     /* Trend callout */
     .trend { background: var(--soft); border-left: 3px solid var(--sky); padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 0 0 36px; font-size: 17px; color: var(--navy); font-weight: 600; }
+    .hist-note { margin: 8px 24px 0; font-size: 14px; color: var(--muted); }
 
     /* ─── Tables ─── */
     .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; margin: 16px 24px 8px; display: block; max-width: calc(100% - 48px); box-shadow: 0 1px 3px rgba(0,0,0,.05); }
@@ -284,31 +285,32 @@
       </div>
       
     <h2>Is rent going up or down in Allston?</h2>
-    <div class="trend">Allston 1-bedroom rent is <strong>up $85 (3.7%)</strong> since June 2025, when Spot Easy's median was $2,300. Month over month it is down $110 from September 2026.</div>
+    <div class="trend">The average 1-bedroom rent in Allston is <strong>$2,407</strong> in October 2026, <strong>down $173 (6.7%)</strong> from September 2026. The median is $2,385, down $110 from $2,495.</div>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>Month</th><th class="num">Median rent</th><th class="num">Change</th></tr></thead>
+        <thead><tr><th>Month</th><th class="num">Average rent</th><th class="num">Change</th><th class="num">Median rent</th></tr></thead>
         <tbody>
-          <tr><td>Jun 2025</td><td class="num">$2,300</td><td class="num"><span class="chg-flat">—</span></td></tr>
-          <tr><td>Jul 2025</td><td class="num">$2,395</td><td class="num"><span class="chg-up">↑ +$95</span></td></tr>
-          <tr><td>Aug 2025</td><td class="num">$2,395</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Sep 2025</td><td class="num">$2,395</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Oct 2025</td><td class="num">$2,350</td><td class="num"><span class="chg-down">↓ −$45</span></td></tr>
-          <tr><td>Nov 2025</td><td class="num">$2,373</td><td class="num"><span class="chg-up">↑ +$23</span></td></tr>
-          <tr><td>Dec 2025</td><td class="num">$2,350</td><td class="num"><span class="chg-down">↓ −$23</span></td></tr>
-          <tr><td>Jan 2026</td><td class="num">$2,350</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Feb 2026</td><td class="num">$2,350</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Mar 2026</td><td class="num">$2,350</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Apr 2026</td><td class="num">$2,350</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>May 2026</td><td class="num">$2,395</td><td class="num"><span class="chg-up">↑ +$45</span></td></tr>
-          <tr><td>Jun 2026</td><td class="num">$2,395</td><td class="num"><span class="chg-flat">even</span></td></tr>
-          <tr><td>Jul 2026</td><td class="num">$2,385</td><td class="num"><span class="chg-down">↓ −$10</span></td></tr>
-          <tr><td>Aug 2026</td><td class="num">$2,500</td><td class="num"><span class="chg-up">↑ +$115</span></td></tr>
-          <tr><td>Sep 2026</td><td class="num">$2,495</td><td class="num"><span class="chg-down">↓ −$5</span></td></tr>
-          <tr><td>Oct 2026</td><td class="num">$2,385</td><td class="num"><span class="chg-down">↓ −$110</span></td></tr>
+          <tr><td>Jun 2025</td><td class="num">$2,391</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$2,300</td></tr>
+          <tr><td>Jul 2025</td><td class="num">$2,533</td><td class="num"><span class="chg-up">↑ +$142</span></td><td class="num">$2,395</td></tr>
+          <tr><td>Aug 2025</td><td class="num">$2,527</td><td class="num"><span class="chg-down">↓ −$6</span></td><td class="num">$2,395</td></tr>
+          <tr><td>Sep 2025</td><td class="num">$2,461</td><td class="num"><span class="chg-down">↓ −$66</span></td><td class="num">$2,395</td></tr>
+          <tr><td>Oct 2025</td><td class="num">$2,455</td><td class="num"><span class="chg-down">↓ −$6</span></td><td class="num">$2,350</td></tr>
+          <tr><td>Nov 2025</td><td class="num">$2,460</td><td class="num"><span class="chg-up">↑ +$5</span></td><td class="num">$2,373</td></tr>
+          <tr><td>Dec 2025</td><td class="num">$2,471</td><td class="num"><span class="chg-up">↑ +$11</span></td><td class="num">$2,350</td></tr>
+          <tr><td>Jan 2026</td><td class="num">$2,467</td><td class="num"><span class="chg-down">↓ −$4</span></td><td class="num">$2,350</td></tr>
+          <tr><td>Feb 2026</td><td class="num">$2,465</td><td class="num"><span class="chg-down">↓ −$2</span></td><td class="num">$2,350</td></tr>
+          <tr><td>Mar 2026</td><td class="num">$2,462</td><td class="num"><span class="chg-down">↓ −$3</span></td><td class="num">$2,350</td></tr>
+          <tr><td>Apr 2026</td><td class="num">$2,461</td><td class="num"><span class="chg-down">↓ −$1</span></td><td class="num">$2,350</td></tr>
+          <tr><td>May 2026</td><td class="num">$2,491</td><td class="num"><span class="chg-up">↑ +$30</span></td><td class="num">$2,395</td></tr>
+          <tr><td>Jun 2026</td><td class="num">$2,516</td><td class="num"><span class="chg-up">↑ +$25</span></td><td class="num">$2,395</td></tr>
+          <tr><td>Jul 2026</td><td class="num">$2,451</td><td class="num"><span class="chg-down">↓ −$65</span></td><td class="num">$2,385</td></tr>
+          <tr><td>Aug 2026</td><td class="num">$2,637</td><td class="num"><span class="chg-flat">—</span></td><td class="num">$2,500</td></tr>
+          <tr><td>Sep 2026</td><td class="num">$2,580</td><td class="num"><span class="chg-down">↓ −$57</span></td><td class="num">$2,495</td></tr>
+          <tr><td>Oct 2026</td><td class="num">$2,407</td><td class="num"><span class="chg-down">↓ −$173</span></td><td class="num">$2,385</td></tr>
         </tbody>
       </table>
     </div>
+    <p class="hist-note">Our listing mix changed in July 2026, so months before August 2026 are not directly comparable with later months.</p>
       
     <h2>How Allston rent compares to Greater Boston</h2>
     <p>A 1-bedroom in Allston runs $317 less than the Greater Boston average of $2,724 — about 12% below it. Among the 13 Greater Boston areas we publish, that ranks Allston 11th most expensive for 1-bedrooms.</p>
