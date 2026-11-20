@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found | Spot Easy</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap" rel="stylesheet" />
+  <!-- Cloudflare Pages serves this page, with a 404, for any path that has no file.
+       Without it, Pages answers every unknown path (robots.txt included) with index.html and a 200. -->
+  <style>
+    :root {
+      --navy: #0A2540;
+      --sky:  #00ACEE;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 32px;
+      font-family: 'Mulish', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: rgba(255,255,255,.7);
+      background: var(--navy) radial-gradient(circle, rgba(0,172,238,.18) 1px, transparent 1px) 0 0 / 28px 28px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main { width: 100%; max-width: 1040px; margin: 0 auto; }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--sky);
+    }
+
+    .eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--sky); }
+
+    h1 {
+      max-width: 680px;
+      margin-bottom: 20px;
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: -.03em;
+      color: #FFFFFF;
+    }
+
+    p { max-width: 520px; margin-bottom: 32px; }
+
+    nav { display: flex; flex-wrap: wrap; gap: 12px; }
+
+    nav a {
+      padding: 12px 20px;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 6px;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    nav a.primary { background: var(--sky); border-color: var(--sky); color: var(--navy); }
+
+    nav a:hover { border-color: var(--sky); }
+
+    nav a:focus-visible { outline: 2px solid var(--sky); outline-offset: 3px; }
+
+    @media (max-width: 768px) {
+      body { padding: 48px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Boston Data Desk · 404</div>
+    <h1>Page not found</h1>
+    <p>There's no page at this address. It may have moved, or the link may have a typo.</p>
+    <nav>
+      <a class="primary" href="https://www.spoteasy.com/data">Boston rental market data</a>
+      <a href="https://www.spoteasy.com/">Find an apartment</a>
+    </nav>
+  </main>
+</body>
+</html>
